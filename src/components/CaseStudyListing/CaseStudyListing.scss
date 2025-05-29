@@ -35,8 +35,12 @@
   }
 
   &__image {
-    height: 40rem;
+    height: 50rem;
     object-fit: cover;
+
+    @include breakpoint(large) {
+      height: 40rem;
+    }
 
     @include breakpoint(medium) {
       height: 20rem;

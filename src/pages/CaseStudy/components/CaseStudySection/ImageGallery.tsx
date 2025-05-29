@@ -1,6 +1,6 @@
 import ImageRow from "@/components/ImageRow";
 import type { Image } from "@/types/global";
-import './ImageGallery.scss'
+import "./ImageGallery.scss";
 
 type ImageGalleryProps = {
     images: Image[][];

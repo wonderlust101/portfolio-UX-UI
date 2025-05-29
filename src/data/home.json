@@ -123,21 +123,21 @@
       "type"        : "UX & UI Design",
       "description" : "Redesigned Skyrim’s quest log into an interactive journal that fixes frustrating usability issues and transforms gameplay into a more immersive and intuitive experience.",
       "link"        : "/skyrim-quest-log-redesign",
-      "previewImage": "images/home/skyrim-quest-log-thumb.png"
+      "previewImage": "images/home/skyrim-quest-log-thumb.webp"
     },
     {
       "title"       : "Telus World of Science Edmonton Guide Book",
       "type"        : "UX & UI Design",
       "description" : "Created a mobile app with AR navigation and gamified exploration to make visiting the science centre more engaging, accessible, and fun for all ages.",
       "link"        : "/telus-world-of-science-guide-book",
-      "previewImage": "images/home/telus-world-of-science-thumb.png"
+      "previewImage": "images/home/telus-world-of-science-thumb.webp"
     },
     {
       "title"       : "Elections Canada Website Audit",
       "type"        : "UX & UI Design",
       "description" : "Audited the Elections Canada website to uncover and fix major usability, accessibility, and content clarity issues that hindered voters' experience.",
       "link"        : "/election-canada-website-audit",
-      "previewImage": "images/home/election-canada-thumb.png"
+      "previewImage": "images/home/election-canada-thumb.webp"
     }
   ]
 }

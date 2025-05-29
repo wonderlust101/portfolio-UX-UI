@@ -10,15 +10,18 @@ type CurrentProjectProps = {
 const otherProjects = [
     {
         project: "The Elder Scrolls: Skyrim Quest Log Redesign",
-        href   : "skyrim-quest-log-redesign"
+        href   : "skyrim-quest-log-redesign",
+        thumbnail: "images/home/skyrim-quest-log-thumb.webp"
     },
     {
         project: "Telus World of Science Edmonton Guide Book",
-        href   : "telus-world-of-science-guide-book"
+        href   : "telus-world-of-science-guide-book",
+        thumbnail: "images/home/telus-world-of-science-thumb.webp"
     },
     {
         project: "Elections Canada Website Audit",
-        href   : "election-canada-website-audit"
+        href   : "election-canada-website-audit",
+        thumbnail: "images/home/election-canada-thumb.webp"
     }
 ];
 
@@ -47,7 +50,7 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
                                 </div>
 
                                 <div className="other-projects__content">
-                                    <img src="images/home/desktop/image-hero-coffeepress.jpg" alt=""/>
+                                    <img className='other-projects__thumbnail' src={project.thumbnail} alt=""/>
                                 </div>
                             </section>
                         </div>

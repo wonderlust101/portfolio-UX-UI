@@ -26,7 +26,7 @@ export default function Hero({tagLine}: HeroProps) {
                         Contact Me</Button>
                 </div>
 
-                <img className="hero__image" src='images/home/sergei-borja.png' alt="Sergei Borja"/>
+                <img className="hero__image" src='images/home/sergei-borja.webp' alt="Sergei Borja"/>
             </div>
 
             <Marquee className="hero__scrolling-text-container">

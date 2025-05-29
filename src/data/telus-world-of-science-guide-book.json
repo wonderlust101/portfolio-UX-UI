@@ -1,94 +1,73 @@
 {
-  "productName": "Telus World of Science",
-  "projectType": "Stamp Book",
-  "heroImage": "images/caseStudy/telus-world-of-science-preview.png",
-  "theme": "purple",
+  "productName"   : "Telus World of Science",
+  "projectType"   : "Stamp Book",
+  "heroImage"     : "images/case-study/telus/telus-world-of-science-preview.webp",
+  "theme"         : "purple",
   "projectSummary": {
     "description": "|Telus World of Science Edmonton Guide Book| is a UX/UI project to design a new mobile app that enhances the visitor experience. Built from scratch, the app features AR-assisted navigation, a digital map, and a gamified stamp system to promote self-guided exploration. The goal was to create an engaging, educational, and accessible tool for learners of all ages across the science centre.",
-    "metadata": [
+    "metadata"   : [
       {
-        "header": "Role",
+        "header" : "Role",
         "content": "UX Researcher & Interaction Designer"
       },
       {
-        "header": "Skills",
+        "header" : "Skills",
         "content": [
           "User Research & Testing",
           "Interaction Design",
           "Prototyping",
-          "Visual Design"
+          "Visual Design",
+          "AR Integration",
+          "3D Modelling"
         ]
       },
       {
-        "header": "Timeline",
-        "content": "Jan 2024 – Apr 2024"
+        "header" : "Timeline",
+        "content": "Sept 2024 – Oct 2024"
       },
       {
-        "header": "Tools",
+        "header" : "Tools",
         "content": [
+          "Adobe Aero",
           "Adobe Illustrator",
-          "Adobe Photoshop",
-          "Google Forms",
+          "Blender",
           "Figma"
         ]
       },
       {
-        "header": "Course Name",
-        "content": "DESN 342: DXD Theory & Issues"
+        "header" : "Course Name",
+        "content": "DESN 444: Interaction Design II"
       },
       {
-        "header": "Collaborators",
+        "header" : "Collaborators",
         "content": [
-          "Chris Clarke",
-          "Sankalp Shrivastav"
+          "Stephanie Flordelis",
+          "Rachel Nhan"
         ]
       }
     ]
   },
-  "sections": [
+  "sections"      : [
     {
-      "title": "Issues with the Original Quest Log",
-      "contents": [
-        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:",
+      "title"      : "Current Visitor Challenges",
+      "contents"   : [
+        "At the Telus World of Science Edmonton, we identified two key areas impacting guest experience:",
         [
           {
-            "header": "Differentiate between main and side quests."
+            "header" : "Navigation",
+            "content": "How guests orient themselves and move through the space. It involves understanding where you are, where you want to go, and how to get there."
           },
           {
-            "header": "Find relevant quest information."
-          },
-          {
-            "header": "Re-immerse after time away from the game."
-          }
-        ]
-      ],
-      "images": [
-        [
-          {
-            "image": "images/home/desktop/image-hero-coffeepress.jpg",
-            "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
-          },
-          {
-            "image": "images/home/desktop/image-hero-coffeepress.jpg",
-            "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
-          }
-        ],
-        [
-          {
-            "image": "images/home/desktop/image-hero-coffeepress.jpg",
-            "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
-          },
-          {
-            "image": "images/home/desktop/image-hero-coffeepress.jpg",
-            "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
+            "header" : "Exploration",
+            "content": "How guests engage with exhibits and absorb information. It’s about hands-on discovery, curiosity, and learning through interaction."
           }
         ]
       ],
       "subsections": [
         {
-          "title": "Redesign Goals",
+          "title"   : "Navigation",
           "contents": [
-            "The primary goal of this redesign was to create a more organized, immersive, and accessible quest log experience. Specifically, we aimed to:",
+            "Navigating the science centre poses several challenges for guests due to a lack of clear guidance and supportive tools, such as:",
             [
               {
                 "header": "Reduce user confusion by clearly differentiating quest types and statuses."
@@ -101,21 +80,61 @@
               }
             ]
           ],
-          "images": [
+          "images"  : [
             [
               {
-                "image": "images/home/desktop/image-hero-coffeepress.jpg",
-                "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
-              }
-            ],
-            [
-              {
-                "image": "images/home/desktop/image-hero-coffeepress.jpg",
-                "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
+                "image"  : "/images/case-study/telus/navigation-1.webp",
+                "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
               },
               {
-                "image": "images/home/desktop/image-hero-coffeepress.jpg",
-                "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
+                "image"  : "/images/case-study/telus/navigation-2.webp",
+                "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Exploration",
+          "contents": [
+            "Engaging with exhibits at Telus World of Science Edmonton is often difficult for many visitors, especially younger audiences, because of several design and accessibility limitations, including:",
+            [
+              {
+                "header": "Limited hands-on learning opportunities for non-readers or visitors with learning challenges"
+              },
+              {
+                "header": "Exhibits rely heavily on static content, reducing engagement and memory-building"
+              },
+              {
+                "header": "Guests lacked a sense of progression or reward, making it harder to stay motivated and immersed throughout the visit"
+              }
+            ]
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/exploration-1.webp",
+                "caption": "A quiz-style screen with static options presents cultural content but lacks audio, animation, or feedback—posing a challenge for younger or non-reading visitors."
+              },
+              {
+                "image"  : "/images/case-study/telus/exploration-2.webp",
+                "caption": "A projected interface displays interactive content, but the flat design and lack of visual prompts or tactile elements reduce accessibility and engagement."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Redesign Goals",
+          "contents": [
+            "We set out to create a solution that enhances the science centre experience by making it more intuitive, engaging, and memorable. \n\n Specifically, we aimed to create an app that:",
+            [
+              {
+                "header": "Reduce user confusion by clearly differentiating quest types and statuses."
+              },
+              {
+                "header": "Minimize time spent navigating the UI by introducing sorting and visual indicators."
+              },
+              {
+                "header": "Improve re-engagement for returning players through context and summaries."
               }
             ]
           ]
@@ -123,27 +142,366 @@
       ]
     },
     {
-      "title": "Research Findings",
-      "contents": [
-        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:"
+      "title"      : "Ideation Process",
+      "contents"   : [
+        "To explore solutions for improving navigation and exploration at Telus World of Science Edmonton, our team engaged in multiple collaborative ideation activities, including brainstorming, mind mapping, and concept sketching."
+      ],
+      "subsections": [
+        {
+          "title"   : "Mind Mapping & Brainwriting",
+          "contents": [
+            "We began with a series of individual and group exercises focused on generating diverse ideas around navigation, interactivity, and guest engagement—encouraging freeform thinking without constraints."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/mind-mapping-1.webp",
+                "caption": "Users interact with a moon lander exhibit using AR. Scanning QR codes reveals astronauts, rover interiors, and educational holograms to simulate a lunar mission."
+              },
+              {
+                "image"  : "/images/case-study/telus/mind-mapping-2.webp",
+                "caption": "Users scan QR codes to explore 360° planetary models. AR overlays show real-time data like humidity and place guests in immersive environments to discover key facts."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mind-mapping-3.webp",
+                "caption": "Users scan QR codes at themed podiums to “travel” between planets. Each station offers AR content, placing guests in planetary settings with immersive fact-based exploration."
+              },
+              {
+                "image"  : "/images/case-study/telus/mind-mapping-4.webp",
+                "caption": "A collaborative map showing major idea branching to wayfinding, Indigenous exhibits, AR add-ons, and health education. Notes reflect pros, cons, and user engagement strategies."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mind-mapping-5.webp",
+                "caption": "A mixed concept combining AR animations, space and body exhibits, and fact-scanning. A mascot character helps guide kids through learning in a playful, engaging way."
+              },
+              {
+                "image"  : "/images/case-study/telus/mind-mapping-6.webp",
+                "caption": "Users scan an igloo exhibit to unlock AR scenes of Indigenous life. The app reveals a campfire, cultural info, and interior visuals to explore daily life and traditions."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/brainwriting-1.webp",
+                "caption": "A concept set on the moon where users learn how astronauts collect lunar rocks. The story includes a diverse team (e.g., former truck driver) and covers challenges like moon gravity and limited communication. It introduces STEM roles in a narrative format."
+              },
+              {
+                "image"  : "/images/case-study/telus/brainwriting-2.webp",
+                "caption": "This story follows a family exploring planets during a visit to the science centre. Using mobile devices, they access interactive content. It highlights accessibility, learning together, and building excitement through shared exploration."
+              },
+              {
+                "image"  : "/images/case-study/telus/brainwriting-3.webp",
+                "caption": "Users explore planet-based missions featuring astronauts, robots, and aliens. With styles ranging from futuristic to humorous, the story encourages curiosity through tasks like scavenger hunts during alien encounters."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Initial Concepts",
+          "contents": [
+            "Each team member developed three early concepts that addressed key exploration and wayfinding issues. These ranged from AR-enhanced scavenger hunts to interactive rover exhibits and projection-based storytelling spaces."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/initial-1.webp",
+                "caption": "This concept allows users to explore how Indigenous people lived in an igloo using AR and VR. Scanning QR codes reveals elements like a campfire and inventory. It’s designed to promote immersive, educational storytelling, especially for kids."
+              },
+              {
+                "image"  : "/images/case-study/telus/initial-2.webp",
+                "caption": "Markers labeled “Scan for Direction” provide real-time AR navigation. Scanning them displays arrows and text to guide users to nearby facilities, helping them navigate efficiently through the exhibit space."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/initial-3.webp",
+                "caption": "Visitors scan QR codes to unlock AR planet visuals, facts, and conditions like humidity. Aimed at children, it offers a rich, gamified learning experience that simulates planetary travel."
+              },
+              {
+                "image"  : "/images/case-study/telus/initial-4.webp",
+                "caption": "A virtual assistant helps users navigate while encouraging them to collect digital items at each exhibit. This gamified journey supports both orientation and full exhibit engagement."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/initial-5.webp",
+                "caption": "This concept shows a floor-based AR system where scanned QR codes activate arrows or colored paths. Users follow the route based on their selected destination, combining visual cues with 3D map interaction."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Prioritization Matrix",
+          "contents": [
+            "We evaluated all proposed concepts based on feasibility or impact, and resource constraints. Using a 2x2 prioritization matrix, we selected the strongest idea by balancing educational value, engagement potential, and technical viability."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/matrix-1.webp",
+                "caption": "A 2x2 prioritization matrix used during an early brainstorming session to plot project ideas by impact (benefit to users) and effort (time, cost, skill). Each sticky note represents a distinct concept being evaluated."
+              },
+              {
+                "image"  : "/images/case-study/telus/matrix-2.webp",
+                "caption": "The refined matrix reflects team consensus on high-value, achievable concepts. Notes at the bottom capture core user needs, the problem statement and what the product will be like."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Inspiration",
+          "contents": [
+            "We drew inspiration from familiar navigation tools that combine clarity and engagement—particularly Google Maps and AR-assisted guidance systems. These helped shape our thinking around how to support self-paced learning and spatial awareness."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/inspo-1.webp",
+                "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
+              },
+              {
+                "image"  : "/images/case-study/telus/inspo-2.webp",
+                "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Chosen Direction",
+          "contents": [
+            "We moved forward with a scavenger hunt–style app concept centred around collectibles and a dynamic task system. \n\nThe final concept included:",
+            [
+              {
+                "header": "A randomized task list for users to complete that changes each visit."
+              },
+              {
+                "header": "A map that guides users through the exhibit to complete the list."
+              },
+              {
+                "header": "A reward system where users redeem prizes based on the number of collectibles collected."
+              }
+            ]
+          ]
+        }
       ]
     },
     {
-      "title": "Redesign Strategy",
-      "contents": [
-        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:"
+      "title"      : "Design Strategy",
+      "contents"   : [
+        "Based on our validated concept, we developed a design strategy focused on simplicity, immersion, and educational value. Our goal was to create a system that was intuitive to navigate, accessible to a wide audience, and engaging for all ages."
+      ],
+      "subsections": [
+        {
+          "title"   : "Task Flows",
+          "contents": [
+            "We mapped out core user journeys such as scanning exhibits, collecting stamps, and navigating the science centre. These flows helped us understand branching decision points and ensure each interaction was logical and goal-driven before moving into wireframes."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/task-flow.webp",
+                "caption": "A visual map of user task flows, outlining core interactions such as scanning exhibits, collecting stamps, and navigating through the science centre."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "low to High Fidelity",
+          "contents": [
+            "Our interface began as hand-drawn sketches to explore layout structure and screen sequencing. These evolved into low and mid fidelity mockups to test visual hierarchy, accessibility, and content density. Each iteration brought us closer to our final prototype while staying aligned with the stamp-based experience."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/wireframe-1.webp",
+                "caption": "Initial hand-drawn wireframes exploring layout ideas, interface components, and user navigation paths. These sketches laid the foundation for further digital prototyping."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/wireframe-2.webp",
+                "caption": "Mid-fidelity mockup used to refine the visual hierarchy and test screen sequencing. These wireframes focused on structure and functionality before visual polish."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/wireframe-3.webp",
+                "caption": "High-fidelity prototypes reflecting near-final design decisions. These screens integrated branding, interactive elements, and accessibility considerations for user testing."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "3d Map and AR Implementation",
+          "contents": [
+            "We recreated the science centre in 3D using Blender to prototype AR navigation. By testing object scanning and directional cues in Adobe Aero, we explored how spatial mapping and real-world integration could support intuitive in-building wayfinding."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/ar-3d-1.webp",
+                "caption": "Reference floor plan of the science centre, used to guide accurate 3D reconstruction so that the 3D model map prototype can be properly showcased."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/ar-3d-2.webp",
+                "caption": "Initial 3D model of the science centre created in Blender, establishing spatial structure for use in virtual navigation and AR overlays."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/ar-3d-3.webp",
+                "caption": "Color-coded 3D model refinement to define zones and enhance visual distinction for user pathfinding during 3D map navigation."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/ar-3d-4.webp",
+                "caption": "AR directional cue displayed in a real hallway environment, guiding users along a predefined route through the science centre."
+              },
+              {
+                "image"  : "/images/case-study/telus/ar-3d-5.webp",
+                "caption": "AR arrow implementation directing the user towards the space gallery, demonstrating visibility and effectiveness of in-building wayfinding in diverse lighting conditions."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Final Mockup",
+          "contents": [
+            "These high-fidelity mockups show the final app interface in action, including stamp collection, navigation, personalization, and onboarding. The design balances educational prompts with intuitive navigation, offering a flexible and engaging experience for diverse audiences."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "/images/case-study/telus/mockup-1.webp",
+                "caption": "These screens guide new users through the initial setup and highlight the app’s key features. The walkthrough introduces the digital map for navigation, the stamp book for tracking progress, saving user activity, and a greetings feature to share experiences."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mockup-2.webp",
+                "caption": "After onboarding, users land on the home screen, where they can immediately access major features. This shows the transition from the home screen into the stamp book section, where users begin engaging with the core stamp-collecting experience."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mockup-3.webp",
+                "caption": "This tutorial sequence introduces users to how the stamp book works. It walks through how to earn stamps, the value of collecting them, and how progress is displayed. These screens help ensure that users understand how to interact with the primary gamified element of the app."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mockup-4.webp",
+                "caption": "Screens in this row show how the stamp book is structured with multiple pages. As users collect more stamps, they can swipe through to review achievements and view newly earned badges, encouraging ongoing exploration and discovery."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mockup-5.webp",
+                "caption": "These screens demonstrate how users use the app’s AR functionality to scan real-world exhibit objects. Successfully scanning unlocks new stamps and content, integrating the digital experience with the physical environment."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mockup-6.webp",
+                "caption": "This section provides an alternative to AR scanning by allowing users to manually enter information or exhibit codes via a keyboard. This ensures accessibility for users who may have difficulties using the camera or are in low-light environments."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mockup-7.webp",
+                "caption": "Here, users explore the centre using a 3D map, browse the exhibit directory, and engage AR navigation features. This enhances wayfinding by combining visual spatial understanding with digital guidance, making it easier to locate and reach points of interest."
+              }
+            ],
+            [
+              {
+                "image"  : "/images/case-study/telus/mockup-8.webp",
+                "caption": "The final row includes user profile, account management, and settings. From here, users can update personal information, adjust accessibility preferences, and manage their experience for comfort and personalization."
+              }
+            ]
+          ]
+        }
       ]
     },
     {
-      "title": "Usability Testing",
-      "contents": [
-        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:"
+      "title"      : "Usability Testing",
+      "contents"   : [
+        "To evaluate our prototype, we conducted both pilot studies and on-site user tests at the Telus World of Science Edmonton.",
+        [
+          {
+            "header" : "Pilot Testing",
+            "content": "We began with four informal tests using friends and family. This helped us refine the app’s layout and gather early feedback on clarity, usability, and design consistency."
+          },
+          {
+            "header" : "On-Site Testing",
+            "content": "We conducted two contextual tests with real users at TWoSE. Participants explored exhibits using the app, giving us insight into how it performed in its intended environment."
+          }
+        ]
+      ],
+      "images"     : [
+        [
+          {
+            "image"  : "/images/case-study/telus/user-test-1.webp",
+            "caption": "A participant uses the prototype app to explore a planetary exhibit, demonstrating how the interface interacts with real-world visuals during on-site testing."
+          },
+          {
+            "image"  : "/images/case-study/telus/user-test-2.webp",
+            "caption": "A close-up of the app interface in use, showing how users engage with the quest list during their visit to the exhibit."
+          }
+        ],
+        [
+          {
+            "image"  : "/images/case-study/telus/user-test-3.webp",
+            "caption": "Another participant interacts with the app near a space-themed display, showcasing real-time usability in an authentic museum environment."
+          }
+        ]
+      ],
+      "subsections": [
+        {
+          "title"   : "Key Observations",
+          "contents": [
+            [
+              {
+                "header": "Users found the app easy to use, even without the tutorial"
+              },
+              {
+                "header": "The interface felt intuitive and well-organized"
+              },
+              {
+                "header": "Accessibility features (audio, contrast, map toggles) were appreciated"
+              },
+              {
+                "header": "However, Some icons needed redesign for better clarity"
+              }
+            ],
+            "Overall, the app worked well as a prototype, showing potential for real-world use. Feedback helped us refine visual hierarchy, accessibility, and interaction flow."
+          ]
+        }
       ]
     },
     {
-      "title": "Key Outcomes",
+      "title"   : "Next Steps",
       "contents": [
-        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:"
+        "While our prototype successfully explored core features, there’s still room to grow. With more time and resources, we would apply the changes based on the feedback on the user testing and expand on the following:",
+        [
+          {
+            "header" : "Deeper Educational Content",
+            "content": "Incorporate layered content in the stamp book—such as videos, trivia, or links—to better support different age groups and learning styles."
+          },
+          {
+            "header" : "Gamification & Progression",
+            "content": "Introduce badges, levels, or time-based challenges to keep returning users engaged and motivated to explore more."
+          },
+          {
+            "header" : "Broader Accessibility Support",
+            "content": "Expand settings for language options, screen readers, and sensory-friendly modes to accommodate a wider range of users."
+          }
+        ]
       ]
     }
   ]

@@ -5,7 +5,8 @@ import { useSelector } from "react-redux";
 
 type ListItem = {
     header: string;
-    content?: string| ReactNode;
+    content?: string|ReactNode;
+    bold?: string;
 };
 
 type ListItemProps = {
@@ -58,7 +59,10 @@ function ListItem({item, index, theme}: ListItemProps) {
                 <p className="list__index">0{index + 1}</p>
 
                 <div className="list__item-content">
+                    {item.bold && <p className="list__item-bold">{item.bold}</p>}
+
                     <p className={`${color}-accent-${theme}`}>{item.header}</p>
+
                     {item.content && <p>{item.content}</p>}
                 </div>
             </li>

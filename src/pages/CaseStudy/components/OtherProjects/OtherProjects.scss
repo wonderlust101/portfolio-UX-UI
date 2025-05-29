@@ -25,4 +25,9 @@
     display: grid;
     gap: 2rem;
   }
+
+  &__thumbnail {
+    height: 25rem;
+    object-fit: cover;
+  }
 }

@@ -85,7 +85,7 @@ export default function Footer({theme}: FooterProps) {
                 </div>
 
                 <div className="footer__right-column">
-                    <img className="footer__image" src="images/home/sergei-borja.png" alt="Sergei Borja"/>
+                    <img className="footer__image" src="images/home/sergei-borja.webp" alt="Sergei Borja"/>
 
                     <ul className="footer__nav-list">
                         {navLinks.projectLinks.map((link, index) => (

@@ -21,7 +21,7 @@ export default function About({aboutText, additionalDetails}: AboutProps) {
                         <List items={additionalDetails} type="meta"/>
                     </div>
 
-                    <img src="images/home/sergei-borja.png" alt="Sergei Borja"/>
+                    <img src="images/home/sergei-borja.webp" alt="Sergei Borja"/>
                 </div>
             </div>
         </Section>

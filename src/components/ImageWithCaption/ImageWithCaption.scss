@@ -1,6 +1,12 @@
 .image-with-caption {
   display: grid;
+  align-content: center;
   gap: 1rem;
+  max-width: 80rem;
+
+  &__image {
+    object-fit: contain;
+  }
 
   &__caption {
     font-size: 1rem;

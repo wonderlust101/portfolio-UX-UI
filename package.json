@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "convert:webp": "node scripts/convert-images.cjs"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -19,6 +20,7 @@
     "react-router-dom": "^7.6.0",
     "react-textfitfix": "^1.1.0",
     "sass-embedded": "^1.88.0",
+    "sharp": "^0.34.2",
     "vite-plugin-svgr": "^4.3.0"
   },
   "devDependencies": {
@@ -33,6 +35,7 @@
     "globals": "^16.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-webp-compress": "^1.1.4"
   }
 }

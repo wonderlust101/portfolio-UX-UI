@@ -13,7 +13,7 @@ export default defineConfig({
       }
     }
   },
-  base   : "/portfolio-ux-ui/",
+  base   : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src")

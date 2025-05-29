@@ -1,0 +1,33 @@
+@use "../abstract/index" as a;
+
+.green-accent-dark {
+  color: a.$clr-green-light;
+}
+
+.green-accent-light {
+  color: a.$clr-green;
+}
+
+.brown-accent-dark {
+  color: a.$clr-brown-light;
+}
+
+.brown-accent-light {
+  color: a.$clr-brown;
+}
+
+.purple-accent-dark {
+  color: a.$clr-purple-light;
+}
+
+.purple-accent-light {
+  color: a.$clr-purple;
+}
+
+.red-accent-dark {
+  color: a.$clr-red-light;
+}
+
+.red-accent-light {
+  color: a.$clr-red;
+}

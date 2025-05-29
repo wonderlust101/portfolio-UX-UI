@@ -1,0 +1,31 @@
+.case-study-hero {
+  grid-template-rows: max-content 1fr;
+  row-gap: 3rem;
+  padding-top: 9rem;
+  background-color: $clr-white;
+
+  @include breakpoint(medium) {
+    padding: 8rem 0 3rem;
+    row-gap: 1.5rem;
+  }
+
+  &__image-container {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__caption {
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: -0.12rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint(medium) {
+      font-size: 1.75rem;
+      text-align: center;
+      font-weight: 900;
+    }
+  }
+}

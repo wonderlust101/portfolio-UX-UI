@@ -1,0 +1,73 @@
+.hero {
+  grid-template-rows: max-content 1fr max-content;
+  align-content: center;
+  row-gap: 4rem;
+  padding: 8rem 0 6rem;
+  height: 100vh;
+  background-color: $clr-white;
+  color: $clr-black;
+
+  @include breakpoint(medium) {
+    padding: 8rem 0 3rem;
+    row-gap: 2rem;
+    grid-template-rows: max-content max-content max-content;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 10%;
+
+    @include breakpoint(large) {
+      gap: 5%;
+    }
+
+    @include breakpoint(medium) {
+      align-content: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content max-content;
+      gap: 3rem;
+    }
+  }
+
+  &__cta {
+    display: grid;
+    gap: 2rem;
+    align-content: flex-start;
+    justify-items: flex-start;
+  }
+
+  &__image {
+    height: 20rem;
+    align-self: center;
+    object-position: center;
+
+    @include breakpoint(large) {
+      height: 16rem;
+    }
+
+    @include breakpoint(medium) {
+      align-self: unset;
+      height: 14rem;
+    }
+  }
+
+  &__scrolling-text-container {
+    grid-column: 1/-1 !important;
+    user-select: none;
+    overflow: hidden;
+  }
+
+  &__scrolling-text {
+    font-size: clamp(4rem, 7.5vw, 12rem);
+    font-weight: 900;
+    letter-spacing: -0.32rem;
+    line-height: 1;
+    text-transform: uppercase;
+    flex-shrink: 0;
+
+    & > :nth-child(2n + 1) {
+      color: $clr-green;
+    }
+  }
+}

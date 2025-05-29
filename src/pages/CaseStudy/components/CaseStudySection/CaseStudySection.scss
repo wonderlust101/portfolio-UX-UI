@@ -1,0 +1,10 @@
+.case-study-section {
+  &__section {
+    display: grid;
+    gap: 3rem;
+
+    @include breakpoint(small) {
+      gap: 1.5rem;
+    }
+  }
+}

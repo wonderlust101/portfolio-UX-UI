@@ -1,0 +1,150 @@
+{
+  "productName": "Election Canada",
+  "projectType": "Website Audit",
+  "heroImage": "images/caseStudy/election-canada-preview.png",
+  "theme": "red",
+  "projectSummary": {
+    "description": "|Elections Canada Website Audit| is a UX and content evaluation of the official site, focused on improving usability, accessibility, and clarity. The audit revealed issues such as dense content, confusing navigation, and poor readability. Using heuristic review, content inventory, and user-based analysis, we identified key barriers and proposed actionable fixes to better serve voters and stakeholders.",
+    "metadata": [
+      {
+        "header": "Role",
+        "content": "UX Researcher & Interaction Designer"
+      },
+      {
+        "header": "Skills",
+        "content": [
+          "User Research & Testing",
+          "Interaction Design",
+          "Prototyping",
+          "Visual Design"
+        ]
+      },
+      {
+        "header": "Timeline",
+        "content": "Jan 2024 – Apr 2024"
+      },
+      {
+        "header": "Tools",
+        "content": [
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+          "Google Forms",
+          "Figma"
+        ]
+      },
+      {
+        "header": "Course Name",
+        "content": "DESN 342: DXD Theory & Issues"
+      },
+      {
+        "header": "Collaborators",
+        "content": [
+          "Chris Clarke",
+          "Sankalp Shrivastav"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Issues with the Original Quest Log",
+      "contents": [
+        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:",
+        [
+          {
+            "header": "Differentiate between main and side quests."
+          },
+          {
+            "header": "Find relevant quest information."
+          },
+          {
+            "header": "Re-immerse after time away from the game."
+          }
+        ]
+      ],
+      "images": [
+        [
+          {
+            "image": "images/home/desktop/image-hero-coffeepress.jpg",
+            "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
+          },
+          {
+            "image": "images/home/desktop/image-hero-coffeepress.jpg",
+            "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
+          }
+        ],
+        [
+          {
+            "image": "images/home/desktop/image-hero-coffeepress.jpg",
+            "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
+          },
+          {
+            "image": "images/home/desktop/image-hero-coffeepress.jpg",
+            "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
+          }
+        ]
+      ],
+      "subsections": [
+        {
+          "title": "Redesign Goals",
+          "contents": [
+            "The primary goal of this redesign was to create a more organized, immersive, and accessible quest log experience. Specifically, we aimed to:",
+            [
+              {
+                "header": "Reduce user confusion by clearly differentiating quest types and statuses."
+              },
+              {
+                "header": "Minimize time spent navigating the UI by introducing sorting and visual indicators."
+              },
+              {
+                "header": "Improve re-engagement for returning players through context and summaries."
+              }
+            ]
+          ],
+          "images": [
+            [
+              {
+                "image": "images/home/desktop/image-hero-coffeepress.jpg",
+                "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
+              }
+            ],
+            [
+              {
+                "image": "images/home/desktop/image-hero-coffeepress.jpg",
+                "caption": "A directional sign listing exhibit names hangs above a ramp, but without arrows or location context, it provides limited guidance for visitors trying to find their way."
+              },
+              {
+                "image": "images/home/desktop/image-hero-coffeepress.jpg",
+                "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Research Findings",
+      "contents": [
+        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:"
+      ]
+    },
+    {
+      "title": "Redesign Strategy",
+      "contents": [
+        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:"
+      ]
+    },
+    {
+      "title": "Usability Testing",
+      "contents": [
+        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:"
+      ]
+    },
+    {
+      "title": "Key Outcomes",
+      "contents": [
+        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and depth of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:"
+      ]
+    }
+  ]
+}

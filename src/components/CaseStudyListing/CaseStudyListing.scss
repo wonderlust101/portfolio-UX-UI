@@ -1,0 +1,45 @@
+.case-study-listing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding-top: 2rem;
+
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr;
+  }
+
+  &__text-column {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+
+    @include breakpoint(medium) {
+      gap: 3rem;
+    }
+  }
+
+  &__description {
+    display: grid;
+    justify-items: flex-start;
+    align-content: center;
+    gap: 2.5rem;
+  }
+
+  &__text {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  &__header {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  &__image {
+    height: 40rem;
+    object-fit: cover;
+
+    @include breakpoint(medium) {
+      height: 20rem;
+    }
+  }
+}

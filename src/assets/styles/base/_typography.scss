@@ -1,0 +1,132 @@
+@use "../abstract/index" as a;
+
+// Global Styles
+* {
+  font-family: 'Satoshi', sans-serif;
+}
+
+li {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.7;
+  white-space: pre-line;
+
+  @include a.breakpoint(medium) {
+    font-size: 1.1rem;
+  }
+
+  @include a.breakpoint(small) {
+    font-size: 1rem;
+  }
+}
+
+// Heading Styles
+.heading-xl {
+  font-size: clamp(1rem, 14.25vw, 23.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1.03125rem;
+  line-height: 1;
+  text-align: center;
+
+  @include a.breakpoint(large) {
+    font-size: clamp(1rem, 14.5vw, 23.5rem);
+    letter-spacing: -1.0rem;
+  }
+
+  @include a.breakpoint(medium) {
+    font-size: 8rem;
+    letter-spacing: -0.48rem;
+    text-align: left;
+  }
+
+  @include a.breakpoint(small) {
+    font-size: 5rem;
+  }
+}
+
+.heading-lg {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.16rem;
+  line-height: 1.25;
+
+  @include a.breakpoint(small) {
+    font-size: 2.5rem;
+  }
+}
+
+.heading-md {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.06rem;
+
+  @include a.breakpoint(small) {
+    font-size: 2rem;
+  }
+}
+
+.heading-sm {
+  font-size: 2.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.045rem;
+
+  @include a.breakpoint(small) {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-xs {
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.015rem;
+
+  @include a.breakpoint(small) {
+    font-size: 1.25rem;
+  }
+}
+
+// Font Weight
+.bold {
+  font-weight: 700;
+}
+
+// Custom Typography
+
+.link {
+  padding-bottom: 8px;
+  background-image: linear-gradient(a.$clr-white, a.$clr-black);
+  background-size: 0 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.36s ease-in-out;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  line-height: 1.7;
+
+  @include a.breakpoint(medium) {
+    font-size: 1.1rem;
+  }
+
+  @include a.breakpoint(small) {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background-size: 100% 3px;
+  }
+}

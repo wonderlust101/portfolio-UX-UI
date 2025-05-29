@@ -1,0 +1,39 @@
+@use "../abstract" as a;
+
+.grid-bleed {
+  display: grid;
+  grid-template-columns: 1fr min(100% - 8rem * 2, 140rem) 1fr;
+
+  @include a.breakpoint(large) {
+    grid-template-columns: 1fr calc(100% - 4rem * 2) 1fr;
+  }
+
+  @include a.breakpoint(medium) {
+    grid-template-columns: 1fr calc(100% - 2rem * 2) 1fr;
+  }
+
+  @include a.breakpoint(small) {
+    grid-template-columns: 1fr calc(100% - 1.25rem * 2) 1fr;
+  }
+
+  & > * {
+    grid-column: 2;
+  }
+}
+
+.grid-bleed-small {
+  display: grid;
+  grid-template-columns: 1fr min(100% - 2rem * 2, 160rem) 1fr;
+
+  @include a.breakpoint(medium) {
+    grid-template-columns: 1fr calc(100% - 2rem * 2) 1fr;
+  }
+
+  @include a.breakpoint(small) {
+    grid-template-columns: 1fr calc(100% - 1.25rem * 2) 1fr;
+  }
+
+  & > * {
+    grid-column: 2;
+  }
+}

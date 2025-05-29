@@ -1,0 +1,21 @@
+.desktop-navigation {
+  display: block;
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+
+  &__nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__link {
+    font-size: 1.1rem !important;
+
+    @include breakpoint(large) {
+      font-size: 1rem !important;
+    }
+  }
+}

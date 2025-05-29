@@ -1,0 +1,83 @@
+.button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: opacity 0.15s ease-in-out;
+
+  &:hover:not(:disabled) {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    filter: saturate(50%);
+    opacity: 0.5;
+  }
+
+  //Color
+  &--white {
+    background-color: $clr-white;
+    color: $clr-black;
+  }
+
+  &--black {
+    background-color: $clr-black;
+    color: $clr-white;
+  }
+
+  &--green-dark {
+    background-color: $clr-green-light;
+    color: $clr-black;
+  }
+
+  &--green-light {
+    background-color: $clr-green;
+    color: $clr-white;
+  }
+
+  &--brown-dark {
+    background-color: $clr-brown-light;
+    color: $clr-black;
+  }
+
+  &--brown-light {
+    background-color: $clr-brown;
+    color: $clr-white;
+  }
+
+  &--purple-dark {
+    background-color: $clr-purple-light;
+    color: $clr-black;
+  }
+
+  &--purple-light {
+    background-color: $clr-purple;
+    color: $clr-white;
+  }
+
+  &--red-dark {
+    background-color: $clr-red-light;
+    color: $clr-black;
+  }
+
+  &--red-light {
+    background-color: $clr-red;
+    color: $clr-white;
+  }
+
+  // Sizes
+  &--sm {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  &--md {
+    padding: 0.75rem 2rem;
+  }
+
+  &--lg {
+    padding: 1rem 3rem;
+  }
+}

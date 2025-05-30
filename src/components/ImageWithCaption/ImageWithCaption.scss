@@ -1,9 +1,13 @@
 .image-with-caption {
   display: grid;
   align-items: center;
-  align-content: center;
-  gap: 1rem;
-  max-width: 80rem;
+  align-content: flex-start;
+  gap: 1.5rem;
+  max-width: 65rem;
+
+  @include breakpoint(small) {
+    gap: 0.5rem;
+  }
 
   &__image {
     object-fit: contain;
@@ -16,7 +20,7 @@
     letter-spacing: 0.02rem;
 
     @include breakpoint(small) {
-      font-size: 0.9rem;
+      font-size: 0.75rem;
     }
   }
 }

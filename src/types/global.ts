@@ -1,5 +1,6 @@
 type ImageOptions = {
     even?: boolean;
+    maxWidth?: number;
 }
 
 export type Image = {

@@ -9,7 +9,12 @@ type ImageWithCaptionProps = {
 
 export default function ImageWithCaption({image, style}: ImageWithCaptionProps) {
     return (
-        <figure className="image-with-caption" style={{width: image.options?.even ? "calc(50% - 1rem)" : "100%"}}>
+        <figure className="image-with-caption" style={
+            {
+                width: image.options?.even ? "calc(50% - 1rem)" : "100%",
+                maxWidth: image.options?.maxWidth,
+            }
+        }>
             <img className="image-with-caption__image" src={image.image} alt={image.caption} loading="lazy" style={style}/>
             <figcaption className="image-with-caption__caption">{image.caption}</figcaption>
         </figure>

@@ -1,6 +1,11 @@
 .list {
   display: grid;
   align-content: flex-start;
+  gap: 2rem;
+
+  @include breakpoint(small) {
+    gap: 1rem;
+  }
 
   &__meta {
     display: flex;
@@ -25,11 +30,6 @@
   &__item {
     display: flex;
     gap: 1rem;
-    padding: 2rem 0;
-
-    @include breakpoint(small) {
-      padding: 1.5rem 0;
-    }
   }
 
   &__index {

@@ -1,4 +1,13 @@
 .image-gallery {
   display: grid;
-  gap: 2.5rem;
+  gap: 3rem;
+
+  @include breakpoint(large) {
+    justify-self: center;
+    max-width: 60rem;
+  }
+
+  @include breakpoint(small) {
+    gap: 2.5rem;
+  }
 }

@@ -2,20 +2,15 @@
   grid-template-rows: max-content 1fr max-content;
   align-content: center;
   row-gap: 4rem;
-  padding: 8rem 0 6rem;
-  height: 100vh;
+  padding: 8rem 0;
+  min-height: 100vh;
   background-color: $clr-white;
   color: $clr-black;
 
   @include breakpoint(medium) {
-    padding: 8rem 0 3rem;
+    padding: 6rem 0 3rem;
     row-gap: 2rem;
     grid-template-rows: max-content max-content max-content;
-  }
-
-  @include breakpoint(small) {
-    height: unset;
-    min-height: 100vh;
   }
 
   &__body {

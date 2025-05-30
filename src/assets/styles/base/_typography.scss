@@ -20,7 +20,7 @@ p {
   line-height: 1.7;
   white-space: pre-line;
 
-  @include a.breakpoint(medium) {
+  @include a.breakpoint(large) {
     font-size: 1.1rem;
   }
 

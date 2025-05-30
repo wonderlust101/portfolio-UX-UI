@@ -12,11 +12,26 @@ export default function DesktopNavigation({navLinks}: DesktopNavigationProps) {
         <nav className="desktop-navigation">
             <ul className="desktop-navigation__nav-links">
                 {navLinks.map((link) => (
-                    <li key={link.title}>
-                        <Link className="desktop-navigation__link link" to={link.link}>
-                            {link.title}
-                        </Link>
+                    <li className="desktop-navigation__nav-link" key={link.title}>
+                        <div className="desktop-navigation__nav-link-wrapper">
+                            <Link className="desktop-navigation__link link" to={link.link}>
+                                {link.title}
+                            </Link>
+
+                            {link.subLinks && (
+                                <ul className="desktop-navigation__sub-link-container">
+                                    {link.subLinks.map((subLink) => (
+                                        <li key={subLink.title}>
+                                            <Link to={subLink.link}>
+                                                <span className="link desktop-navigation__link">{subLink.title}</span>
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </div>
                     </li>
+
                 ))}
 
                 <Button

@@ -1,5 +1,9 @@
 @use "../abstract/index" as a;
 
+body {
+  background-color: a.$clr-white;
+}
+
 ul,
 ol {
   list-style: none;

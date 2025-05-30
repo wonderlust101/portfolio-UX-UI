@@ -13,6 +13,11 @@
     grid-template-rows: max-content max-content max-content;
   }
 
+  @include breakpoint(small) {
+    height: unset;
+    min-height: 100vh;
+  }
+
   &__body {
     display: grid;
     grid-template-columns: 1fr 1.5fr;

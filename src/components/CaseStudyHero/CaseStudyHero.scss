@@ -14,6 +14,18 @@
     overflow: hidden;
   }
 
+  &__image {
+    @include breakpoint(small) {
+      height: 16rem;
+    }
+  }
+
+  &__type {
+    @include breakpoint(small) {
+      display: inline;
+    }
+  }
+
   &__caption {
     font-size: 2.75rem;
     font-weight: 900;

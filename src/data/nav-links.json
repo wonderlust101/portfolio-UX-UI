@@ -14,7 +14,21 @@
     },
     {
       "title": "Case Studies",
-      "link": "/#case-studies"
+      "link": "/#case-studies",
+      "subLinks" : [
+        {
+          "title": "Skyrim Quest Log Redesign",
+          "link": "/skyrim-quest-log-redesign"
+        },
+        {
+          "title": "Telus World of Science - Stamp Book",
+          "link": "/telus-world-of-science-guide-book"
+        },
+        {
+          "title": "Election Canada Website Audit",
+          "link": "/election-canada-website-audit"
+        }
+      ]
     }
   ],
   "projectLinks": [

@@ -18,4 +18,39 @@
       font-size: 1rem !important;
     }
   }
+
+  &__nav-link {
+    position: relative;
+  }
+
+  &__nav-link-wrapper {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 1rem;
+      width: 100%;
+    }
+
+    &:hover .desktop-navigation__sub-link-container {
+      display: grid;
+    }
+  }
+
+  &__sub-link-container {
+    display: none;
+    gap: 0.75rem;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    width: max-content;
+    padding: 1.5rem 2rem;
+    background-color: $clr-white;
+    border: 1px solid $clr-black-50;
+    z-index: 20;
+  }
 }

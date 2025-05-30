@@ -4,7 +4,7 @@
   "heroImage"     : "images/case-study/election-canada/election-canada-preview.webp",
   "theme"         : "red",
   "projectSummary": {
-    "description": "|Elections Canada Website Audit| is a UX and content evaluation of the official site, focused on improving usability, accessibility, and clarity. The audit revealed issues such as dense content, confusing navigation, and poor readability. Using heuristic review, content inventory, and user-based analysis, we identified key barriers and proposed actionable fixes to better serve voters and stakeholders.",
+    "description": "|Elections Canada Website Audit| is a UX and content evaluation of the official site focused on improving usability, accessibility, and clarity. The audit revealed dense content, confusing navigation, and poor readability. Using a heuristic review, content inventory, and user-based analysis, we identified key barriers and proposed actionable fixes to serve voters better.",
     "metadata"   : [
       {
         "header" : "Role",
@@ -48,7 +48,7 @@
   },
   "sections"      : [
     {
-      "title"      : "UX & Accessibility Issues",
+      "title"      : "Website Context & User Challenges",
       "contents"   : [
         "The Elections Canada website serves a critical national function by informing over 20 million eligible voters about the voting process, political entities, and election updates. \n\nHowever, when using the site, users can face several key challenges while interacting with the Elections Canada website:",
         [
@@ -76,15 +76,15 @@
         [
           {
             "image"  : "images/case-study/election-canada/intro.webp",
-            "caption": "A static floor map near the entrance offers an overview of exhibits but lacks interactive elements or directional arrows, making real-time navigation difficult for guests."
+            "caption": "The official Elections Canada website is a primary platform for voter information, election updates, and federal electoral resources."
           }
         ]
       ],
       "subsections": [
         {
-          "title"   : "Redesign Goals",
+          "title"   : "Audit Goals & Scope",
           "contents": [
-            "The primary goal of this redesign was to create a more organized, immersive, and accessible quest log experience. Specifically, we aimed to:",
+            "The audit focused solely on the public-facing Elections Canada website. Each evaluation was based on publicly accessible desktop experiences during a defined audit window.\n\nEach audit targeted a different dimension of the digital experience:",
             [
               {
                 "header": "Content Quality Audit"
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "title"      : "Audit Methods & Process",
+      "title"      : "Audit Methodology",
       "contents"   : [
         "To begin the audit, we needed a clear understanding of how content was structured and experienced across the Elections Canada website.\n\nWe approached this in three key steps:",
         [
@@ -139,19 +139,19 @@
             [
               {
                 "image"  : "images/case-study/election-canada/inventory-2.webp",
-                "caption": "Visual representation of the Elections Canada website’s content distribution, highlighting the overwhelming volume of pages in the Resource Centre section, showcasing the content imbalance that may cause potential user to become overwhelmed."
+                "caption": "Visual representation of the Elections Canada website’s content distribution, highlighting the overwhelming volume of pages in the Resource Centre section, showcasing the content as mostly informative as it generally provides information about the election."
               }
             ],
             [
               {
                 "image"  : "images/case-study/election-canada/inventory-3.webp",
-                "caption": "Search engine analysis of elections.ca showing 142.8K monthly organic visits, primarily from Canada, with notable traffic volatility indicating areas for visibility and engagement improvement."
+                "caption": "Search engine analysis of elections.ca shows 142.8K monthly organic visits, primarily from Canada, with notable traffic occurring during election-related events."
               }
             ],
             [
               {
                 "image"  : "images/case-study/election-canada/inventory-4.webp",
-                "caption": "Breakdown of top-ranking keywords and search intent for elections.ca. The dominance of informational queries reveals strong interest in educational content, yet many keywords rank poorly suggesting missed opportunities for optimization."
+                "caption": "Breakdown of top-ranking keywords and search intent for elections.ca. The dominance of informational queries reveals a strong interest in educational content, yet many keywords rank poorly, suggesting missed opportunities for optimization."
               }
             ],
             [
@@ -171,13 +171,13 @@
             [
               {
                 "image"  : "images/case-study/election-canada/qualitative-1.webp",
-                "caption": "Example of a qualitative assessment completed by one of the group members as part of the content audit process. The site received an average score of 2.87 out of 5 across 23 criteria of this particular assessment, highlighting issues with accessibility, media alternatives, inline styles, and overall reading ease."
+                "caption": "Example of a qualitative assessment completed by one of the group members as part of the content audit process. The site received an average score of 2.87 out of 5 across 23 assessment criteria, highlighting issues with accessibility, media alternatives, inline styles, and overall reading ease."
               }
             ],
             [
               {
                 "image"  : "images/case-study/election-canada/qualitative-2.webp",
-                "caption": "WebAIM’s WAVE audit of the Elections Canada homepage revealing numerous issues such as small text, redundant links, missing labels, and poor heading structure which poses as a significant barriers for users relying on assistive technologies."
+                "caption": "WebAIM’s WAVE audit of the Elections Canada homepage revealed numerous issues, such as small text, redundant links, missing labels, and poor heading structure, which pose a significant barrier for users relying on assistive technologies."
               }
             ]
           ]
@@ -194,19 +194,19 @@
                 "header": "Learn about the Green Party of Canada"
               }
             ],
-            "Each task was completed individually by group members to reduce bias, followed by a group audit where findings were discussed and synthesized."
+            "Group members completed Each task individually to reduce bias, followed by a group audit where findings were discussed to determine an agreed-upon rating."
           ],
           "images"  : [
             [
               {
                 "image"  : "images/case-study/election-canada/group-audit-1.webp",
-                "caption": "Group task audit assessing the process of finding the nearest electoral district for Grant MacEwan University. The group identified issues with breadcrumb navigation, inconsistent menu labelling, and unclear page transitions resulting in an average score of 2.93 out of 5."
+                "caption": "Group task audit assessing the finding of the nearest electoral district for Grant MacEwan University. The group identified issues with breadcrumb navigation, inconsistent menu labelling, and unclear page transitions, resulting in an average score of 2.93 out of 5."
               }
             ],
             [
               {
                 "image"  : "images/case-study/election-canada/group-audit-2.webp",
-                "caption": "Group task audit evaluating the task of learning about the Green Party of Canada. Although some elements such as menu labeling performed moderately well, problems with page structure, dense content lists, and confusing navigation paths led to an average score of 3.71 out of 5."
+                "caption": "Group task audit evaluating learning about the Green Party of Canada. Although some elements, such as menu labelling, performed moderately well, problems with page structure, dense content lists, and confusing navigation paths led to an average score of 3.71 out of 5."
               }
             ]
           ]
@@ -214,9 +214,9 @@
       ]
     },
     {
-      "title"      : "Top Issues Identified",
+      "title"      : "Key Findings",
       "contents"   : [
-        "Through five qualitative audits, we identified a range of issues that affect content clarity, site usability, accessibility, and user engagement."
+        "Through five qualitative audits, we identified various issues affecting content clarity, site usability, accessibility, and user engagement."
       ],
       "subsections": [
         {
@@ -238,21 +238,21 @@
             [
               {
                 "image"  : "images/case-study/election-canada/content-quality-audit-1.webp",
-                "caption": "Duplicate content example from the Elections Canada website showing identical pages under different navigation paths. This contributes to the 6,190 pages identified as duplicates, making up 18.7% of the entire site and significantly impacting user experience and content management."
+                "caption": "A duplicate content example from the Elections Canada website shows identical pages under different navigation paths. This contributes to the 6,190 pages identified as duplicates, making up 18.7% of the site and significantly impacting the user experience and content management."
               },
               {
                 "image"  : "images/case-study/election-canada/content-quality-audit-2.webp",
-                "caption": "The duplicate content on another page where the breadcrumbs shows different paths but the end path results to the same page."
+                "caption": "The duplicate content is on another page where the breadcrumbs show different paths, but the end path results are on the same page."
               }
             ],
             [
               {
                 "image"  : "images/case-study/election-canada/content-quality-audit-3.webp",
-                "caption": "Repetitive tabular content from the 40th General Election results, reinforcing the issue of content duplication. Redundant data layouts like this were found across multiple pages, inflating page count and complicating content discoverability."
+                "caption": "Repetitive tables from the 40th General Election results reinforce the issue of content duplication. Redundant data layouts like this were found across multiple pages, inflating page count and complicating content discoverability."
               },
               {
                 "image"  : "images/case-study/election-canada/content-quality-audit-4.webp",
-                "caption": "Example of a chart without sufficient alternative text, highlighting accessibility challenges on the Elections Canada website. With 1,442 of 5,506 images missing alt text (26.19%), assistive technology users face significant barriers in accessing visual information."
+                "caption": "An example of a chart without sufficient alternative text highlights accessibility challenges on the Elections Canada website. With 1,442 of 5,506 images missing alt text (26.19%), assistive technology users face significant barriers in accessing visual information."
               }
             ]
           ]
@@ -265,7 +265,7 @@
                 "header": "Labels were unclear and often used technical terms, which created confusion, especially for users unfamiliar with political language."
               },
               {
-                "header": "The advanced search was hard to locate and difficult to use, offering limited filtering options."
+                "header": "The advanced search was hard to locate and use, offering limited filtering options."
               }
             ]
           ],
@@ -273,11 +273,11 @@
             [
               {
                 "image"  : "images/case-study/election-canada/information-architecture-audit-1.webp",
-                "caption": "The Elections Canada website lacks clear visual and structural distinctions between subsections, making navigation difficult. This issue, especially problematic for users with lower English proficiency, affects around seven of the most frequently visited pages."
+                "caption": "The Elections Canada website lacks clear visual and structural distinctions between subsections, making navigation difficult. This issue, especially problematic for users with lower English proficiency, affects around seven most frequently visited pages."
               },
               {
                 "image"  : "images/case-study/election-canada/information-architecture-audit-2.webp",
-                "caption": "The advanced search interface is overly complex and isolated to a single page, creating frustration for users trying to refine results. Its unintuitive layout and limited accessibility contribute to poor task flow and may cause users to leave the site prematurely."
+                "caption": "The advanced search interface is overly complex and isolated to a single page, frustrating users trying to refine results. Its unintuitive layout and limited accessibility contribute to poor task flow and may cause users to leave the site prematurely."
               }
             ]
           ]
@@ -301,11 +301,11 @@
             [
               {
                 "image"  : "images/case-study/election-canada/homepage-audit-1.webp",
-                "caption": "The homepage includes redundant navigation links such as a “Home” link that leads back to the same homepage, offering no added value. This reflects inefficient organization and can create minor but avoidable confusion for users."
+                "caption": "Text across the homepage is small and lacks clarity, making it hard for users with visual impairments to read. The page has a low reading grade of 16.8 and a readability score of 18.2, indicating poor accessibility for general users."
               },
               {
                 "image"  : "images/case-study/election-canada/homepage-audit-2.webp",
-                "caption": "Text across the homepage is small and lacks clarity, making it hard for users with visual impairments to read. The page has a low reading grade of 16.8 and a readability score of 18.2, indicating poor accessibility for general users."
+                "caption": "The homepage includes redundant navigation links, such as a “Home” link that leads back to the same homepage, offering no added value. This reflects inefficient organization and can create minor but avoidable confusion for users."
               }
             ]
           ]
@@ -326,13 +326,13 @@
             [
               {
                 "image"  : "images/case-study/election-canada/social-media-audit-1.webp",
-                "caption": "Posts across multiple platforms including Twitter, Facebook, and YouTube, show low engagement levels, with minimal likes, shares, and comments. This signals that content is not resonating with the audience, limiting its reach during crucial periods like elections. Around 80% of platforms examined display this issue."
+                "caption": "Posts across multiple platforms, including Twitter, Facebook, and YouTube, show low engagement levels, with minimal likes, shares, and comments. This signals that content is not resonating with the audience, limiting its reach during crucial periods like elections. Around 4 out of 5 platforms examined display this issue."
               }
             ],
             [
               {
                 "image"  : "images/case-study/election-canada/social-media-audit-2.webp",
-                "caption": "Several posts show a lack of strategic hashtag use, which reduces discoverability and reach. Despite covering important updates, the content struggles to connect with broader audiences due to poor tagging practices. Roughly 60% of platforms analyzed had minimal or irrelevant hashtag use."
+                "caption": "Several posts show a lack of strategic hashtag use, which reduces discoverability and reach. Despite covering important updates, the content struggles to connect with broader audiences due to poor tagging practices. Roughly 3 out of 5 platforms analyzed had minimal or irrelevant hashtag use."
               }
             ]
           ]
@@ -356,15 +356,15 @@
             [
               {
                 "image"  : "images/case-study/election-canada/task-audit-1.webp",
-                "caption": "This screenshot highlights the Elections Canada search tool offering multiple ways to find electoral districts. While flexible, it may confuse users due to overlapping search options."
+                "caption": "This screenshot highlights the Elections Canada search tool, which offers multiple ways to find electoral districts. While flexible, it may confuse users due to overlapping search options."
               },
               {
                 "image"  : "images/case-study/election-canada/task-audit-2.webp",
-                "caption": "This image shows another path to the same district info, contributing to duplicate content and a less consistent user experience."
+                "caption": "Clicking the party name redirects users to an external site in the same tab, which may confuse users by breaking the navigation flow."
               },
               {
                 "image"  : "images/case-study/election-canada/task-audit-3.webp",
-                "caption": "Clicking the party name redirects users to an external site in the same tab, which may confuse users by breaking navigation flow."
+                "caption": "This image shows another path to the same district info, contributing to duplicate content and a less consistent user experience."
               }
             ]
           ]
@@ -387,7 +387,7 @@
     {
       "title"   : "Recommendations",
       "contents": [
-        "Based on our audit findings, we propose the following short and long term improvements for Elections Canada’s website:",
+        "Based on our audit findings, we propose the following short and long-term improvements for Elections Canada’s website:",
         [
           {
             "header": "Open external links in new tabs to help users stay oriented while exploring outside content."
@@ -396,7 +396,7 @@
             "header": "Use clearer, more familiar section labels to improve navigation and reduce confusion."
           },
           {
-            "header": "Enhance both basic and advanced search tools so users can find information faster and more accurately."
+            "header": "Enhance basic and advanced search tools so users can find information faster and more accurately."
           },
           {
             "header": "Regularly review and update content to maintain site relevance and improve overall user experience."
@@ -407,7 +407,7 @@
     {
       "title"   : "Reflection",
       "contents": [
-        "This audit project helped us develop practical skills in content analysis, accessibility evaluation, and UX problem-solving—especially within a large-scale, public-facing website.",
+        "This audit project helped us develop practical skills in content analysis, accessibility evaluation, and UX problem-solving, especially within a large-scale, public-facing website.",
         [
           {
             "header": "Designing for accessibility means thinking beyond visuals to include everyone’s experience."
@@ -419,7 +419,7 @@
             "header": "Running real user tasks revealed issues we never would’ve seen in a static review."
           },
           {
-            "header": "We learned that organizing content well is just as important as making it look good."
+            "header": "We learned that organizing content well is as important as making it look good."
           }
         ]
       ]

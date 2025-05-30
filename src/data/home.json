@@ -1,6 +1,6 @@
 {
-  "tagLine"          : "I'm a computer science student in Edmonton, Alberta, with a passion for UX/UI and full stack development. I love solving problems, designing clean interfaces, and building things that help people.",
-  "aboutText"        : "I'm currently working toward my B.Sc. in Computer Science at MacEwan University and looking for internship opportunities in development or design. I'm known for being organized, hardworking, and someone who manages time well.\n\nI enjoy working with others to turn ideas into real, useful products. Whether it's sketching in Figma or coding in React, I always bring curiosity, focus, and a drive to do things right.",
+  "tagLine"          : "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing clean interfaces, and building things that help people.",
+  "aboutText"        : "I'm currently looking for internship opportunities in development or design. I'm known for being organized, hardworking, and someone who manages time well.\n\nI enjoy working with others to turn ideas into real, useful products. Whether sketching in Figma or coding in React, I always bring curiosity, focus, and a drive to do things right.",
   "additionalDetails": [
     {
       "header" : "Role",
@@ -22,7 +22,7 @@
   "skills"           : [
     {
       "title"      : "Designing Experiences",
-      "description": "I can use research methods like user interviews and usability testing to understand real user needs. My goal is to shape intuitive, meaningful experiences through journey mapping, wireframing, and prototyping.",
+      "description": "I can use research methods like user interviews and usability testing to understand real user needs. I aim to shape intuitive, meaningful experiences through journey mapping, wireframing, and prototyping.",
       "skillList"  : [
         {
           "header": "User Interviews"
@@ -100,7 +100,7 @@
     },
     {
       "title"      : "Additional Skills",
-      "description": "These are the supporting skills that help me work efficiently in modern development environments from managing code and deployments to ensuring quality and smooth collaboration.",
+      "description": "These supporting skills help me work efficiently in modern development environments, from managing code and deployments to ensuring quality and smooth collaboration.",
       "skillList"  : [
         {
           "header": "Git"

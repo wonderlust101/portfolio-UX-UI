@@ -34,11 +34,11 @@ export default function Home() {
 
 
     if (status === "error" || heroData === null) {
-        return (<h1>Error</h1>);
+        return (<h1></h1>);
     }
 
     if (status === "loading") {
-        return <h1>Waiting</h1>;
+        return <h1></h1>;
     }
 
     return (

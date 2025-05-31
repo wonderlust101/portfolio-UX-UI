@@ -11,7 +11,9 @@
     "convert:webp": "node scripts/convert-images.cjs"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@reduxjs/toolkit": "^2.8.2",
+    "gsap": "^3.13.0",
     "motion": "^12.10.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -43,7 +43,7 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
                                         theme="light"
                                         size="sm"
                                         disabled={currentProject === project.href}
-                                        to={`/${project.href}`}
+                                        href={`/${project.href}`}
                                     >
                                         Read Case Study
                                     </Button>

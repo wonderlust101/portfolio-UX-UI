@@ -3,7 +3,6 @@ import "./MobileNavigation.scss";
 import CloseMenuIcon from "@/assets/images/close-menu.svg?react";
 import type { NavLinks } from "@/types/links";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 type MobileNavigationProps = {
     navLinks: NavLinks[];
@@ -39,19 +38,19 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                     <li key={link.title}>
                         {link.subLinks ? (
                                 <>
-                                    <Link to={link.link} className="mobile-navigation__link-container" onClick={() => setOpenNav(false)}>
-                                        <span className="link mobile-navigation__link">{link.title}</span>
+                                    <div className="mobile-navigation__link-container">
+                                        <p className="link mobile-navigation__link">{link.title}</p>
                                         <hr/>
-                                    </Link>
+                                    </div>
 
                                     {link.subLinks &&
                                         <ul className="mobile-navigation__sub-link-container">
                                             {link.subLinks.map((subLink) => (
                                                 <li key={subLink.title} className="mobile-navigation__nav-item">
-                                                    <Link to={subLink.link} className="mobile-navigation__link-container" onClick={() => setOpenNav(false)}>
+                                                    <a href={subLink.link} className="mobile-navigation__link-container" onClick={() => setOpenNav(false)}>
                                                         <span className="link mobile-navigation__link">{subLink.title}</span>
                                                         <hr/>
-                                                    </Link>
+                                                    </a>
                                                 </li>
                                             ))}
                                         </ul>
@@ -59,10 +58,10 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                                 </>
                             )
                             : (
-                                <Link to={link.link} className="mobile-navigation__link-container" onClick={() => setOpenNav(false)}>
+                                <a href={link.link} className="mobile-navigation__link-container" onClick={() => setOpenNav(false)}>
                                     <span className="link mobile-navigation__link">{link.title}</span>
                                     <hr/>
-                                </Link>
+                                </a>
                             )
                         }
                     </li>

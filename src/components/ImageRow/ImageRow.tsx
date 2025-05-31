@@ -11,7 +11,7 @@ export default function ImageRow({imageSources}: ImageRowProps) {
         <div className="image-row">
             {imageSources.map(image => (
                 <ImageWithCaption
-                    key={image.caption}
+                    key={image.image}
                     image={image}
                 />
             ))}

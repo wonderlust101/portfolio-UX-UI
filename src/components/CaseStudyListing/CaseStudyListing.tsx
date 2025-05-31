@@ -34,7 +34,7 @@ export default function CaseStudyListing({caseStudy, index}: CaseStudyListingPro
                             <p>{caseStudy.description}</p>
                         </div>
 
-                        <Button color="white" size="md" to={caseStudy.link}>Read More</Button>
+                        <Button color="white" size="md" href={caseStudy.link}>Read More</Button>
                     </div>
                 </div>
 

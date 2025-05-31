@@ -5,16 +5,7 @@
       "link": "/"
     },
     {
-      "title": "About Me",
-      "link": "/#about-me"
-    },
-    {
-      "title": "Skills & Tools",
-      "link": "/#skill-and-tools"
-    },
-    {
       "title": "Case Studies",
-      "link": "/#case-studies",
       "subLinks" : [
         {
           "title": "Skyrim Quest Log Redesign",

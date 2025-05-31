@@ -1,6 +1,5 @@
 import Button from "@/components/Button";
 import type { NavLinks } from "@/types/links";
-import { Link } from "react-router-dom";
 import "./DesktopNavigation.scss";
 
 type DesktopNavigationProps = {
@@ -14,17 +13,21 @@ export default function DesktopNavigation({navLinks}: DesktopNavigationProps) {
                 {navLinks.map((link) => (
                     <li className="desktop-navigation__nav-link" key={link.title}>
                         <div className="desktop-navigation__nav-link-wrapper">
-                            <Link className="desktop-navigation__link link" to={link.link}>
-                                {link.title}
-                            </Link>
+                            {link.link ?
+                                <a className="desktop-navigation__link link" href={link.link}>
+                                    {link.title}
+                                </a>
+                                :
+                                <p className='desktop-navigation__link'>{link.title}</p>
+                            }
 
                             {link.subLinks && (
                                 <ul className="desktop-navigation__sub-link-container">
                                     {link.subLinks.map((subLink) => (
                                         <li key={subLink.title}>
-                                            <Link to={subLink.link}>
+                                            <a href={subLink.link}>
                                                 <span className="link desktop-navigation__link">{subLink.title}</span>
-                                            </Link>
+                                            </a>
                                         </li>
                                     ))}
                                 </ul>
@@ -38,7 +41,7 @@ export default function DesktopNavigation({navLinks}: DesktopNavigationProps) {
                     color="accent"
                     theme="light"
                     size="sm"
-                    to="mailto:sergei.borja0701@gmail.com"
+                    href="mailto:sergei.borja0701@gmail.com"
                 >
                     Contact Me
                 </Button>

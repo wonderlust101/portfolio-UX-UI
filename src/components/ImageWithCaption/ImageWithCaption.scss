@@ -23,4 +23,8 @@
       font-size: 0.75rem;
     }
   }
+
+  &--even {
+    width: calc(50% - 1rem);
+  }
 }

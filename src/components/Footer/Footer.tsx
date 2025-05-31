@@ -4,7 +4,6 @@ import Button from "@/components/Button";
 import List from "@/components/List";
 import navLinks from "@/data/nav-links.json";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 
 type FooterProps = {
     theme: "light"|"dark";
@@ -66,7 +65,7 @@ export default function Footer({theme}: FooterProps) {
                                 color="accent"
                                 theme={theme}
                                 size="lg"
-                                to="mailto:sergei.borja0701@gmail.com"
+                                href="mailto:sergei.borja0701@gmail.com"
                             >
                                 Send an Email
                             </Button>
@@ -74,7 +73,7 @@ export default function Footer({theme}: FooterProps) {
                             <Button
                                 color={theme === "dark" ? "white" : "black"}
                                 size="lg"
-                                to="Sergei Borja - Resume.pdf"
+                                href="Sergei Borja - Resume.pdf"
                             >
                                 Download Resume
                             </Button>
@@ -90,7 +89,7 @@ export default function Footer({theme}: FooterProps) {
                     <ul className="footer__nav-list">
                         {navLinks.projectLinks.map((link, index) => (
                             <li key={index}>
-                                <Link className={`link${theme === "dark" ? " link--dark" : ""}`} to={link.link}>{link.title}</Link>
+                                <a className={`link${theme === "dark" ? " link--dark" : ""}`} href={link.link}>{link.title}</a>
                             </li>
                         ))}
                     </ul>

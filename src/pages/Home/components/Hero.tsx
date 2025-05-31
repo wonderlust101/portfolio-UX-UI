@@ -21,7 +21,7 @@ export default function Hero({tagLine}: HeroProps) {
                         color="accent"
                         theme="light"
                         size="lg"
-                        to="mailto:sergei.borja0701@gmail.com"
+                        href="mailto:sergei.borja0701@gmail.com"
                     >
                         Contact Me</Button>
                 </div>

@@ -1,0 +1,25 @@
+.content-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9rem;
+  padding-top: 2rem;
+
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @include breakpoint(small) {
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+
+    @include breakpoint(small) {
+      gap: 1rem;
+    }
+  }
+}

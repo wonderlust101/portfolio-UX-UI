@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: $clr-black;
+  background-color: $clr-white;
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 100;
+  }
+
+  &__logo {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: -0.03rem;
+    text-transform: uppercase;
+  }
+
+  &__left-side {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+    @include breakpoint(large) {
+      gap: 2.5rem;
+    }
+  }
+
+  &__tag {
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+
+    @include breakpoint(x-small) {
+      display: none;
+    }
+  }
+}

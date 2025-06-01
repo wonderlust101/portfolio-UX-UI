@@ -1,0 +1,47 @@
+.case-study-hero {
+  grid-template-rows: 1fr max-content;
+  row-gap: 3rem;
+  padding: 4.75rem 0;
+  background-color: $clr-white;
+  min-height: 100vh;
+
+  @include breakpoint(large) {
+    grid-template-rows: 1fr max-content;
+  }
+
+  @include breakpoint(medium) {
+    padding: 4.75rem 0 3rem;
+    row-gap: 1.5rem;
+  }
+
+  &__header {
+    overflow: hidden;
+  }
+
+  &__image-container {
+    grid-column: 1/-1;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__type {
+    @include breakpoint(small) {
+      display: inline;
+    }
+  }
+
+  &__caption {
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: -0.12rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint(medium) {
+      font-size: 1.75rem;
+      text-align: center;
+      font-weight: 900;
+    }
+  }
+}

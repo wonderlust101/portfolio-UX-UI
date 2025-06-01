@@ -1,0 +1,534 @@
+{
+  "productName"    : "The Elder Scrolls: Skyrim",
+  "projectType"    : "Quest Log Redesign",
+  "heroImage"      : "images/case-study/skyrim/skyrim-quest-log-preview.webp",
+  "heroImageTablet": "images/case-study/skyrim/skyrim-quest-log-preview-tablet.webp",
+  "heroImageMobile": "images/case-study/skyrim/skyrim-quest-log-preview-mobile.webp",
+  "theme"          : "brown",
+  "projectSummary" : {
+    "description": "|Skyrim Quest Log Redesign| is a UX/UI project, a redesign to fix usability issues that frustrated players, such as poor organization, lack of clarity, and minimal accessibility. By turning the quest log into an interactive journal, we made it more immersive, intuitive, and personalized for different play styles.",
+    "metadata"   : [
+      {
+        "header" : "Role",
+        "content": "UX Researcher & Interaction Designer"
+      },
+      {
+        "header" : "Skills",
+        "content": [
+          "User Research & Testing",
+          "Interaction Design",
+          "Prototyping",
+          "Visual Design"
+        ]
+      },
+      {
+        "header" : "Timeline",
+        "content": "Jan 2024 – Apr 2024"
+      },
+      {
+        "header" : "Tools",
+        "content": [
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+          "Google Forms",
+          "Figma"
+        ]
+      },
+      {
+        "header" : "Course Name",
+        "content": "DESN 342: DXD Theory & Issues"
+      },
+      {
+        "header" : "Collaborators",
+        "content": [
+          "Chris Clarke",
+          "Sankalp Shrivastav"
+        ]
+      }
+    ]
+  },
+  "sections"       : [
+    {
+      "title"      : "Problem Overview",
+      "contents"   : [
+        "Our primary goal was to redesign Skyrim’s quest log into an experience that supports clarity, immersion, and efficiency without losing the fantasy and immersiveness of the original game.\n\nThe original Skyrim quest log lacked these qualities as users struggled to:",
+        [
+          {
+            "header": "Differentiate between main and side quests"
+          },
+          {
+            "header": "Find relevant quest information"
+          },
+          {
+            "header": "Re-immerse after time away from the game"
+          }
+        ]
+      ],
+      "images"     : [
+        [
+          {
+            "image": "images/case-study/skyrim/quest-log-issue.webp"
+          }
+        ]
+      ],
+      "subsections": [
+        {
+          "title"   : "Redesign Goals & Objectives",
+          "contents": [
+            "The primary goal of this redesign was to create a more organized, immersive, and accessible quest log experience. What we aim to achieve with the redesign is to:",
+            [
+              {
+                "header": "Reduce user confusion by clearly differentiating quest types and statuses"
+              },
+              {
+                "header": "Minimize time spent navigating the UI by introducing sorting and visual indicators"
+              },
+              {
+                "header": "Improve re-engagement for returning players through context and summaries"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Research & Insights",
+      "contents"   : [
+        "We began by conducting a range of research methods, including heuristic evaluations, competitor analysis, and player-focused techniques like user interviews, guided tours, and the 5 Whys method. These approaches helped us uncover patterns in player behaviour and gather actionable insights that informed our design direction."
+      ],
+      "subsections": [
+        {
+          "title"   : "Heuristic Evaluation Summary",
+          "contents": [
+            "The first step in our research was to determine what was wrong with the current interface. We evaluated Skyrim’s quest log against 12 usability heuristics. This helped us determine UX and UI inconsistencies so that we could address these concerns later in the redesign process."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "images/case-study/skyrim/heuristic-1.webp",
+                "caption": "Match Between the System and the Real World. Real-world phrases like “looking for a woman in Whiterun” make the objective easier to follow for most players; however, fantasy-specific terms without context like “Redguard” or “Alik’r” can prevent players unfamiliar with Skyrim’s lore from fully understanding the quest."
+              },
+              {
+                "image"  : "images/case-study/skyrim/heuristic-2.webp",
+                "caption": "User Control and Freedom. The quest log is efficient for quick scanning due to its simple list structure, but the lack of customization makes it feel rigid, as users can't reorganize quests or tailor them to their preferences."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/heuristic-3.webp",
+                "caption": "Recognition Rather Than Recall. The quest description provides a brief reminder of the objective, but the lack of past dialogue or event history makes it difficult for users to recall previous context."
+              },
+              {
+                "image"  : "images/case-study/skyrim/heuristic-4.webp",
+                "caption": "Consistency and Standards. This layout demonstrates strong consistency, with clear quest descriptions and checklist-style objectives. However, not all quests follow this format, as miscellaneous ones lack detail, breaking this consistency."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/heuristic-5.webp",
+                "caption": "Aesthetic and Minimalist Design. The clean Nordic UI keeps the experience visually immersive, but essential quest info is minimal or missing, reducing usability for players needing more context."
+              },
+              {
+                "image"  : "images/case-study/skyrim/heuristic-6.webp",
+                "caption": "Help and Documentation. Instructions for fast travel are text-based and informative, but without visual or interactive support, users may struggle to follow or remember the steps, especially new players."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/heuristic-7.webp",
+                "caption": "Design Dialogs to Yield Closure. The game clearly shows a \"COMPLETED\" notification, but inconsistent messaging can confuse whether it's a full quest or just a sub-objective has ended."
+              },
+              {
+                "image"  : "images/case-study/skyrim/heuristic-8.webp",
+                "caption": "Seek Universal Usability. The interface supports keyboard and controller inputs yet lacks features like colourblind modes or assistive settings, limiting access for users with disabilities."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/heuristic-9.webp",
+                "caption": "Flexibility and Efficiency of Use. Players can quickly open the map using a shortcut after selecting a quest, but the lack of filtering or sorting options makes browsing long quest logs inefficient."
+              },
+              {
+                "image"  : "images/case-study/skyrim/heuristic-10.webp",
+                "caption": "Colour. White and grey text indicate inactive or completed quests, but the interface lacks more diverse colour use, which could help guide users more intuitively."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/heuristic-11.webp",
+                "caption": "Visible Navigation. While scrolling can allow players to view quests, the absence of scroll bars or indicators makes it hard to estimate list length or quickly navigate to the end.\n"
+              },
+              {
+                "image"  : "images/case-study/skyrim/heuristic-12.webp",
+                "caption": "Visibility of System Status. The active quest is marked beside the quest title and echoed on the map, offering a simple visual indicator to guide players. However, players can miss quest updates without opening the menu due to a lack of on-screen alerts or consistent visual feedback."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Competitive Analysis Highlights",
+          "contents": [
+            "Next, we reviewed three RPGs: The Witcher 3, Baldur’s Gate 3, Deus Ex and Metro: Exodus. Each offered strengths and weaknesses we could evaluate and analyse. Comparing these helped us identify best practices and gaps Skyrim could address."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "images/case-study/skyrim/competitor-witcher-1.webp",
+                "caption": "The Witcher 3’s quest log is divided into categories with icons and indicators for quest type, location, and completion. While visually organised, it can feel overwhelming due to dense text and lore-heavy descriptions."
+              },
+              {
+                "image"  : "images/case-study/skyrim/competitor-witcher-2.webp",
+                "caption": "Each quest shows its suggested level and location, but the interface does not support tracking multiple quests at once. Players must manage progress manually, which can slow down navigation."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/competitor-baldurs-1.webp",
+                "caption": "The interface displays collapsible categories and a clean quest log with strong organisation, allowing users to manage many quests efficiently without being overwhelmed."
+              },
+              {
+                "image"  : "images/case-study/skyrim/competitor-baldurs-2.webp",
+                "caption": "Each quest objective includes supporting context that clarifies the task and why it was assigned, helping users understand story progression and what actions to take next. Clear indicators will also assist users to know the status of the quest immediately."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/competitor-metro.webp",
+                "caption": "Metro Exodus uses an immersive in-world quest interface, where players interact with a physical map or journal, enhancing engagement and storytelling without breaking immersion."
+              },
+              {
+                "image"  : "images/case-study/skyrim/competitor-deus-ex.webp",
+                "caption": "Deus Ex features a consistent futuristic interface with colour-coded quests and detailed objectives but lacks sorting options and integrated map support for more straightforward navigation."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "User Research Findings",
+          "contents": [
+            "Then, we gathered direct player insights through interviews, guided tours, and the 5 Whys method. These sessions revealed how different types of players interact with the quest log, what frustrates them, and what features they value most, giving us a general understanding to inform our design process later.",
+            [
+              {
+                "header" : "User Interviews",
+                "content": "We conducted open-ended interviews to understand how players interact with the quest log and what they value in an interface. This method helped us collect insights across a range of user types."
+              },
+              {
+                "header" : "Guided Tours",
+                "content": "We watched users play Skyrim and other games, noting their habits, behaviours, and friction points. This allowed us to identify areas where players struggled or skimmed over important content."
+              },
+              {
+                "header" : "5 Whys",
+                "content": "We used this interview technique to drill down into user frustrations by repeatedly asking “why.” This helped us reveal the root causes behind pain points and identify opportunities for clearer design."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Player Personas",
+          "contents": [
+            "Finally, we developed user personas representing distinct Skyrim player types to translate our research into actionable insights. These personas anchored our redesign strategy, ensuring our solutions prioritized usability, clarity, and immersive gameplay for various player needs."
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Design Approach",
+      "contents"   : [
+        "After identifying major usability and clarity issues in Skyrim’s original quest log, we set out to redesign it with a focus on immersion, organization, and accessibility. Our approach followed a user-centred design process to ensure that each decision was grounded in research and validated through testing."
+      ],
+      "subsections": [
+        {
+          "title"   : "Whiteboarding",
+          "contents": [
+            "We used whiteboarding to explore initial layout ideas, focusing on how to group quests, summaries, and progress tracking in a functional and immersive way."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "images/case-study/skyrim/whiteboarding-1.webp",
+                "caption": "This whiteboarding session captures an early-stage evaluation of quest log improvement ideas, ranked by effort and impact. Each sticky note represents a distinct feature or change. We first focused on idea generation."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/whiteboarding-2.webp",
+                "caption": "In this second whiteboarding session, we identified and prioritized key features to include in the redesign by evaluating their impact and effort. On the right, an early storyboard outlines a typical player flow to help visualize how the updated quest log would function in context."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Storyboarding",
+          "contents": [
+            "We also developed a storyboard that mapped a typical player's journey from accepting a quest to returning after a break, helping us design for clarity and re-engagement."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "images/case-study/skyrim/storyboarding.webp",
+                "caption": "This storyboard outlines a player's journey in Skyrim, from accepting a quest to returning after a break, highlighting how effective quest tracking can support clarity and help users reorient themselves."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "UI Flow Improvements",
+          "contents": [
+            "Once we finished our storyboard, we restructured the UI flow to reduce friction, making it easier to switch between active quests, summaries, and the map with minimal effort."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "images/case-study/skyrim/ui-flow-1.webp",
+                "caption": "This initial flow visualizes a basic and linear process for engaging with quests. It lacks flexibility, with no sorting or quest status indicators, making navigation cumbersome for users trying to manage multiple quests."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/ui-flow-2.webp",
+                "caption": "The revised flow introduces options for sorting, identifying active quests, and marking them for tracking. This supports better organization, personalization, and re-engagement after breaks, enhancing the overall usability of the quest log."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Style Tile",
+          "contents": [
+            "We created a visual system using parchment textures, muted tones, and fantasy-inspired typography to balance immersion with readability."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "images/case-study/skyrim/style-tile-1.webp",
+                "caption": "The initial style tile showcases a clean and minimal interface using a limited grayscale palette and condensed typography. While it fits Skyrim’s Nordic theme, it lacks warmth and variation, which can reduce visual engagement and clarity."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/style-tile-2.webp",
+                "caption": "The redesigned style tile introduces a more immersive, parchment-inspired aesthetic with earthy tones and enhanced typography hierarchy. Additional icons and labels improve visual cues, supporting a more engaging and readable quest log design."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Wireframing Low to High Fidelity",
+          "contents": [
+            "Next, we moved into wireframing to explore structure, layout, and information hierarchy. This stage focused on organizing content to support quick orientation and intuitive navigation. We refined visual cues to enhance clarity and user flow as the fidelity increased."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "images/case-study/skyrim/wireframe-1.webp",
+                "caption": "This early wireframe focused on base layout and organization, helping us define how quests are grouped and displayed. A faded background icon was added to tie quests to their storyline and add visual interest visually."
+              },
+              {
+                "image"  : "images/case-study/skyrim/wireframe-2.webp",
+                "caption": "The “Synopsis” tab beside the quest reinforced the connection between narrative and objectives. This helped create a more cohesive and informative quest reading experience."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/wireframe-3.webp",
+                "caption": "This layout served as a progress page, tracking player stats and completion across key quest lines. It helped us refine how to present detailed progression data in a clear and organized format."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/wireframe-4.webp",
+                "caption": "This version introduces potential rewards and quest-type sorting, helping players prioritize and choose quests more meaningfully. These additions aim to improve engagement and give clearer context for each quest."
+              },
+              {
+                "image"  : "images/case-study/skyrim/wireframe-5.webp",
+                "caption": "This “Synopsis” tab version introduces a feature where content gradually fills in as the player progresses. It supports narrative recall without overwhelming the user as if the character is writing their journey for immersiveness."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/wireframe-6.webp",
+                "caption": "The progress tracker now has a section where users can view the entire quest line and filter through the quest line."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/wireframe-7.webp",
+                "caption": "At this stage, side quest icons, level indicators and other indicators were added for better use efficiency. The quest background logo was shifted off-centre to prevent the text from being unreadable."
+              },
+              {
+                "image"  : "images/case-study/skyrim/wireframe-8.webp",
+                "caption": "This version continues to explore detailed quest narratives but highlights how lore-heavy terminology. It reinforced the need for a balance between immersion and usability."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/wireframe-10.webp",
+                "caption": "This version focused on balancing functionality with a realistic book, adding to the immersiveness of the quest log. The visual structure was refined through icon integration and proper breathing space to maintain realism."
+              },
+              {
+                "image"  : "images/case-study/skyrim/wireframe-11.webp",
+                "caption": "This layout introduced a stylized, handwritten-inspired font to strengthen the immersive feel of the quest log. Paired with the book-like design, the typography choice reinforced the narrative tone and helped the interface feel more immersive."
+              }
+            ]
+          ]
+        },
+        {
+          "title"   : "Final Interface Mockups",
+          "contents": [
+            "Finally, we unified all previous insights into a fully realized interface that balances immersion with functionality. This final stage focused on refining visual cohesion, reinforcing narrative context, and ensuring the interface seamlessly integrated into the game world."
+          ],
+          "images"  : [
+            [
+              {
+                "image"  : "images/case-study/skyrim/mockup-1.webp",
+                "caption": "This screen introduces a final visual polish to the quest log. Objectives are now structured clearly with visual icons, and a summary layout highlights the active quest on the right."
+              },
+              {
+                "image"  : "images/case-study/skyrim/mockup-2.webp",
+                "caption": "A full narrative version of the journal entry is shown here for completed quests, offering immersive storytelling while maintaining a clean visual hierarchy in the completed quest list."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/mockup-3.webp",
+                "caption": "This minimal view of an active quest keeps the focus on a quest the user is doing, presenting a stripped-down version for quick referencing of the objective and reward."
+              },
+              {
+                "image"  : "images/case-study/skyrim/mockup-4.webp",
+                "caption": "Quests are sorted by level, clearly emphasizing progression. The visual structure and use of icons improve scannability and distinguish quest types at a glance."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/mockup-5.webp",
+                "caption": "Sorting by distance is showcased here, giving players a practical way to approach nearby tasks while reinforcing the same consistent design format."
+              },
+              {
+                "image"  : "images/case-study/skyrim/mockup-6.webp",
+                "caption": "Grouping quests by their storylines enhances comprehension of narrative arcs. This allows players to be better immersed in the story."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/mockup-7.webp",
+                "caption": "Region-based sorting supports location-driven exploration. It's particularly helpful for players focusing on specific areas in-game."
+              },
+              {
+                "image"  : "images/case-study/skyrim/mockup-8.webp",
+                "caption": "Recently added quests surface in descending order, helping players track the newest additions quickly and cleanly."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/mockup-9.webp",
+                "caption": "Combined with a journal entry view, this layout helps re-engage users with context after a take a break from the game, linking gameplay mechanics with storytelling. Allow users to re-engage with the game."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/mockup-10.webp",
+                "caption": "This screen shows how quest objectives seamlessly transition into the map interface, displaying the quest's location with visual consistency. The card on the map reflects the journal's aesthetic, reinforcing immersion and clarity for players navigating the world."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/mockup-11.webp",
+                "caption": "This page acts as the progress tracker, letting players browse different questlines. The right side overviews gameplay stats like skills, progress, and accomplishments."
+              },
+              {
+                "image"  : "images/case-study/skyrim/mockup-12.webp",
+                "caption": "This screen shows a specific quest under the Dark Brotherhood questline, including a short narrative summary and objectives for the player to complete."
+              }
+            ],
+            [
+              {
+                "image"  : "images/case-study/skyrim/mockup-13.webp",
+                "caption": "This page presents the Dawnguard storyline quest, providing a multi-paragraph context and a list of related objectives, helping players understand their current role in the narrative."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title"   : "Usability Testing",
+      "contents": [
+        "To evaluate the usability of our redesign, we conducted task-based usability testing using a functional prototype. Participants completed tasks, and we recorded both Inuit metric scores and qualitative feedback to assess effectiveness, efficiency, and satisfaction.",
+        [
+          {
+            "header" : "Find a Specific Quest",
+            "content": "Users searched for a specified quest and identified its objectives, type, and description."
+          },
+          {
+            "header" : "Review a Completed Quest",
+            "content": "Users located a finished quest and used the synopsis to understand what happened."
+          },
+          {
+            "header" : "Track a Quest on the Map",
+            "content": "Users selected a quest and used the interactive map to find its in-game location."
+          }
+        ]
+      ],
+      "images"  : [
+        [
+          {
+            "image"  : "images/case-study/skyrim/testing-1.webp",
+            "caption": "While most users successfully located the specific quest, one-third indicated difficulty, suggesting room to improve the search or categorization features."
+          },
+          {
+            "image"  : "images/case-study/skyrim/testing-2.webp",
+            "caption": "All users found the quest information clear once located, confirming that content presentation is effective when accessed."
+          }
+        ],
+        [
+          {
+            "image"  : "images/case-study/skyrim/testing-3.webp",
+            "caption": "Only a small portion of users reported confusion, indicating that the majority found the interface intuitive during the quest-finding task."
+          },
+          {
+            "image"  : "images/case-study/skyrim/testing-4.webp",
+            "caption": "Most users reported minimal distraction, though a few noted visual elements that could interfere with quickly locating quests."
+          }
+        ],
+        [
+          {
+            "image"  : "images/case-study/skyrim/testing-5.webp",
+            "caption": "Opinions were split evenly, revealing that while the visual structure helped some users, others may have found it less supportive in identifying specific quests."
+          },
+          {
+            "image"  : "images/case-study/skyrim/testing-6.webp",
+            "caption": "No users found the interface crowded, confirming that the layout provides sufficient space for quest details without overwhelming the user."
+          }
+        ],
+        [
+          {
+            "image"  : "images/case-study/skyrim/testing-7.webp",
+            "caption": "The unanimous agreement indicates that once users understood how to navigate, they could quickly access the quest they were searching for."
+          }
+        ]
+      ]
+    },
+    {
+      "title"   : "Results & Impact",
+      "contents": [
+        "Our redesigned quest log significantly improved the player experience in key areas:",
+        [
+          {
+            "header" : "Task success rate",
+            "content": "Users could locate and identify quest objectives with greater accuracy, showing strong alignment between the new layout and player expectations.",
+            "bold"   : "95%"
+          },
+          {
+            "header" : "Improved navigation efficiency",
+            "content": "With filtering, sorting, and visual indicators, players spent significantly less time searching through the quest log—freeing up focus for gameplay and exploration.",
+            "bold"   : "53%"
+          },
+          {
+            "header" : "Increased re-engagement",
+            "content": "The addition of the Quest Synopsis tab allowed players to quickly re-immerse after taking a break, reducing confusion and improving long-term session retention.",
+            "bold"   : "88%"
+          }
+        ]
+      ]
+    }
+  ]
+}

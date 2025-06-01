@@ -1,0 +1,46 @@
+.mobile-navigation {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: block;
+  }
+
+  &__hamburger {
+    display: grid;
+    border: none;
+    background-color: transparent;
+    padding-top: 0.1rem;
+  }
+
+  &__nav-links {
+    align-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5rem 1.25rem;
+    background-color: $clr-white;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    z-index: -1;
+  }
+
+  &__link-container {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  &__sub-link-container {
+    padding-left: 3rem;
+  }
+
+  &__link {
+    @include breakpoint(medium) {
+      background-image: unset !important;
+    }
+  }
+}

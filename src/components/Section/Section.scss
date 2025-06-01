@@ -1,0 +1,28 @@
+.section {
+  padding: 5rem 0;
+  background-color: $clr-white;
+  color: $clr-black;
+
+  @include breakpoint(small) {
+    padding: 3rem 0;
+  }
+
+  &__header {
+    display: grid;
+    padding-bottom: 2rem;
+
+    @include breakpoint(small) {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    //justify-items: center;
+    gap: 9rem;
+
+    @include breakpoint(small) {
+      gap: 4rem;
+    }
+  }
+}

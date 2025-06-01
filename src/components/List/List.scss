@@ -1,0 +1,55 @@
+.list {
+  display: grid;
+  align-content: flex-start;
+  gap: 2rem;
+
+  @include breakpoint(small) {
+    gap: 1rem;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    text-align: right;
+
+    @include breakpoint(small) {
+      display: grid;
+      gap: 0.25rem;
+      padding: 1.5rem 0;
+      text-align: left;
+    }
+
+    & > p:first-child {
+      opacity: 0.75;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__index {
+    font-weight: 400;
+    opacity: 0.5;
+  }
+
+  &__item-content {
+    display: grid;
+    gap: 0.5rem;
+
+    & > p:first-child {
+      font-weight: 700;
+    }
+  }
+
+  &__item-bold {
+    font-size: 3rem;
+    font-weight: 900 !important;
+    line-height: 1;
+    margin-bottom: -0.25rem;
+    text-transform: uppercase;
+  }
+}

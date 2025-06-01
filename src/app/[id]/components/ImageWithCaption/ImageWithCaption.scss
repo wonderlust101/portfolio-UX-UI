@@ -14,13 +14,13 @@
   }
 
   &__caption {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02rem;
 
     @include breakpoint(small) {
-      font-size: 0.75rem;
+      font-size: 0.65rem;
     }
   }
 

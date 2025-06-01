@@ -23,8 +23,8 @@ export default function CaseStudySection({section}: CaseStudySectionProps) {
             </div>
 
             {section.subsections?.map((subsection) => (
-                <div key={subsection.title} className="case-study-section__section">
-                    <ContentBlock header={subsection.title} type="block">
+                <div key={subsection.title} className="case-study-section__sub-section">
+                    <ContentBlock header={subsection.title} type="block" hideDivider>
                         <ContentRenderer contents={subsection.contents}/>
                     </ContentBlock>
 

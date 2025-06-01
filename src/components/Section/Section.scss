@@ -18,8 +18,7 @@
 
   &__content {
     display: grid;
-    //justify-items: center;
-    gap: 9rem;
+    gap: 6rem;
 
     @include breakpoint(small) {
       gap: 4rem;

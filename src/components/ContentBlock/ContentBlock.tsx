@@ -10,9 +10,10 @@ type SubsectionProps = {
     children: ReactNode;
     header: string;
     type?: "subsection" | "block";
+    hideDivider?: boolean;
 };
 
-export default function ContentBlock({children, header, type = "subsection"}: SubsectionProps) {
+export default function ContentBlock({children, header, type = "subsection", hideDivider = false}: SubsectionProps) {
     return (
         <motion.div
             className="content-block__container"
@@ -21,7 +22,7 @@ export default function ContentBlock({children, header, type = "subsection"}: Su
             whileInView="visible"
             viewport={{ once: true }}
         >
-            <motion.hr variants={fadeUpLowOpacity} />
+            {!hideDivider && (<motion.hr variants={fadeUpLowOpacity} />)}
 
             <motion.section className="content-block" variants={staggerParent}>
                 <motion.div variants={fadeUp}>

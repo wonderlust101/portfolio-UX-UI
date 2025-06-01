@@ -1,14 +1,10 @@
 .image-gallery {
   display: grid;
-  max-width: 85rem;
-  gap: 3rem;
-
-  @include breakpoint(x-large) {
-    max-width: 70rem;
-  }
+  gap: 2rem;
+  margin: 0 2rem;
 
   @include breakpoint(large) {
-    max-width: 55rem;
+
   }
 
   @include breakpoint(small) {

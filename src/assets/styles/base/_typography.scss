@@ -15,16 +15,12 @@ a {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.7;
   white-space: pre-line;
 
   @include a.breakpoint(x-large) {
-    font-size: 1.1rem;
-  }
-
-  @include a.breakpoint(small) {
     font-size: 1rem;
   }
 }

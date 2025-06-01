@@ -1,27 +1,32 @@
 // app/[id]/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
 import { ReactNode } from "react";
 import path from "path";
 import fs from "fs/promises";
 
-interface LayoutProps {
-    children: ReactNode;
+// ⚠️ Must match your internal layout types — hence Promise<{ id: string }>
+type Props = {
     params: Promise<{ id: string }>;
-}
+};
 
 async function getCaseStudy(id: string) {
     const filePath = path.join(process.cwd(), "src/data", `${id}.json`);
     try {
         const data = await fs.readFile(filePath, "utf-8");
         return JSON.parse(data);
-    } catch (err) {
+    } catch {
         return null;
     }
 }
 
-export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
+export async function generateMetadata(
+    { params }: Props,
+    parent: ResolvingMetadata
+): Promise<Metadata> {
     const { id } = await params;
     const caseStudy = await getCaseStudy(id);
+
+    const previousImages = (await parent).openGraph?.images || [];
 
     if (!caseStudy) {
         return {
@@ -36,11 +41,24 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
         openGraph: {
             title: caseStudy.productName,
             description: caseStudy.projectSummary?.description,
-            images: [caseStudy.mobileHeroImage],
+            images: [caseStudy.mobileHeroImage, ...previousImages],
         },
     };
 }
 
+// Static params for build-time generation
+export async function generateStaticParams() {
+    const dirPath = path.join(process.cwd(), "src/data");
+    const files = await fs.readdir(dirPath);
+
+    return files
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => ({
+        id: path.basename(file, ".json"),
+    }));
+}
+
+// Layout component
 export default function CaseStudyLayout({ children }: { children: ReactNode }) {
     return <>{children}</>;
 }

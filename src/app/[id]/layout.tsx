@@ -1,5 +1,7 @@
 // app/[id]/layout.tsx
 import type { Metadata, ResolvingMetadata } from "next";
+import fs from "fs/promises";
+import path from "path";
 import { ReactNode } from "react";
 
 export const runtime = "nodejs";
@@ -13,10 +15,10 @@ type MetadataProps = {
 };
 
 async function getCaseStudy(id: string) {
+    const filePath = path.join(process.cwd(), "public", "data", `${id}.json`);
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/data/${id}.json`);
-        if (!res.ok) return null;
-        return await res.json();
+        const data = await fs.readFile(filePath, "utf-8");
+        return JSON.parse(data);
     } catch {
         return null;
     }

@@ -75,7 +75,8 @@
         [
           {
             "image"  : "images/case-study/election-canada/intro.webp",
-            "caption": "The official Elections Canada website is a primary platform for voter information, election updates, and federal electoral resources."
+            "caption": "The official Elections Canada website is a primary platform for voter information, election updates, and federal electoral resources.",
+            "containerPercentage": 75
           }
         ]
       ],
@@ -131,7 +132,8 @@
             [
               {
                 "image"  : "images/case-study/election-canada/inventory-2.webp",
-                "caption": "Visual representation of the Elections Canada website’s content distribution, highlighting the overwhelming volume of pages in the Resource Centre section, showcasing the content as mostly informative as it generally provides information about the election."
+                "caption": "Visual representation of the Elections Canada website’s content distribution, highlighting the overwhelming volume of pages in the Resource Centre section, showcasing the content as mostly informative as it generally provides information about the election.",
+                "containerPercentage": 75
               }
             ]
           ]
@@ -145,7 +147,8 @@
             [
               {
                 "image"  : "images/case-study/election-canada/qualitative-2.webp",
-                "caption": "WebAIM’s WAVE audit of the Elections Canada homepage revealed numerous issues, such as small text, redundant links, missing labels, and poor heading structure, which pose a significant barrier for users relying on assistive technologies."
+                "caption": "WebAIM’s WAVE audit of the Elections Canada homepage revealed numerous issues, such as small text, redundant links, missing labels, and poor heading structure, which pose a significant barrier for users relying on assistive technologies.",
+                "containerPercentage": 40
               }
             ]
           ]

@@ -4,6 +4,12 @@
   align-content: flex-start;
   gap: 1.5rem;
   position: relative;
+  justify-self: center;
+  max-width: var(--image-max-width, 100%);
+
+  @include breakpoint(large) {
+    max-width: 100%;
+  }
 
   @include breakpoint(small) {
     gap: 0.5rem;
@@ -11,6 +17,8 @@
 
   &__image {
     object-fit: contain;
+    width: 100%;
+    height: auto;
   }
 
   &__caption {

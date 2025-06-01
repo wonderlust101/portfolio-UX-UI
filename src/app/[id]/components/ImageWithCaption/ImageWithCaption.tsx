@@ -1,20 +1,24 @@
 import type { Image as ImageType } from "@/types/global";
 import "./ImageWithCaption.scss";
-import Image from 'next/image';
+import Image from "next/image";
+import { CSSProperties } from "react";
 
 type ImageWithCaptionProps = {
     image: ImageType;
 }
 
-export default function ImageWithCaption({image, }: ImageWithCaptionProps) {
+export default function ImageWithCaption({image}: ImageWithCaptionProps) {
+    const styles = {
+        "--image-max-width": image.containerPercentage ? `${image.containerPercentage}%` : undefined,
+    } as CSSProperties;
+
+
     return (
-        <figure
-            className="image-with-caption"
-        >
+        <figure className="image-with-caption" style={styles}>
             <Image
                 className="image-with-caption__image"
-                src={`/${image.image.replace(/^\/?/, '')}`}
-                alt={image.caption || 'Loading Image'}
+                src={`/${image.image.replace(/^\/?/, "")}`}
+                alt={image.caption || "Loading Image"}
                 loading="lazy"
                 width={1200}
                 height={1200}

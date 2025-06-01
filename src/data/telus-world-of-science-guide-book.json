@@ -194,7 +194,8 @@
             [
               {
                 "image"  : "/images/case-study/telus/task-flow.webp",
-                "caption": "A visual map of user task flows, outlining core interactions such as scanning exhibits, collecting stamps, and navigating through the science centre."
+                "caption": "A visual map of user task flows, outlining core interactions such as scanning exhibits, collecting stamps, and navigating through the science centre.",
+                "containerPercentage": 70
               }
             ]
           ]
@@ -226,13 +227,15 @@
             [
               {
                 "image"  : "/images/case-study/telus/mockup-2.webp",
-                "caption": "After onboarding, users land on the home screen to immediately access major features. This shows the transition from the home screen into the stamp book section, where users begin engaging with the core stamp-collecting experience."
+                "caption": "After onboarding, users land on the home screen to immediately access major features. This shows the transition from the home screen into the stamp book section, where users begin engaging with the core stamp-collecting experience.",
+                "containerPercentage": 56
               }
             ],
             [
               {
                 "image"  : "/images/case-study/telus/mockup-4.webp",
-                "caption": "Screens in this row show how the stamp book is structured with multiple pages. Users can swipe through to review achievements and view newly earned badges as they collect more stamps, encouraging ongoing exploration and discovery."
+                "caption": "Screens in this row show how the stamp book is structured with multiple pages. Users can swipe through to review achievements and view newly earned badges as they collect more stamps, encouraging ongoing exploration and discovery.",
+                "containerPercentage": 78
               }
             ],
             [
@@ -280,7 +283,8 @@
         [
           {
             "image"  : "/images/case-study/telus/user-test-3.webp",
-            "caption": "Another participant interacts with the app near a space-themed display, showcasing real-time usability in an authentic science centre environment."
+            "caption": "Another participant interacts with the app near a space-themed display, showcasing real-time usability in an authentic science centre environment.",
+            "containerPercentage": 50
           }
         ]
       ],

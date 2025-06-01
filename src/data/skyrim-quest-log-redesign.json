@@ -85,7 +85,8 @@
             [
               {
                 "image": "images/case-study/skyrim/quest-log-issue.webp",
-                "caption": "The original Skyrim quest log interface, illustrating the lack of clear quest categorization and limited sorting options, key issues addressed in our redesign goals."
+                "caption": "The original Skyrim quest log interface, illustrating the lack of clear quest categorization and limited sorting options, key issues addressed in our redesign goals.",
+                "containerPercentage": 80
               }
             ]
           ]
@@ -185,7 +186,8 @@
             [
               {
                 "image"  : "images/case-study/skyrim/ui-flow-2.webp",
-                "caption": "The revised flow introduces options for sorting, identifying active quests, and marking them for tracking. This supports better organization, personalization, and re-engagement after breaks, enhancing the overall usability of the quest log."
+                "caption": "The revised flow introduces options for sorting, identifying active quests, and marking them for tracking. This supports better organization, personalization, and re-engagement after breaks, enhancing the overall usability of the quest log.",
+                "containerPercentage": 70
               }
             ]
           ]

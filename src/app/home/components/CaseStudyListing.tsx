@@ -59,7 +59,7 @@ export default function CaseStudyListing({caseStudy, index}: CaseStudyListingPro
                     src={caseStudy.previewImage}
                     alt=""
                     variants={fadeUpWithDelay}
-                    custom={0.55}
+                    custom={0.70}
                 />
             </motion.section>
         </motion.div>

@@ -7,7 +7,7 @@
   justify-self: center;
   max-width: var(--image-max-width, 100%);
 
-  @include breakpoint(large) {
+  @include breakpoint(medium) {
     max-width: 100%;
   }
 

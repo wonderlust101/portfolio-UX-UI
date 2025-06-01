@@ -4,7 +4,7 @@
   color: $clr-black;
 
   @include breakpoint(small) {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   &__header {
@@ -20,8 +20,16 @@
     display: grid;
     gap: 6rem;
 
-    @include breakpoint(small) {
+    @include breakpoint(large) {
       gap: 4rem;
+    }
+
+    @include breakpoint(medium) {
+      gap: 3rem;
+    }
+
+    @include breakpoint(small) {
+      gap: 2rem;
     }
   }
 }

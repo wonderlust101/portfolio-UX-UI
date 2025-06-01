@@ -1,13 +1,10 @@
 .image-gallery {
   display: grid;
   gap: 2rem;
-  margin: 0 2rem;
+  margin: 0 3rem;
 
-  @include breakpoint(large) {
-
-  }
-
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
+    margin: 0;
     gap: 2.5rem;
   }
 }

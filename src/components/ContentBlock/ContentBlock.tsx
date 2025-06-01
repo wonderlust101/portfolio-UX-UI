@@ -1,7 +1,7 @@
 "use client";
 
 import SectionHeader from "@/components/SectionHeader";
-import { ReactNode } from "react";
+import { CSSProperties, ReactNode } from "react";
 import { motion } from "framer-motion";
 import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants";
 import "./ContentBlock.scss";
@@ -14,6 +14,10 @@ type SubsectionProps = {
 };
 
 export default function ContentBlock({children, header, type = "subsection", hideDivider = false}: SubsectionProps) {
+    const styles = {
+        "--border-padding-top": hideDivider ? `0` : undefined,
+    } as CSSProperties;
+
     return (
         <motion.div
             className="content-block__container"
@@ -24,7 +28,11 @@ export default function ContentBlock({children, header, type = "subsection", hid
         >
             {!hideDivider && (<motion.hr variants={fadeUpLowOpacity} />)}
 
-            <motion.section className="content-block" variants={staggerParent}>
+            <motion.section
+                className="content-block"
+                variants={staggerParent}
+                style={styles}
+            >
                 <motion.div variants={fadeUp}>
                     <SectionHeader type={type}>
                         {header}

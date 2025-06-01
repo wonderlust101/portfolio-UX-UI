@@ -1,17 +1,17 @@
 .content-block {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.25fr;
   gap: 9rem;
-  padding-top: 2rem;
+  padding-top: var(--border-padding-top, 2rem);
 
   @include breakpoint(medium) {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   @include breakpoint(small) {
     gap: 1rem;
-    padding-top: 1.5rem;
+    padding-top: var(--border-padding-top, 1.5rem);
   }
 
   &__container {

@@ -4,7 +4,11 @@ import { ReactNode } from "react";
 import path from "path";
 import fs from "fs/promises";
 
-// Helper function to load case study data
+interface LayoutProps {
+    children: ReactNode;
+    params: Promise<{ id: string }>;
+}
+
 async function getCaseStudy(id: string) {
     const filePath = path.join(process.cwd(), "src/data", `${id}.json`);
     try {
@@ -15,8 +19,9 @@ async function getCaseStudy(id: string) {
     }
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-    const caseStudy = await getCaseStudy(params.id);
+export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
+    const { id } = await params;
+    const caseStudy = await getCaseStudy(id);
 
     if (!caseStudy) {
         return {

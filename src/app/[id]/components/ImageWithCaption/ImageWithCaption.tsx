@@ -1,18 +1,25 @@
-import type { Image } from "@/types/global";
-import type { CSSProperties } from "react";
+import type { Image as ImageType } from "@/types/global";
 import "./ImageWithCaption.scss";
+import Image from 'next/image';
 
 type ImageWithCaptionProps = {
-    image: Image;
-    style?: CSSProperties;
+    image: ImageType;
 }
 
-export default function ImageWithCaption({image, style}: ImageWithCaptionProps) {
+export default function ImageWithCaption({image, }: ImageWithCaptionProps) {
     return (
         <figure
             className="image-with-caption"
         >
-            <img className="image-with-caption__image" src={image.image} alt={image.caption} loading="lazy" style={style}/>
+            <Image
+                className="image-with-caption__image"
+                src={`/${image.image.replace(/^\/?/, '')}`}
+                alt={image.caption || 'Loading Image'}
+                loading="lazy"
+                width={1600}
+                height={1600}
+                quality={75}
+            />
             <figcaption className="image-with-caption__caption">{image.caption}</figcaption>
         </figure>
     );

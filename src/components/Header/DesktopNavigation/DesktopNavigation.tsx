@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import type { NavLinks } from "@/types/links";
 import "./DesktopNavigation.scss";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
+import Link from "next/link";
 
 type DesktopNavigationProps = {
     navLinks: NavLinks[];
@@ -19,9 +20,9 @@ export default function DesktopNavigation({navLinks}: DesktopNavigationProps) {
                     <li className="desktop-navigation__nav-link" key={link.title}>
                         <div className="desktop-navigation__nav-link-wrapper">
                             {link.link ?
-                                <a className="link desktop-navigation__link" href={link.link} onClick={handleNavigation(link.link)}>
+                                <Link className="link desktop-navigation__link" href={link.link} onClick={handleNavigation(link.link)}>
                                     {link.title}
-                                </a>
+                                </Link>
                                 :
                                 <p className='desktop-navigation__link'>{link.title}</p>
                             }
@@ -30,9 +31,9 @@ export default function DesktopNavigation({navLinks}: DesktopNavigationProps) {
                                 <ul className="desktop-navigation__sub-link-container">
                                     {link.subLinks.map((subLink) => (
                                         <li key={subLink.title}>
-                                            <a className="link desktop-navigation__link" href={subLink.link} onClick={handleNavigation(subLink.link)}>
+                                            <Link className="link desktop-navigation__link" href={subLink.link} onClick={handleNavigation(subLink.link)}>
                                                 {subLink.title}
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

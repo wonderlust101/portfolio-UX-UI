@@ -1,80 +1,60 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
-
 import CaseStudyHero from "@/app/[id]/components/CaseStudyHero";
 import CaseStudySection from "@/app/[id]/components/CaseStudySection";
 import OtherProjects from "@/app/[id]/components/OtherProjects";
 import ProjectSummary from "@/app/[id]/components/ProjectSummary";
+import Revealer from "@/components/Revealer";
+import ThemeEffect from "@/components/ThemeEffect";
+import { CaseStudy } from "@/types/case-study";
+import { promises as fs } from "fs";
+import { notFound } from "next/navigation";
+import path from "path";
 
-import { useRevealer } from "@/hooks/useRevealer";
-import { useThemeStore } from "@/store/useThemeStore";
-import type { CaseStudy } from "@/types/case-study";
+type Props = {
+    params: Promise<{ id: string }>
+};
 
-export default function CaseStudyPage() {
-    useRevealer();
+export const dynamic = 'force-static';
 
-    const params = useParams();
-    const id = params?.id as string | undefined;
+export default async function CaseStudyPage({params}: Props) {
+    const { id } = await params;
+    const filePath = path.join(process.cwd(), "src", "data", `${id}.json`);
 
-    const [caseStudy, setCaseStudy] = useState<CaseStudy | null>(null);
-    const [status, setStatus] = useState<"loading" | "ok" | "error">("loading");
+    let caseStudy: CaseStudy;
 
-    const changeColor = useThemeStore((state) => state.changeColor);
+    try {
+        const file = await fs.readFile(filePath, "utf8");
+        caseStudy = JSON.parse(file);
+    } catch (err) {
+        return notFound();
+    }
 
-    useEffect(() => {
-        if (!id) return;
-
-        fetch(`/data/${id}.json`)
-        .then((res) => {
-            if (!res.ok) throw new Error("Failed to load");
-            return res.json();
-        })
-        .then((data: CaseStudy) => {
-            setCaseStudy(data);
-            setStatus("ok");
-        })
-        .catch(() => {
-            setStatus("error");
-        });
-    }, [id]);
-
-    useEffect(() => {
-        if (caseStudy) {
-            changeColor(caseStudy.theme);
-        }
-    }, [caseStudy, changeColor]);
+    if (!caseStudy || !caseStudy.sections) {
+        return notFound();
+    }
 
     return (
         <>
-            <div className="revealer" />
+            <ThemeEffect theme={caseStudy.theme}/>
+            <Revealer/>
 
-            {status === "loading" && <p className="text-center">Loading project...</p>}
+            <main className="home__content">
+                <CaseStudyHero
+                    productName={caseStudy.productName}
+                    projectType={caseStudy.projectType}
+                    heroImage={caseStudy.heroImage}
+                    mobileHeroImage={caseStudy.heroImageMobile}
+                    tabletHeroImage={caseStudy.heroImageTablet}
+                />
 
-            {status === "error" && (
-                <p className="text-center text-red-500">Project not found.</p>
-            )}
+                <ProjectSummary details={caseStudy.projectSummary}/>
 
-            {status === "ok" && caseStudy && (
-                <main className="home__content">
-                    <CaseStudyHero
-                        productName={caseStudy.productName}
-                        projectType={caseStudy.projectType}
-                        heroImage={caseStudy.heroImage}
-                        mobileHeroImage={caseStudy.heroImageMobile}
-                        tabletHeroImage={caseStudy.heroImageTablet}
-                    />
+                {caseStudy.sections.map((section) => (
+                    <CaseStudySection key={section.title} section={section}/>
+                ))}
 
-                    <ProjectSummary details={caseStudy.projectSummary} />
+                <OtherProjects currentProject={id}/>
+            </main>
 
-                    {caseStudy.sections.map((section) => (
-                        <CaseStudySection key={section.title} section={section} />
-                    ))}
-
-                    <OtherProjects currentProject={id!} />
-                </main>
-            )}
         </>
     );
 }

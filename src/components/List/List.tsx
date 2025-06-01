@@ -1,3 +1,5 @@
+"use client";
+
 import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants";
 import { useThemeStore } from "@/store/useThemeStore";
 import { motion } from "motion/react";

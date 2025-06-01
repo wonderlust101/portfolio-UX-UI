@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useTransitionRouter } from "next-view-transitions";
-import type { MouseEvent } from "react";
+import { MouseEvent } from "react";
 
 export function useAnimatedNavigation() {
     const router = useTransitionRouter();

@@ -1,75 +1,53 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import Hero from "@/app/home/components/Hero";
-import CaseStudyListing from "@/app/home/components/CaseStudyListing";
 import About from "@/app/home/components/About";
-import Section from "@/components/Section";
+import CaseStudyListing from "@/app/home/components/CaseStudyListing";
+import Hero from "@/app/home/components/Hero";
 import ContentBlock from "@/components/ContentBlock";
 import List from "@/components/List";
+import Revealer from "@/components/Revealer";
+import Section from "@/components/Section";
+import ThemeEffect from "@/components/ThemeEffect";
+import { ProfileData } from "@/types/home";
+import { promises as fs } from "fs";
+import { notFound } from "next/navigation";
+import path from "path";
 
-import { useRevealer } from "@/hooks/useRevealer";
-import { useThemeStore } from "@/store/useThemeStore";
-import type { ProfileData } from "@/types/home";
+export const dynamic = 'force-static';
 
-export default function Home() {
-    useRevealer();
+export default async function Home() {
+    const filePath = path.join(process.cwd(), "src", "data", `home.json`);
 
-    const [heroData, setHeroData] = useState<ProfileData | null>(null);
-    const [status, setStatus] = useState<"loading" | "ok" | "error">("loading");
+    let homeData: ProfileData;
 
-    const changeColor = useThemeStore((state) => state.changeColor);
-
-    useEffect(() => {
-        // ✅ Load from public folder
-        fetch("/data/home.json")
-        .then((res) => {
-            if (!res.ok) throw new Error("Failed to load data");
-            return res.json();
-        })
-        .then((data: ProfileData) => {
-            setHeroData(data);
-            setStatus("ok");
-        })
-        .catch(() => setStatus("error"));
-    }, []);
-
-    useEffect(() => {
-        changeColor("green");
-    }, [changeColor]);
+    try {
+        const file = await fs.readFile(filePath, "utf8");
+        homeData = JSON.parse(file);
+    } catch (err) {
+        return notFound();
+    }
 
     return (
         <>
-            <div className="revealer" />
+            <Revealer/>
+            <ThemeEffect theme={"green"}/>
 
-            {status === "loading" && <p className="text-center">Loading homepage...</p>}
+            <Hero tagLine={homeData.tagLine}/>
 
-            {status === "error" && (
-                <p className="text-center text-red-500">Failed to load content.</p>
-            )}
+            <Section header="Case Studies">
+                {homeData.caseStudies.map((caseStudy, index) => (
+                    <CaseStudyListing key={index} caseStudy={caseStudy} index={index + 1}/>
+                ))}
+            </Section>
 
-            {status === "ok" && heroData && (
-                <>
-                    <Hero tagLine={heroData.tagLine} />
+            <Section header="Skills & Tools">
+                {homeData.skills.map((skill) => (
+                    <ContentBlock key={skill.title} header={skill.title}>
+                        <p>{skill.description}</p>
+                        <List items={skill.skillList} type="list"/>
+                    </ContentBlock>
+                ))}
+            </Section>
 
-                    <Section header="Case Studies">
-                        {heroData.caseStudies.map((caseStudy, index) => (
-                            <CaseStudyListing key={index} caseStudy={caseStudy} index={index + 1} />
-                        ))}
-                    </Section>
-
-                    <Section header="Skills & Tools">
-                        {heroData.skills.map((skill) => (
-                            <ContentBlock key={skill.title} header={skill.title}>
-                                <p>{skill.description}</p>
-                                <List items={skill.skillList} type="list" />
-                            </ContentBlock>
-                        ))}
-                    </Section>
-
-                    <About aboutText={heroData} />
-                </>
-            )}
+            <About aboutText={homeData}/>
         </>
     );
 }

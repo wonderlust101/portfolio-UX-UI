@@ -1,3 +1,5 @@
+"use client"
+
 import ImageWithCaption from "../ImageWithCaption";
 import './ImageRow.scss'
 import type { Image } from "@/types/global";

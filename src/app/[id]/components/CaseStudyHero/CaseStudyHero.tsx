@@ -2,11 +2,11 @@
 
 import SectionHeader from "@/components/SectionHeader";
 import "./CaseStudyHero.scss";
-import { useThemeStore } from "@/store/useThemeStore";
+import { parseHighlightedText } from "@/utils/parseHighlightedText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
-import { CSSProperties, useRef } from "react";
+import { useRef } from "react";
 
 gsap.registerPlugin(SplitText);
 
@@ -19,8 +19,6 @@ type CaseStudyHeroProps = {
 }
 
 export default function CaseStudyHero({productName, projectType, heroImage, mobileHeroImage, tabletHeroImage}: CaseStudyHeroProps) {
-    const color = useThemeStore((state) => state.color);
-
     const titleRef = useRef<HTMLHeadingElement|null>(null);
     const typeRef = useRef<HTMLDivElement|null>(null);
     const imageRef = useRef<HTMLImageElement|null>(null);
@@ -33,13 +31,11 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
             charsClass: "letter"
         });
 
-        gsap.set(splitText.words, {y: "200%"});
-
-        const tl = gsap.timeline();
+        gsap.set(splitText.words, {y: "300%"});
 
         gsap.to(splitText.words, {
             y       : "0%",
-            duration: 1.5,
+            duration: 1.75,
             stagger : 0.15,
             delay   : 2.25,
             ease    : "power4.out"
@@ -81,7 +77,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
             <div className="case-study-hero__header" ref={titleRef}>
                 <SectionHeader type="page">
                     <span>{productName}</span>
-                    <div ref={typeRef} className="case-study-hero__type"> {projectType}</div>
+                    <div ref={typeRef} className="case-study-hero__type"> {parseHighlightedText(projectType)}</div>
                 </SectionHeader>
             </div>
         </section>

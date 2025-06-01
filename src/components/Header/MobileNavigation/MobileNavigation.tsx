@@ -5,6 +5,7 @@ import "./MobileNavigation.scss";
 import closeMenuIcon from "@/assets/images/close-menu.svg";
 import type { NavLinks } from "@/types/links";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 
@@ -55,10 +56,10 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                                         <ul className="mobile-navigation__sub-link-container">
                                             {link.subLinks.map((subLink) => (
                                                 <li key={subLink.title} className="mobile-navigation__nav-item">
-                                                    <a className="mobile-navigation__link-container" href={subLink.link} onClick={handleNavigation(subLink.link, () => setOpenNav(false))}>
+                                                    <Link className="mobile-navigation__link-container" href={subLink.link} onClick={handleNavigation(subLink.link, () => setOpenNav(false))}>
                                                         <span className="link mobile-navigation__link">{subLink.title}</span>
                                                         <hr />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -67,10 +68,10 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                             )
                             : (
                                 link.link &&
-                                <a className="mobile-navigation__link-container" href={link.link} onClick={handleNavigation(link.link, () => setOpenNav(false))}>
+                                <Link className="mobile-navigation__link-container" href={link.link} onClick={handleNavigation(link.link, () => setOpenNav(false))}>
                                     <span className="link mobile-navigation__link">{link.title}</span>
                                     <hr />
-                                </a>
+                                </Link>
                             )
                         }
                     </li>

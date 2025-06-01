@@ -1,5 +1,8 @@
+"use client"
+
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import { useThemeStore } from "@/store/useThemeStore";
+import Link from "next/link";
 import type { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from "react";
 import "./Button.scss";
 
@@ -33,15 +36,15 @@ export default function Button({ children, color, theme="light", size, href, onC
 
     if (href)
         return (
-            <a
+            <Link
                 href={ href }
                 className={`button button--${color === 'accent' ? `${buttonColor}-${theme}` : color} button--${size}`}
                 aria-label={ ariaLabel }
-                onClick={handleNavigation(href)}
+                onClick={(e) => handleNavigation(href, undefined)(e)}
                 { ...props }
             >
                 { children }
-            </a>
+            </Link>
         );
 
     return (

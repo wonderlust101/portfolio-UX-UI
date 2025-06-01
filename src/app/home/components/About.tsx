@@ -1,3 +1,5 @@
+"use client"
+
 import List from "@/components/List";
 import Section from "@/components/Section";
 import "./About.scss";

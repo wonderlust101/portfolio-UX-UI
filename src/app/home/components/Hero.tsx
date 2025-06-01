@@ -20,37 +20,46 @@ export default function Hero({tagLine}: HeroProps) {
     const marqueeRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        const splitText = SplitText.create(".hero__name", {
-            type      : "chars",
-            charsClass: "letter"
-        });
+        const runAnimation = () => {
 
-        gsap.set(splitText.chars, {y: "110%"});
+            const splitText = SplitText.create(".hero__name", {
+                type      : "chars",
+                charsClass: "letter"
+            });
 
-        gsap.to(splitText.chars, {
-            y       : "0%",
-            duration: 1.5,
-            stagger : 0.1,
-            delay   : 1.25,
-            ease    : "power4.out"
-        });
+            gsap.set(splitText.chars, {y: "110%"});
 
-        gsap.fromTo(
-            [paragraphRef.current, imageRef.current, marqueeRef.current],
-            {
-                opacity: 0,
-                y      : 60
-            },
-            {
-                opacity : 1,
-                y       : 0,
-                duration: 1,
-                stagger : 0.15,
-                delay   : 2.5,
-                ease    : "power4.out",
-                clearProps: "all",
-            }
-        );
+            gsap.to(splitText.chars, {
+                y       : "0%",
+                duration: 1.5,
+                stagger : 0.1,
+                delay   : 1.25,
+                ease    : "power4.out"
+            });
+
+            gsap.fromTo(
+                [paragraphRef.current, imageRef.current, marqueeRef.current],
+                {
+                    opacity: 0,
+                    y      : 60
+                },
+                {
+                    opacity   : 1,
+                    y         : 0,
+                    duration  : 1,
+                    stagger   : 0.15,
+                    delay     : 2.5,
+                    ease      : "power4.out",
+                    clearProps: "all"
+                }
+            );
+        };
+
+        if (document.fonts?.ready) {
+            document.fonts.ready.then(runAnimation);
+        } else {
+            runAnimation();
+        }
     }, []);
 
     return (
@@ -82,7 +91,7 @@ export default function Hero({tagLine}: HeroProps) {
             </div>
 
             <div className="hero__scrolling-text-container" ref={marqueeRef}>
-                <Marquee>
+                <Marquee ref={marqueeRef}>
                     <p className="hero__scrolling-text">
                         <span>UX & UI Designer</span>
                         <span>Full Stack Developer</span>

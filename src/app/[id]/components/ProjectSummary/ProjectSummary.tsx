@@ -1,3 +1,5 @@
+"use client"
+
 import ContentBlock from "@/components/ContentBlock";
 import List from "@/components/List";
 import Section from "@/components/Section";

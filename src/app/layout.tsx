@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ViewTransitions } from "next-view-transitions";
 import { ReactNode } from "react";
 import "@/assets/styles/globals.scss";
+import { satoshi } from '@/fonts/Satoshi/satoshi';
 
 export const metadata: Metadata = {
     title: "Sergei Borja | Product Designer & Developer",
@@ -17,7 +18,7 @@ type RootLayoutProps = {
 export default function RootLayout({children}: RootLayoutProps) {
     return (
         <ViewTransitions>
-            <html lang="en">
+            <html lang="en" className={satoshi.variable}>
             <body>
                 <Header/>
 

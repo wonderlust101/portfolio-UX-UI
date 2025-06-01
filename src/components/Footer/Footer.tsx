@@ -6,6 +6,7 @@ import List from "@/components/List";
 import navLinks from "@/data/nav-links.json";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import { useThemeStore } from "@/store/useThemeStore";
+import Link from "next/link";
 
 const contactList = [
     {
@@ -79,9 +80,9 @@ export default function Footer() {
                     <ul className="footer__nav-list">
                         {navLinks.projectLinks.map((link, index) => (
                             <li key={index}>
-                                <a className="link link--dark" href={link.link} onClick={handleNavigation(link.link)}>
+                                <Link className="link link--dark" href={link.link} onClick={handleNavigation(link.link)}>
                                     {link.title}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

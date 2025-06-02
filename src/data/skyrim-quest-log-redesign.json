@@ -230,7 +230,7 @@
         {
           "title"   : "UI Flow Improvements",
           "contents": [
-            "Building on our storyboard, we mapped out improved UI flows that reduced friction—enabling faster switching between quests, summaries, and map views with minimal cognitive effort."
+            "Building on our storyboard, we mapped out improved UI flows that reduced friction and enabling faster switching between quests, summaries, and map views with minimal cognitive effort."
           ],
           "images"  : [
             [
@@ -370,7 +370,7 @@
               },
               {
                 "header" : "Improved navigation efficiency",
-                "content": "With filtering, sorting, and visual indicators, players spent significantly less time searching through the quest log—freeing up focus for gameplay and exploration.",
+                "content": "With filtering, sorting, and visual indicators, players spent significantly less time searching through the quest log and freeing up focus for gameplay and exploration.",
                 "bold"   : "53%"
               },
               {

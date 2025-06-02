@@ -136,7 +136,7 @@
             [
               {
                 "image"  : "/images/case-study/telus/exploration-1.webp",
-                "caption": "A quiz-style screen with static options presents cultural content but lacks audio, animation, or feedback\u2014posing a challenge for younger or non-reading visitors."
+                "caption": "A quiz-style screen with static options presents cultural content but lacks audio, animation, or feedback which poses a challenge for younger or non-reading visitors."
               },
               {
                 "image"  : "/images/case-study/telus/exploration-2.webp",
@@ -366,7 +366,7 @@
     {
       "title"   : "Project Reflection",
       "contents": [
-        "Our project set out to improve how guests navigate and engage with the Telus World of Science\u2014and the stamp-based app prototype brought that vision to life.\n\nWe successfully met the learning objectives we set at the start of the project as:",
+        "Our project set out to improve how guests navigate and engage with the Telus World of Science and the stamp-based app prototype brought that vision to life.\n\nWe successfully met the learning objectives we set at the start of the project as:",
         [
           {
             "header": "Users were guided by stamp tasks that gave their visit direction and purpose"

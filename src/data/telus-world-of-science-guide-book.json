@@ -116,7 +116,7 @@
     {
       "title"      : "Ideation",
       "contents"   : [
-        "After our visit to Telus World of Science Edmonton, we moved into the ideation phase—engaging in team-based activities to generate and evaluate solutions for improving navigation and exploration."
+        "Once we gather our information from the Telus World of Science Edmonton, we moved onto the ideation phase. We participated in several team-based activities to generate and evaluate solutions for improving navigation and exploration."
       ],
       "subsections": [
         {
@@ -182,7 +182,7 @@
     {
       "title"      : "Design Strategy",
       "contents"   : [
-        "Based on our concept, we developed a design strategy focused on simplicity, immersion, and educational value. Our goal was to create a system that was intuitive to navigate, accessible to a wide audience, and engaging for all ages."
+        "Once we decided what idea to move forward with, we developed a design strategy focused on simplicity, engagement, and educational value. Our goal was to create a system that was intuitive to navigate, accessible to a wide audience, and engaging for all ages."
       ],
       "subsections": [
         {
@@ -203,7 +203,7 @@
         {
           "title"   : "Wireframes & Iterative Prototyping",
           "contents": [
-            "Our interface began as hand-drawn sketches to explore layout structure and screen sequencing. These evolved into low and mid-fidelity mockups to test visual hierarchy, accessibility, and content density."
+            "After getting our task flow, we moved on to wireframing so that we can explore the layout and structure of the app as well as test visual hierarchy, accessibility, and content density."
           ],
           "images"  : [
             [
@@ -221,7 +221,7 @@
         {
           "title"   : "Final Mockup",
           "contents": [
-            "These high-fidelity mockups show the final app interface, including stamp collection, navigation, personalization, and onboarding. The design balances educational prompts with intuitive navigation, offering diverse audiences a flexible and engaging experience."
+            "Our final mockups show the fleshed out app interface after several iterations, including stamp collection and navigation. The design balances educational prompts with intuitive navigation, offering diverse audiences a flexible and engaging experience."
           ],
           "images"  : [
             [

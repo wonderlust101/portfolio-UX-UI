@@ -15,13 +15,13 @@ a {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.7;
   white-space: pre-line;
 
-  @include a.breakpoint(x-large) {
-    font-size: 1rem;
+  @include a.breakpoint(small) {
+    font-size: 0.9rem;
   }
 }
 
@@ -53,11 +53,15 @@ p {
 }
 
 .heading-lg {
-  font-size: 4rem;
+  font-size: 3.25rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.16rem;
   line-height: 1.25;
+
+  @include a.breakpoint(medium) {
+    font-size: 2.625rem;
+  }
 
   @include a.breakpoint(small) {
     font-size: 2.25rem;
@@ -65,10 +69,14 @@ p {
 }
 
 .heading-md {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.06rem;
+
+  @include a.breakpoint(medium) {
+    font-size: 2.5rem;
+  }
 
   @include a.breakpoint(small) {
     font-size: 2rem;
@@ -76,10 +84,14 @@ p {
 }
 
 .heading-sm {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.045rem;
+
+  @include a.breakpoint(medium) {
+    font-size: 1.75rem;
+  }
 
   @include a.breakpoint(small) {
     font-size: 1.5rem;
@@ -91,6 +103,10 @@ p {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.015rem;
+
+  @include a.breakpoint(medium) {
+    font-size: 1.5rem;
+  }
 
   @include a.breakpoint(small) {
     font-size: 1.25rem;
@@ -110,19 +126,14 @@ p {
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: background-size 0.36s ease-in-out;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.02rem;
   line-height: 1.7;
 
-  @include a.breakpoint(medium) {
-    font-size: 1.1rem;
-  }
-
   @include a.breakpoint(small) {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-
 
   &:hover {
     background-size: 100% 3px;

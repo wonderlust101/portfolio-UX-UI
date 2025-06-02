@@ -96,13 +96,13 @@
     {
       "title"      : "Research & Insights",
       "contents"   : [
-        "We began by conducting a range of research methods that will help us uncover patterns in player behaviour and gather actionable insights that informed our design direction."
+        "We began by conducting a range of research methods including heuristic evaluations, competitor analysis, and player-focused techniques like user interviews, guided tours, and the 5 Whys method. These approaches helped us uncover patterns in player behaviour and gather actionable insights that informed our design direction."
       ],
       "subsections": [
         {
           "title"   : "User Research Findings",
           "contents": [
-            "We gathered through research and direct player and some of the insight we gained includes:",
+            "Through the research and user interviews we gained valuable insight about the pain points of the current interface. Some the insight we gain from the different research methods includes:",
             [
               {
                 "header" : "Heuristic Evaluation",
@@ -156,13 +156,13 @@
     {
       "title"      : "Design Approach",
       "contents"   : [
-        "After identifying major usability and clarity issues in Skyrim’s original quest log, we set out to redesign it with a focus on immersion, organization, and accessibility. Our approach followed a user-centred design process to ensure that each decision was grounded in research and validated through testing."
+        "After identifying usability issues in Skyrim’s original quest log, we set out to redesign it with a focus on immersion, organization, and accessibility. Our approach followed a user-centred design process to ensure that each decision was grounded in research and validated through testing."
       ],
       "subsections": [
         {
           "title"   : "Ideation",
           "contents": [
-            "We used whiteboarding to explore initial layout ideas, focusing on how to group quests, summaries, and progress tracking in a functional and immersive way."
+            "We first used whiteboarding to explore initial layout ideas, focusing on how to group quests, summaries, and progress tracking in a functional and immersive way."
           ],
           "images"  : [
             [
@@ -213,7 +213,7 @@
         {
           "title"   : "Wireframing Low to High Fidelity",
           "contents": [
-            "Next, we moved into wireframing to explore structure, layout, and information hierarchy. This stage focused on organizing content to support quick orientation and intuitive navigation. We refined visual cues to enhance clarity and user flow as the fidelity increased."
+            "Then, we moved into wireframing to explore structure, layout, and information hierarchy. This stage focused on organizing content to create an efficient and intuitive navigation system. We then refined visual cues to enhance clarity and flow as the fidelity increased."
           ],
           "images"  : [
             [
@@ -249,9 +249,9 @@
           ]
         },
         {
-          "title": "Final Interface Mockups",
+          "title": "Final Mockups",
           "contents": [
-            "Finally, we unified all previous insights into a fully realized interface that balances immersion with functionality. This final stage focused on refining visual cohesion, reinforcing narrative context, and ensuring the interface seamlessly integrated into the game world."
+            "Finally,through several revisions we reach a final mockup that balances immersion with functionality. This final stage focused on refining visual cohesion, reinforcing narrative context, and ensuring the interface seamlessly integrated into the game world."
           ],
           "images": [
             [

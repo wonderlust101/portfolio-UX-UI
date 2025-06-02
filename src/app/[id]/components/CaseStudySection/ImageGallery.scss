@@ -1,9 +1,18 @@
 .image-gallery {
   display: grid;
   gap: 2rem;
-  margin: 0 3rem;
 
   @include breakpoint(medium) {
+    margin: 0 5rem;
+    gap: 2.5rem;
+  }
+
+  @include breakpoint(small) {
+    margin: 0 2rem;
+    gap: 2.5rem;
+  }
+
+  @include breakpoint(x-small) {
     margin: 0;
     gap: 2.5rem;
   }

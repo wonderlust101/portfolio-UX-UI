@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
 import { useRef } from "react";
+import Image from "next/image";
 
 gsap.registerPlugin(SplitText);
 
@@ -65,11 +66,14 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
                 <picture className="case-study-hero__image-container">
                     <source srcSet={mobileHeroImage} media="(max-width: 48rem)" />
                     <source srcSet={tabletHeroImage} media="(max-width: 74rem)" />
-                    <img
+                    <Image
                         ref={imageRef}
                         className="case-study-hero__image"
-                        src={heroImage}
+                        src={`/${heroImage.replace(/^\/?/, "")}`}
                         alt={`Preview of ${productName} ${projectType}`}
+                        height={1600}
+                        width={1600}
+                        priority
                     />
                 </picture>
             </div>

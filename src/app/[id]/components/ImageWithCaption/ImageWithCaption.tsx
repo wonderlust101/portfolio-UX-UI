@@ -1,6 +1,8 @@
+import { fadeUp } from "@/motion/motionVariants";
 import type { Image as ImageType } from "@/types/global";
 import "./ImageWithCaption.scss";
 import Image from "next/image";
+import { motion } from "motion/react";
 import { CSSProperties } from "react";
 
 type ImageWithCaptionProps = {
@@ -9,12 +11,12 @@ type ImageWithCaptionProps = {
 
 export default function ImageWithCaption({image}: ImageWithCaptionProps) {
     const styles = {
-        "--image-max-width": image.containerPercentage ? `${image.containerPercentage}%` : undefined,
+        "--image-max-width": image.containerPercentage ? `${image.containerPercentage}%` : undefined
     } as CSSProperties;
 
 
     return (
-        <figure className="image-with-caption" style={styles}>
+        <motion.figure className="image-with-caption" style={styles} variants={fadeUp}>
             <Image
                 className="image-with-caption__image"
                 src={`/${image.image.replace(/^\/?/, "")}`}
@@ -24,7 +26,9 @@ export default function ImageWithCaption({image}: ImageWithCaptionProps) {
                 height={1200}
                 quality={75}
             />
-            <figcaption className="image-with-caption__caption">{image.caption}</figcaption>
-        </figure>
+            {image.caption && (
+                <figcaption className="image-with-caption__caption">{image.caption}</figcaption>
+            )}
+        </motion.figure>
     );
 }

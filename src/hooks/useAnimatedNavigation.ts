@@ -1,15 +1,20 @@
 "use client";
-
-import { usePathname } from "next/navigation";
+import { useLenis } from "@studio-freight/react-lenis";
 import { useTransitionRouter } from "next-view-transitions";
-import { MouseEvent } from "react";
+import { usePathname } from "next/navigation";
+import type { MouseEvent as ReactMouseEvent } from "react";
 
 export function useAnimatedNavigation() {
     const router = useTransitionRouter();
     const pathname = usePathname();
+    const lenis = useLenis();
 
     function triggerPageTransition() {
-        window.scrollTo({ top: 0, behavior: "instant" });
+        if (lenis) {
+            lenis.scrollTo(0, { immediate: true });
+        } else {
+            window.scrollTo({ top: 0, behavior: "instant" });
+        }
 
         document.documentElement.animate(
             [
@@ -28,7 +33,7 @@ export function useAnimatedNavigation() {
         );
     }
 
-    const handleNavigation = (path: string, callback?: () => void) => (e: MouseEvent<HTMLAnchorElement>) => {
+    const handleNavigation = (path: string, callback?: () => void) => (e: ReactMouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
 
         if (pathname === path) return;

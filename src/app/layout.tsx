@@ -34,8 +34,8 @@ export default function RootLayout({children}: RootLayoutProps) {
                     <Footer/>
                 </body>
                 </html>
-            </ViewTransitions>;
+            </ViewTransitions>
         </>
-    )
-        ;
+    );
+
 }

@@ -32,7 +32,7 @@ export default async function Home() {
 
             <Hero/>
 
-            <Section header="Case Studies">
+            <Section header="Featured Case Studies">
                 {homeData.caseStudies.map((caseStudy, index) => (
                     <CaseStudyListing key={index} caseStudy={caseStudy} index={index + 1}/>
                 ))}

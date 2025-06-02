@@ -1,6 +1,6 @@
 {
-  "tagLine"          : "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing clean interfaces, and building things that help people.",
-  "aboutText"        : "I'm currently looking for internship opportunities in development or design. I'm known for being organized, hardworking, and someone who manages time well.\n\nI enjoy working with others to turn ideas into real, useful products. Whether sketching in Figma or coding in React, I always bring curiosity, focus, and a drive to do things right.",
+  "tagLine"          : "",
+  "aboutText"        : "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing clean interfaces, and building things that help people.\n\nI enjoy working with others to turn ideas into real, useful products. Whether sketching in Figma or coding in React, I always bring curiosity, focus, and a drive to do things right.",
   "additionalDetails": [
     {
       "header" : "Role",

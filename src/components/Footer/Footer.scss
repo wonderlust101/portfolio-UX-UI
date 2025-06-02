@@ -36,7 +36,7 @@
     font-weight: 900;
     letter-spacing: -0.12rem;
     text-transform: uppercase;
-    line-height: 1.25;
+    line-height: 1;
 
     @include breakpoint(medium) {
       font-size: clamp(1rem, 12.5vw, 20rem);

@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import SectionHeader from "@/components/SectionHeader";
+import Image from "next/image";
 import "./OtherProjects.scss";
 
 type CurrentProjectProps = {
@@ -50,7 +51,14 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
                                 </div>
 
                                 <div className="other-projects__content">
-                                    <img className='other-projects__thumbnail' src={project.thumbnail} alt=""/>
+                                    <Image
+                                        className='other-projects__thumbnail'
+                                        src={`/${project.thumbnail.replace(/^\/?/, "")}`}
+                                        alt=""
+                                        height={1600}
+                                        width={1600}
+                                        quality={75}
+                                    />
                                 </div>
                             </section>
                         </div>

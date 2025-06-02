@@ -4,7 +4,6 @@
   align-content: flex-start;
   gap: 1.5rem;
   position: relative;
-  justify-self: center;
   max-width: var(--image-max-width, 100%);
 
   @include breakpoint(medium) {

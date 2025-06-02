@@ -1,11 +1,20 @@
 "use client";
+import type { LenisOptions } from "@studio-freight/lenis";
 import { ReactLenis } from "@studio-freight/react-lenis";
+import { ReactNode } from "react";
 
-function SmoothScrolling({ children }) {
+interface SmoothScrollingProps {
+    children?: ReactNode;
+}
+
+const lenisOptions: LenisOptions = {
+    duration: 1.5,
+    lerp    : 0.1
+};
+
+function SmoothScrolling({children}: SmoothScrollingProps) {
     return (
-        <ReactLenis root options={{ duration: 1.5, lerp: 0.07 }}>
-            {children}
-        </ReactLenis>
+        <ReactLenis root options={lenisOptions}/>
     );
 }
 

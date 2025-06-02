@@ -18,10 +18,12 @@ type RootLayoutProps = {
 
 export default function RootLayout({children}: RootLayoutProps) {
     return (
-        <ViewTransitions>
-            <html lang="en" className={`${satoshi.variable}`}>
-            <body>
-                <SmoothScrolling>
+        <>
+            <SmoothScrolling/>
+
+            <ViewTransitions>
+                <html lang="en" className={`${satoshi.variable}`}>
+                <body>
 
                     <Header/>
 
@@ -30,9 +32,10 @@ export default function RootLayout({children}: RootLayoutProps) {
                     </main>
 
                     <Footer/>
-                </SmoothScrolling>
-            </body>
-            </html>
-        </ViewTransitions>
-    );
+                </body>
+                </html>
+            </ViewTransitions>;
+        </>
+    )
+        ;
 }

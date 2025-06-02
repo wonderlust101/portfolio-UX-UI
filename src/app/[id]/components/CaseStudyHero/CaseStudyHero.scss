@@ -4,7 +4,7 @@
   align-content: center;
   padding: 4.75rem 0;
   background-color: $clr-white;
-  height: 100vh;
+  height: 100dvh;
 
   @include breakpoint(large) {
     grid-template-rows: 1fr max-content;

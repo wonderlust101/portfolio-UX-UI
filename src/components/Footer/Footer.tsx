@@ -61,11 +61,11 @@ export default function Footer() {
                         </p>
 
                         <div className="footer__buttons">
-                            <Button color="accent" theme='dark' size="lg" href="mailto:sergei.borja0701@gmail.com">
+                            <Button color="accent" theme='dark' size="md" href="mailto:sergei.borja0701@gmail.com">
                                 Send an Email
                             </Button>
 
-                            <Button color="white" size="lg" href="Sergei Borja - Resume.pdf">
+                            <Button color="white" size="md" href="Sergei Borja - Resume.pdf">
                                 Download Resume
                             </Button>
                         </div>

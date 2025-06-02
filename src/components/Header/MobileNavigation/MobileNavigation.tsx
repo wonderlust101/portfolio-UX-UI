@@ -3,11 +3,12 @@
 import burgerMenuIcon from "@/assets/images/burger-menu.svg";
 import "./MobileNavigation.scss";
 import closeMenuIcon from "@/assets/images/close-menu.svg";
+import Button from "@/components/Button";
+import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import type { NavLinks } from "@/types/links";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 
 type MobileNavigationProps = {
     navLinks: NavLinks[];
@@ -15,7 +16,7 @@ type MobileNavigationProps = {
 
 export default function MobileNavigation({navLinks}: MobileNavigationProps) {
     const [openNav, setOpenNav] = useState(false);
-    const { handleNavigation } = useAnimatedNavigation();
+    const {handleNavigation} = useAnimatedNavigation();
 
     useEffect(() => {
         if (openNav) {
@@ -56,9 +57,10 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                                         <ul className="mobile-navigation__sub-link-container">
                                             {link.subLinks.map((subLink) => (
                                                 <li key={subLink.title} className="mobile-navigation__nav-item">
-                                                    <Link className="mobile-navigation__link-container" href={subLink.link} onClick={handleNavigation(subLink.link, () => setOpenNav(false))}>
+                                                    <Link className="mobile-navigation__link-container" href={subLink.link}
+                                                          onClick={handleNavigation(subLink.link, () => setOpenNav(false))}>
                                                         <span className="link mobile-navigation__link">{subLink.title}</span>
-                                                        <hr />
+                                                        <hr/>
                                                     </Link>
                                                 </li>
                                             ))}
@@ -68,14 +70,25 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                             )
                             : (
                                 link.link &&
-                                <Link className="mobile-navigation__link-container" href={link.link} onClick={handleNavigation(link.link, () => setOpenNav(false))}>
+                                <Link className="mobile-navigation__link-container" href={link.link}
+                                      onClick={handleNavigation(link.link, () => setOpenNav(false))}>
                                     <span className="link mobile-navigation__link">{link.title}</span>
-                                    <hr />
+                                    <hr/>
                                 </Link>
                             )
                         }
                     </li>
                 ))}
+                <li className='mobile-navigation__button-container'>
+                    <Button
+                        color="accent"
+                        theme="light"
+                        size="sm"
+                        href="mailto:sergei.borja0701@gmail.com"
+                    >
+                        Contact Me
+                    </Button>
+                </li>
             </ul>
         </nav>
     );

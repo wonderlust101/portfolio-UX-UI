@@ -1,0 +1,48 @@
+.scroll-to-top-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  padding: 0.25rem 1rem;
+  background: black;
+  color: white;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+
+  @include breakpoint(medium) {
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.15rem 0.75rem;
+  }
+
+  @include breakpoint(small) {
+    bottom: 1.5rem;
+    right: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  &__arrow {
+    width: 1.5rem;
+    transform: rotate(90deg);
+    color: $clr-white;
+
+    @include breakpoint(medium) {
+      width: 1.25rem;
+    }
+    @include breakpoint(medium) {
+      width: 1rem;
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+
+    @include breakpoint(medium) {
+      font-size: 0.9rem;
+    }
+  }
+}

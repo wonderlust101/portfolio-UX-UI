@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "convert:webp": "node scripts/convert-images.cjs"
+    "convert:webp": "node scripts/convert-images.cjs",
+    "convert:placeholders": "node scripts/create-placeholders.cjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -21,9 +22,11 @@
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
     "sharp": "^0.34.2",
+    "webpack": "^5.99.9",
     "zustand": "^5.0.5"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

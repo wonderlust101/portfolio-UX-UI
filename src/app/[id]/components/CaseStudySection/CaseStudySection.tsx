@@ -23,6 +23,7 @@ export default function CaseStudySection({ section }: CaseStudySectionProps) {
                 className="case-study-section__section"
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true }}
                 variants={staggerParent}
             >
                 <motion.div variants={fadeUp}>

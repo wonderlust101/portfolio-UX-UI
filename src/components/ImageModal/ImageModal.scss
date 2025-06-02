@@ -1,0 +1,57 @@
+.image-modal {
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 6rem;
+
+    @include breakpoint(large) {
+      padding: 4rem;
+    }
+
+    @include breakpoint(small) {
+      display: none;
+    }
+  }
+
+  &__image-container {
+    display: grid;
+    gap: 1rem;
+    border-radius: $border-radius;
+
+    @include breakpoint(medium) {
+      gap: 0.5rem;
+    }
+  }
+
+  &__image {
+    max-height: 80dvh;
+    object-fit: contain;
+    background-color: $clr-white;
+    padding: 0.25rem;
+  }
+
+  &__caption {
+    font-family: var(--font-satoshi), sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02rem;
+    color: $clr-white;
+
+    @include breakpoint(medium) {
+      font-size: 0.9rem;
+    }
+
+    @include breakpoint(small) {
+      font-size: 0.75rem;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 import SectionHeader from "@/components/SectionHeader";
 import "./CaseStudyHero.scss";
+import { getPlaceholderUrl } from "@/utils/getPlaceholderUrl";
 import { parseHighlightedText } from "@/utils/parseHighlightedText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -74,6 +75,8 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
                         height={1600}
                         width={1600}
                         priority
+                        placeholder="blur"
+                        blurDataURL={getPlaceholderUrl(heroImage)}
                     />
                 </picture>
             </div>

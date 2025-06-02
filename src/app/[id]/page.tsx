@@ -3,6 +3,7 @@ import CaseStudySection from "@/app/[id]/components/CaseStudySection";
 import OtherProjects from "@/app/[id]/components/OtherProjects";
 import ProjectSummary from "@/app/[id]/components/ProjectSummary";
 import Revealer from "@/components/Revealer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import ThemeEffect from "@/components/ThemeEffect";
 import { CaseStudy } from "@/types/case-study";
 import { promises as fs } from "fs";
@@ -36,6 +37,8 @@ export default async function CaseStudyPage({params}: Props) {
         <>
             <ThemeEffect theme={caseStudy.theme}/>
             <Revealer/>
+
+            <ScrollToTopButton/>
 
             <main className="home__content">
                 <CaseStudyHero

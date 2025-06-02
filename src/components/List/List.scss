@@ -39,6 +39,7 @@
   &__item-content {
     display: grid;
     gap: 0.5rem;
+    width: 100%;
 
     & > p:first-child {
       font-weight: 700;

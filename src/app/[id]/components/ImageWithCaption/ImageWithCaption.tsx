@@ -14,7 +14,7 @@ export default function ImageWithCaption({image}: ImageWithCaptionProps) {
 
 
     return (
-        <figure className="image-with-caption">
+        <figure className="image-with-caption" style={styles}>
             <Image
                 className="image-with-caption__image"
                 src={`/${image.image.replace(/^\/?/, "")}`}
@@ -23,7 +23,6 @@ export default function ImageWithCaption({image}: ImageWithCaptionProps) {
                 width={1200}
                 height={1200}
                 quality={75}
-                style={styles}
             />
             <figcaption className="image-with-caption__caption">{image.caption}</figcaption>
         </figure>

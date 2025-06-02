@@ -7,8 +7,8 @@ import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants
 import "./ContentBlock.scss";
 
 type SubsectionProps = {
-    children: ReactNode;
-    header: string;
+    children: ReactNode | undefined;
+    header: string | undefined;
     type?: "subsection" | "block";
     hideDivider?: boolean;
 };

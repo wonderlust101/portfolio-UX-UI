@@ -1,20 +1,18 @@
 @use "../abstract/index" as a;
 
 // Global Styles
-* {
-  font-family: var(--font-satoshi), sans-serif;
-}
-
 li {
   color: inherit;
 }
 
 a {
+  font-family: var(--font-satoshi), sans-serif;
   color: inherit;
   text-decoration: none;
 }
 
 p {
+  font-family: var(--font-satoshi), sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.7;
@@ -27,6 +25,7 @@ p {
 
 // Heading Styles
 .heading-xl {
+  font-family: var(--font-satoshi), sans-serif;
   font-size: clamp(1rem, 14.25vw, 23.5rem);
   font-weight: 900;
   text-transform: uppercase;
@@ -53,6 +52,7 @@ p {
 }
 
 .heading-lg {
+  font-family: var(--font-satoshi), sans-serif;
   font-size: 3.25rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -69,6 +69,7 @@ p {
 }
 
 .heading-md {
+  font-family: var(--font-satoshi), sans-serif;
   font-size: 2.75rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -84,6 +85,7 @@ p {
 }
 
 .heading-sm {
+  font-family: var(--font-satoshi), sans-serif;
   font-size: 2rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -99,6 +101,7 @@ p {
 }
 
 .heading-xs {
+  font-family: var(--font-satoshi), sans-serif;
   font-size: 1.75rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -137,5 +140,25 @@ p {
 
   &:hover {
     background-size: 100% 3px;
+  }
+}
+
+.quote {
+  font-family: var(--font-erode), serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.quote-main {
+  font-family: var(--font-erode), serif;
+  font-size: 1.4rem;
+  line-height: 1.75;
+  font-style: italic;
+  font-weight: 600;
+
+  @include a.breakpoint(small) {
+    font-size: 1rem;
   }
 }

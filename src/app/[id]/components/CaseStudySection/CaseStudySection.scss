@@ -13,16 +13,16 @@
     justify-items: center;
     gap: 3rem;
     margin: 0 4rem;
-    padding: 4.5rem 4rem;
-    background-color: rgba(196, 196, 196, 0.35);
+    padding: 4rem;
+    background-color: $clr-grey-35;
 
     @include breakpoint(x-large) {
       margin: 0 3rem;
-      padding: 4rem 3.5rem;
+      padding: 3.5rem;
     }
 
     @include breakpoint(medium) {
-      padding: 2.5rem 2rem;
+      padding: 2rem;
       margin: 0;
     }
 

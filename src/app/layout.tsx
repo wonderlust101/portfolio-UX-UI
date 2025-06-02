@@ -18,7 +18,7 @@ type RootLayoutProps = {
 export default function RootLayout({children}: RootLayoutProps) {
     return (
         <ViewTransitions>
-            <html lang="en" className={satoshi.variable}>
+            <html lang="en" className={`${satoshi.variable}`}>
             <body>
                 <Header/>
 

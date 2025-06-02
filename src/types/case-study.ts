@@ -1,13 +1,18 @@
 import type { Image, Metadata } from "@/types/global";
 
-export type SectionContent = string|{header: string}[];
+export type SectionContent = string|{
+    header?: string;
+    content?: string;
+    quote?: string;
+}[];
 
-type Persona = {
+export type Persona = {
     name: string;
+    image: string;
     age: number;
     location: string;
     devices: string[];
-    playStyle: string;
+    type: string;
     quote: string;
     goals: string[];
     painPoints: string[];
@@ -22,10 +27,11 @@ export type CaseStudySection = {
 };
 
 export type CaseStudySubSection = {
-    title: string;
-    contents: SectionContent[];
+    title?: string;
+    contents?: SectionContent[];
     images?: Image[][];
     persona?: Persona;
+    quote?: string;
 };
 
 export type ProjectSummary = {

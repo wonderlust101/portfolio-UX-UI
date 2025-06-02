@@ -64,7 +64,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
             <div className="case-study-hero__image-container">
                 <picture className="case-study-hero__image-container">
                     <source srcSet={mobileHeroImage} media="(max-width: 48rem)" />
-                    <source srcSet={tabletHeroImage} media="(max-width: 70rem)" />
+                    <source srcSet={tabletHeroImage} media="(max-width: 74rem)" />
                     <img
                         ref={imageRef}
                         className="case-study-hero__image"

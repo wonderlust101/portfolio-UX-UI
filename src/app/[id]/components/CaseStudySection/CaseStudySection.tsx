@@ -1,8 +1,9 @@
 import ContentBlock from "@/components/ContentBlock";
+import Persona from "@/components/Persona";
 import Section from "@/components/Section";
+import type { CaseStudySection } from "@/types/case-study";
 import ContentRenderer from "./ContentRenderer";
 import ImageGallery from "./ImageGallery";
-import type { CaseStudySection } from "@/types/case-study";
 import "./CaseStudySection.scss";
 
 type CaseStudySectionProps = {
@@ -22,11 +23,17 @@ export default function CaseStudySection({section}: CaseStudySectionProps) {
                 }
             </div>
 
-            {section.subsections?.map((subsection) => (
-                <div key={subsection.title} className="case-study-section__sub-section">
+            {section.subsections?.map((subsection, index) => (
+                <div key={index} className="case-study-section__sub-section">
                     <ContentBlock header={subsection.title} type="block" hideDivider>
-                        <ContentRenderer contents={subsection.contents}/>
+                        {subsection.contents &&
+                            <ContentRenderer contents={subsection.contents}/>
+                        }
                     </ContentBlock>
+
+                    {subsection.persona &&
+                        <Persona personaData={subsection.persona} />
+                    }
 
                     {subsection.images &&
                         <ImageGallery images={subsection.images}/>

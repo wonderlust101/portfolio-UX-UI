@@ -6,9 +6,9 @@ import { motion } from "motion/react";
 import { Fragment, type ReactNode } from "react";
 import "./List.scss";
 
-type ListItem = {
-    header: string;
-    content?: string|ReactNode;
+export type ListItem = {
+    header?: string | undefined;
+    content?: string | ReactNode;
     bold?: string;
 };
 

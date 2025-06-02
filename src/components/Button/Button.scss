@@ -4,73 +4,100 @@
   border: none;
   font-weight: 700;
   text-transform: uppercase;
-  transition: opacity 0.15s ease-in-out, transform  0.15s ease-in-out;
+  border-radius: $border-radius;
+  transition: all 0.15s ease-in-out;
 
   &:hover:not(:disabled) {
     transform: scale(1.05);
-    opacity: 0.75;
     cursor: pointer;
-  }
-
-  &:disabled {
-    filter: saturate(50%);
-    opacity: 0.5;
   }
 
   //Color
   &--white {
     background-color: $clr-white;
     color: $clr-black;
-  }
 
-  &--black {
-    background-color: $clr-black;
-    color: $clr-white;
+    &:hover:not(:disabled) {
+      opacity: 0.85;
+    }
   }
 
   &--green-dark {
     background-color: $clr-green-light;
     color: $clr-black;
+
+    &:hover:not(:disabled) {
+      opacity: 0.85;
+    }
   }
 
   &--green-light {
     background-color: $clr-green;
     color: $clr-white;
+
+    &:hover:not(:disabled) {
+      background-color: $clr-green-dark;
+    }
   }
 
   &--brown-dark {
     background-color: $clr-brown-light;
     color: $clr-black;
+
+    &:hover:not(:disabled) {
+      opacity: 0.85;
+    }
   }
 
   &--brown-light {
     background-color: $clr-brown;
     color: $clr-white;
+
+    &:hover:not(:disabled) {
+      background-color: $clr-brown-dark;
+    }
   }
 
   &--purple-dark {
     background-color: $clr-purple-light;
     color: $clr-black;
+
+    &:hover:not(:disabled) {
+      opacity: 0.85;
+    }
   }
 
   &--purple-light {
     background-color: $clr-purple;
     color: $clr-white;
+
+    &:hover:not(:disabled) {
+      background-color: $clr-purple-dark;
+    }
   }
 
   &--red-dark {
     background-color: $clr-red-light;
     color: $clr-black;
+
+    &:hover:not(:disabled) {
+      opacity: 0.85;
+    }
   }
 
   &--red-light {
     background-color: $clr-red;
     color: $clr-white;
+
+    &:hover:not(:disabled) {
+      background-color: $clr-red-dark;
+    }
   }
 
   // Sizes
   &--sm {
     font-size: 0.9rem;
+    letter-spacing: 0.01rem;
     padding: 0.75rem 1.5rem;
   }
 
@@ -79,6 +106,7 @@
   }
 
   &--lg {
+    font-size: 1.1rem;
     padding: 1rem 3rem;
   }
 }

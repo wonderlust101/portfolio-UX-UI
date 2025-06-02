@@ -5,19 +5,12 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
 import { useRef } from "react";
-import Marquee from "react-fast-marquee";
 import "./Hero.scss";
-
-type HeroProps = {
-    tagLine: string;
-};
 
 gsap.registerPlugin(SplitText);
 
-export default function Hero({tagLine}: HeroProps) {
+export default function Hero() {
     const paragraphRef = useRef<HTMLParagraphElement>(null);
-    const imageRef = useRef<HTMLImageElement>(null);
-    const marqueeRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
         const runAnimation = () => {
@@ -38,7 +31,7 @@ export default function Hero({tagLine}: HeroProps) {
             });
 
             gsap.fromTo(
-                [paragraphRef.current, imageRef.current, marqueeRef.current],
+                [paragraphRef.current],
                 {
                     opacity: 0,
                     y      : 60
@@ -64,41 +57,25 @@ export default function Hero({tagLine}: HeroProps) {
 
     return (
         <section className="hero grid-bleed-small">
-            <h1 className="heading-xl hero__name">
-                Sergei<span className="hero__name--break"></span> Borja
-            </h1>
-
             <div className="hero__body">
-                <div className="hero__cta" ref={paragraphRef}>
-                    <p>{tagLine}</p>
+                <h1 className="heading-xl hero__name">
+                    Sergei <span className="hero__name--break"><br/></span> Borja
+                </h1>
 
-                    <Button
-                        color="accent"
-                        theme="light"
-                        size="lg"
-                        href="mailto:sergei.borja0701@gmail.com"
-                    >
-                        Contact Me
-                    </Button>
+                <div>
+                    <div className="hero__cta" ref={paragraphRef}>
+                        <p className='hero__tag'>[ Full Stack Developer, UX & UI Designer ]</p>
+
+                        <Button
+                            color="accent"
+                            theme="light"
+                            size="lg"
+                            href="mailto:sergei.borja0701@gmail.com"
+                        >
+                            Contact Me
+                        </Button>
+                    </div>
                 </div>
-
-                <img
-                    className="hero__image"
-                    ref={imageRef}
-                    src="images/home/sergei-borja.webp"
-                    alt="Sergei Borja"
-                />
-            </div>
-
-            <div className="hero__scrolling-text-container" ref={marqueeRef}>
-                <Marquee ref={marqueeRef}>
-                    <p className="hero__scrolling-text">
-                        <span>UX & UI Designer</span>
-                        <span>Full Stack Developer</span>
-                        <span>UX & UI Designer</span>
-                        <span>Full Stack Developer</span>
-                    </p>
-                </Marquee>
             </div>
         </section>
     );

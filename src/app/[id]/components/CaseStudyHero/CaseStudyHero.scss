@@ -1,9 +1,10 @@
 .case-study-hero {
-  grid-template-rows: 1fr max-content;
+  grid-template-rows: max-content max-content;
   row-gap: 3rem;
+  align-content: center;
   padding: 4.75rem 0;
   background-color: $clr-white;
-  min-height: 100vh;
+  height: 100vh;
 
   @include breakpoint(large) {
     grid-template-rows: 1fr max-content;
@@ -19,9 +20,12 @@
   }
 
   &__image-container {
-    grid-column: 1/-1;
-    height: 100%;
     overflow: hidden;
+    height: 100%;
+  }
+
+  &__image {
+    object-position: center;
   }
 
   &__type {

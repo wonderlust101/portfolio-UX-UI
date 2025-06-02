@@ -30,7 +30,7 @@ export default async function Home() {
             <Revealer/>
             <ThemeEffect theme={"green"}/>
 
-            <Hero tagLine={homeData.tagLine}/>
+            <Hero/>
 
             <Section header="Case Studies">
                 {homeData.caseStudies.map((caseStudy, index) => (

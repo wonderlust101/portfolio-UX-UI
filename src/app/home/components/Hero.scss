@@ -1,20 +1,16 @@
 .hero {
-  grid-template-rows: max-content 1fr max-content;
-  align-content: center;
-  row-gap: 4rem;
+  grid-template-rows: 1fr max-content;
+  align-items: center;
   padding: 8rem 0;
-  min-height: 100vh;
+  height: 100vh;
   background-color: $clr-white;
   color: $clr-black;
 
   @include breakpoint(medium) {
-    padding: 6rem 0 3rem;
-    row-gap: 2rem;
-    grid-template-rows: max-content max-content max-content;
+    padding: 6rem 0;
   }
 
   &__name {
-    color: $clr-black;
     overflow: hidden;
     white-space: nowrap;
 
@@ -22,7 +18,7 @@
       display: none;
 
       @include breakpoint(medium) {
-        display: block;
+        display: inline;
       }
     }
 
@@ -33,61 +29,28 @@
 
   &__body {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 10%;
-
-    @include breakpoint(large) {
-      gap: 5%;
-    }
-
-    @include breakpoint(medium) {
-      align-content: center;
-      grid-template-columns: 1fr;
-      grid-template-rows: max-content max-content;
-      gap: 3rem;
-    }
+    grid-template-rows: max-content max-content;
+    gap: 4rem;
+    justify-items: center;
   }
 
   &__cta {
     display: grid;
     gap: 2rem;
-    align-content: flex-start;
-    justify-items: flex-start;
+    justify-items: center;
   }
 
-  &__image {
-    height: 20rem;
-    align-self: center;
-    object-position: center;
-
-    @include breakpoint(large) {
-      height: 16rem;
-    }
+  &__tag {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
 
     @include breakpoint(medium) {
-      align-self: unset;
-      height: 14rem;
+      font-size: 1.25rem;
     }
-  }
 
-  &__scrolling-text-container {
-    grid-column: 1/-1 !important;
-    user-select: none;
-    overflow: hidden;
-  }
-
-  &__scrolling-text {
-    font-family: var(--font-satoshi), sans-serif;
-    font-size: clamp(4rem, 7.5vw, 12rem);
-    font-weight: 900;
-    letter-spacing: -0.32rem;
-    line-height: 1;
-    text-transform: uppercase;
-    flex-shrink: 0;
-    overflow: hidden;
-
-    & > :nth-child(2n + 1) {
-      color: $clr-green;
+    @include breakpoint(small) {
+      font-size: 1.1rem;
     }
   }
 }

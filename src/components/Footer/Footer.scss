@@ -15,6 +15,7 @@
 
   &__cta {
     display: grid;
+    grid-template-rows: max-content max-content;
     gap: 1.5rem;
   }
 
@@ -27,6 +28,23 @@
 
     @include breakpoint(medium) {
       font-size: 2.5rem;
+    }
+  }
+
+  &__name {
+    font-size: 8rem;
+    font-weight: 900;
+    letter-spacing: -0.12rem;
+    text-transform: uppercase;
+    line-height: 1.25;
+
+    @include breakpoint(medium) {
+      font-size: clamp(1rem, 12.5vw, 20rem);
+      text-align: center;
+    }
+
+    @include breakpoint(small) {
+      font-size: clamp(1rem, 22vw, 20rem);
     }
   }
 
@@ -53,6 +71,10 @@
       grid-template-columns: 1fr;
       gap: 4rem;
     }
+
+    @include breakpoint(small) {
+      gap: 2rem;
+    }
   }
 
   &__left-column {
@@ -62,7 +84,7 @@
 
   &__right-column {
     display: grid;
-    align-content: center;
+    align-content: flex-start;
     gap: 2.5rem;
   }
 

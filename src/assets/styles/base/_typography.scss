@@ -26,28 +26,32 @@ p {
 // Heading Styles
 .heading-xl {
   font-family: var(--font-satoshi), sans-serif;
-  font-size: clamp(1rem, 14.25vw, 23.5rem);
+  color: a.$clr-black;
+  font-size: clamp(1rem, 14.5vw, 23.5rem);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -1.25rem;
   line-height: 1;
   text-align: center;
   position: relative;
-  right: 1rem;
+  padding-right: 1rem;
 
   @include a.breakpoint(large) {
-    font-size: clamp(1rem, 14.5vw, 23.5rem);
+    font-size: clamp(1rem, 14.25vw, 23.5rem);
     letter-spacing: -1.0rem;
   }
 
   @include a.breakpoint(medium) {
-    font-size: 8rem;
-    letter-spacing: -0.48rem;
-    text-align: left;
+    font-size: clamp(1rem, 20vw, 23.5rem);
+    letter-spacing: -0.75rem;
   }
 
   @include a.breakpoint(small) {
-    font-size: 5rem;
+    letter-spacing: -0.50rem;
+  }
+
+  @include a.breakpoint(x-small) {
+    letter-spacing: -0.35rem;
   }
 }
 
@@ -117,8 +121,17 @@ p {
 }
 
 // Font Weight
+.normal {
+  font-weight: 500;
+}
+
 .bold {
   font-weight: 700;
+}
+
+// Text Transform
+.text-transform-unset {
+  text-transform: unset;
 }
 
 // Custom Typography

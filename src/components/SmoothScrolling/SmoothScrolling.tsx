@@ -5,8 +5,8 @@ import { ReactLenis } from "@studio-freight/react-lenis";
 import type { LenisOptions } from "@studio-freight/lenis";
 
 const lenisOptions: LenisOptions = {
-    duration: 2,
-    lerp: 0.075
+    duration: 1.5,
+    lerp: 0.09
 };
 
 function SmoothScrolling() {

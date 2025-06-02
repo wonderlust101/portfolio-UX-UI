@@ -48,7 +48,7 @@ export const staggerParent = {
     hidden: {},
     visible: {
         transition: {
-            staggerChildren: 0.15,
+            staggerChildren: 0.1,
             delayChildren: 0.1
         }
     }

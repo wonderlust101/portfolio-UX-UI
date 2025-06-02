@@ -3,8 +3,6 @@
   width: 100%;
   max-width: 85rem;
   gap: 2rem;
-  padding: 3rem;
-  border: 1px solid $clr-black;
 
   @include breakpoint(medium) {
     padding: 2rem;
@@ -20,10 +18,11 @@
 
   &__top {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
 
     @include breakpoint(medium) {
+      gap: 2rem;
       grid-template-columns: 1fr;
     }
   }
@@ -39,27 +38,22 @@
   }
 
   &__image-container {
-    display: grid;
     position: relative;
-    gap: 1rem;
   }
 
   &__image {
-    max-width: 26rem;
+    max-height: 26rem;
+    width: 100%;
+    justify-self: center;
 
-    @include breakpoint(medium) {
-      max-height: unset;
-      max-width: 26rem;
-    }
-
-    @include breakpoint(medium) {
+    @include breakpoint(small) {
       max-width: unset;
     }
   }
 
   &__info {
     display: grid;
-    align-content: center;
+    align-content: space-between;
     gap: 3rem;
 
     @include breakpoint(medium) {

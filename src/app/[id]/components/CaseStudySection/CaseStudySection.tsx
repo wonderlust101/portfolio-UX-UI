@@ -1,3 +1,5 @@
+"use client";
+
 import ContentBlock from "@/components/ContentBlock";
 import Persona from "@/components/Persona";
 import Section from "@/components/Section";
@@ -6,39 +8,64 @@ import ContentRenderer from "./ContentRenderer";
 import ImageGallery from "./ImageGallery";
 import "./CaseStudySection.scss";
 
+import { motion } from "framer-motion";
+import { fadeUp, staggerParent } from "@/motion/motionVariants";
+
+
 type CaseStudySectionProps = {
     section: CaseStudySection;
 }
 
-export default function CaseStudySection({section}: CaseStudySectionProps) {
+export default function CaseStudySection({ section }: CaseStudySectionProps) {
     return (
         <Section key={section.title}>
-            <div className="case-study-section__section">
-                <ContentBlock header={section.title}>
-                    <ContentRenderer contents={section.contents}/>
-                </ContentBlock>
+            <motion.div
+                className="case-study-section__section"
+                initial="hidden"
+                whileInView="visible"
+                variants={staggerParent}
+            >
+                <motion.div variants={fadeUp}>
+                    <ContentBlock header={section.title}>
+                        <ContentRenderer contents={section.contents} />
+                    </ContentBlock>
+                </motion.div>
 
-                {section.images &&
-                    <ImageGallery images={section.images}/>
-                }
-            </div>
+                {section.images && (
+                    <motion.div variants={fadeUp}>
+                        <ImageGallery images={section.images} />
+                    </motion.div>
+                )}
+            </motion.div>
 
             {section.subsections?.map((subsection, index) => (
-                <div key={index} className="case-study-section__sub-section">
-                    <ContentBlock header={subsection.title} type="block" hideDivider>
-                        {subsection.contents &&
-                            <ContentRenderer contents={subsection.contents}/>
-                        }
-                    </ContentBlock>
+                <motion.div
+                    key={index}
+                    className="case-study-section__sub-section"
+                    initial="hidden"
+                    animate="visible"
+                    variants={staggerParent}
+                >
+                    <motion.div variants={fadeUp}>
+                        <ContentBlock header={subsection.title} type="block" hideDivider>
+                            {subsection.contents && (
+                                <ContentRenderer contents={subsection.contents} />
+                            )}
+                        </ContentBlock>
+                    </motion.div>
 
-                    {subsection.persona &&
-                        <Persona personaData={subsection.persona} />
-                    }
+                    {subsection.persona && (
+                        <motion.div variants={fadeUp}>
+                            <Persona personaData={subsection.persona} />
+                        </motion.div>
+                    )}
 
-                    {subsection.images &&
-                        <ImageGallery images={subsection.images}/>
-                    }
-                </div>
+                    {subsection.images && (
+                        <motion.div variants={fadeUp}>
+                            <ImageGallery images={subsection.images} />
+                        </motion.div>
+                    )}
+                </motion.div>
             ))}
         </Section>
     );

@@ -1,9 +1,12 @@
-"use client"
+"use client";
 
+import SectionHeader from "@/components/SectionHeader";
 import { useThemeStore } from "@/store/useThemeStore";
 import type { Persona as PersonaType } from "@/types/case-study";
 import "./Persona.scss";
+import { motion } from "motion/react";
 import Image from "next/image";
+import { contentVariants, fadeUp, fadeUpLowOpacity, headerVariants, staggerParent } from "@/motion/motionVariants";
 
 type PersonaProps = {
     personaData: PersonaType;
@@ -12,14 +15,17 @@ type PersonaProps = {
 export default function Persona({personaData}: PersonaProps) {
     const color = useThemeStore((state) => state.color);
 
-    console.log(personaData.image);
-
     return (
-        <section className="persona">
-            <div className="persona__top">
-                <div className="persona__image-container">
-                    <h4 className="heading-xs">{personaData.name}</h4>
+        <motion.section
+            className="persona"
+            initial="hidden"
+            whileInView="visible"
+            variants={staggerParent}
+            viewport={{ once: true }}
+        >
 
+            <motion.div className="persona__top" variants={fadeUp}>
+                <motion.div className="persona__image-container" variants={headerVariants}>
                     <Image
                         className="persona__image"
                         src={personaData?.image}
@@ -27,43 +33,45 @@ export default function Persona({personaData}: PersonaProps) {
                         height={1600}
                         width={1600}
                     />
-                </div>
+                </motion.div>
 
-                <div className="persona__info">
+                <motion.div className="persona__info" variants={contentVariants}>
+                    <SectionHeader type='block'>{personaData.name}</SectionHeader>
+
                     <ul>
                         <li><p><span className="bold">Age: </span>{personaData.age}</p></li>
                         <li><p><span className="bold">Location: </span>{personaData.location}</p></li>
                         <li><p><span className="bold">Type: </span>{personaData.type}</p></li>
                     </ul>
                     <p className={`persona__quote ${color}-accent-light`}>"{personaData.quote}"</p>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
-            <div className="persona__bottom">
-                <div className="persona__list">
+            <motion.hr variants={fadeUpLowOpacity} />
+
+            <motion.div className="persona__bottom" variants={staggerParent}>
+                <motion.div className="persona__list" variants={fadeUp}>
                     <p className="bold">Goals:</p>
-
                     <ul>
-                        {personaData.goals.map(goal => (
-                            <li key={goal}>
+                        {personaData.goals.map((goal) => (
+                            <motion.li key={goal} variants={fadeUp}>
                                 <p>{goal}</p>
-                            </li>
+                            </motion.li>
                         ))}
                     </ul>
-                </div>
+                </motion.div>
 
-                <div className="persona__list">
+                <motion.div className="persona__list" variants={fadeUp}>
                     <p className="bold">Pain Points:</p>
-
                     <ul>
-                        {personaData.painPoints.map(pain => (
-                            <li key={pain}>
+                        {personaData.painPoints.map((pain) => (
+                            <motion.li key={pain} variants={fadeUp}>
                                 <p>{pain}</p>
-                            </li>
+                            </motion.li>
                         ))}
                     </ul>
-                </div>
-            </div>
-        </section>
+                </motion.div>
+            </motion.div>
+        </motion.section>
     );
 }

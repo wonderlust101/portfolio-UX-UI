@@ -70,6 +70,10 @@ p {
   @include a.breakpoint(small) {
     font-size: 2.25rem;
   }
+
+  @include a.breakpoint(x-small) {
+    font-size: 2rem;
+  }
 }
 
 .heading-md {

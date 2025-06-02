@@ -59,7 +59,7 @@ export default function Hero() {
         <section className="hero grid-bleed-small">
             <div className="hero__body">
                 <h1 className="heading-xl hero__name">
-                    Sergei <span className="hero__name--break"><br/></span> Borja
+                    Sergei <br className="hero__name--break"/> Borja
                 </h1>
 
                 <div>

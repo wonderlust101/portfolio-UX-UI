@@ -13,7 +13,7 @@ type ProjectSummaryProps = {
 export default function ProjectSummary({details}: ProjectSummaryProps) {
     return (
         <Section style={{paddingTop: "0"}}>
-            <ContentBlock header="Project Summary">
+            <ContentBlock header="Project Overview">
                 <p>{parseHighlightedText(details.description)}</p>
                 <List items={details.metadata} type='meta'/>
             </ContentBlock>

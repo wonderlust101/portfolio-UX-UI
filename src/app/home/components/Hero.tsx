@@ -11,6 +11,7 @@ gsap.registerPlugin(SplitText);
 
 export default function Hero() {
     const paragraphRef = useRef<HTMLParagraphElement>(null);
+    const buttonRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
         const runAnimation = () => {
@@ -31,7 +32,7 @@ export default function Hero() {
             });
 
             gsap.fromTo(
-                [paragraphRef.current],
+                [paragraphRef.current, buttonRef.current],
                 {
                     opacity: 0,
                     y      : 60
@@ -64,16 +65,18 @@ export default function Hero() {
 
                 <div>
                     <div className="hero__cta" ref={paragraphRef}>
-                        <p className='hero__tag'>[ Full Stack Developer, UX & UI Designer ]</p>
+                        <p className="hero__tag">[ Full Stack Developer, UX & UI Designer ]</p>
 
-                        <Button
-                            color="accent"
-                            theme="light"
-                            size="lg"
-                            href="mailto:sergei.borja0701@gmail.com"
-                        >
-                            Contact Me
-                        </Button>
+                        <div ref={buttonRef}>
+                            <Button
+                                color="accent"
+                                theme="light"
+                                size="lg"
+                                href="mailto:sergei.borja0701@gmail.com"
+                            >
+                                Contact Me
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>

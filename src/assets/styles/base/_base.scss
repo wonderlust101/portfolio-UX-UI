@@ -23,3 +23,16 @@ hr {
   border: 1.25px solid;
   opacity: 20%;
 }
+
+html.lenis,
+body.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

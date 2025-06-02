@@ -57,18 +57,20 @@ p {
 
 .heading-lg {
   font-family: var(--font-satoshi), sans-serif;
-  font-size: 3.25rem;
+  font-size: 3.5rem;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: -0.16rem;
+  letter-spacing: -0.11rem;
   line-height: 1.25;
 
   @include a.breakpoint(medium) {
     font-size: 2.625rem;
+    letter-spacing: -0.1rem;
   }
 
   @include a.breakpoint(small) {
     font-size: 2.25rem;
+    letter-spacing: -0.075rem;
   }
 
   @include a.breakpoint(x-small) {

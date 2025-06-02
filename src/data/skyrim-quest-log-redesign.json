@@ -79,19 +79,19 @@
         {
           "title"   : "Our Solution",
           "contents": [
-            "Through the research and user interviews we gained valuable insight about the pain points of the current interface. Some the insight we gain from the different research methods includes:",
+            "Building on our research findings, the final solution introduces a redesigned quest log with features that directly tackle the identified user pain points:",
             [
               {
                 "header" : "Clear Quest Categorization",
-                "content": "We introduced visual tags, filters, and color-coded labels to clearly separate main quests from side quests and miscellaneous tasks.\n\n"
+                "content": "We introduced visual tags, filters, and color-coded labels to clearly separate main quests from side quests and miscellaneous tasks."
               },
               {
                 "header" : "Enhanced Quest Information",
-                "content": "Quests now feature structured objectives, contextual summaries, and sorting tools to help players quickly find and act on relevant information.\n\n"
+                "content": "Quests now feature structured objectives, contextual summaries, and sorting tools to help players quickly find and act on relevant information."
               },
               {
                 "header" : "Immersion Through Memory Aids",
-                "content": "A dedicated synopsis section allows players to easily revisit key quest details and story progress after time away from the game.\n\n"
+                "content": "A dedicated synopsis section allows players to easily revisit key quest details and story progress after time away from the game."
               }
             ]
           ],
@@ -384,7 +384,7 @@
       ]
     },
     {
-      "title"   : "Results & Impact",
+      "title"   : "Reflection",
       "contents": [
         "Redesigning Skyrim’s quest log challenged us to merge immersion with usability. By centering our process around real player frustrations, we delivered a solution that felt both familiar and fresh.",
         [

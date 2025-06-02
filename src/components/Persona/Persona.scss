@@ -2,7 +2,7 @@
   display: grid;
   width: 100%;
   max-width: 85rem;
-  gap: 2rem;
+  gap: 1.5rem;
 
   @include breakpoint(medium) {
     padding: 2rem;
@@ -19,7 +19,7 @@
   &__top {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 4rem;
 
     @include breakpoint(medium) {
       gap: 2rem;
@@ -53,30 +53,36 @@
 
   &__info {
     display: grid;
-    align-content: space-between;
-    gap: 3rem;
+    align-content: center;
+    gap: 2rem;
 
     @include breakpoint(medium) {
       gap: 2rem;
     }
 
-    & > ul {
+    & > div {
       display: grid;
-      gap: 0.5rem;
+      gap: 1.5rem;
+
+      & > ul {
+        display: grid;
+        gap: 0.5rem;
+      }
     }
+
   }
 
   &__quote {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-style: italic;
     font-weight: 600;
 
     @include breakpoint(medium) {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
     }
 
     @include breakpoint(small) {
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
   }
 

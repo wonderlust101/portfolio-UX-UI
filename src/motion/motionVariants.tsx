@@ -4,7 +4,7 @@ export const headerVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.75,
+            duration: 0.5,
             ease: "easeOut",
             delay: 0.15
         }
@@ -17,7 +17,7 @@ export const contentVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.75,
+            duration: 0.5,
             ease: "easeOut",
             delay: 0.3
         }
@@ -27,20 +27,20 @@ export const contentVariants = {
 export const fadeUp = {
     hidden: { opacity: 0, y: 50 },
     visible: {
-        delay: 0.5,
+        delay: 0.25,
         opacity: 1,
         y: 0,
-        transition: { duration: 0.75, ease: "easeOut" }
+        transition: { duration: 0.5, ease: "easeOut" }
     }
 };
 
 export const fadeUpLowOpacity = {
     hidden: { opacity: 0, y: 50 },
     visible: {
-        delay: 0.5,
+        delay: 0.25,
         opacity: 0.25,
         y: 0,
-        transition: { duration: 0.75, ease: "easeOut" }
+        transition: { duration: 0.5, ease: "easeOut" }
     }
 };
 
@@ -60,7 +60,7 @@ export const fadeUpWithDelay = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.75,
+            duration: 0.5,
             ease: "easeOut",
             delay: customDelay
         }

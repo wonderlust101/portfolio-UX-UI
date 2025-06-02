@@ -65,7 +65,7 @@
             "header": "Barriers to Hands-On Learning"
           },
           {
-            "header": "Low Engagement with Static Exhibits"
+            "header": "Low Engagement with Exhibits"
           }
         ],
         "These were some of the issues we identified during our visit and they directly shaped the goals of this project. In order to improve the experience, we needed to design an application to solve some of issues."
@@ -74,7 +74,7 @@
         {
           "title"   : "Our Solution",
           "contents": [
-            "To address the challenges we identified during our research, we designed a mobile app that enhances both navigation and exploration at the science centre. Our solution integrates:",
+            "To address the challenges we identified, we designed a mobile app that enhances both navigation and exploration at the science centre. Our solution integrates:",
             [
               {
                 "header" : "AR-Assisted Navigation",

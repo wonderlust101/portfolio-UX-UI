@@ -7,7 +7,13 @@
   transform-origin: center top;
   background-color: $clr-black;
   pointer-events: none;
-  z-index: 2;
+  z-index: 1000;
+}
+
+@-moz-document url-prefix() {
+  .revealer {
+    display: none;
+  }
 }
 
 ::view-transition-old(root),

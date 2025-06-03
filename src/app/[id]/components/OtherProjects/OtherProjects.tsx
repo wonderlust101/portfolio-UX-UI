@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import SectionHeader from "@/components/SectionHeader";
+import { getPlaceholderUrl } from "@/utils/getPlaceholderUrl";
 import Image from "next/image";
 import "./OtherProjects.scss";
 
@@ -58,6 +59,8 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
                                         height={1600}
                                         width={1600}
                                         quality={75}
+                                        placeholder="blur"
+                                        blurDataURL={getPlaceholderUrl(project.thumbnail)}
                                     />
                                 </div>
                             </section>

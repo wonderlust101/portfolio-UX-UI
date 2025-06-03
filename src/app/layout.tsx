@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+
 import SmoothScrolling from "@/components/SmoothScrolling";
 import { satoshi } from "@/fonts/Satoshi/satoshi";
 import type { Metadata } from "next";

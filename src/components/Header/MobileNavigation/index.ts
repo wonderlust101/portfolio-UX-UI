@@ -1,3 +1,3 @@
-import MobileNavigation from './MobileNavigation';
+import MobileNavigation from "./MobileNavigation";
 
 export default MobileNavigation;

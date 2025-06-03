@@ -35,8 +35,8 @@ export default async function CaseStudyPage({params}: Props) {
 
     return (
         <>
-            <ThemeEffect theme={caseStudy.theme}/>
             <Revealer/>
+            <ThemeEffect theme={caseStudy.theme}/>
 
             <ScrollToTopButton/>
 

@@ -37,10 +37,10 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
 
         gsap.to(splitText.words, {
             y       : "0%",
-            duration: 1.75,
-            stagger : 0.15,
+            duration: 1.5,
+            stagger : 0.1,
             delay   : 2.25,
-            ease    : "power4.out"
+            ease    : "power3.out"
         });
 
         gsap.fromTo(
@@ -55,7 +55,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
                 duration  : 1.5,
                 stagger   : 0.15,
                 delay     : 1.75,
-                ease      : "power4.out",
+                ease      : "power3.out",
                 clearProps: "all"
             }
         );

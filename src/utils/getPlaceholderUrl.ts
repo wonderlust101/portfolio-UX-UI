@@ -1,7 +1,7 @@
 export function getPlaceholderUrl(imageUrl: string): string {
-    // Ensure there's no leading slash
-    const cleanPath = imageUrl.replace(/^\/+/, '');
+    // Ensure the path starts with a single leading slash
+    const normalizedPath = imageUrl.startsWith("/") ? imageUrl : `/${imageUrl}`;
 
-    // Insert `-placeholder` before the file extension
-    return '/' + cleanPath.replace(/(\.\w+)$/, '-placeholder.webp');
+    // Replace file extension with '-placeholder.webp'
+    return normalizedPath.replace(/(\.\w+)$/, '-placeholder.webp');
 }

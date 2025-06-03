@@ -5,7 +5,9 @@ import "./CaseStudyListing.scss";
 import { contentVariants, fadeUp, fadeUpWithDelay, headerVariants, staggerParent } from "@/motion/motionVariants";
 import { useThemeStore } from "@/store/useThemeStore";
 import type { CaseStudyList } from "@/types/home";
+import { getPlaceholderUrl } from "@/utils/getPlaceholderUrl";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 type CaseStudyListingProps = {
     caseStudy: CaseStudyList;
@@ -54,13 +56,22 @@ export default function CaseStudyListing({caseStudy, index}: CaseStudyListingPro
                     </motion.div>
                 </motion.div>
 
-                <motion.img
-                    className="case-study-listing__image"
-                    src={caseStudy.previewImage}
-                    alt=""
+                <motion.div
                     variants={fadeUpWithDelay}
                     custom={0.70}
-                />
+                >
+                    <Image
+                        className="case-study-listing__image"
+                        src={`/${caseStudy.previewImage.replace(/^\/?/, "")}`}
+                        alt={caseStudy.title}
+                        loading="lazy"
+                        width={1600}
+                        height={1600}
+                        quality={75}
+                        placeholder="blur"
+                        blurDataURL={getPlaceholderUrl(caseStudy.previewImage)}
+                    />
+                </motion.div>
             </motion.section>
         </motion.div>
     );

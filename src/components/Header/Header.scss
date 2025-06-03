@@ -12,6 +12,7 @@
     align-items: center;
     padding: 1rem 0;
     z-index: 100;
+    user-select: none;
   }
 
   &__logo {
@@ -29,6 +30,10 @@
 
     @include breakpoint(large) {
       gap: 2.5rem;
+    }
+
+    @include breakpoint(medium) {
+      display: none;
     }
   }
 

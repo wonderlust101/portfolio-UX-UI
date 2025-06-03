@@ -78,6 +78,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
                         alt={`Preview of ${productName} ${projectType}`}
                         height={1600}
                         width={1600}
+                        quality={80}
                         priority
                         placeholder="blur"
                         blurDataURL={getPlaceholderUrl(heroImage)}
@@ -85,8 +86,8 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
                 </picture>
             </div>
 
-            <div className="case-study-hero__header" ref={titleRef}>
-                <SectionHeader type="page">
+            <div className="case-study-hero__header">
+                <SectionHeader type="page" ref={titleRef}>
                     <span>{productName}</span>
                     <div ref={typeRef} className={`case-study-hero__type ${color}-accent-light`}> {parseHighlightedText(projectType)}</div>
                 </SectionHeader>

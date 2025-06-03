@@ -39,9 +39,10 @@ export default async function CaseStudyPage({params}: Props) {
                     tabletHeroImage={caseStudy.heroImageTablet}
                 />
 
+                <h2 className='sr-only'>Case Study</h2>
+
                 <ScrollTracker>
                     <ProjectSummary details={caseStudy.projectSummary} />
-
                     {caseStudy.sections.map((section) => (
                         <CaseStudySection key={section.title} section={section} />
                     ))}

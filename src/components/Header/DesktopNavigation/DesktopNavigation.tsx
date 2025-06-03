@@ -43,15 +43,16 @@ export default function DesktopNavigation({navLinks}: DesktopNavigationProps) {
                     </li>
 
                 ))}
-
-                <Button
-                    color="accent"
-                    theme="light"
-                    size="sm"
-                    href="mailto:sergei.borja0701@gmail.com"
-                >
-                    Contact Me
-                </Button>
+                <li>
+                    <Button
+                        color="accent"
+                        theme="light"
+                        size="sm"
+                        href="mailto:sergei.borja0701@gmail.com"
+                    >
+                        Contact Me
+                    </Button>
+                </li>
             </ul>
         </nav>
     );

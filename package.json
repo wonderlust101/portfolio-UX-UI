@@ -7,11 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build",
     "convert:webp": "node scripts/convert-images.cjs",
     "convert:placeholders": "node scripts/create-placeholders.cjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@next/bundle-analyzer": "^15.3.3",
     "@studio-freight/lenis": "^1.0.42",
     "@studio-freight/react-lenis": "^0.0.47",
     "gsap": "^3.13.0",
@@ -21,7 +23,6 @@
     "next-view-transitions": "^0.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-fast-marquee": "^1.6.5",
     "react-use": "^17.6.0",
     "sharp": "^0.34.2",
     "webpack": "^5.99.9",
@@ -32,6 +33,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
     "sass": "^1.89.1",
     "typescript": "^5"
   }

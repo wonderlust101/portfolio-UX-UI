@@ -3,7 +3,7 @@
 import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants";
 import { useThemeStore } from "@/store/useThemeStore";
 import { motion } from "motion/react";
-import { Fragment, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import "./List.scss";
 
 export type ListItem = {
@@ -28,7 +28,7 @@ type ListProps = {
 
 function MetaItem({item}: MetaItemProps) {
     return (
-        <motion.li className="list__meta" variants={fadeUp}>
+        <motion.div className="list__meta" variants={fadeUp}>
             <p>{item.header}:</p>
             {Array.isArray(item.content) ? (
                 <ul>
@@ -43,7 +43,7 @@ function MetaItem({item}: MetaItemProps) {
             ) : (
                 item.content
             )}
-        </motion.li>
+        </motion.div>
     );
 }
 
@@ -51,14 +51,14 @@ function ListItem({item, index}: ListItemProps) {
     const color = useThemeStore((state) => state.color);
 
     return (
-        <motion.li className="list__item" variants={fadeUp}>
+        <motion.div className="list__item" variants={fadeUp}>
             <p className="list__index">0{index + 1}</p>
             <div className="list__item-content">
                 {item.bold && <p className="list__item-bold">{item.bold}</p>}
                 <p className={`${color}-accent-light bold`}>{item.header}</p>
                 {item.content && <p>{item.content}</p>}
             </div>
-        </motion.li>
+        </motion.div>
     );
 }
 
@@ -72,7 +72,7 @@ export default function List({items, type}: ListProps) {
             viewport={{once: true}}
         >
             {items.map((item, index) => (
-                <Fragment key={item.header}>
+                <li key={item.header} style={{display: "contents"}}>
                     {type === "meta" ? (
                         <MetaItem item={item}/>
                     ) : (
@@ -82,7 +82,7 @@ export default function List({items, type}: ListProps) {
                     {index !== items.length - 1 && (
                         <motion.hr className="list__divider" variants={fadeUpLowOpacity}/>
                     )}
-                </Fragment>
+                </li>
             ))}
         </motion.ul>
     );

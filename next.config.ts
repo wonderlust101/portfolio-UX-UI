@@ -1,4 +1,9 @@
 import type { NextConfig } from "next";
+import withBundleAnalyzer from "@next/bundle-analyzer";
+
+const withAnalyzer = withBundleAnalyzer({
+    enabled: process.env.ANALYZE === "true",
+});
 
 const nextConfig: NextConfig = {
     sassOptions: {
@@ -7,4 +12,4 @@ const nextConfig: NextConfig = {
     allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev'],
 };
 
-export default nextConfig;
+export default withAnalyzer(nextConfig);

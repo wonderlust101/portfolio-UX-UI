@@ -1,6 +1,8 @@
+"use client";
+
 import Button from "@/components/Button";
 import Section from "@/components/Section";
-import SectionHeader from "@/components/SectionHeader";
+import { useThemeStore } from "@/store/useThemeStore";
 import { getPlaceholderUrl } from "@/utils/getPlaceholderUrl";
 import Image from "next/image";
 import "./OtherProjects.scss";
@@ -28,6 +30,7 @@ const otherProjects = [
 ];
 
 export default function OtherProjects({currentProject}: CurrentProjectProps) {
+    const color = useThemeStore((state) => state.color);
 
     return (
         <Section header="Other Projects">
@@ -39,7 +42,12 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
 
                             <section className="other-projects">
                                 <div className="other-projects__header">
-                                    <SectionHeader type="block">{project.project}</SectionHeader>
+                                    <h3 className="heading-xs">
+                                        <span className={`${color}-accent-light`}>// </span>
+                                        {project.project}
+                                        <span className={`${color}-accent-light`}>.</span>
+                                    </h3>
+
                                     <Button
                                         color="accent"
                                         theme="light"

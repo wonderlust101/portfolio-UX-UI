@@ -65,7 +65,7 @@ export default function Footer() {
                                 Send an Email
                             </Button>
 
-                            <Button color="white" size="md" href="Sergei Borja - Resume.pdf">
+                            <Button color="white" size="md" href="/Sergei Borja - Resume.pdf">
                                 Download Resume
                             </Button>
                         </div>

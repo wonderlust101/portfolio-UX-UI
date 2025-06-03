@@ -27,7 +27,6 @@ export default function ImageModal({ src, caption, onClose }: ImageModalProps) {
                     animate={{ scale: 1, opacity: 1 }}
                     exit={{ scale: 0.9, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    onClick={(e) => e.stopPropagation()}
                 >
                     <Image
                         className="image-modal__image"

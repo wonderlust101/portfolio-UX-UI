@@ -46,6 +46,7 @@
     top: 0;
     left: 0;
     height: 100dvh;
+    width: 100%;
     padding-bottom: calc(8rem + env(safe-area-inset-bottom));
     background-color: #ECEAE7;
     -webkit-overflow-scrolling: touch;
@@ -53,6 +54,10 @@
     overscroll-behavior: contain;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
     z-index: 5;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__overlay-bar {
@@ -65,8 +70,8 @@
 
   &__copy {
     display: grid;
-    align-content: space-between;
-    gap: 4rem;
+    align-content: flex-start;
+    gap: 6rem;
     height: 100%;
     padding-top: 6rem;
     min-height: calc(100dvh + 6rem + env(safe-area-inset-bottom));

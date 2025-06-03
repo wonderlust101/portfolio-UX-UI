@@ -161,23 +161,3 @@ p {
     background-size: 100% 3px;
   }
 }
-
-.quote {
-  font-family: var(--font-erode), serif;
-  font-size: 1.1rem;
-  line-height: 1.75;
-  font-style: italic;
-  font-weight: 600;
-}
-
-.quote-main {
-  font-family: var(--font-erode), serif;
-  font-size: 1.4rem;
-  line-height: 1.75;
-  font-style: italic;
-  font-weight: 600;
-
-  @include a.breakpoint(small) {
-    font-size: 1rem;
-  }
-}

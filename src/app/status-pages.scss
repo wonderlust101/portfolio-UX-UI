@@ -1,0 +1,71 @@
+.status-page {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: max-content max-content;
+  gap: 4rem;
+  min-height: 100dvh;
+  text-align: center;
+
+  @include breakpoint(medium) {
+    gap: 2rem;
+  }
+
+  &__options {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  &__button-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @include breakpoint(medium) {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  &__header {
+    font-family: var(--font-satoshi), sans-serif;
+    color: $clr-black;
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.4rem;
+    line-height: 1;
+
+    @include breakpoint(medium) {
+      font-size: 5rem;
+      letter-spacing: -0.2rem;
+    }
+
+    @include breakpoint(small) {
+      font-size: 3rem;
+      letter-spacing: -0.1rem;
+    }
+
+    @include breakpoint(x-small) {
+      font-size: 2rem;
+    }
+  }
+
+  &__mesage {
+    font-family: var(--font-satoshi), sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.045rem;
+
+    @include breakpoint(medium) {
+      font-size: 1.25rem;
+    }
+
+    @include breakpoint(small) {
+      font-size: 1rem;
+    }
+  }
+}

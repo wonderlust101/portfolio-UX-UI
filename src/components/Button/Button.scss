@@ -6,6 +6,7 @@
   text-transform: uppercase;
   border-radius: $border-radius;
   transition: all 0.2s ease-in-out;
+  font-family: "Satoshi", sans-serif;
 
   &:hover:not(:disabled) {
     transform: scale(1.05);
@@ -16,6 +17,15 @@
   &--white {
     background-color: $clr-white;
     color: $clr-black;
+
+    &:hover:not(:disabled) {
+      opacity: 0.85;
+    }
+  }
+
+  &--black {
+    background-color: $clr-black;
+    color: $clr-white;
 
     &:hover:not(:disabled) {
       opacity: 0.85;

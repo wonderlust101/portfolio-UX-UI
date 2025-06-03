@@ -121,8 +121,8 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                 </div>
             </div>
 
-            <div className="mobile-navigation__overlay">
-                <div className="mobile-navigation__overlay-bar grid-bleed-small">
+            <div className="mobile-navigation__overlay grid-bleed">
+                <div className="mobile-navigation__overlay-bar">
                     <div className="mobile-navigation__bar-flex">
                         <div className="mobile-navigation__logo">
                             <Link

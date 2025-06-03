@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 
   &__logo {
@@ -44,9 +45,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
     height: 100dvh;
-    padding: 2rem 2rem calc(8rem + env(safe-area-inset-bottom));
+    padding-bottom: calc(8rem + env(safe-area-inset-bottom));
     background-color: #ECEAE7;
     z-index: 5;
     -webkit-overflow-scrolling: touch;
@@ -58,6 +58,7 @@
   &__overlay-bar {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
     align-items: center;
     background-color: #ECEAE7;
   }

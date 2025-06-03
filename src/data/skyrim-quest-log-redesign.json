@@ -1,5 +1,13 @@
 {
   "productName"    : "The Elder Scrolls: Skyrim",
+  "metadata": {
+    "title": "The Elder Scrolls: Skyrim - Quest Log Redesign",
+    "description": "A UX/UI redesign of Skyrim's quest log, transforming it into an intuitive and immersive journal with improved clarity, filtering, and usability for modern players.",
+    "keywords": ["Skyrim", "UX design", "quest log", "UI redesign", "game interface", "player experience", "immersive design"],
+    "imageUrl": "/images/case-study/skyrim/skyrim-quest-log-preview-mobile.webp",
+    "url": "https://sergei-borja.dev/skyrim-quest-log-redesign"
+  },
+
   "projectType"    : "Quest Log Redesign",
   "heroImage"      : "images/case-study/skyrim/skyrim-quest-log-preview.webp",
   "heroImageTablet": "images/case-study/skyrim/skyrim-quest-log-preview-tablet.webp",
@@ -7,7 +15,7 @@
   "theme"          : "brown",
   "projectSummary" : {
     "description": "|Skyrim Quest Log Redesign| is a UX/UI project, a redesign to fix usability issues that frustrated players, such as poor organization, lack of clarity, and minimal accessibility. By turning the quest log into an interactive journal, we made it more immersive, intuitive, and personalized for different play styles.",
-    "metadata"   : [
+    "details"   : [
       {
         "header" : "Role",
         "content": "UX Researcher & Interaction Designer"

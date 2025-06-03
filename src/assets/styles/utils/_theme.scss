@@ -8,12 +8,20 @@
   color: a.$clr-green;
 }
 
+.green-accent-background {
+  background-color: a.$clr-green;
+}
+
 .brown-accent-dark {
   color: a.$clr-brown-light;
 }
 
 .brown-accent-light {
   color: a.$clr-brown;
+}
+
+.brown-accent-background {
+  background-color: a.$clr-brown;
 }
 
 .purple-accent-dark {
@@ -24,10 +32,18 @@
   color: a.$clr-purple;
 }
 
+.purple-accent-background {
+  background-color: a.$clr-purple;
+}
+
 .red-accent-dark {
   color: a.$clr-red-light;
 }
 
 .red-accent-light {
   color: a.$clr-red;
+}
+
+.red-accent-background {
+  background-color: a.$clr-red;
 }

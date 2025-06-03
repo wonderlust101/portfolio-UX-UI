@@ -1,0 +1,15 @@
+.scroll-tracker {
+  &__bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+    transform-origin: 0 0;
+    z-index: 1;
+  }
+
+  &__content {
+    display: contents;
+  }
+}

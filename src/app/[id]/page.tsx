@@ -4,11 +4,10 @@ import OtherProjects from "@/app/[id]/components/OtherProjects";
 import ProjectSummary from "@/app/[id]/components/ProjectSummary";
 import Revealer from "@/components/Revealer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import ScrollTracker from "@/components/ScrollTracker";
 import ThemeEffect from "@/components/ThemeEffect";
-import { CaseStudy } from "@/types/case-study";
-import { promises as fs } from "fs";
+import { getCaseStudy } from "@/lib/getCaseStudy";
 import { notFound } from "next/navigation";
-import path from "path";
 
 type Props = {
     params: Promise<{ id: string }>
@@ -18,16 +17,7 @@ export const dynamic = 'force-static';
 
 export default async function CaseStudyPage({params}: Props) {
     const { id } = await params;
-    const filePath = path.join(process.cwd(), "src", "data", `${id}.json`);
-
-    let caseStudy: CaseStudy;
-
-    try {
-        const file = await fs.readFile(filePath, "utf8");
-        caseStudy = JSON.parse(file);
-    } catch (err) {
-        return notFound();
-    }
+    const caseStudy = await getCaseStudy(id);
 
     if (!caseStudy || !caseStudy.sections) {
         return notFound();
@@ -49,11 +39,13 @@ export default async function CaseStudyPage({params}: Props) {
                     tabletHeroImage={caseStudy.heroImageTablet}
                 />
 
-                <ProjectSummary details={caseStudy.projectSummary}/>
+                <ScrollTracker>
+                    <ProjectSummary details={caseStudy.projectSummary} />
 
-                {caseStudy.sections.map((section) => (
-                    <CaseStudySection key={section.title} section={section}/>
-                ))}
+                    {caseStudy.sections.map((section) => (
+                        <CaseStudySection key={section.title} section={section} />
+                    ))}
+                </ScrollTracker>
 
                 <OtherProjects currentProject={id}/>
             </main>

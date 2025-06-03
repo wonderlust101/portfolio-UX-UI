@@ -1,5 +1,12 @@
 {
   "productName"    : "Telus World of Science",
+  "metadata": {
+    "title": "Telus World of Science Stamp Book",
+    "description": "A mobile app UX/UI project for Telus World of Science Edmonton featuring AR navigation and a gamified stamp system to enhance visitor learning and engagement.",
+    "keywords": ["Telus World of Science", "UX design", "AR navigation", "interactive guide", "stamp book", "educational app", "museum UX"],
+    "imageUrl": "/images/case-study/telus/telus-world-of-science-preview-mobile.webp",
+    "url": "https://sergei-borja.dev/telus-world-of-science-guide-book"
+  },
   "projectType"    : "Stamp Book",
   "heroImage"      : "images/case-study/telus/telus-world-of-science-preview.webp",
   "heroImageTablet": "images/case-study/telus/telus-world-of-science-preview-tablet.webp",
@@ -7,7 +14,7 @@
   "theme"          : "purple",
   "projectSummary" : {
     "description": "|Telus World of Science Edmonton Guide Book| is a UX/UI project to design a new mobile app that enhances the visitor experience. Built from scratch, the app features AR-assisted navigation, a digital map, and a gamified stamp system to promote self-guided exploration. The goal was to create an engaging, educational, and accessible tool for learners of all ages across the science centre.",
-    "metadata"   : [
+    "details"   : [
       {
         "header" : "Role",
         "content": "UX Researcher & Interaction Designer"

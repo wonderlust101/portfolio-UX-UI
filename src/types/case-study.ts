@@ -36,8 +36,17 @@ export type CaseStudySubSection = {
 
 export type ProjectSummary = {
     description: string;
-    metadata: Metadata[];
+    details: Metadata[];
 };
+
+export type CaseStudyMetadata = {
+    title: string;
+    description: string;
+    keywords: string[];
+    imageUrl?: string;
+    url: string;
+};
+
 
 export type CaseStudy = {
     productName: string;
@@ -46,6 +55,7 @@ export type CaseStudy = {
     heroImageTablet: string;
     heroImageMobile: string;
     theme: string;
+    metadata: CaseStudyMetadata;
     projectSummary: ProjectSummary;
     sections: CaseStudySection[];
 };

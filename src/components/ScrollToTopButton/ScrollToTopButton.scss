@@ -11,7 +11,7 @@
   border-radius: $border-radius;
   border: none;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1;
 
   @include breakpoint(medium) {
     bottom: 2rem;

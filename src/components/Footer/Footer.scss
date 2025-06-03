@@ -2,6 +2,8 @@
   padding-top: 4rem;
   background-color: $clr-black;
   color: $clr-white;
+  position: relative;
+  z-index: 101;
 
   &__header {
     display: grid;

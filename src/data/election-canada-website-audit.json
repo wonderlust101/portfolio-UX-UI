@@ -1,5 +1,12 @@
 {
   "productName"    : "Election Canada",
+  "metadata": {
+    "title": "Election Canada Website Audit",
+    "description": "A comprehensive UX audit of the Elections Canada website focusing on accessibility, content clarity, and navigation improvements to better serve Canadian voters.",
+    "keywords": ["Elections Canada", "UX audit", "accessibility", "website redesign", "information architecture", "usability", "content audit"],
+    "imageUrl": "/images/case-study/election-canada/election-canada-preview-mobile.webp",
+    "url": "https://sergei-borja.dev/election-canada-website-audit"
+  },
   "projectType"    : "Website Audit",
   "heroImage"      : "images/case-study/election-canada/election-canada-preview.webp",
   "heroImageTablet": "images/case-study/election-canada/election-canada-preview-tablet.webp",
@@ -7,7 +14,7 @@
   "theme"          : "red",
   "projectSummary" : {
     "description": "|Elections Canada Website Audit| is a UX and content evaluation of the official site focused on improving usability, accessibility, and clarity. The audit revealed dense content, confusing navigation, and poor readability. Using a heuristic review, content inventory, and user-based analysis, we identified key barriers and proposed actionable fixes to serve voters better.",
-    "metadata"   : [
+    "details"   : [
       {
         "header" : "Role",
         "content": "UX Auditor"

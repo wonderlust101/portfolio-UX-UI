@@ -15,7 +15,7 @@ export default function ProjectSummary({details}: ProjectSummaryProps) {
         <Section style={{paddingTop: "0"}}>
             <ContentBlock header="Project Overview">
                 <p>{parseHighlightedText(details.description)}</p>
-                <List items={details.metadata} type='meta'/>
+                <List items={details.details} type='meta'/>
             </ContentBlock>
         </Section>
     );

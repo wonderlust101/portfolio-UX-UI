@@ -48,11 +48,11 @@
     height: 100dvh;
     padding-bottom: calc(8rem + env(safe-area-inset-bottom));
     background-color: #ECEAE7;
-    z-index: 5;
     -webkit-overflow-scrolling: touch;
     overflow-y: auto;
     overscroll-behavior: contain;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    z-index: 5;
   }
 
   &__overlay-bar {

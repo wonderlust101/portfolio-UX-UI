@@ -16,7 +16,7 @@ export default function Header() {
         <header className="header grid-bleed-small">
             <div className='header__container'>
                 <div className="header__left-side">
-                    <Link className="header__logo" href='/' onClick={handleNavigation('/')}>
+                    <Link scroll={true} className="header__logo" href='/' onClick={handleNavigation('/')}>
                         <span className={`${color}-accent-light`}>//</span> SB
                     </Link>
                     <p className="header__tag">[ Full Stack Developer, UX & UI Designer ]</p>

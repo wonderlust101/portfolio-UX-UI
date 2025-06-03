@@ -41,6 +41,7 @@ export default function Button({ children, color, theme="light", size, href, onC
                 className={`button button--${color === 'accent' ? `${buttonColor}-${theme}` : color} button--${size}`}
                 aria-label={ ariaLabel }
                 onClick={(e) => handleNavigation(href, undefined)(e)}
+                scroll={true}
                 { ...props }
             >
                 { children }

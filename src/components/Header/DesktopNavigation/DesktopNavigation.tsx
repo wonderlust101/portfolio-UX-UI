@@ -1,9 +1,9 @@
 "use client";
 
 import Button from "@/components/Button";
+import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import type { NavLinks } from "@/types/links";
 import "./DesktopNavigation.scss";
-import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import Link from "next/link";
 
 type DesktopNavigationProps = {
@@ -11,7 +11,7 @@ type DesktopNavigationProps = {
 }
 
 export default function DesktopNavigation({navLinks}: DesktopNavigationProps) {
-    const { handleNavigation } = useAnimatedNavigation();
+    const {handleNavigation} = useAnimatedNavigation();
 
     return (
         <nav className="desktop-navigation">
@@ -20,18 +20,19 @@ export default function DesktopNavigation({navLinks}: DesktopNavigationProps) {
                     <li className="desktop-navigation__nav-link" key={link.title}>
                         <div className="desktop-navigation__nav-link-wrapper">
                             {link.link ?
-                                <Link className="link desktop-navigation__link" href={link.link} onClick={handleNavigation(link.link)}>
+                                <Link className="link desktop-navigation__link" href={link.link} onClick={handleNavigation(link.link)} scroll={true}>
                                     {link.title}
                                 </Link>
                                 :
-                                <p className='desktop-navigation__link'>{link.title}</p>
+                                <p className="desktop-navigation__link">{link.title}</p>
                             }
 
                             {link.subLinks && (
                                 <ul className="desktop-navigation__sub-link-container">
                                     {link.subLinks.map((subLink) => (
                                         <li key={subLink.title}>
-                                            <Link className="link desktop-navigation__link" href={subLink.link} onClick={handleNavigation(subLink.link)}>
+                                            <Link className="link desktop-navigation__link" href={subLink.link} onClick={handleNavigation(subLink.link)}
+                                                  scroll={true}>
                                                 {subLink.title}
                                             </Link>
                                         </li>

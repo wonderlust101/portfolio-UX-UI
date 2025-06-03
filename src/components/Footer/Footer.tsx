@@ -82,7 +82,7 @@ export default function Footer() {
                     <ul className="footer__nav-list">
                         {navLinks.projectLinks.map((link, index) => (
                             <li key={index}>
-                                <Link className="link link--dark" href={link.link} onClick={handleNavigation(link.link)}>
+                                <Link className="link link--dark" href={link.link} onClick={handleNavigation(link.link)} scroll={true}>
                                     {link.title}
                                 </Link>
                             </li>

@@ -57,7 +57,7 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                                         <ul className="mobile-navigation__sub-link-container">
                                             {link.subLinks.map((subLink) => (
                                                 <li key={subLink.title} className="mobile-navigation__nav-item">
-                                                    <Link className="mobile-navigation__link-container" href={subLink.link}
+                                                    <Link className="mobile-navigation__link-container" href={subLink.link} scroll={true}
                                                           onClick={handleNavigation(subLink.link, () => setOpenNav(false))}>
                                                         <span className="link mobile-navigation__link">{subLink.title}</span>
                                                         <hr/>
@@ -70,7 +70,7 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                             )
                             : (
                                 link.link &&
-                                <Link className="mobile-navigation__link-container" href={link.link}
+                                <Link className="mobile-navigation__link-container" href={link.link} scroll={true}
                                       onClick={handleNavigation(link.link, () => setOpenNav(false))}>
                                     <span className="link mobile-navigation__link">{link.title}</span>
                                     <hr/>

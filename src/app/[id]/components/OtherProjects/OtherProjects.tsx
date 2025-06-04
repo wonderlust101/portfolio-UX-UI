@@ -1,10 +1,10 @@
 "use client";
 
 import Button from "@/components/Button";
+import OptimizedImage from "@/components/OptimizedImage";
 import Section from "@/components/Section";
+import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { useThemeStore } from "@/store/useThemeStore";
-import { getPlaceholderUrl } from "@/utils/getPlaceholderUrl";
-import Image from "next/image";
 import "./OtherProjects.scss";
 
 type CurrentProjectProps = {
@@ -15,17 +15,17 @@ const otherProjects = [
     {
         project: "The Elder Scrolls: Skyrim Quest Log Redesign",
         href   : "skyrim-quest-log-redesign",
-        thumbnail: "images/home/skyrim-quest-log-thumb.webp"
+        thumbnail: "skyrim-wide_stut1i"
     },
     {
         project: "Telus World of Science Edmonton Guide Book",
         href   : "telus-world-of-science-guide-book",
-        thumbnail: "images/home/telus-world-of-science-thumb.webp"
-    },
+        thumbnail: "telus-wide_qtlqgz"
+},
     {
         project: "Elections Canada Website Audit",
         href   : "election-canada-website-audit",
-        thumbnail: "images/home/election-canada-thumb.webp"
+        thumbnail: "election-canada-wide_dfpmwa"
     }
 ];
 
@@ -60,15 +60,13 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
                                 </div>
 
                                 <div className="other-projects__content">
-                                    <Image
+                                    <OptimizedImage
                                         className='other-projects__thumbnail'
-                                        src={`/${project.thumbnail.replace(/^\/?/, "")}`}
+                                        src={buildNamedTransformUrl(project.thumbnail, "webp_low")}
                                         alt=""
-                                        height={1600}
                                         width={1600}
-                                        quality={75}
-                                        placeholder="blur"
-                                        blurDataURL={getPlaceholderUrl(project.thumbnail)}
+                                        height={400}
+                                        quality={50}
                                     />
                                 </div>
                             </section>

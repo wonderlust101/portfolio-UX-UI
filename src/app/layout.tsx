@@ -11,7 +11,7 @@ import "@/assets/styles/globals.scss";
 export const metadata: Metadata = {
     title       : "Sergei Borja | Product Designer & Developer",
     description : "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing" +
-        " clean interfaces, and building things that help people.",
+        " clean interfaces, and bu ilding things that help people.",
     keywords    : [
         "Sergei Borja",
         "UX designer",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         title      : "Sergei Borja | Product Designer & Developer",
         description: "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing" +
             " clean interfaces, and building things that help people.",
-        images     : ["/images/home/sergei-borja.webp"],
+        images     : ["/images/shared/sergei-borja.webp"],
         creator    : "@sergeiborja"
     },
     metadataBase: new URL("https://www.sergei-borja.dev"),

@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
         additionalData: `@use "@/assets/styles/abstract/_index.scss" as *;`
     },
     allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev'],
+    images: {
+        domains: ['res.cloudinary.com'],
+    },
 };
 
 export default withAnalyzer(nextConfig);

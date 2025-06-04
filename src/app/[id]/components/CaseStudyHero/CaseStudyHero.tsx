@@ -1,15 +1,15 @@
 "use client";
 
+import OptimizedImage from "@/components/OptimizedImage";
 import SectionHeader from "@/components/SectionHeader";
 import "./CaseStudyHero.scss";
+import { buildNamedTransformUrl, buildNamedTransformUrlTablet } from "@/lib/cloudinary";
 import { useThemeStore } from "@/store/useThemeStore";
-import { getPlaceholderUrl } from "@/utils/getPlaceholderUrl";
 import { parseHighlightedText } from "@/utils/parseHighlightedText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
-import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 gsap.registerPlugin(SplitText);
 
@@ -17,12 +17,12 @@ type CaseStudyHeroProps = {
     productName: string;
     projectType: string;
     heroImage: string;
-    mobileHeroImage: string;
     tabletHeroImage: string;
 }
 
-export default function CaseStudyHero({productName, projectType, heroImage, mobileHeroImage, tabletHeroImage}: CaseStudyHeroProps) {
+export default function CaseStudyHero({productName, projectType, heroImage, tabletHeroImage}: CaseStudyHeroProps) {
     const color = useThemeStore((state) => state.color);
+    const [tabletImage, setTabletImage] = useState<string>("");
     const titleRef = useRef<HTMLHeadingElement|null>(null);
     const typeRef = useRef<HTMLDivElement|null>(null);
     const imageRef = useRef<HTMLImageElement|null>(null);
@@ -63,25 +63,25 @@ export default function CaseStudyHero({productName, projectType, heroImage, mobi
                 }
             );
         });
-    }, [color]); // Add color as dependency
+    }, [color]);
+
+    useEffect(() => {
+        setTabletImage(buildNamedTransformUrlTablet(tabletHeroImage, "webp_high"));
+    }, []);
 
     return (
         <section className="case-study-hero grid-bleed-small">
             <div className="case-study-hero__image-container">
-                <picture className="case-study-hero__image-container">
-                    <source srcSet={mobileHeroImage} media="(max-width: 48rem)"/>
-                    <source srcSet={tabletHeroImage} media="(max-width: 74rem)"/>
-                    <Image
-                        ref={imageRef}
+                <picture className="case-study-hero__image-container" ref={imageRef}>
+                    <source srcSet={tabletImage!} media="(max-width: 100rem)"/>
+                    <OptimizedImage
                         className="case-study-hero__image"
-                        src={`/${heroImage.replace(/^\/?/, "")}`}
+                        src={buildNamedTransformUrl(heroImage, "webp_high")}
                         alt={`Preview of ${productName} ${projectType}`}
-                        height={1600}
-                        width={1600}
+                        height={800}
+                        width={2200}
                         quality={80}
                         priority
-                        placeholder="blur"
-                        blurDataURL={getPlaceholderUrl(heroImage)}
                     />
                 </picture>
             </div>

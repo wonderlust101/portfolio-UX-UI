@@ -13,8 +13,6 @@ type Props = {
     params: Promise<{ id: string }>
 };
 
-export const dynamic = 'force-static';
-
 export default async function CaseStudyPage({params}: Props) {
     const { id } = await params;
     const caseStudy = await getCaseStudy(id);
@@ -35,7 +33,6 @@ export default async function CaseStudyPage({params}: Props) {
                     productName={caseStudy.productName}
                     projectType={caseStudy.projectType}
                     heroImage={caseStudy.heroImage}
-                    mobileHeroImage={caseStudy.heroImageMobile}
                     tabletHeroImage={caseStudy.heroImageTablet}
                 />
 

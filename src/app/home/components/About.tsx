@@ -1,12 +1,13 @@
 "use client";
 
 import List from "@/components/List";
+import OptimizedImage from "@/components/OptimizedImage";
 import Section from "@/components/Section";
 import "./About.scss";
+import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants";
 import type { ProfileData } from "@/types/home";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 type AboutProps = {
     aboutText: ProfileData|null;
@@ -30,16 +31,14 @@ export default function About({aboutText}: AboutProps) {
                     </motion.div>
 
                     <motion.div variants={fadeUp} className="about__image">
-                        <Image
+                        <OptimizedImage
                             className="about__image"
-                            src="/images/home/sergei-borja.webp"
+                            src={buildNamedTransformUrl("sergei-borja_c36hvi", "webp_low")}
                             alt="Sergei Borja"
                             loading="lazy"
-                            width={1600}
-                            height={1600}
+                            width={700}
+                            height={700}
                             quality={75}
-                            placeholder="blur"
-                            blurDataURL="/images/home/sergei-borja-placeholder.webp"
                         />
                     </motion.div>
                 </motion.div>

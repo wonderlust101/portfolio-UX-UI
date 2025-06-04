@@ -2,12 +2,12 @@
 
 import Button from "@/components/Button";
 import "./CaseStudyListing.scss";
+import OptimizedImage from "@/components/OptimizedImage";
+import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { contentVariants, fadeUp, fadeUpWithDelay, headerVariants, staggerParent } from "@/motion/motionVariants";
 import { useThemeStore } from "@/store/useThemeStore";
 import type { CaseStudyList } from "@/types/home";
-import { getPlaceholderUrl } from "@/utils/getPlaceholderUrl";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 type CaseStudyListingProps = {
     caseStudy: CaseStudyList;
@@ -60,16 +60,14 @@ export default function CaseStudyListing({caseStudy, index}: CaseStudyListingPro
                     variants={fadeUpWithDelay}
                     custom={0.70}
                 >
-                    <Image
+                    <OptimizedImage
                         className="case-study-listing__image"
-                        src={`/${caseStudy.previewImage.replace(/^\/?/, "")}`}
+                        src={buildNamedTransformUrl(caseStudy.previewImage, "webp_low")}
                         alt={caseStudy.title}
                         loading="lazy"
-                        width={1600}
-                        height={1600}
-                        quality={75}
-                        placeholder="blur"
-                        blurDataURL={getPlaceholderUrl(caseStudy.previewImage)}
+                        width={750}
+                        height={750}
+                        quality={50}
                     />
                 </motion.div>
             </motion.section>

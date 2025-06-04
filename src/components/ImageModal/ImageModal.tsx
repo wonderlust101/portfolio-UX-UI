@@ -1,8 +1,8 @@
 "use client";
 
-import { getPlaceholderUrl } from "@/utils/getPlaceholderUrl";
+import OptimizedImage from "@/components/OptimizedImage";
+import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { motion } from "motion/react";
-import Image from "next/image";
 import "./ImageModal.scss";
 
 type ImageModalProps = {
@@ -28,16 +28,13 @@ export default function ImageModal({ src, caption, onClose }: ImageModalProps) {
                     exit={{ scale: 0.9, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
                 >
-                    <Image
+                    <OptimizedImage
                         className="image-modal__image"
-                        src={src}
+                        src={buildNamedTransformUrl(src, "webp_high")}
                         alt={caption || "No caption available"}
-                        loading="lazy"
-                        width={1600}
-                        height={1600}
-                        quality={100}
-                        placeholder="blur"
-                        blurDataURL={getPlaceholderUrl(src)}
+                        width={2000}
+                        height={2000}
+                        quality={80}
                     />
                     {caption && (
                         <figcaption className="image-modal__caption">

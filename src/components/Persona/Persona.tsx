@@ -1,12 +1,13 @@
 "use client";
 
+import OptimizedImage from "@/components/OptimizedImage";
 import SectionHeader from "@/components/SectionHeader";
+import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { contentVariants, fadeUp, fadeUpLowOpacity, headerVariants, staggerParent } from "@/motion/motionVariants";
 import { useThemeStore } from "@/store/useThemeStore";
 import type { Persona as PersonaType } from "@/types/case-study";
 import "./Persona.scss";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 type PersonaProps = {
     personaData: PersonaType;
@@ -26,12 +27,12 @@ export default function Persona({personaData}: PersonaProps) {
 
             <motion.div className="persona__top" variants={fadeUp}>
                 <motion.div className="persona__image-container" variants={headerVariants}>
-                    <Image
+                    <OptimizedImage
                         className="persona__image"
-                        src={personaData?.image}
+                        src={buildNamedTransformUrl(personaData?.image, "webp_low")}
                         alt={`${personaData.name}`}
-                        height={1600}
-                        width={1600}
+                        height={600}
+                        width={600}
                     />
                 </motion.div>
 

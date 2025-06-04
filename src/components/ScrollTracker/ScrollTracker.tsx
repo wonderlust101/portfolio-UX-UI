@@ -18,8 +18,6 @@ export default function ScrollTracker({ children }: ScrollTrackerProps) {
         offset: ["start end", "end start"],
     });
 
-    console.log(color)
-
     return (
         <>
             <motion.div

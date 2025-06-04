@@ -21,11 +21,11 @@ export default function Hero() {
                 charsClass: "letter"
             });
 
-            gsap.set(splitText.chars, {y: "110%"});
+            gsap.set(splitText.chars, {y: "200%"});
 
             gsap.to(splitText.chars, {
                 y       : "0%",
-                duration: 1.5,
+                duration: 2,
                 stagger : 0.1,
                 delay   : 1.25,
                 ease    : "power4.out"

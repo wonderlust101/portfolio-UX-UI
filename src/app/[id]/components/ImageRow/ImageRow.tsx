@@ -1,5 +1,3 @@
-"use client";
-
 import { staggerParent } from "@/motion/motionVariants";
 import type { Image } from "@/types/global";
 import { motion } from "motion/react";

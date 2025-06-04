@@ -11,8 +11,6 @@ import { promises as fs } from "fs";
 import { notFound } from "next/navigation";
 import path from "path";
 
-export const dynamic = 'force-static';
-
 export default async function Home() {
     const filePath = path.join(process.cwd(), "src", "data", `home.json`);
 

@@ -4,13 +4,12 @@
     "title": "Election Canada Website Audit",
     "description": "A comprehensive UX audit of the Elections Canada website focusing on accessibility, content clarity, and navigation improvements to better serve Canadian voters.",
     "keywords": ["Elections Canada", "UX audit", "accessibility", "website redesign", "information architecture", "usability", "content audit"],
-    "imageUrl": "/images/case-study/election-canada/election-canada-preview-mobile.webp",
+    "imageUrl": "/images/shared/election-canada-square-preview.webp",
     "url": "https://sergei-borja.dev/election-canada-website-audit"
   },
   "projectType"    : "Website Audit",
-  "heroImage"      : "images/case-study/election-canada/election-canada-preview.webp",
-  "heroImageTablet": "images/case-study/election-canada/election-canada-preview-tablet.webp",
-  "heroImageMobile": "images/case-study/election-canada/election-canada-preview-mobile.webp",
+  "heroImage"      : "election-canada-wide_dfpmwa",
+  "heroImageTablet": "election-canada-square_tmz5es",
   "theme"          : "red",
   "projectSummary" : {
     "description": "|Elections Canada Website Audit| is a UX and content evaluation of the official site focused on improving usability, accessibility, and clarity. The audit revealed dense content, confusing navigation, and poor readability. Using a heuristic review, content inventory, and user-based analysis, we identified key barriers and proposed actionable fixes to serve voters better.",
@@ -81,7 +80,7 @@
       "images"     : [
         [
           {
-            "image"  : "images/case-study/election-canada/intro.webp",
+            "image"  : "problem_ffse7d",
             "caption": "The official Elections Canada website is a primary platform for voter information, election updates, and federal electoral resources.",
             "containerPercentage": 75
           }
@@ -138,7 +137,7 @@
           "images"  : [
             [
               {
-                "image"  : "images/case-study/election-canada/inventory-2.webp",
+                "image"  : "inventory_c7iegu",
                 "caption": "Visual representation of the Elections Canada website’s content distribution, highlighting the overwhelming volume of pages in the Resource Centre section, showcasing the content as mostly informative as it generally provides information about the election.",
                 "containerPercentage": 75
               }
@@ -153,7 +152,7 @@
           "images"  : [
             [
               {
-                "image"  : "images/case-study/election-canada/qualitative-2.webp",
+                "image"  : "qualitative_u0sblh",
                 "caption": "WebAIM’s WAVE audit of the Elections Canada homepage revealed numerous issues, such as small text, redundant links, missing labels, and poor heading structure, which pose a significant barrier for users relying on assistive technologies.",
                 "containerPercentage": 40
               }
@@ -177,11 +176,11 @@
           "images"  : [
             [
               {
-                "image"  : "images/case-study/election-canada/group-audit-1.webp",
+                "image"  : "group-audit-1_cxbfvr",
                 "caption": "Group task audit assessing the finding of the nearest electoral district for Grant MacEwan University. The group identified issues with breadcrumb navigation, inconsistent menu labelling, and unclear page transitions, resulting in an average score of 2.93 out of 5."
               },
               {
-                "image"  : "images/case-study/election-canada/group-audit-2.webp",
+                "image"  : "group-audit-2_c99naj",
                 "caption": "Group task audit evaluating learning about the Green Party of Canada. Although some elements, such as menu labelling, performed moderately well, problems with page structure, dense content lists, and confusing navigation paths led to an average score of 3.71 out of 5."
               }
             ]
@@ -213,11 +212,11 @@
           "images"  : [
             [
               {
-                "image"  : "images/case-study/election-canada/content-quality-audit-1.webp",
+                "image"  : "content-quality-audit-1_vldlsc",
                 "caption": "A duplicate content example from the Elections Canada website shows identical pages under different navigation paths. This contributes to the 6,190 pages identified as duplicates, making up 18.7% of the site and significantly impacting the user experience and content management."
               },
               {
-                "image"  : "images/case-study/election-canada/content-quality-audit-2.webp",
+                "image"  : "content-quality-audit-2_dtivek",
                 "caption": "The duplicate content is on another page where the breadcrumbs show different paths, but the end path results are on the same page."
               }
             ]
@@ -238,11 +237,11 @@
           "images"  : [
             [
               {
-                "image"  : "images/case-study/election-canada/information-architecture-audit-1.webp",
+                "image"  : "information-architecture-audit-1_ppmzs2",
                 "caption": "The Elections Canada website lacks clear visual and structural distinctions between subsections, making navigation difficult. This issue, especially problematic for users with lower English proficiency, affects around seven most frequently visited pages."
               },
               {
-                "image"  : "images/case-study/election-canada/information-architecture-audit-2.webp",
+                "image"  : "information-architecture-audit-2_rbspbt",
                 "caption": "The advanced search interface is overly complex and isolated to a single page, frustrating users trying to refine results. Its unintuitive layout and limited accessibility contribute to poor task flow and may cause users to leave the site prematurely."
               }
             ]
@@ -266,11 +265,11 @@
           "images"  : [
             [
               {
-                "image"  : "images/case-study/election-canada/homepage-audit-1.webp",
+                "image"  : "homepage-audit-1_ahksbb",
                 "caption": "Text across the homepage is small and lacks clarity, making it hard for users with visual impairments to read. The page has a low reading grade of 16.8 and a readability score of 18.2, indicating poor accessibility for general users."
               },
               {
-                "image"  : "images/case-study/election-canada/homepage-audit-2.webp",
+                "image"  : "homepage-audit-2_n9clnx",
                 "caption": "The homepage includes redundant navigation links, such as a “Home” link that leads back to the same homepage, offering no added value. This reflects inefficient organization and can create minor but avoidable confusion for users."
               }
             ]
@@ -291,7 +290,7 @@
           "images"  : [
             [
               {
-                "image"  : "images/case-study/election-canada/social-media-audit-1.webp",
+                "image"  : "social-media-audit_umcn4w",
                 "caption": "Posts across multiple platforms, including Twitter, Facebook, and YouTube, show low engagement levels, with minimal likes, shares, and comments. This signals that content is not resonating with the audience, limiting its reach during crucial periods like elections. Around 4 out of 5 platforms examined display this issue."
               }
             ]
@@ -315,15 +314,15 @@
           "images"  : [
             [
               {
-                "image"  : "images/case-study/election-canada/task-audit-1.webp",
+                "image"  : "task-audit-1_culfbl",
                 "caption": "This screenshot highlights the Elections Canada search tool, which offers multiple ways to find electoral districts. While flexible, it may confuse users due to overlapping search options."
               },
               {
-                "image"  : "images/case-study/election-canada/task-audit-2.webp",
+                "image"  : "task-audit-2_gzhiho",
                 "caption": "Clicking the party name redirects users to an external site in the same tab, which may confuse users by breaking the navigation flow."
               },
               {
-                "image"  : "images/case-study/election-canada/task-audit-3.webp",
+                "image"  : "task-audit-3_rigjca",
                 "caption": "This image shows another path to the same district info, contributing to duplicate content and a less consistent user experience."
               }
             ]

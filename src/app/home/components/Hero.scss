@@ -28,6 +28,7 @@
   }
 
   &__body {
+    grid-area: 1/2;
     display: grid;
     grid-template-rows: max-content max-content;
     gap: 4rem;

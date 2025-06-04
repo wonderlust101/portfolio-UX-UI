@@ -1,9 +1,11 @@
 .mobile-navigation {
-  display: none;
-
-  @include breakpoint(medium) {
-    display: unset;
-    width: 100%;
+  &__bar {
+    color: $clr-white;
+    background-color: $clr-black;
+    padding: 1rem 2rem;
+    border-radius: $border-radius $border-radius;
+    position: relative;
+    z-index: 100;
   }
 
   &__overlay-bar {
@@ -12,7 +14,7 @@
     left: 0;
     width: 100%;
     padding: 1rem 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   &__bar-flex {
@@ -26,6 +28,33 @@
     display: flex;
     align-items: center;
     gap: 8rem;
+
+    @include breakpoint(medium) {
+      gap: 2rem;
+    }
+
+    @include breakpoint(small) {
+      & > p {
+        display: none;
+      }
+    }
+  }
+
+  &__cta {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 4rem;
+
+    @include breakpoint(medium) {
+      gap: 3rem;
+    }
+
+    @include breakpoint(small) {
+      & > a {
+        display: none;
+      }
+    }
   }
 
   &__toggle {
@@ -42,17 +71,18 @@
   }
 
   &__overlay {
-    position: fixed;
-    top: 0;
+    position: relative;
+    top: -0.25rem;
+    padding-top: 0.25rem;
     left: 0;
-    height: 100dvh;
     width: 100%;
-    padding-bottom: calc(8rem + env(safe-area-inset-bottom));
-    background-color: #ECEAE7;
+    color: $clr-white;
+    background-color: $clr-black;
     -webkit-overflow-scrolling: touch;
     overflow-y: auto;
     overscroll-behavior: contain;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    border-radius: 0 0 $border-radius $border-radius;
     z-index: 5;
 
     &::-webkit-scrollbar {
@@ -63,37 +93,61 @@
   &__overlay-bar {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 2rem;
     align-items: center;
-    background-color: #ECEAE7;
+    color: $clr-white;
+    background-color: $clr-black;
+    border-radius: $border-radius;
   }
 
   &__copy {
     display: grid;
-    align-content: flex-start;
+    grid-template-columns: 1fr 1fr;
     gap: 6rem;
-    height: 100%;
-    padding-top: 6rem;
-    min-height: calc(100dvh + 6rem + env(safe-area-inset-bottom));
+    padding: 2rem;
+
+    @include breakpoint(medium) {
+      grid-template-columns: 1fr;
+    }
+
+    @include breakpoint(small) {
+      gap: 3rem;
+    }
   }
 
   &__contact {
     display: grid;
     gap: 3rem;
+
+    @include breakpoint(small) {
+      display: none;
+    }
   }
 
   &__links {
     display: grid;
-    gap: 2rem;
+    align-content: flex-start;
+    gap: 1rem;
+    text-align: right;
+
+    @include breakpoint(medium) {
+      order: -1;
+      text-align: left;
+    }
   }
 
   &__link {
-    color: $clr-black;
+    color: $clr-white;
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.5rem;
     letter-spacing: -0.03em;
     cursor: pointer;
+
+    @include breakpoint(small) {
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
   }
 
   &__link-item {

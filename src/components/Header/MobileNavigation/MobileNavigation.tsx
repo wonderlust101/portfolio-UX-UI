@@ -64,23 +64,20 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
 
     useGSAP(
         () => {
-            gsap.set(".mobile-navigation__link-item-holder", { y: 75 });
-            tl.current = gsap
-            .timeline({ paused: true })
-            .to(".mobile-navigation__overlay", {
-                duration: 1,
+            gsap.set(".mobile-navigation__link-item-holder", {y: 75});
+            tl.current = gsap.timeline({paused: true}).to(".mobile-navigation__overlay", {
+                duration: 0.5,
                 clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                ease: "power4.inOut",
-            })
-            .to(".mobile-navigation__link-item-holder", {
-                y: 0,
+                ease    : "power4.inOut"
+            }).to(".mobile-navigation__link-item-holder", {
+                y       : 0,
                 duration: 1,
-                stagger: 0.1,
-                ease: "power4.out",
-                delay: -0.75,
+                stagger : 0.1,
+                ease    : "power4.out",
+                delay   : -0.75
             });
         },
-        { scope: containerRef }
+        {scope: containerRef}
     );
 
     useEffect(() => {
@@ -92,61 +89,56 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
     }, [isMenuOpen]);
 
     return (
-        <div className="mobile-navigation" ref={containerRef}>
+        <div className="mobile-navigation grid-bleed-small" ref={containerRef}>
             <div className="mobile-navigation__bar">
                 <div className="mobile-navigation__bar-flex">
                     <div className="mobile-navigation__logo">
-                        <Link
-                            scroll={true}
-                            className="header__logo"
-                            href="/"
-                            onClick={handleNavigation("/", () => setIsMenuOpen(false))}
-                            aria-label="Go to Home"
-                        >
-                            <span className={`${color}-accent-light`}>//</span> SB
-                        </Link>
-                        <p className="header__tag" role='presentation'>
-                            [ Full Stack Developer, UX &amp; UI Designer ]
-                        </p>
+                    <Link
+                        scroll={true}
+                        className="header__logo"
+                        href="/"
+                        onClick={handleNavigation("/", () => setIsMenuOpen(false))}
+                        aria-label="Go to Home"
+                    >
+                        <span className={`${color}-accent-dark`}>//</span> SB
+                    </Link>
+                    <p className="header__tag" role="presentation">
+                        [ Full Stack Developer, UX &amp; UI Designer ]
+                    </p>
                     </div>
 
-                    <div className="mobile-navigation__toggle" onClick={toggleMenu}>
-                        <Image
-                            src={burgerMenuIcon}
-                            alt="Open menu"
-                            role="presentation"
-                            width={24}
-                            height={24}
-                        />
+                    <div className="mobile-navigation__cta">
+                        <Button
+                            color="accent"
+                            theme="dark"
+                            size="sm"
+                            href="mailto:sergei.borja0701@gmail.com"
+                            aria-label="Send an email to Sergei"
+                        >
+                            Contact Me
+                        </Button>
+
+                        <div className="mobile-navigation__toggle" onClick={toggleMenu}>
+                            <Image
+                                src={isMenuOpen ? closeMenuIcon : burgerMenuIcon}
+                                alt="Open menu"
+                                role="presentation"
+                                width={24}
+                                height={24}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className="mobile-navigation__overlay grid-bleed">
-                <div className="mobile-navigation__overlay-bar">
-                    <div className="mobile-navigation__bar-flex">
-                        <div className="mobile-navigation__logo">
-                            <Link
-                                scroll={true}
-                                className="header__logo"
-                                href="/"
-                                onClick={() => handleNavigation("/", toggleMenu)}
-                                aria-label="Go to Home"
-                            >
-                                <span className={`${color}-accent-light`}>//</span> SB
-                            </Link>
-                            <p className="header__tag">
-                                [ Full Stack Developer, UX &amp; UI Designer ]
-                            </p>
-                        </div>
-
-                        <div className="mobile-navigation__toggle" onClick={toggleMenu}>
-                            <Image src={closeMenuIcon} alt="Close menu" width={24} height={24}/>
+            <div className="mobile-navigation__overlay">
+                <div className="mobile-navigation__copy">
+                    <div className="mobile-navigation__contact">
+                        <div className="mobile-navigation__info">
+                            <List items={contactList} type="meta"/>
                         </div>
                     </div>
-                </div>
 
-                <div className="mobile-navigation__copy">
                     <div className="mobile-navigation__links">
                         {navLinks.map((link) => (
                             <Fragment key={link.title}>
@@ -180,21 +172,6 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                                 ))}
                             </Fragment>
                         ))}
-                    </div>
-
-                    <div className="mobile-navigation__contact">
-                        <div className="mobile-navigation__info">
-                            <List items={contactList} type="meta"/>
-                        </div>
-                        <Button
-                            color="accent"
-                            theme="light"
-                            size="sm"
-                            href="mailto:sergei.borja0701@gmail.com"
-                            aria-label="Send an email to Sergei"
-                        >
-                            Contact Me
-                        </Button>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,7 @@
 .header {
   position: fixed;
-  top: 0;
+  top: 1rem;
   width: 100%;
-  color: $clr-black;
-  background-color: $clr-white;
-  border-bottom: 1px solid $clr-black;
   z-index: 2;
 
   &__container {

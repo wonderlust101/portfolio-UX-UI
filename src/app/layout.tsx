@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         follow: true
     },
     openGraph   : {
-        title      : "Sergei Borja | Product Designer & Developer",
+        title      : "Sergei Borja | Full Stack Developer & UX & UI Designer",
         description: "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing" +
             " clean interfaces, and building things that help people.",
         url        : "https://www.sergei-borja.dev",

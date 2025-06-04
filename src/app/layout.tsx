@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         siteName   : "Sergei Borja Portfolio",
         images     : [
             {
-                url: "/images/home/sergei-borja.webp",
+                url: "/images/shared/sergei-borja.webp",
                 alt: "Sergei Borja Portfolio Preview"
             }
         ],

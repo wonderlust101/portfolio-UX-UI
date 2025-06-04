@@ -50,39 +50,46 @@ export default function Footer() {
     const {handleNavigation} = useAnimatedNavigation();
 
     return (
-        <footer className={`footer grid-bleed-small`}>
+        <footer className="footer grid-bleed-small">
             <div className="footer__grid">
-                <div className="footer__left-column">
+                <section className="footer__left-column">
                     <div className="footer__cta">
-                        <p className="footer__cta-text">
+                        <h2 className="footer__cta-text">
                             <span className={`${color}-accent-dark`}>// </span>
                             Let’s get in touch
                             <span className={`${color}-accent-dark`}>!</span>
-                        </p>
+                        </h2>
 
                         <div className="footer__buttons">
-                            <Button color="accent" theme='dark' size="md" href="mailto:sergei.borja0701@gmail.com">
+                            <Button color="accent" theme='dark' size="md" href="mailto:sergei.borja0701@gmail.com" aria-label="Send an email to Sergei">
                                 Send an Email
                             </Button>
 
-                            <Button color="white" size="md" href="/Sergei Borja - Resume.pdf">
+                            <Button color="white" size="md" href="/Sergei Borja - Resume.pdf" aria-label="Download Sergei's Resume">
                                 Download Resume
                             </Button>
                         </div>
                     </div>
 
                     <List items={contactList} type="meta"/>
-                </div>
+                </section>
 
                 <div className="footer__right-column">
-                    <p className="footer__name">
+                    <p className="footer__name" role="presentation">
                         Sergei Borja
                     </p>
 
+                    <h2 className='sr-only'>Contact Information</h2>
                     <ul className="footer__nav-list">
                         {navLinks.projectLinks.map((link, index) => (
                             <li key={index}>
-                                <Link className="link link--dark" href={link.link} onClick={handleNavigation(link.link)} scroll={true}>
+                                <Link
+                                    className="link link--dark"
+                                    href={link.link}
+                                    onClick={handleNavigation(link.link)}
+                                    scroll={true}
+                                    aria-label={`Take a look at ${link.title}`}
+                                >
                                     {link.title}
                                 </Link>
                             </li>
@@ -90,7 +97,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="footer__bottom">
+                <div className="footer__bottom" role="presentation">
                     <hr/>
                     <p className="footer__copyright">@ 2025 Sergei Borja</p>
                 </div>

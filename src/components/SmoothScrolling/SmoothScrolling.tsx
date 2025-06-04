@@ -15,14 +15,12 @@ function SmoothScrolling() {
     useEffect(() => {
         const handleMouseDown = (e: MouseEvent) => {
             if (e.button === 1) {
-                // Middle mouse button pressed
                 setEnableLenis(false);
             }
         };
 
         const handleMouseUp = (e: MouseEvent) => {
             if (e.button === 1) {
-                // Re-enable Lenis when released
                 setEnableLenis(true);
             }
         };

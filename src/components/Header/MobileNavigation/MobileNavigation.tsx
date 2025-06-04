@@ -101,10 +101,11 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                             className="header__logo"
                             href="/"
                             onClick={handleNavigation("/", () => setIsMenuOpen(false))}
+                            aria-label="Go to Home"
                         >
                             <span className={`${color}-accent-light`}>//</span> SB
                         </Link>
-                        <p className="header__tag">
+                        <p className="header__tag" role='presentation'>
                             [ Full Stack Developer, UX &amp; UI Designer ]
                         </p>
                     </div>
@@ -130,6 +131,7 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                                 className="header__logo"
                                 href="/"
                                 onClick={() => handleNavigation("/", toggleMenu)}
+                                aria-label="Go to Home"
                             >
                                 <span className={`${color}-accent-light`}>//</span> SB
                             </Link>
@@ -155,6 +157,7 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                                                 scroll={true}
                                                 className="mobile-navigation__link" href={link.link}
                                                 onClick={handleNavigation(link.link, toggleMenu)}
+                                                aria-label={`Go to ${link.title} page`}
                                             >
                                                 {link.title}
                                             </Link>
@@ -168,6 +171,7 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                                                 scroll={true}
                                                 className="mobile-navigation__link" href={subLink.link}
                                                 onClick={handleNavigation(subLink.link, toggleMenu)}
+                                                aria-label={`Go to ${subLink.title} page`}
                                             >
                                                 {subLink.title}
                                             </Link>
@@ -187,6 +191,7 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                             theme="light"
                             size="sm"
                             href="mailto:sergei.borja0701@gmail.com"
+                            aria-label="Send an email to Sergei"
                         >
                             Contact Me
                         </Button>

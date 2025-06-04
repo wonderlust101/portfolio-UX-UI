@@ -9,7 +9,7 @@ export default function NotFound() {
         <>
             <Revealer/>
 
-            <div className="status-page grid-bleed-small" id="not-found">
+            <section className="status-page grid-bleed-small" id="not-found">
                 <h2 className="status-page__header">Page Not Found!</h2>
 
                 <div className="status-page__options">
@@ -21,7 +21,7 @@ export default function NotFound() {
                         Go to Homepage
                     </Button>
                 </div>
-            </div>
+            </section>
         </>
     );
 }

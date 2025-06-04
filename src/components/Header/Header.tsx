@@ -43,7 +43,7 @@ export default function Header() {
         <header className="header grid-bleed-small" ref={headerRef}>
             <div className="header__container">
                 <div className="header__left-side">
-                    <Link scroll={true} className="header__logo" href="/" onClick={handleNavigation("/")}>
+                    <Link scroll={true} className="header__logo" href="/" onClick={handleNavigation("/")} aria-label="Go to Home">
                         <span className={`${color}-accent-light`}>//</span> SB
                     </Link>
                     <p className="header__tag">[ Full Stack Developer, UX & UI Designer ]</p>

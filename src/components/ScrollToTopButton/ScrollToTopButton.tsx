@@ -42,6 +42,7 @@ export default function ScrollToTopButton() {
                 scale: 1.05,
                 transition: { duration: 0.15, ease: "easeOut" },
             }}
+            aria-label="Scroll back to top"
         >
             <ArrowSVG className="scroll-to-top-button__arrow" />
             <p className="scroll-to-top-button__text">Back to Top</p>

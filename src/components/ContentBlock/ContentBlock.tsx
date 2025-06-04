@@ -19,7 +19,7 @@ export default function ContentBlock({children, header, type = "subsection", hid
     } as CSSProperties;
 
     return (
-        <motion.div
+        <motion.section
             className="content-block__container"
             variants={staggerParent}
             initial="hidden"
@@ -28,7 +28,7 @@ export default function ContentBlock({children, header, type = "subsection", hid
         >
             {!hideDivider && (<motion.hr variants={fadeUpLowOpacity} />)}
 
-            <motion.section
+            <motion.div
                 className="content-block"
                 variants={staggerParent}
                 style={styles}
@@ -42,7 +42,7 @@ export default function ContentBlock({children, header, type = "subsection", hid
                 <motion.div className="content-block__content" variants={fadeUp}>
                     {children}
                 </motion.div>
-            </motion.section>
-        </motion.div>
+            </motion.div>
+        </motion.section>
     );
 }

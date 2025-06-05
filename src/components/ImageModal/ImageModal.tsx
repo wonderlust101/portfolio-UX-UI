@@ -15,7 +15,7 @@ type ImageModalProps = {
 
 export default function ImageModal({src, caption, onClose, blurDataUrl}: ImageModalProps) {
     const [isLoaded, setIsLoaded] = useState(false);
-    const loadingStyles = {height: "50dvh", width: "75dvh"};
+    const loadingStyles = {height: "40dvh", width: "65dvh"};
 
     return (
         <motion.div

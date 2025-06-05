@@ -45,6 +45,7 @@
     max-height: 26rem;
     width: 100%;
     justify-self: center;
+    object-fit: cover;
 
     @include breakpoint(small) {
       max-width: unset;

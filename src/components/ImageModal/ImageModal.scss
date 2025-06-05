@@ -23,7 +23,7 @@
 
   &__image-container {
     display: grid;
-    grid-template-rows: 1fr max-content;
+    grid-template-rows: max-content max-content;
     justify-items: center;
     justify-content: center;
     gap: 1rem;
@@ -36,9 +36,10 @@
 
   &__image {
     max-height: 80dvh;
+    height: 100%;
     object-fit: contain;
     background-color: $clr-white;
-    padding: 0.25rem;
+    padding: 0.1rem;
     width: unset;
   }
 
@@ -49,7 +50,6 @@
     line-height: 1.75;
     letter-spacing: 0.02rem;
     color: $clr-white;
-
 
     @include breakpoint(medium) {
       font-size: 0.9rem;

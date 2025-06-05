@@ -1,10 +1,10 @@
 "use client";
 
-import OptimizedImage from "@/components/OptimizedImage";
-import { buildNamedTransformUrl } from "@/lib/cloudinary";
-import { motion } from "motion/react";
-import "./ImageModal.scss";
 import { useState } from "react";
+import { motion } from "motion/react";
+import { buildNamedTransformUrl } from "@/lib/cloudinary";
+import OptimizedImage from "@/components/OptimizedImage";
+import "./ImageModal.scss";
 
 type ImageModalProps = {
     src: string;

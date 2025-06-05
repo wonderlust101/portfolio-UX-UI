@@ -27,6 +27,7 @@
   }
 
   &__image {
+    object-fit: cover;
     max-height: 32rem;
   }
 }

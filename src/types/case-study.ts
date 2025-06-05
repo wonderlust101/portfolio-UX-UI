@@ -1,11 +1,3 @@
-import type { Image, Metadata } from "@/types/global";
-
-export type SectionContent = string|{
-    header?: string;
-    content?: string;
-    quote?: string;
-}[];
-
 export type Persona = {
     name: string;
     image: string;
@@ -18,44 +10,63 @@ export type Persona = {
     painPoints: string[];
 };
 
-export type CaseStudySection = {
-    title: string;
-    contents?: SectionContent[];
-    images?: Image[][];
-    persona?: Persona;
-    subsections?: CaseStudySubSection[];
-};
-
-export type CaseStudySubSection = {
-    title?: string;
-    contents?: SectionContent[];
-    images?: Image[][];
-    persona?: Persona;
+export type SectionContent = string|{
+    header?: string;
+    content?: string;
     quote?: string;
+}[];
+
+export type ProjectMetadata = {
+    title: string;
+    description: string;
+    keywords: string[];
+    imageUrl: string;
+    url: string;
 };
 
 export type ProjectSummary = {
     description: string;
-    details: Metadata[];
+    details: ProjectSummaryDetail[];
+}
+
+export type ThemeColors = {
+    themeColor: string;
+    lightThemeColor: string;
+    darkThemeColor: string;
 };
 
-export type CaseStudyMetadata = {
+export type ProjectSummaryDetail = {
+    header: string;
+    content: string|string[];
+};
+
+export type ProjectImage = {
+    image: string;
+    caption: string;
+    containerPercentage?: number;
+};
+
+export type Subsection = {
     title: string;
-    description: string;
-    keywords: string[];
-    imageUrl?: string;
-    url: string;
+    contents: SectionContent[];
+    images?: ProjectImage[][];
+    persona?: Persona;
 };
 
+export type Section = {
+    title: string;
+    contents: SectionContent[];
+    images?: ProjectImage[][];
+    subsections?: Subsection[];
+};
 
 export type CaseStudy = {
     productName: string;
+    metadata: ProjectMetadata;
     projectType: string;
     heroImage: string;
     heroImageTablet: string;
-    heroImageMobile: string;
-    theme: string;
-    metadata: CaseStudyMetadata;
+    theme: ThemeColors;
     projectSummary: ProjectSummary;
-    sections: CaseStudySection[];
+    sections: Section[];
 };

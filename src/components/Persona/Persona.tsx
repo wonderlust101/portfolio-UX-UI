@@ -4,7 +4,6 @@ import OptimizedImage from "@/components/OptimizedImage";
 import SectionHeader from "@/components/SectionHeader";
 import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { contentVariants, fadeUp, fadeUpLowOpacity, headerVariants, staggerParent } from "@/motion/motionVariants";
-import { useThemeStore } from "@/store/useThemeStore";
 import type { Persona as PersonaType } from "@/types/case-study";
 import "./Persona.scss";
 import { motion } from "motion/react";
@@ -14,7 +13,6 @@ type PersonaProps = {
 }
 
 export default function Persona({personaData}: PersonaProps) {
-    const color = useThemeStore((state) => state.color);
 
     return (
         <motion.section
@@ -45,7 +43,7 @@ export default function Persona({personaData}: PersonaProps) {
                             <li><p><span className="bold">Location: </span>{personaData.location}</p></li>
                             <li><p><span className="bold">Type: </span>{personaData.type}</p></li>
                         </ul>
-                        <p className={`persona__quote ${color}-accent-light`}>"{personaData.quote}"</p>
+                        <p className="persona__quote accent-color">"{personaData.quote}"</p>
                     </div>
                 </motion.div>
             </motion.div>

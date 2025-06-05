@@ -1,7 +1,6 @@
 "use client";
 
 import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants";
-import { useThemeStore } from "@/store/useThemeStore";
 import { motion } from "motion/react";
 import { type ReactNode } from "react";
 import "./List.scss";
@@ -48,14 +47,13 @@ function MetaItem({item}: MetaItemProps) {
 }
 
 function ListItem({item, index}: ListItemProps) {
-    const color = useThemeStore((state) => state.color);
 
     return (
         <motion.div className="list__item" variants={fadeUp}>
             <p className="list__index">0{index + 1}</p>
             <div className="list__item-content">
                 {item.bold && <p className="list__item-bold">{item.bold}</p>}
-                <p className={`${color}-accent-light bold`}>{item.header}</p>
+                <p className="accent-color">{item.header}</p>
                 {item.content && <p>{item.content}</p>}
             </div>
         </motion.div>

@@ -1,3 +1,5 @@
+"use client"
+
 import { CldImage, getCldImageUrl } from "next-cloudinary";
 import { useEffect, useState } from "react";
 

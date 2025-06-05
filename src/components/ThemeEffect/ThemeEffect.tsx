@@ -1,20 +1,31 @@
 "use client";
-
-import { useThemeStore } from "@/store/useThemeStore";
 import { useEffect } from "react";
 
-type Props = {
-    theme: string;
+type ThemeProps = {
+    themeColor?: string;
+    lightThemeColor?: string;
+    darkThemeColor?: string;
 };
 
-export default function ThemeEffect({theme}: Props) {
-    const changeColor = useThemeStore((state) => state.changeColor);
+type Props = {
+    theme?: ThemeProps;
+};
 
+export default function ThemeEffect({ theme }: Props) {
     useEffect(() => {
-        if (theme) {
-            changeColor(theme);
-        }
-    }, [theme, changeColor]);
+        document.documentElement.style.setProperty(
+            "--theme-color",
+            theme?.themeColor ?? "#507A5C"
+        );
+        document.documentElement.style.setProperty(
+            "--light-theme-color",
+            theme?.lightThemeColor ?? "#8AD1A0"
+        );
+        document.documentElement.style.setProperty(
+            "--dark-theme-color",
+            theme?.darkThemeColor ?? "#4A7256"
+        );
+    }, [theme]);
 
     return null;
 }

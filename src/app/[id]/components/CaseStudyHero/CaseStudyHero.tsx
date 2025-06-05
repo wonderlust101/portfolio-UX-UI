@@ -4,7 +4,6 @@ import OptimizedImage from "@/components/OptimizedImage";
 import SectionHeader from "@/components/SectionHeader";
 import "./CaseStudyHero.scss";
 import { buildNamedTransformUrl, buildNamedTransformUrlTablet } from "@/lib/cloudinary";
-import { useThemeStore } from "@/store/useThemeStore";
 import { parseHighlightedText } from "@/utils/parseHighlightedText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -21,49 +20,46 @@ type CaseStudyHeroProps = {
 }
 
 export default function CaseStudyHero({productName, projectType, heroImage, tabletHeroImage}: CaseStudyHeroProps) {
-    const color = useThemeStore((state) => state.color);
     const [tabletImage, setTabletImage] = useState<string>("");
     const titleRef = useRef<HTMLHeadingElement|null>(null);
     const typeRef = useRef<HTMLDivElement|null>(null);
     const imageRef = useRef<HTMLImageElement|null>(null);
 
     useGSAP(() => {
-        if (!titleRef.current || !color) return;
+        if (!titleRef.current) return;
 
-        // Small delay to ensure color classes are applied
-        gsap.delayedCall(0.1, () => {
-            const splitText = SplitText.create(titleRef.current, {
-                type      : "words",
-                charsClass: "letter"
-            });
-
-            gsap.set(splitText.words, {y: "300%"});
-
-            gsap.to(splitText.words, {
-                y       : "0%",
-                duration: 1.5,
-                stagger : 0.1,
-                delay   : 1.50,
-                ease    : "power3.out"
-            });
-
-            gsap.fromTo(
-                [imageRef.current],
-                {
-                    opacity: 0,
-                    y      : 160
-                },
-                {
-                    opacity   : 1,
-                    y         : 0,
-                    duration  : 1.5,
-                    stagger   : 0.15,
-                    delay     : 1.55,
-                    ease      : "power3.out",
-                }
-            );
+        const splitText = SplitText.create(titleRef.current, {
+            type: "words",
+            charsClass: "letter"
         });
-    }, [color]);
+
+        gsap.set(splitText.words, { y: "300%" });
+
+        gsap.to(splitText.words, {
+            y: "0%",
+            duration: 1.5,
+            stagger: 0.1,
+            delay: 1.5, // retain original animation delay if intentional
+            ease: "power3.out"
+        });
+
+        gsap.fromTo(
+            [imageRef.current],
+            {
+                opacity: 0,
+                y: 160
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                stagger: 0.15,
+                delay: 1.55,
+                ease: "power3.out"
+            }
+        );
+    });
+
 
     useEffect(() => {
         setTabletImage(buildNamedTransformUrlTablet(tabletHeroImage, "webp_high"));
@@ -89,7 +85,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
             <div className="case-study-hero__header">
                 <SectionHeader type="page" ref={titleRef}>
                     <span>{productName}</span>
-                    <div ref={typeRef} className={`case-study-hero__type ${color}-accent-light`}> {parseHighlightedText(projectType)}</div>
+                    <div ref={typeRef} className="case-study-hero__type accent-color"> {parseHighlightedText(projectType)}</div>
                 </SectionHeader>
             </div>
         </section>

@@ -123,21 +123,36 @@
       "type"        : "UX & UI Design",
       "description" : "Redesigned Skyrim’s quest log into an interactive journal that fixes frustrating usability issues and transforms gameplay into a more immersive and intuitive experience.",
       "link"        : "/skyrim-quest-log-redesign",
-      "previewImage": "skyrim-square_jtisqs"
+      "previewImage": "skyrim-square_jtisqs",
+      "theme"          : {
+        "themeColor"     : "#C12A2C",
+        "lightThemeColor": "#F15154",
+        "darkThemeColor" : "#9D2325"
+      }
     },
     {
       "title"       : "Telus World of Science Edmonton Guide Book",
       "type"        : "UX & UI Design",
       "description" : "Created a mobile app with AR navigation and gamified exploration to make visiting the science centre more engaging, accessible, and fun for all ages.",
       "link"        : "/telus-world-of-science-guide-book",
-      "previewImage": "telus-square_mjt24z"
+      "previewImage": "telus-square_mjt24z",
+      "theme"          : {
+        "themeColor"     : "#8E2D90",
+        "lightThemeColor": "#EBB2ED",
+        "darkThemeColor" : "#732575"
+      }
     },
     {
       "title"       : "Elections Canada Website Audit",
       "type"        : "UX & UI Design",
       "description" : "Audited the Elections Canada website to uncover and fix major usability, accessibility, and content clarity issues that hindered voters' experience.",
       "link"        : "/election-canada-website-audit",
-      "previewImage": "election-canada-square_tmz5es"
+      "previewImage": "election-canada-square_tmz5es",
+      "theme"          : {
+        "themeColor"     : "#8B2942",
+        "lightThemeColor": "#D694A6",
+        "darkThemeColor" : "#6E2134"
+      }
     }
   ]
 }

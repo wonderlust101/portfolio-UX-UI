@@ -1,7 +1,6 @@
 "use client"
 
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
-import { useThemeStore } from "@/store/useThemeStore";
 import Link from "next/link";
 import type { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from "react";
 import "./Button.scss";
@@ -17,7 +16,6 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement | HTMLAncho
 }
 
 export default function Button({ children, color, theme="light", size, href, onClick, ariaLabel, ...props }: ButtonProps) {
-    const buttonColor = useThemeStore((state) => state.color);
     const {handleNavigation} = useAnimatedNavigation();
 
     if (href && href.endsWith('.pdf')) {
@@ -25,7 +23,7 @@ export default function Button({ children, color, theme="light", size, href, onC
             <a
                 href={href}
                 download
-                className={`button button--${color === 'accent' ? `${buttonColor}-${theme}` : color} button--${size}`}
+                className={`button button--${color === 'accent' ? `${color}-${theme}` : color} button--${size}`}
                 aria-label={ariaLabel}
                 {...props}
             >
@@ -38,7 +36,7 @@ export default function Button({ children, color, theme="light", size, href, onC
         return (
             <Link
                 href={ href }
-                className={`button button--${color === 'accent' ? `${buttonColor}-${theme}` : color} button--${size}`}
+                className={`button button--${color === 'accent' ? `${color}-${theme}` : color} button--${size}`}
                 aria-label={ ariaLabel }
                 onClick={(e) => handleNavigation(href, undefined)(e)}
                 scroll={true}
@@ -50,7 +48,7 @@ export default function Button({ children, color, theme="light", size, href, onC
 
     return (
         <button
-            className={`button button--${color === 'accent' ? `${buttonColor}-${theme}` : color} button--${size}`}
+            className={`button button--${color === 'accent' ? `${color}-${theme}` : color} button--${size}`}
             onClick={ onClick }
             aria-label={ ariaLabel }
             { ...props }

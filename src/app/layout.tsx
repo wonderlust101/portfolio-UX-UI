@@ -9,7 +9,7 @@ import { ReactNode } from "react";
 import "@/assets/styles/globals.scss";
 
 export const metadata: Metadata = {
-    title       : "Sergei Borja | Product Designer & Developer",
+    title       : "Sergei Borja | Full Stack Developer & UX & UI Designer",
     description : "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing" +
         " clean interfaces, and bu ilding things that help people.",
     keywords    : [

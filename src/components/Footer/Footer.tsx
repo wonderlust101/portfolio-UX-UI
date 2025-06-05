@@ -5,7 +5,6 @@ import Button from "@/components/Button";
 import List from "@/components/List";
 import navLinks from "@/data/nav-links.json";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
-import { useThemeStore } from "@/store/useThemeStore";
 import Link from "next/link";
 
 const contactList = [
@@ -46,7 +45,6 @@ const contactList = [
 ];
 
 export default function Footer() {
-    const color = useThemeStore((state) => state.color);
     const {handleNavigation} = useAnimatedNavigation();
 
     return (
@@ -55,9 +53,9 @@ export default function Footer() {
                 <section className="footer__left-column">
                     <div className="footer__cta">
                         <h2 className="footer__cta-text">
-                            <span className={`${color}-accent-dark`}>// </span>
+                            <span className="accent-color-light">// </span>
                             Let’s get in touch
-                            <span className={`${color}-accent-dark`}>!</span>
+                            <span className="accent-color-light">!</span>
                         </h2>
 
                         <div className="footer__buttons">

@@ -1,11 +1,10 @@
 "use client";
 
 import Button from "@/components/Button";
-import "./CaseStudyListing.scss";
+import "./SelectedWork.scss";
 import OptimizedImage from "@/components/OptimizedImage";
 import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { contentVariants, fadeUp, fadeUpWithDelay, headerVariants, staggerParent } from "@/motion/motionVariants";
-import { useThemeStore } from "@/store/useThemeStore";
 import type { CaseStudyList } from "@/types/home";
 import { motion } from "motion/react";
 
@@ -14,9 +13,7 @@ type CaseStudyListingProps = {
     index: number;
 };
 
-export default function CaseStudyListing({caseStudy, index}: CaseStudyListingProps) {
-    const color = useThemeStore((state) => state.color);
-
+export default function SelectedWork({caseStudy, index}: CaseStudyListingProps) {
     return (
         <motion.div
             variants={staggerParent}
@@ -27,22 +24,22 @@ export default function CaseStudyListing({caseStudy, index}: CaseStudyListingPro
             <hr/>
 
             <motion.section
-                className="case-study-listing"
+                className="selected-work"
                 variants={fadeUp}
             >
                 <motion.div
-                    className="case-study-listing__text-column"
+                    className="selected-work__text-column"
                     variants={contentVariants}
                 >
                     <motion.h3 className="heading-sm" variants={headerVariants}>
-                        <span className={`${color}-accent-light`}>// </span>
+                        <span className="accent-color">// </span>
                         0{index}
-                        <span className={`${color}-accent-light`}>.</span>
+                        <span className="accent-color">.</span>
                     </motion.h3>
 
-                    <motion.div className="case-study-listing__description" variants={contentVariants}>
-                        <div className="case-study-listing__text">
-                            <div className="case-study-listing__header">
+                    <motion.div className="selected-work__description" variants={contentVariants}>
+                        <div className="selected-work__text">
+                            <div className="selected-work__header">
                                 <p>{caseStudy.type}</p>
                                 <h3 className="heading-xs">{caseStudy.title}</h3>
                             </div>
@@ -61,7 +58,7 @@ export default function CaseStudyListing({caseStudy, index}: CaseStudyListingPro
                     custom={0.70}
                 >
                     <OptimizedImage
-                        className="case-study-listing__image"
+                        className="selected-work__image"
                         src={buildNamedTransformUrl(caseStudy.previewImage, "webp_low")}
                         alt={caseStudy.title}
                         loading="lazy"

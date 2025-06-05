@@ -47,7 +47,6 @@ export default async function CaseStudyPage({params}: Props) {
 
                 <OtherProjects currentProject={id}/>
             </main>
-
         </>
     );
 }

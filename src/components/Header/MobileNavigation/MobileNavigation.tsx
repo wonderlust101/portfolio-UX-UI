@@ -5,7 +5,7 @@ import closeMenuIcon from "@/assets/images/close-menu.svg";
 import Button from "@/components/Button";
 import List from "@/components/List";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
-import { useThemeStore } from "@/store/useThemeStore";
+
 import type { NavLinks } from "@/types/links";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
@@ -51,7 +51,6 @@ const contactList = [
 ];
 
 export default function MobileNavigation({navLinks}: MobileNavigationProps) {
-    const color = useThemeStore((state) => state.color);
     const {handleNavigation} = useAnimatedNavigation();
 
     const containerRef = useRef<HTMLDivElement>(null);
@@ -100,7 +99,7 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
                         onClick={handleNavigation("/", () => setIsMenuOpen(false))}
                         aria-label="Go to Home"
                     >
-                        <span className={`${color}-accent-dark`}>//</span> SB
+                        <span className='accent-color-light'>//</span> SB
                     </Link>
                     <p className="header__tag" role="presentation">
                         [ Full Stack Developer, UX &amp; UI Designer ]

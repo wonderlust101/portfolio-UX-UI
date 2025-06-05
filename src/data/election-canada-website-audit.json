@@ -1,19 +1,31 @@
 {
   "productName"    : "Election Canada",
-  "metadata": {
-    "title": "Election Canada Website Audit",
+  "metadata"       : {
+    "title"      : "Election Canada Website Audit",
     "description": "A comprehensive UX audit of the Elections Canada website focusing on accessibility, content clarity, and navigation improvements to better serve Canadian voters.",
-    "keywords": ["Elections Canada", "UX audit", "accessibility", "website redesign", "information architecture", "usability", "content audit"],
-    "imageUrl": "/images/shared/election-canada-square-preview.webp",
-    "url": "https://sergei-borja.dev/election-canada-website-audit"
+    "keywords"   : [
+      "Elections Canada",
+      "UX audit",
+      "accessibility",
+      "website redesign",
+      "information architecture",
+      "usability",
+      "content audit"
+    ],
+    "imageUrl"   : "/images/shared/election-canada-square-preview.webp",
+    "url"        : "https://sergei-borja.dev/election-canada-website-audit"
   },
   "projectType"    : "Website Audit",
   "heroImage"      : "election-canada-wide_dfpmwa",
   "heroImageTablet": "election-canada-square_tmz5es",
-  "theme"          : "red",
+  "theme"          : {
+    "themeColor"     : "#8B2942",
+    "lightThemeColor": "#D694A6",
+    "darkThemeColor" : "#6E2134"
+  },
   "projectSummary" : {
     "description": "|Elections Canada Website Audit| is a UX and content evaluation of the official site focused on improving usability, accessibility, and clarity. The audit revealed dense content, confusing navigation, and poor readability. Using a heuristic review, content inventory, and user-based analysis, we identified key barriers and proposed actionable fixes to serve voters better.",
-    "details"   : [
+    "details"    : [
       {
         "header" : "Role",
         "content": "UX Auditor"
@@ -80,8 +92,8 @@
       "images"     : [
         [
           {
-            "image"  : "problem_ffse7d",
-            "caption": "The official Elections Canada website is a primary platform for voter information, election updates, and federal electoral resources.",
+            "image"              : "problem_ffse7d",
+            "caption"            : "The official Elections Canada website is a primary platform for voter information, election updates, and federal electoral resources.",
             "containerPercentage": 75
           }
         ]
@@ -137,8 +149,8 @@
           "images"  : [
             [
               {
-                "image"  : "inventory_c7iegu",
-                "caption": "Visual representation of the Elections Canada website’s content distribution, highlighting the overwhelming volume of pages in the Resource Centre section, showcasing the content as mostly informative as it generally provides information about the election.",
+                "image"              : "inventory_c7iegu",
+                "caption"            : "Visual representation of the Elections Canada website’s content distribution, highlighting the overwhelming volume of pages in the Resource Centre section, showcasing the content as mostly informative as it generally provides information about the election.",
                 "containerPercentage": 75
               }
             ]
@@ -152,8 +164,8 @@
           "images"  : [
             [
               {
-                "image"  : "qualitative_u0sblh",
-                "caption": "WebAIM’s WAVE audit of the Elections Canada homepage revealed numerous issues, such as small text, redundant links, missing labels, and poor heading structure, which pose a significant barrier for users relying on assistive technologies.",
+                "image"              : "qualitative_u0sblh",
+                "caption"            : "WebAIM’s WAVE audit of the Elections Canada homepage revealed numerous issues, such as small text, redundant links, missing labels, and poor heading structure, which pose a significant barrier for users relying on assistive technologies.",
                 "containerPercentage": 40
               }
             ]

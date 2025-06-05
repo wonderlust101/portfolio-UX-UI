@@ -10,7 +10,11 @@
   "projectType"    : "Stamp Book",
   "heroImage"      : "telus-wide_qtlqgz",
   "heroImageTablet": "telus-square_mjt24z",
-  "theme"          : "purple",
+  "theme"          : {
+    "themeColor"     : "#8E2D90",
+    "lightThemeColor": "#EBB2ED",
+    "darkThemeColor" : "#732575"
+  },
   "projectSummary" : {
     "description": "|Telus World of Science Edmonton Guide Book| is a UX/UI project to design a new mobile app that enhances the visitor experience. Built from scratch, the app features AR-assisted navigation, a digital map, and a gamified stamp system to promote self-guided exploration. The goal was to create an engaging, educational, and accessible tool for learners of all ages across the science centre.",
     "details"   : [

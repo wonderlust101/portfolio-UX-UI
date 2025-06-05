@@ -1,10 +1,10 @@
 import About from "@/app/home/components/About";
-import CaseStudyListing from "@/app/home/components/CaseStudyListing";
 import Hero from "@/app/home/components/Hero";
 import ContentBlock from "@/components/ContentBlock";
 import List from "@/components/List";
 import Revealer from "@/components/Revealer";
 import Section from "@/components/Section";
+import SelectedWork from "@/components/SelectedWork";
 import ThemeEffect from "@/components/ThemeEffect";
 import { ProfileData } from "@/types/home";
 import { promises as fs } from "fs";
@@ -26,13 +26,13 @@ export default async function Home() {
     return (
         <>
             <Revealer/>
-            <ThemeEffect theme={"green"}/>
+            <ThemeEffect/>
 
             <Hero/>
 
             <Section header="Featured Case Studies">
                 {homeData.caseStudies.map((caseStudy, index) => (
-                    <CaseStudyListing key={index} caseStudy={caseStudy} index={index + 1}/>
+                    <SelectedWork key={index} caseStudy={caseStudy} index={index + 1}/>
                 ))}
             </Section>
 

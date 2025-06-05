@@ -1,49 +1,19 @@
 @use "../abstract/index" as a;
 
-.green-accent-dark {
-  color: a.$clr-green-light;
+:root {
+  --theme-color: #507A5C;
+  --light-theme-color: #8AD1A0;
+  --dark-theme-color: #4A7256;
 }
 
-.green-accent-light {
-  color: a.$clr-green;
+.accent-color {
+  color: var(--theme-color);
 }
 
-.green-accent-background {
-  background-color: a.$clr-green;
+.accent-color-light {
+  color: var(--light-theme-color);
 }
 
-.brown-accent-dark {
-  color: a.$clr-brown-light;
-}
-
-.brown-accent-light {
-  color: a.$clr-brown;
-}
-
-.brown-accent-background {
-  background-color: a.$clr-brown;
-}
-
-.purple-accent-dark {
-  color: a.$clr-purple-light;
-}
-
-.purple-accent-light {
-  color: a.$clr-purple;
-}
-
-.purple-accent-background {
-  background-color: a.$clr-purple;
-}
-
-.red-accent-dark {
-  color: a.$clr-red-light;
-}
-
-.red-accent-light {
-  color: a.$clr-red;
-}
-
-.red-accent-background {
-  background-color: a.$clr-red;
+.accent-color-dark {
+  color: var(--dark-theme-color);
 }

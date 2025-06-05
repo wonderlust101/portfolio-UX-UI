@@ -1,6 +1,5 @@
 "use client";
 
-import { useThemeStore } from "@/store/useThemeStore";
 import { useRef, ReactNode } from "react";
 import { motion, useScroll } from "motion/react";
 import './ScrollTracker.scss'
@@ -10,7 +9,6 @@ type ScrollTrackerProps = {
 };
 
 export default function ScrollTracker({ children }: ScrollTrackerProps) {
-    const color = useThemeStore((state) => state.color);
     const containerRef = useRef<HTMLDivElement>(null);
 
     const { scrollYProgress } = useScroll({
@@ -21,7 +19,7 @@ export default function ScrollTracker({ children }: ScrollTrackerProps) {
     return (
         <>
             <motion.div
-                className={`scroll-tracker__bar ${color}-accent-background`}
+                className={`scroll-tracker__bar`}
                 style={{scaleX: scrollYProgress as unknown as number, }}
             />
 

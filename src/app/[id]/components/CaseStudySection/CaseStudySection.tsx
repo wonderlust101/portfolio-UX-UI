@@ -3,7 +3,7 @@
 import ContentBlock from "@/components/ContentBlock";
 import Persona from "@/components/Persona";
 import Section from "@/components/Section";
-import type { CaseStudySection } from "@/types/case-study";
+import type { Section as SectionType } from "@/types/case-study";
 import ContentRenderer from "./ContentRenderer";
 import ImageGallery from "./ImageGallery";
 import "./CaseStudySection.scss";
@@ -13,7 +13,7 @@ import { fadeUp, staggerParent } from "@/motion/motionVariants";
 
 
 type CaseStudySectionProps = {
-    section: CaseStudySection;
+    section: SectionType;
 }
 
 export default function CaseStudySection({ section }: CaseStudySectionProps) {

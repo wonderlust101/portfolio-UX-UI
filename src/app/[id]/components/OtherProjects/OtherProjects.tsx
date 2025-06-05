@@ -4,7 +4,6 @@ import Button from "@/components/Button";
 import OptimizedImage from "@/components/OptimizedImage";
 import Section from "@/components/Section";
 import { buildNamedTransformUrl } from "@/lib/cloudinary";
-import { useThemeStore } from "@/store/useThemeStore";
 import "./OtherProjects.scss";
 
 type CurrentProjectProps = {
@@ -30,8 +29,6 @@ const otherProjects = [
 ];
 
 export default function OtherProjects({currentProject}: CurrentProjectProps) {
-    const color = useThemeStore((state) => state.color);
-
     return (
         <Section header="Other Projects">
             {otherProjects.map((project) => {
@@ -42,10 +39,10 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
 
                             <section className="other-projects">
                                 <div className="other-projects__header">
-                                    <h3 className="heading-xs">
-                                        <span className={`${color}-accent-light`}>// </span>
+                                    <h3 className="heading-xs" >
+                                        <span className="accent-color">// </span>
                                         {project.project}
-                                        <span className={`${color}-accent-light`}>.</span>
+                                        <span className="accent-color">.</span>
                                     </h3>
 
                                     <Button

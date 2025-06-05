@@ -32,8 +32,8 @@
     }
   }
 
-  &--green-dark {
-    background-color: $clr-green-light;
+  &--accent-dark {
+    background-color: var(--light-theme-color);
     color: $clr-black;
 
     &:hover:not(:disabled) {
@@ -41,66 +41,12 @@
     }
   }
 
-  &--green-light {
-    background-color: $clr-green;
+  &--accent-light {
+    background-color: var(--theme-color);
     color: $clr-white;
 
     &:hover:not(:disabled) {
-      background-color: $clr-green-dark;
-    }
-  }
-
-  &--brown-dark {
-    background-color: $clr-brown-light;
-    color: $clr-black;
-
-    &:hover:not(:disabled) {
-      opacity: 0.85;
-    }
-  }
-
-  &--brown-light {
-    background-color: $clr-brown;
-    color: $clr-white;
-
-    &:hover:not(:disabled) {
-      background-color: $clr-brown-dark;
-    }
-  }
-
-  &--purple-dark {
-    background-color: $clr-purple-light;
-    color: $clr-black;
-
-    &:hover:not(:disabled) {
-      opacity: 0.85;
-    }
-  }
-
-  &--purple-light {
-    background-color: $clr-purple;
-    color: $clr-white;
-
-    &:hover:not(:disabled) {
-      background-color: $clr-purple-dark;
-    }
-  }
-
-  &--red-dark {
-    background-color: $clr-red-light;
-    color: $clr-black;
-
-    &:hover:not(:disabled) {
-      opacity: 0.85;
-    }
-  }
-
-  &--red-light {
-    background-color: $clr-red;
-    color: $clr-white;
-
-    &:hover:not(:disabled) {
-      background-color: $clr-red-dark;
+      background-color: var(--dark-theme-color);
     }
   }
 

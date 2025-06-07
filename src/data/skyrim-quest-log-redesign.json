@@ -19,9 +19,9 @@
   "heroImage"      : "skyrim-wide_stut1i",
   "heroImageTablet": "skyrim-square_jtisqs",
   "theme"          : {
-    "themeColor"     : "#C12A2C",
-    "lightThemeColor": "#F15154",
-    "darkThemeColor" : "#9D2325"
+    "themeColor"     : "#655945",
+    "lightThemeColor": "#B9A98F",
+    "darkThemeColor" : "#544A3A"
   },
   "projectSummary" : {
     "description": "|Skyrim Quest Log Redesign| is a UX/UI project, a redesign to fix usability issues that frustrated players, such as poor organization, lack of clarity, and minimal accessibility. By turning the quest log into an interactive journal, we made it more immersive, intuitive, and personalized for different play styles.",

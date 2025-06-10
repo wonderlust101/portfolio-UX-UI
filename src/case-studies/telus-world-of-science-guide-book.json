@@ -124,7 +124,7 @@
                   }
                 ],
                 "options": {
-                  "columns": 4
+                  "columns": 3
                 }
               }
             }
@@ -182,20 +182,16 @@
               "imagesGallery": {
                 "images" : [
                   {
-                    "src": "navigation-1_ljuk4e",
+                    "src": "research-1_e6cnxb",
                     "alt": "Image from Contextual Research: heuristic-1_mqzplx"
                   },
                   {
-                    "src": "navigation-2_wi72fk",
+                    "src": "research-2_gztqo0",
                     "alt": "Image from Contextual Research: heuristic-2_exhk3n"
                   },
                   {
-                    "src": "exploration-1_ljdj9p",
+                    "src": "research-3_dnsqjx",
                     "alt": "Image from Contextual Research: competitor-witcher-_m2xqty"
-                  },
-                  {
-                    "src": "exploration-2_eul6x5",
-                    "alt": "Image from Contextual Research: competitor-metro_hs5sz0"
                   }
                 ],
                 "options": {}

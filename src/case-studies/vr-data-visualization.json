@@ -72,7 +72,7 @@
       "contents"   : [
         {
           "type": "text",
-          "text": "Working with geospatial data often involves parsing complex, layered information all within tools designed primarily for 2D viewing. These tools are powerful but can be dense, cognitively demanding, and require several other tools for a simple task. For professionals like urban planners or analysts, making sense of spatial relationships across disconnected maps and dashboards isn’t just inefficient and it can obscure critical insights. This environment presents unique challenges for clarity, context, and communication."
+          "text": "Working with geospatial data often involves parsing complex, layered information all within tools designed primarily for 2D or 3D viewing. These tools are powerful but can be dense, cognitively demanding, and require several other tools for a simple task. For professionals like urban planners or analysts, making sense of spatial relationships across disconnected maps and dashboards isn’t just inefficient and it can obscure critical insights. This environment presents unique challenges for clarity, context, and communication."
         }
       ],
       "subsections": [
@@ -101,12 +101,34 @@
               ]
             }
           ]
+        },
+        {
+          "title"   : "2D & 3D Geospatial Data",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "problem-1_jopj7e",
+                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                  },
+                  {
+                    "src": "problem-2_ef2rhv",
+                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                  }
+                ],
+                "options": {
+                }
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "title"   : "The Solution",
-      "contents": [
+      "title"      : "The Solution",
+      "contents"   : [
         {
           "type": "text",
           "text": "Rather than relying on static, screen-based tools, we introduced a fully immersive VR experience tailored for spatial data exploration. Built in Unity and optimized for the Meta Quest 3, our solution emphasizes intuitive interaction and deeper comprehension through:"
@@ -135,10 +157,9 @@
       ],
       "subsections": [
         {
-          "title"   : "Demo (Coming Soon)"
+          "title": "Demo (Coming Soon)"
         }
       ]
-
     },
     {
       "title"      : "Research Process",
@@ -293,14 +314,14 @@
           ]
         },
         {
-          "title"   : "Development Photos",
+          "title"   : "Legend Development",
           "contents": [
             {
               "type"         : "imagesGallery",
               "imagesGallery": {
                 "images" : [
                   {
-                    "src": "development_lhpsmh",
+                    "src": "development_dmzjuy",
                     "alt": "Image from Wireframing: wireframe-1_nff4kv"
                   }
                 ],

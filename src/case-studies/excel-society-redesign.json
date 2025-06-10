@@ -96,6 +96,27 @@
               ]
             }
           ]
+        },
+        {
+          "title"   : "Problem Areas",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "problem-1_a5et9r",
+                    "alt": "Image from Contextual Research: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "problem-2_yonszj",
+                    "alt": "Image from Contextual Research: heuristic-2_exhk3n"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
         }
       ]
     },
@@ -368,6 +389,27 @@
           ]
         },
         {
+          "title"   : "CMS and Component Utilization",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "implementation-1_hhimn4",
+                    "alt": "Image from Title Style: style-tile-1_tp5txk"
+                  },
+                  {
+                    "src": "implementation-2_felgpz",
+                    "alt": "Image from Title Style: style-tile-2_srtty4"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
           "title"   : "Challenges & Solutions",
           "contents": [
             {
@@ -386,6 +428,27 @@
                   "text"  : "Many original pages had inconsistent formatting and excessive text, making direct migration inefficient.\n\n|Solution:| We rewrote and restructured some of the content during implementation to fit the new visual hierarchy and break dense blocks into skimmable, sectioned layouts."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "title"   : "Custom and 3rd Party Javascript",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "implementation-3_lyilpd",
+                    "alt": "Image from Title Style: style-tile-1_tp5txk"
+                  },
+                  {
+                    "src": "implementation-4_w9mgpe",
+                    "alt": "Image from Title Style: style-tile-2_srtty4"
+                  }
+                ],
+                "options": {}
+              }
             }
           ]
         }

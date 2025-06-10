@@ -14,8 +14,8 @@
       "Immersive Technology",
       "Meta Quest"
     ],
-    "imageUrl"   : "/images/shared/skyrim-square-preview.webp",
-    "url"        : "https://sergei-borja.dev/skyrim-quest-log-redesign"
+    "imageUrl"   : "/images/shared/vr-visualization-preview.webp",
+    "url"        : "https://sergei-borja.dev/vr-data-visualization"
   },
   "projectType"    : " A Spatial Data Explorer for Meta Quest",
   "heroImage"      : "vr-visualization-preview-wide_xyswfp",

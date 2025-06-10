@@ -41,15 +41,16 @@ export default function ImageWithCaption({image, alt = "No caption available"}: 
             </figure>
 
             {isOpen && (
-                <Lightbox
-                    className="image-with-caption__modal"
-                    medium={thumbUrl}
-                    large={largeUrl}
-                    alt={alt}
-                    onClose={() => setIsOpen(false)}
-                    hideDownload={true}
-                    hideZoom={false}
-                />
+                <div className="image-with-caption__modal">
+                    <Lightbox
+                        medium={thumbUrl}
+                        large={largeUrl}
+                        alt={alt}
+                        onClose={() => setIsOpen(false)}
+                        hideDownload={true}
+                        hideZoom={false}
+                    />
+                </div>
             )}
         </>
     );

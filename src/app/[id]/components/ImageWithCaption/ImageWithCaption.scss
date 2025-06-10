@@ -35,19 +35,7 @@
     transition: transform 0.35s ease-in-out;
   }
 
-  &__caption {
-    font-family: var(--font-satoshi), sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02rem;
-
-    @include breakpoint(small) {
-      font-size: 0.65rem;
-    }
-  }
-
-  &--even {
-    width: calc(50% - 1rem);
+  &__modal {
+    position: absolute;
   }
 }

@@ -1,4 +1,5 @@
 import FigmaFrame from "@/components/FigmaFrame";
+import VideoPlayer from "@/components/VideoPlayer";
 import dynamic from "next/dynamic";
 import List from "@/components/List";
 import Persona from "@/components/Persona";
@@ -33,6 +34,8 @@ export default function ContentRenderer({contents}: ContentRendererProps) {
                         return <QuoteList key={index} quotes={content.quotes}/>;
                     case "figma":
                         return <FigmaFrame key={index} figmaLink={content.figmaLink}/>
+                    case "video":
+                        return <VideoPlayer key={index} videoLink={content.video}></VideoPlayer>
                     default:
                         return null;
                 }

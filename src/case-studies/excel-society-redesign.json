@@ -151,7 +151,13 @@
       ],
       "subsections": [
         {
-          "title": "Demo (Coming Soon)"
+          "title"   : "Demo",
+          "contents": [
+            {
+              "type" : "video",
+              "video": "excel-society-demo_yiifcc"
+            }
+          ]
         }
       ]
     },
@@ -294,22 +300,6 @@
               "imagesGallery": {
                 "images" : [
                   {
-                    "src": "wireframe-1_xigcrg",
-                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
-                  },
-                  {
-                    "src": "wireframe-2_ijz1gr",
-                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
-                  },
-                  {
-                    "src": "wireframe-3_kfa26z",
-                    "alt": "Image from Wireframing: wireframe-3_cpi4yl"
-                  },
-                  {
-                    "src": "wireframe-4_gvkrmm",
-                    "alt": "Image from Wireframing: wireframe-4_mhn3rc"
-                  },
-                  {
                     "src": "wireframe-5_uenv9o",
                     "alt": "Image from Wireframing: wireframe-5_rre8p1"
                   },
@@ -328,7 +318,7 @@
                 ],
                 "options": {
                   "columns"      : 4,
-                  "tabletColumns": 3
+                  "tabletColumns": 2
                 }
               }
             }
@@ -389,22 +379,20 @@
           ]
         },
         {
-          "title"   : "CMS and Component Utilization",
+          "title"   : "CMS Utilization",
           "contents": [
             {
               "type"         : "imagesGallery",
               "imagesGallery": {
                 "images" : [
                   {
-                    "src": "implementation-1_hhimn4",
+                    "src": "implementation-1_lywbfs",
                     "alt": "Image from Title Style: style-tile-1_tp5txk"
-                  },
-                  {
-                    "src": "implementation-2_felgpz",
-                    "alt": "Image from Title Style: style-tile-2_srtty4"
                   }
                 ],
-                "options": {}
+                "options": {
+                  "columns": 1
+                }
               }
             }
           ]
@@ -432,7 +420,7 @@
           ]
         },
         {
-          "title"   : "Custom and 3rd Party Javascript",
+          "title"   : "Custom and 3rd Party Javascript Libraries",
           "contents": [
             {
               "type"         : "imagesGallery",

@@ -8,13 +8,13 @@
     display: grid;
     grid-column: 1/-1;
 
-    &:not(:has(.image-gallery, .figma-frame)){
+    &:not(:has(.image-gallery, .figma-frame, .video-player)){
       padding: 2rem;
       background-color: $clr-grey-35;
       border-radius: $border-radius;
     }
 
-    &:has(.image-gallery, .figma-frame) {
+    &:has(.image-gallery, .figma-frame, .video-player) {
       width: 100%;
     }
 

@@ -54,12 +54,8 @@ export type ContentBlock =
     |PersonaBlock
     |QuoteList
     |UserStatement
-    |FigmaBlock;
-
-export type FigmaBlock = {
-    type: "figma";
-    figmaLink: string;
-};
+    |FigmaBlock
+    |VideoBlock;
 
 export type TextBlock = {
     type: "text";
@@ -124,3 +120,13 @@ export type UserStatement = {
     type: "userStatement";
     statement: string;
 }
+
+export type FigmaBlock = {
+    type: "figma";
+    figmaLink: string;
+};
+
+export type VideoBlock = {
+    type: "video";
+    video: string;
+};

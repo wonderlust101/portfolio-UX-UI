@@ -158,7 +158,13 @@
       ],
       "subsections": [
         {
-          "title": "Demo (Coming Soon)"
+          "title": "Demo",
+          "contents"   : [
+            {
+              "type": "video",
+              "video": "Desn444_Final_Crit_1_rgrmuh"
+            }
+          ]
         }
       ]
     },

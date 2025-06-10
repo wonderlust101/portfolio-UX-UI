@@ -42,6 +42,7 @@ export default function ImageWithCaption({image, alt = "No caption available"}: 
 
             {isOpen && (
                 <Lightbox
+                    className="image-with-caption__modal"
                     medium={thumbUrl}
                     large={largeUrl}
                     alt={alt}

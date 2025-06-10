@@ -65,7 +65,108 @@
   },
   "sections"       : [
     {
-      "title"      : "Problem Discovery",
+      "title"   : "The Problem Space",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Visiting the science center is meant to be an immersive and exploratory experience, especially for families, children, and guests of all abilities. However, with so many exhibits, diverse visitor needs, and a dynamic physical environment, creating a cohesive, accessible journey across the space is an ongoing challenge. From orientation to interaction, every space shapes how visitors engage, learn, and move through the experience."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Challenges",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Limited Accessibility Across Navigation and Exhibits",
+                  "text"  : "Guests frequently get lost due to missing signs and unclear elevator directions. Inconsistent wayfinding forces reliance on staff and interrupts the visit flow, especially during busy hours."
+                },
+                {
+                  "header": "Confusing and Ineffective Map System",
+                  "text"  : "Existing maps lack clarity and adaptability, making it hard for guests to orient themselves or locate exhibits. Without real-time guidance or accessible formats, visitors often get lost or miss areas entirely."
+                },
+                {
+                  "header": "Barriers to Hands-On Learning",
+                  "text"  : "Younger visitors struggle with text-heavy content and may also cause concern to fragile displays. Limited interactive opportunities restrict their ability to explore concepts through play and experimentation."
+                },
+                {
+                  "header": "Low Engagement with Exhibits",
+                  "text"  : "Static presentations and minimal use of new or interesting technology lead to reduced interest, especially among repeat visitors. The lack of dynamic, personalized interaction diminishes overall engagement and learning retention."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "Problem Areas",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "navigation-1_ljuk4e",
+                    "alt": "Image from Contextual Research: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "navigation-2_wi72fk",
+                    "alt": "Image from Contextual Research: heuristic-2_exhk3n"
+                  },
+                  {
+                    "src": "exploration-1_ljdj9p",
+                    "alt": "Image from Contextual Research: competitor-witcher-_m2xqty"
+                  },
+                  {
+                    "src": "exploration-2_eul6x5",
+                    "alt": "Image from Contextual Research: competitor-metro_hs5sz0"
+                  }
+                ],
+                "options": {
+                  "columns": 4
+                }
+              }
+            }
+          ]
+        }
+
+      ]
+
+    },
+    {
+      "title"      : "The Solution",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "To address the identified challenges, we designed a mobile app that utilizes AR technology to enhance navigation and exploration at the science centre. Our solution integrates:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "AR-Assisted, Real-Time Navigation",
+              "text"  : "Guests can interact with the built-in map of their exhibit of choice and receive guidance through AR arrows, making it easier to locate exhibits, restrooms, and other key areas without confusion."
+            },
+            {
+              "header": "Gamified Exploration with a Digital Stamp Book",
+              "text"  : "The app includes an interactive stamp system that encourages deeper engagement. Visitors collect stamps by interacting with exhibits, giving their visit a sense of progress, reward, and discovery."
+            },
+            {
+              "header": "Built-In Accessibility for All Users",
+              "text"  : "With high-contrast visuals, audio narration, and simplified language, the app is designed to support a wide range of visitors, including children, seniors, and those with visual or sensory impairments."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Demo (Coming Soon)"
+        }
+      ]
+    },
+    {
+      "title"      : "Research Process",
       "contents"   : [
         {
           "type": "text",
@@ -103,32 +204,6 @@
           ]
         },
         {
-          "title"   : "Insight",
-          "contents": [
-            {
-              "type" : "list",
-              "items": [
-                {
-                  "header": "Limited Accessibility Across Navigation and Exhibits",
-                  "text"  : "Guests frequently get lost due to missing signs and unclear elevator directions. Inconsistent wayfinding forces reliance on staff and interrupts the visit flow, especially during busy hours."
-                },
-                {
-                  "header": "Confusing and Ineffective Map System",
-                  "text"  : "Existing maps lack clarity and adaptability, making it hard for guests to orient themselves or locate exhibits. Without real-time guidance or accessible formats, visitors often get lost or miss areas entirely."
-                },
-                {
-                  "header": "Barriers to Hands-On Learning",
-                  "text"  : "Younger visitors struggle with text-heavy content and may also cause concern to fragile displays. Limited interactive opportunities restrict their ability to explore concepts through play and experimentation."
-                },
-                {
-                  "header": "Low Engagement with Exhibits",
-                  "text"  : "Static presentations and minimal use of new or interesting technology lead to reduced interest, especially among repeat visitors. The lack of dynamic, personalized interaction diminishes overall engagement and learning retention."
-                }
-              ]
-            }
-          ]
-        },
-        {
           "title"   : "User Statement",
           "contents": [
             {
@@ -136,54 +211,34 @@
               "statement": "“As a visitor with a strong interest towards science, I want intuitive navigation and engaging interactive elements so I can focus on discovery without getting lost or bored.”"
             }
           ]
-        }
-      ]
-    },
-    {
-      "title"      : "The Solution",
-      "contents"   : [
-        {
-          "type": "text",
-          "text": "To address the identified challenges, we designed a mobile app that utilizes AR technology to enhance navigation and exploration at the science centre. Our solution integrates:"
         },
         {
-          "type" : "list",
-          "items": [
-            {
-              "header": "AR-Assisted, Real-Time Navigation",
-              "text"  : "Guests can interact with the built-in map of their exhibit of choice and receive guidance through AR arrows, making it easier to locate exhibits, restrooms, and other key areas without confusion."
-            },
-            {
-              "header": "Gamified Exploration with a Digital Stamp Book",
-              "text"  : "The app includes an interactive stamp system that encourages deeper engagement. Visitors collect stamps by interacting with exhibits, giving their visit a sense of progress, reward, and discovery."
-            },
-            {
-              "header": "Built-In Accessibility for All Users",
-              "text"  : "With high-contrast visuals, audio narration, and simplified language, the app is designed to support a wide range of visitors, including children, seniors, and those with visual or sensory impairments."
-            }
-          ]
-        }
-      ],
-      "subsections": [
-        {
-          "title"   : "Preview",
+          "title"   : "Personas",
           "contents": [
             {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "intro_a1ddt3",
-                    "alt": "Image from Title Style: style-tile-1_tp5txk"
-                  }
+              "type"   : "persona",
+              "persona": {
+                "name"      : "Charlie Stewart",
+                "image"     : "persona_voceaj",
+                "age"       : 13,
+                "location"  : "Edmonton, BC",
+                "type"      : "Student",
+                "quote"     : "I want to create something that will amaze my classmates so that I can share my curiosity about science in a way that feels fun and engaging for everyone.",
+                "goals"     : [
+                  "Learn more about the solar system to finish her science fair project on time.",
+                  "Prove how much she's learned while visiting the science centre.",
+                  "Show she is responsible enough to explore without her mom."
                 ],
-                "options": {
-                  "columns": 1
-                }
+                "painPoints": [
+                  "Tends to lose focus quickly, especially in environments with a lot of visuals.",
+                  "Her phone has parental restrictions, which limit access to certain apps or features.",
+                  "Feels uncomfortable approaching staff or unfamiliar adults for assistance."
+                ]
               }
             }
           ]
         }
+
       ]
     },
     {
@@ -191,7 +246,7 @@
       "contents"   : [
         {
           "type": "text",
-          "text": "During this phase, I collaborated with my team to reimagine the visitor experience at the Telus World of Science, using user research and creative strategy to guide our design decisions. I contributed across all areas of the project while also taking the lead on AR prototyping and 3D modelling:"
+          "text": "During this phase, I collaborated with my team to reimagine the visitor experience at the Telus World of Science, using user research to guide our design decisions. I contributed across all areas of the project while also taking the lead on AR prototyping and 3D modelling:"
         },
         {
           "type" : "list",

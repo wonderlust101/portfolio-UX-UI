@@ -14,7 +14,7 @@ const SectionHeader = forwardRef<HTMLHeadingElement, SectionHeaderProps>(
         switch (type) {
             case "page":
                 return (
-                    <h1 ref={ref} className="heading-lg">
+                    <h1 ref={ref} className="heading-md">
                         {children}
                     </h1>
                 );

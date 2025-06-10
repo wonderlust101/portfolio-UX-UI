@@ -68,16 +68,16 @@
   },
   "sections"       : [
     {
-      "title"      : "Problem Discovery",
+      "title"      : "The Problem Space",
       "contents"   : [
         {
           "type": "text",
-          "text": "My teammate and I reviewed existing research and defined user needs through persona development to understand the existing issues with traditional spatial data viewing methods. This initial research helped clarify how traditional geospatial tools fall short, especially compared to more immersive technologies like VR."
+          "text": "Working with geospatial data often involves parsing complex, layered information all within tools designed primarily for 2D viewing. These tools are powerful but can be dense, cognitively demanding, and require several other tools for a simple task. For professionals like urban planners or analysts, making sense of spatial relationships across disconnected maps and dashboards isn’t just inefficient and it can obscure critical insights. This environment presents unique challenges for clarity, context, and communication."
         }
       ],
       "subsections": [
         {
-          "title"   : "Insight",
+          "title"   : "Challenges",
           "contents": [
             {
               "type" : "list",
@@ -99,44 +99,6 @@
                   "text"  : "While 3D and VR technologies have been explored in other domains, a gap exists in applying immersive VR environments specifically to geospatial datasets."
                 }
               ]
-            }
-          ]
-        },
-        {
-          "title"   : "User Statement",
-          "contents": [
-            {
-              "type"     : "userStatement",
-              "statement": "As an urban planner, I want to intuitively explore layered geospatial data in a virtual environment to quickly understand spatial relationships and make informed planning decisions."
-            }
-          ]
-        },
-        {
-          "title"   : "Personas",
-          "contents": [
-            {
-              "type"   : "persona",
-              "persona": {
-                "name"      : "Maya Rodriguez",
-                "image"     : "persona-vr_ebc5ek",
-                "age"       : 35,
-                "location"  : "Vancouver, BC",
-                "devices"   : [
-                  "Meta Quest 3"
-                ],
-                "type"      : "Municipal GIS Analyst",
-                "quote"     : "I need to see how all the layers interact such as elevation, zoning, and infrastructure without flipping between ten different maps.",
-                "goals"     : [
-                  "Evaluate potential development zones with complete spatial context",
-                  "Compare zoning boundaries and building footprints in a single environment",
-                  "Communicate spatial insights clearly to non-technical stakeholders"
-                ],
-                "painPoints": [
-                  "Wastes time toggling between flat maps and layers in disconnected tools",
-                  "Struggles to convey spatial relationships to decision-makers using 2D diagrams",
-                  "Finds it difficult to explain spatial decisions to team members without visual aids"
-                ]
-              }
             }
           ]
         }
@@ -167,6 +129,61 @@
             {
               "header": "Integration with ArcGIS for Real-World Data Fidelity",
               "text"  : "The app uses the ArcGIS Maps SDK to bring in high-accuracy geographic data, enabling stakeholders to analyze real-world information in a realistic and interactive context."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Demo (Coming Soon)"
+        }
+      ]
+
+    },
+    {
+      "title"      : "Research Process",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "My teammate and I reviewed existing research and defined user needs through persona development to understand the existing issues with traditional spatial data viewing methods. This initial research helped clarify how traditional geospatial tools fall short, especially compared to more immersive technologies like VR."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "User Statement",
+          "contents": [
+            {
+              "type"     : "userStatement",
+              "statement": "As an urban planner, I want to intuitively explore layered geospatial data in a virtual environment to quickly understand spatial relationships and make informed planning decisions."
+            }
+          ]
+        },
+        {
+          "title"   : "Personas",
+          "contents": [
+            {
+              "type"   : "persona",
+              "persona": {
+                "name"      : "Maya Rodriguez",
+                "image"     : "persona-vr_ebc5ek",
+                "age"       : 35,
+                "location"  : "Vancouver, BC",
+                "devices"   : [
+                  "Meta Quest 3"
+                ],
+                "type"      : "Municipal GIS Analyst",
+                "quote"     : "I need to see how all the layers interact such as elevation, zoning, and infrastructure without flipping between ten different maps.",
+                "goals"     : [
+                  "Evaluate potential development zones with complete spatial context.",
+                  "Compare zoning boundaries and building footprints in a single environment.",
+                  "Communicate spatial insights clearly to non-technical stakeholders."
+                ],
+                "painPoints": [
+                  "Wastes time toggling between flat maps and layers in disconnected tools.",
+                  "Struggles to convey spatial relationships to decision-makers using 2D diagrams.",
+                  "Finds it difficult to explain spatial decisions to team members without visual aids."
+                ]
+              }
             }
           ]
         }
@@ -458,7 +475,7 @@
       "contents": [
         {
           "type": "text",
-          "text": "By embracing both the creative and practical challenges of VR development, we delivered a functional prototype that pushed our skills and demonstrated the viability of spatial data exploration in virtual environments."
+          "text": "While we couldn't implement the changes from our testing, we got an insight into how we can improve both our design and development skills for VR. By embracing both the creative and practical challenges of VR development, we delivered a functional prototype that pushed our skills and demonstrated the viability of spatial data exploration in virtual environments."
         },
         {
           "type" : "list",

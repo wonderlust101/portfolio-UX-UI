@@ -11,15 +11,15 @@ type Props = {
     theme?: ThemeProps;
 };
 
-export default function ThemeEffect({ theme }: Props) {
+export default function ThemeEffect({theme}: Props) {
     useEffect(() => {
         document.documentElement.style.setProperty(
             "--theme-color",
-            theme?.themeColor ?? "#6A7D8B"
+            theme?.themeColor ?? "#536877"
         );
         document.documentElement.style.setProperty(
             "--light-theme-color",
-            theme?.lightThemeColor ?? "#c2c7cc"
+            theme?.lightThemeColor ?? "#c4ced9"
         );
         document.documentElement.style.setProperty(
             "--dark-theme-color",

@@ -9,7 +9,6 @@
     grid-column: 1/-1;
 
     &:not(:has(.image-gallery)) {
-      width: 100%;
       padding: 2rem;
       background-color: $clr-grey-35;
       border-radius: $border-radius;

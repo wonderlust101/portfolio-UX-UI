@@ -31,7 +31,7 @@ export default function Persona({personaData}: PersonaProps) {
                         <ul>
                             <li><p><span className="bold">Age: </span>{personaData.age}</p></li>
                             <li><p><span className="bold">Location: </span>{personaData.location}</p></li>
-                            <li><p><span className="bold">Type: </span>{personaData.type}</p></li>
+                            <li><p><span className="bold">Occupation: </span>{personaData.type}</p></li>
                         </ul>
                         <p className="persona__quote accent-color">"{personaData.quote}"</p>
                     </div>

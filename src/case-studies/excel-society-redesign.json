@@ -67,7 +67,75 @@
   },
   "sections"       : [
     {
-      "title"      : "Problem Discovery",
+      "title"      : "The Problem Space",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "A website often serves as the first point of contact for organizations that rely on public support and community engagement. It's not just a source of information, as it's where people decide whether to get involved, seek services, or offer support. The website's various needs mean accommodating a wide range of users; however, each group brings different goals and digital expectations. The challenge lies in designing an experience that communicates and adapts to varied needs."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Challenges",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Dense, Unscannable Content Layout",
+                  "text"  : "The large blocks of text can potentially overwhelm the user and a lack of clear pathways to donate, volunteer, or participate results in low interaction rates and missed opportunities."
+                },
+                {
+                  "header": "Unclear Communication of Mission and Services",
+                  "text"  : "The website does not clearly explain who Excel Society is or what they do. This lack of clarity limits user engagement and reduces understanding of their services."
+                },
+                {
+                  "header": "Outdated System with Limited Update Flexibility",
+                  "text"  : "The site is built on a system that requires a developer to update content. This prevents staff from easily posting new information about events or services."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "The Solution",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "Working collaboratively, my team completely redesigned the website using a modern, responsive platform to address usability and maintenance challenges. Essential improvements included:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Intuitive Information Architecture",
+              "text"  : "Navigation was restructured, using user-centred categories and moving pages into their respective sections."
+            },
+            {
+              "header": "Modern Visual Design and Layout",
+              "text"  : "The new design emphasized accessibility and clarity, with streamlined content, strong visual hierarchy, and high-visibility calls to action."
+            },
+            {
+              "header": "Client-Side Content Management",
+              "text"  : "Webflow's content management system was implemented to allow staff to update events, news, and program details directly through a user-friendly dashboard, reducing reliance on developers."
+            },
+            {
+              "header": "Improved Engagement and Conversion Paths",
+              "text"  : "A dedicated events page with filtering options and clearly placed volunteer and contact links were introduced to make participation and support more visible."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title": "Demo (Coming Soon)"
+        }
+      ]
+    },
+    {
+      "title"      : "Research Process",
       "contents"   : [
         {
           "type": "text",
@@ -142,84 +210,11 @@
           ]
         },
         {
-          "title"   : "Insight",
-          "contents": [
-            {
-              "type" : "list",
-              "items": [
-                {
-                  "header": "Dense, Unscannable Content Layout",
-                  "text"  : "The large blocks of text can potentially overwhelm the user and a lack of clear pathways to donate, volunteer, or participate results in low interaction rates and missed opportunities."
-                },
-                {
-                  "header": "Unclear Communication of Mission and Services",
-                  "text"  : "The website does not clearly explain who Excel Society is or what they do. This lack of clarity limits user engagement and reduces understanding of their services."
-                },
-                {
-                  "header": "Outdated System with Limited Update Flexibility",
-                  "text"  : "The site is built on a system that requires a developer to update content. This prevents staff from easily posting new information about events or services."
-                }
-              ]
-            }
-          ]
-        },
-        {
           "title"   : "User Statement",
           "contents": [
             {
               "type"     : "userStatement",
               "statement": "As a volunteer, I want to quickly find relevant information about services and events so that I can stay engaged and support the organization."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title"      : "The Solution",
-      "contents"   : [
-        {
-          "type": "text",
-          "text": "Working collaboratively, my team completely redesigned the website using a modern, responsive platform to address usability and maintenance challenges. Essential improvements included:"
-        },
-        {
-          "type" : "list",
-          "items": [
-            {
-              "header": "Intuitive Information Architecture",
-              "text"  : "Navigation was restructured, using user-centred categories and moving pages into their respective sections."
-            },
-            {
-              "header": "Modern Visual Design and Layout",
-              "text"  : "The new design emphasized accessibility and clarity, with streamlined content, strong visual hierarchy, and high-visibility calls to action."
-            },
-            {
-              "header": "Client-Side Content Management",
-              "text"  : "Webflow's content management system was implemented to allow staff to update events, news, and program details directly through a user-friendly dashboard, reducing reliance on developers."
-            },
-            {
-              "header": "Improved Engagement and Conversion Paths",
-              "text"  : "A dedicated events page with filtering options and clearly placed volunteer and contact links were introduced to make participation and support more visible."
-            }
-          ]
-        }
-      ],
-      "subsections": [
-        {
-          "title"   : "Preview",
-          "contents": [
-            {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "preview_lfhtcy",
-                    "alt": "Image from Title Style: style-tile-1_tp5txk"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
             }
           ]
         }
@@ -400,7 +395,7 @@
       "title"      : "Final Product",
       "subsections": [
         {
-          "title"   : "Events Page",
+          "title"   : "Home, About, Careers, Donate & Contact",
           "contents": [
             {
               "type"         : "imagesGallery",
@@ -415,9 +410,32 @@
                     "alt": "Image from Final Product: mockup-6_hgt5rm"
                   },
                   {
-                    "src": "final-5_kgdbjc",
+                    "src": "final-9_b6uvse",
                     "alt": "Image from Final Product: mockup-5_xnfw9u"
                   },
+                  {
+                    "src": "final-6_dfqdpu",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  },
+                  {
+                    "src": "final-16_aqcvvw",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  }
+                ],
+                "options": {
+                  "columns": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Service",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
                   {
                     "src": "final-3_ap6ghb",
                     "alt": "Image from Final Product: mockup-5_xnfw9u"
@@ -427,31 +445,53 @@
                     "alt": "Image from Final Product: mockup-6_hgt5rm"
                   },
                   {
+                    "src": "final-2_nrnzvo",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  }
+                ],
+                "options": {
+                  "columns": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Engagement",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "final-5_kgdbjc",
+                    "alt": "Image from Final Product: mockup-5_xnfw9u"
+                  },
+                  {
                     "src": "final-15_pv19ly",
                     "alt": "Image from Final Product: mockup-5_xnfw9u"
                   },
                   {
-                    "src": "final-9_b6uvse",
-                    "alt": "Image from Final Product: mockup-5_xnfw9u"
-                  },
-                  {
-                    "src": "final-2_nrnzvo",
-                    "alt": "Image from Final Product: mockup-6_hgt5rm"
-                  },
-                  {
-                    "src": "final-6_dfqdpu",
-                    "alt": "Image from Final Product: mockup-6_hgt5rm"
-                  },
-                  {
-                    "src": "final-8_fvej1x",
-                    "alt": "Image from Final Product: mockup-6_hgt5rm"
-                  },
-                  {
                     "src": "final-11_gnjk2s",
                     "alt": "Image from Final Product: mockup-5_xnfw9u"
-                  },
+                  }
+                ],
+                "options": {
+                  "columns": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Support Us & Misc.",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
                   {
-                    "src": "final-12_by2iwh",
+                    "src": "final-8_fvej1x",
                     "alt": "Image from Final Product: mockup-6_hgt5rm"
                   },
                   {
@@ -472,8 +512,7 @@
                   }
                 ],
                 "options": {
-                  "columns"      : 4,
-                  "tabletColumns": 3
+                  "columns": 5
                 }
               }
             }

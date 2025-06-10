@@ -65,39 +65,35 @@ p {
 }
 
 .heading-lg {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: -0.11rem;
+  letter-spacing: -0.125rem;
   line-height: 1.25;
 
   @include a.breakpoint(medium) {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     letter-spacing: -0.1rem;
-  }
-  //
-  @include a.breakpoint(small) {
-    font-size: 2rem;
-    letter-spacing: -0.075rem;
   }
 
   @include a.breakpoint(x-small) {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
 }
 
 .heading-md {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: -0.06rem;
+  line-height: 1.25;
 
   @include a.breakpoint(medium) {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
   }
 
-  @include a.breakpoint(small) {
-    font-size: 2rem;
+  @include a.breakpoint(x-small) {
+    font-size: 1.75rem;
   }
 }
 
@@ -132,7 +128,7 @@ p {
 }
 
 .heading-xxs {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 900;
   text-transform: uppercase;
 }

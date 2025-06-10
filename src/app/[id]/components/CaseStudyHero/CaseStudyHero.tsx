@@ -1,6 +1,5 @@
 "use client";
 
-import SectionHeader from "@/components/SectionHeader";
 import "./CaseStudyHero.scss";
 import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { parseHighlightedText } from "@/utils/parseHighlightedText";
@@ -48,7 +47,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
             y       : "0%",
             duration: 1.5,
             stagger : 0.1,
-            delay   : 1.5,
+            delay   : 1.,
             ease    : "power3.out"
         });
 
@@ -72,10 +71,10 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
     return (
         <section className="case-study-hero grid-bleed-small">
             <div className="case-study-hero__header">
-                <SectionHeader type="page" ref={titleRef}>
+                <h1 className='heading-lg' ref={titleRef}>
                     <span>{productName}</span>
                     <div ref={typeRef} className="case-study-hero__type accent-color"> {parseHighlightedText(projectType)}</div>
-                </SectionHeader>
+                </h1>
             </div>
 
             <div className="case-study-hero__image-container">

@@ -7,11 +7,7 @@
   color: $clr-black;
   border-radius: $border-radius;
 
-  @include breakpoint(large) {
-    padding: 1.5rem;
-  }
-
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     display: none;
   }
 

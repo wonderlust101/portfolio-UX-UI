@@ -50,7 +50,7 @@ export function useAnimatedNavigation() {
                     if (hash) {
                         const el = document.getElementById(hash);
                         if (el) {
-                            lenis?.scrollTo?.(el, { offset: -280 }) || el.scrollIntoView();
+                            lenis?.scrollTo?.(el, { offset: -100 }) || el.scrollIntoView();
                         }
                     }
                     if (callback) callback();
@@ -67,7 +67,7 @@ export function useAnimatedNavigation() {
                             setTimeout(() => {
                                 const el = document.getElementById(hash);
                                 if (el) {
-                                    lenis?.scrollTo?.(el, { offset: -280 }) || el.scrollIntoView();
+                                    lenis?.scrollTo?.(el, { offset: -100 }) || el.scrollIntoView();
                                 }
                             }, 500);
                         }

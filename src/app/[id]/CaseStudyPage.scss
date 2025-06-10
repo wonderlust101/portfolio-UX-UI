@@ -16,10 +16,6 @@
       grid-template-columns: 16rem 1fr;
       gap: 2rem;
     }
-
-    @include breakpoint(medium) {
-      grid-template-columns: 14rem 1fr;
-    }
   }
 
   &__sections {
@@ -27,7 +23,7 @@
     display: grid;
     gap: 8rem;
 
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
       gap: 6rem;
       grid-column: 1/-1;
     }

@@ -1,11 +1,6 @@
 .section {
-  padding: 5rem 0;
   background-color: $clr-white;
   color: $clr-black;
-
-  @include breakpoint(small) {
-    padding: 2rem 0;
-  }
 
   &__header {
     display: grid;
@@ -18,18 +13,10 @@
 
   &__content {
     display: grid;
-    gap: 5rem;
-
-    @include breakpoint(large) {
-      gap: 4rem;
-    }
-
-    @include breakpoint(medium) {
-      gap: 3rem;
-    }
+    gap: 4rem;
 
     @include breakpoint(small) {
-      gap: 2rem;
+      gap: 1rem;
     }
   }
 }

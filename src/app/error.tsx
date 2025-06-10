@@ -3,7 +3,6 @@
 import Button from "@/components/Button";
 import Modal from "@/components/Modal";
 import Revealer from "@/components/Revealer";
-import { AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 
 import "./status-pages.scss";
@@ -50,13 +49,11 @@ export default function Error({error, reset}: ErrorProps) {
                     Show more details
                 </Button>
 
-                <AnimatePresence mode="wait">
-                    {open &&
-                        <Modal onClose={() => setOpen(false)}>
-                            <p>{error.stack}</p>
-                        </Modal>
-                    }
-                </AnimatePresence>
+                {open &&
+                    <Modal onClose={() => setOpen(false)}>
+                        <p>{error.stack}</p>
+                    </Modal>
+                }
             </section>
         </>
     );

@@ -1,8 +1,7 @@
 .list {
   display: grid;
   align-content: flex-start;
-  gap: 1.25rem;
-  width: 100%;
+  gap: 1.5rem;
 
   @include breakpoint(small) {
     gap: 1rem;
@@ -23,6 +22,7 @@
 
     & > p:first-child {
       opacity: 0.75;
+      font-weight: 500;
     }
   }
 
@@ -32,7 +32,6 @@
   }
 
   &__index {
-    font-weight: 400;
     opacity: 0.5;
   }
 

@@ -9,21 +9,21 @@ export function useAnimatedNavigation() {
     const pathname = usePathname();
     const lenis = useLenis();
 
+    const isFirefox =
+        typeof navigator !== "undefined" &&
+        navigator.userAgent.toLowerCase().includes("firefox");
+
     function triggerPageTransition() {
         if (lenis) {
             lenis.scrollTo(0, { immediate: true });
         } else {
-            window.scrollTo({ top: 0, behavior: "instant" });
+            window.scrollTo({ top: 0 });
         }
 
         document.documentElement.animate(
             [
-                {
-                    clipPath: "polygon(25% 75%, 75% 75%, 75% 75%, 25% 75%)",
-                },
-                {
-                    clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-                },
+                { clipPath: "polygon(25% 75%, 75% 75%, 75% 75%, 25% 75%)" },
+                { clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)" },
             ],
             {
                 duration: 2000,
@@ -33,17 +33,47 @@ export function useAnimatedNavigation() {
         );
     }
 
-    const handleNavigation = (path: string, callback?: () => void) => (e: ReactMouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
+    const handleNavigation =
+        (fullPath: string, callback?: () => void) =>
+            (e: ReactMouseEvent<HTMLElement>) => {
+                if (isFirefox) {
+                    if (callback) callback();
+                    return;
+                }
+                e.preventDefault();
+                const [pathWithoutHash, hash] = fullPath.split("#");
 
-        if (pathname === path) return;
+                if (
+                    pathname === pathWithoutHash ||
+                    (!pathWithoutHash && pathname === "/")
+                ) {
+                    if (hash) {
+                        const el = document.getElementById(hash);
+                        if (el) {
+                            lenis?.scrollTo?.(el, { offset: -280 }) || el.scrollIntoView();
+                        }
+                    }
+                    if (callback) callback();
+                    return;
+                }
 
-        if (callback) callback();
+                if (callback) callback();
 
-        router.push(path, {
-            onTransitionReady: triggerPageTransition,
-        });
-    };
+                router.push(pathWithoutHash || "/", {
+                    onTransitionReady: () => {
+                        triggerPageTransition();
+
+                        if (hash) {
+                            setTimeout(() => {
+                                const el = document.getElementById(hash);
+                                if (el) {
+                                    lenis?.scrollTo?.(el, { offset: -280 }) || el.scrollIntoView();
+                                }
+                            }, 500);
+                        }
+                    },
+                });
+            };
 
     return { handleNavigation };
 }

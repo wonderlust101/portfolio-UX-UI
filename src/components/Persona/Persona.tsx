@@ -1,40 +1,30 @@
 "use client";
 
-import OptimizedImage from "@/components/OptimizedImage";
 import SectionHeader from "@/components/SectionHeader";
-import { buildNamedTransformUrl } from "@/lib/cloudinary";
-import { contentVariants, fadeUp, fadeUpLowOpacity, headerVariants, staggerParent } from "@/motion/motionVariants";
-import type { Persona as PersonaType } from "@/types/case-study";
+import type { Persona } from "@/types/case-study";
 import "./Persona.scss";
-import { motion } from "motion/react";
+import { CldImage } from "next-cloudinary";
 
 type PersonaProps = {
-    personaData: PersonaType;
+    personaData: Persona;
 }
 
 export default function Persona({personaData}: PersonaProps) {
 
     return (
-        <motion.section
-            className="persona"
-            initial="hidden"
-            whileInView="visible"
-            variants={staggerParent}
-            viewport={{once: true}}
-        >
-
-            <motion.div className="persona__top" variants={fadeUp}>
-                <motion.div className="persona__image-container" variants={headerVariants}>
-                    <OptimizedImage
+        <section className="persona">
+            <div className="persona__top">
+                <div className="persona__image-container">
+                    <CldImage
                         className="persona__image"
-                        src={buildNamedTransformUrl(personaData?.image, "webp_low")}
+                        src={personaData.image}
                         alt={`${personaData.name}`}
                         height={600}
                         width={600}
                     />
-                </motion.div>
+                </div>
 
-                <motion.div className="persona__info" variants={contentVariants}>
+                <div className="persona__info">
                     <SectionHeader type="block">{personaData.name}</SectionHeader>
 
                     <div>
@@ -45,34 +35,34 @@ export default function Persona({personaData}: PersonaProps) {
                         </ul>
                         <p className="persona__quote accent-color">"{personaData.quote}"</p>
                     </div>
-                </motion.div>
-            </motion.div>
+                </div>
+            </div>
 
-            <motion.hr variants={fadeUpLowOpacity}/>
+            <hr/>
 
-            <motion.div className="persona__bottom" variants={staggerParent}>
-                <motion.div className="persona__list" variants={fadeUp}>
+            <div className="persona__bottom">
+                <div className="persona__list">
                     <p className="bold">Goals:</p>
                     <ul>
                         {personaData.goals.map((goal) => (
-                            <motion.li key={goal} variants={fadeUp}>
+                            <li key={goal}>
                                 <p>{goal}</p>
-                            </motion.li>
+                            </li>
                         ))}
                     </ul>
-                </motion.div>
+                </div>
 
-                <motion.div className="persona__list" variants={fadeUp}>
+                <div className="persona__list">
                     <p className="bold">Pain Points:</p>
                     <ul>
                         {personaData.painPoints.map((pain) => (
-                            <motion.li key={pain} variants={fadeUp}>
+                            <li key={pain}>
                                 <p>{pain}</p>
-                            </motion.li>
+                            </li>
                         ))}
                     </ul>
-                </motion.div>
-            </motion.div>
-        </motion.section>
+                </div>
+            </div>
+        </section>
     );
 }

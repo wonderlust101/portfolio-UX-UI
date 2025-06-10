@@ -1,17 +1,16 @@
 "use client";
 
 import MobileNavigation from "@/components/Header/MobileNavigation";
-import navLinks from "@/data/nav-links.json";
 import gsap from "gsap";
 import "./Header.scss";
 import { useEffect, useRef, useState } from "react";
-import { useWindowScroll } from "react-use";
+import { useWindowScrollFixed } from '@/hooks/useWindowScrollFixed';
 
 export default function Header() {
     const [isHeaderVisible, setIsHeaderVisible] = useState(true);
     const headerRef = useRef(null);
     const lastScrollY = useRef(0);
-    const { y: currentScrollY } = useWindowScroll();
+    const { y: currentScrollY } = useWindowScrollFixed();
 
     useEffect(() => {
         const prevY = lastScrollY.current;
@@ -35,7 +34,7 @@ export default function Header() {
 
     return (
         <header className="header" ref={headerRef}>
-            <MobileNavigation navLinks={navLinks.navLinks} />
+            <MobileNavigation />
         </header>
     );
 }

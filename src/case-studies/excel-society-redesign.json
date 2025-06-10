@@ -1,0 +1,511 @@
+{
+  "productName"    : "Excel Society Website Redesign",
+  "projectType"    : "Enhancing Accessibility and Community Engagement",
+  "type"           : "UX & UI Design | Webflow",
+  "featured"       : true,
+  "metadata"       : {
+    "title"      : "Excel Society Website Redesign",
+    "description": "A redesign of Excel Society’s website focused on improving usability, accessibility, and improved staff content management.",
+    "keywords"   : [
+      "Excel Society",
+      "UX design",
+      "Webflow CMS",
+      "UI redesign",
+      "Community Engagement",
+      "Inclusive Design",
+      "Nonprofit Website"
+    ],
+    "imageUrl"   : "/images/shared/skyrim-square-preview.webp",
+    "url"        : "https://sergei-borja.dev/excel-society-redesign"
+  },
+  "heroImage"      : "excel-society-preview-wide_qgius3",
+  "heroImageTablet": "excel-society-preview-square_ktrsnz",
+  "theme"          : {
+    "themeColor"     : "#1e3c57",
+    "lightThemeColor": "#8f9eab",
+    "darkThemeColor" : "#0f1e2c"
+  },
+  "projectSummary" : {
+    "description": "In collaboration with Excel Society and the work-integrated learning platform |Ripen|, we built a responsive website in Webflow that enables staff to manage content easily and helps users find services, events, and other essential information through accessible and well-organized design.",
+    "role"       : "I collaborated on UX research, wireframing and design. I also played a major role in front and backend development tasks, including implementing CMS structures, building responsive layouts, and implementing JavaScript using Webflow and third-party tools.",
+    "details"    : [
+      {
+        "header": "Course Name",
+        "text"  : "DESN 440: Web Design & Development II"
+      },
+      {
+        "header": "Timeline",
+        "text"  : "Jan 2025 – Apr 2025"
+      },
+      {
+        "header": "Collaborators",
+        "text"  : [
+          "Andre Arabejo",
+          "Amaka Kwushue",
+          "Anika Molino"
+        ]
+      },
+      {
+        "header": "Skills",
+        "text"  : [
+          "UX Research & Testing",
+          "Visual Design",
+          "Prototyping",
+          "Web Development",
+          "CMS Implementation"
+        ]
+      },
+      {
+        "header": "Tools",
+        "text"  : [
+          "Figma",
+          "Webflow",
+          "Finsweet"
+        ]
+      }
+    ]
+  },
+  "sections"       : [
+    {
+      "title"      : "Problem Discovery",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "The original Excel Society website presented major usability and maintenance issues for its primary audiences, including supporters, clients, and volunteers. We conducted a client interview, a card-sorting exercise, and a comprehensive content audit to uncover these issues."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Client Interview",
+          "contents": [
+            {
+              "type"  : "quoteList",
+              "quotes": [
+                "The current website is pretty outdated, so we're totally open to new ideas and changes.",
+                "We want to grow our events page and make it super easy to update",
+                "We’re hoping more people get involved, like by working with us, volunteering, or donating.",
+                "We’re open to changing the wording to make it feel more inclusive and welcoming to everyone."
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "Content Audit",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "content-audit-1_nzjb3a",
+                    "alt": "Image from Content Audit: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "content-audit-2_moofan",
+                    "alt": "Image from Content Audit: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "content-audit-3_fpzpl5",
+                    "alt": "Image from Content Audit: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "content-audit-4_eqdlkb",
+                    "alt": "Image from Content Audit: heuristic-2_exhk3n"
+                  }
+                ],
+                "options": {
+                  "masonry": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Card Sorting",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "card-sort-1_cahbud",
+                    "alt": "Image from Card Sorting: competitor-witcher-_m2xqty"
+                  },
+                  {
+                    "src": "card-sort-2_sun1rz",
+                    "alt": "Image from Card Sorting: competitor-metro_hs5sz0"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Insight",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Dense, Unscannable Content Layout",
+                  "text"  : "The large blocks of text can potentially overwhelm the user and a lack of clear pathways to donate, volunteer, or participate results in low interaction rates and missed opportunities."
+                },
+                {
+                  "header": "Unclear Communication of Mission and Services",
+                  "text"  : "The website does not clearly explain who Excel Society is or what they do. This lack of clarity limits user engagement and reduces understanding of their services."
+                },
+                {
+                  "header": "Outdated System with Limited Update Flexibility",
+                  "text"  : "The site is built on a system that requires a developer to update content. This prevents staff from easily posting new information about events or services."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "User Statement",
+          "contents": [
+            {
+              "type"     : "userStatement",
+              "statement": "As a volunteer, I want to quickly find relevant information about services and events so that I can stay engaged and support the organization."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "The Solution",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "Working collaboratively, my team completely redesigned the website using a modern, responsive platform to address usability and maintenance challenges. Essential improvements included:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Intuitive Information Architecture",
+              "text"  : "Navigation was restructured, using user-centred categories and moving pages into their respective sections."
+            },
+            {
+              "header": "Modern Visual Design and Layout",
+              "text"  : "The new design emphasized accessibility and clarity, with streamlined content, strong visual hierarchy, and high-visibility calls to action."
+            },
+            {
+              "header": "Client-Side Content Management",
+              "text"  : "Webflow's content management system was implemented to allow staff to update events, news, and program details directly through a user-friendly dashboard, reducing reliance on developers."
+            },
+            {
+              "header": "Improved Engagement and Conversion Paths",
+              "text"  : "A dedicated events page with filtering options and clearly placed volunteer and contact links were introduced to make participation and support more visible."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Preview",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "preview_lfhtcy",
+                    "alt": "Image from Title Style: style-tile-1_tp5txk"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Ideation & Design",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "During this phase, I worked with my team to reimagine Excel Society's web experience, structure and design based on our findings and strategic insights. I contributed to the following with the help of my team:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Reorganized Content for Clarity and Navigation",
+              "text"  : "We restructured the sitemap to reduce redundancy and grouped related content to help users find essential information more quickly."
+            },
+            {
+              "header": "Created a Cohesive, User-Friendly Interface",
+              "text"  : "Drawing from our prototyping and feedback, we developed a clean and approachable design system aligned with Excel Society's mission and audience."
+            },
+            {
+              "header": "Prioritized Accessibility and Ease of Maintenance",
+              "text"  : "We designed the site to be responsive, accessible, and easy for staff to update, ensuring long-term usability without requiring technical expertise."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Sitemap",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "sitemap_j3act8",
+                    "alt": "Image from Updated Sitemap: ui-flow_zvcn8t"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Wireframing",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "wireframe-1_xigcrg",
+                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                  },
+                  {
+                    "src": "wireframe-2_ijz1gr",
+                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                  },
+                  {
+                    "src": "wireframe-3_kfa26z",
+                    "alt": "Image from Wireframing: wireframe-3_cpi4yl"
+                  },
+                  {
+                    "src": "wireframe-4_gvkrmm",
+                    "alt": "Image from Wireframing: wireframe-4_mhn3rc"
+                  },
+                  {
+                    "src": "wireframe-5_uenv9o",
+                    "alt": "Image from Wireframing: wireframe-5_rre8p1"
+                  },
+                  {
+                    "src": "wireframe-6_jvdpzm",
+                    "alt": "Image from Wireframing: wireframe-6_ogdoah"
+                  },
+                  {
+                    "src": "wireframe-7_ojggr9",
+                    "alt": "Image from Wireframing: wireframe-6_ogdoah"
+                  },
+                  {
+                    "src": "wireframe-8_xzbvw3",
+                    "alt": "Image from Wireframing: wireframe-6_ogdoah"
+                  }
+                ],
+                "options": {
+                  "columns"      : 4,
+                  "tabletColumns": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Branding Adjustments",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "branding-1_n13jll",
+                    "alt": "Image from Title Style: style-tile-1_tp5txk"
+                  },
+                  {
+                    "src": "branding-2_v0y9mc",
+                    "alt": "Image from Title Style: style-tile-2_srtty4"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Implementation",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "To bring our redesigned concept to life, we followed a structured development process using the MAST framework to simplify building grids and encourage creating and using reusable classes. While the entire team collaborated on structuring and styling pages, I primarily handled advanced interactions, JavaScript functionality, and managing structured content systems."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Development Process",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Content Architecture Optimization",
+                  "text"  : "We redefined how content was organized and connected across the site, using CMS collections for easy updates and ensuring scalability, consistency, and logical relationships between services, events, and news."
+                },
+                {
+                  "header": "Component-Based Page Templates",
+                  "text"  : "We created reusable components to maintain visual consistency and streamline future updates across the site."
+                },
+                {
+                  "header": "Responsive Design System",
+                  "text"  : "Every page was developed to be fully responsive across desktop, tablet, and mobile, ensuring accessibility and usability for a broad audience of guardians, donors, and clients."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "Challenges & Solutions",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Webflow Limitations for Custom Logic",
+                  "text"  : "Webflow lacked built-in support for complex user interactions like dynamic content filtering with their databases.\n\n|Solution:| I helped implement conditional logic through structured CMS collections and integrated third-party tools like Finsweet to enable advanced filtering and interactivity."
+                },
+                {
+                  "header": "Maintaining Accessibility Compliance",
+                  "text"  : "Webflow's visual editor required extra care to uphold accessibility standards, such as semantic HTML and alt text on images.\n\n|Solution:| We performed manual audits during development and used tools like Webflow's audit panel to meet WCAG compliance."
+                },
+                {
+                  "header": "Content Migration and Cleanup",
+                  "text"  : "Many original pages had inconsistent formatting and excessive text, making direct migration inefficient.\n\n|Solution:| We rewrote and restructured some of the content during implementation to fit the new visual hierarchy and break dense blocks into skimmable, sectioned layouts."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Final Product",
+      "subsections": [
+        {
+          "title"   : "Events Page",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "final-1_jtpqzz",
+                    "alt": "Image from Final Product: final-1_bxffwv"
+                  },
+                  {
+                    "src": "final-14_fo2zao",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  },
+                  {
+                    "src": "final-5_kgdbjc",
+                    "alt": "Image from Final Product: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "final-3_ap6ghb",
+                    "alt": "Image from Final Product: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "final-4_lohk3m",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  },
+                  {
+                    "src": "final-15_pv19ly",
+                    "alt": "Image from Final Product: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "final-9_b6uvse",
+                    "alt": "Image from Final Product: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "final-2_nrnzvo",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  },
+                  {
+                    "src": "final-6_dfqdpu",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  },
+                  {
+                    "src": "final-8_fvej1x",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  },
+                  {
+                    "src": "final-11_gnjk2s",
+                    "alt": "Image from Final Product: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "final-12_by2iwh",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  },
+                  {
+                    "src": "final-16_aqcvvw",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  },
+                  {
+                    "src": "final-7_cxq9ja",
+                    "alt": "Image from Final Product: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "final-13_xvicxg",
+                    "alt": "Image from Final Product: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "final-10_a3re0u",
+                    "alt": "Image from Final Product: mockup-6_hgt5rm"
+                  }
+                ],
+                "options": {
+                  "columns"      : 4,
+                  "tabletColumns": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"   : "Reflection",
+      "contents": [
+        {
+          "type": "text",
+          "text": "This project reinforced the importance of thoughtful content architecture and inclusive design—especially for nonprofits serving diverse users like donors, guardians, and clients. We delivered a welcoming, manageable, mission-aligned site by combining accessibility-first thinking with clear user pathways."
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Client collaboration anchored every design choice",
+              "text"  : "Early interviews and strategy sessions helped us stay aligned with Excel Society's vision and build a site that truly supports their goals which allows for connection, clarity, and ease of use."
+            },
+            {
+              "header": "Balancing clarity with complexity was key",
+              "text"  : "Many pages required presenting dense information, so we tried different layout strategies like visual hierarchy, sectioning, and skimmable formatting to keep content digestible without oversimplifying."
+            },
+            {
+              "header": "Starting from Problem Discovery to Development",
+              "text"  : "From identifying usability issues through research to restructuring the content and implementing a maintainable site, our team worked iteratively to ensure every phase was built toward a solution that met user and client needs."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

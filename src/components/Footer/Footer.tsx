@@ -3,22 +3,21 @@
 import "./Footer.scss";
 import Button from "@/components/Button";
 import List from "@/components/List";
-import navLinks from "@/data/nav-links.json";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import Link from "next/link";
 
 const contactList = [
     {
         header : "Email",
-        content: "sergei.borja0701@gmail.com"
+        text: "sergei.borja0701@gmail.com"
     },
     {
         header : "Phone",
-        content: "(780) 886-0023"
+        text: "(780) 886-0023"
     },
     {
         header : "LinkedIn",
-        content: (
+        text: (
             <a
                 className="link"
                 href="https://www.linkedin.com/in/sergei-borja/"
@@ -31,7 +30,7 @@ const contactList = [
     },
     {
         header : "GitHub",
-        content: (
+        text: (
             <a
                 className="link"
                 href="https://github.com/wonderlust101"
@@ -43,6 +42,25 @@ const contactList = [
         )
     }
 ];
+
+const navLinks = [
+    {
+        page: "Home",
+        link: "/"
+    },
+    {
+        page: "Selected Works",
+        link: "/#selected-works"
+    },
+    {
+        page: "Skills and Tools",
+        link: "/#skills-and-tools"
+    },
+    {
+        page: "About Me",
+        link: "/#about-me"
+    }
+]
 
 export default function Footer() {
     const {handleNavigation} = useAnimatedNavigation();
@@ -79,16 +97,16 @@ export default function Footer() {
 
                     <h2 className='sr-only'>Contact Information</h2>
                     <ul className="footer__nav-list">
-                        {navLinks.projectLinks.map((link, index) => (
+                        {navLinks.map((link, index) => (
                             <li key={index}>
                                 <Link
                                     className="link link--dark"
                                     href={link.link}
                                     onClick={handleNavigation(link.link)}
                                     scroll={true}
-                                    aria-label={`Take a look at ${link.title}`}
+                                    aria-label={`Take a look at ${link.page}`}
                                 >
-                                    {link.title}
+                                    {link.page}
                                 </Link>
                             </li>
                         ))}

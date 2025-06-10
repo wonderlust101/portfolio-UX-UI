@@ -1,0 +1,16 @@
+.section-header {
+  &--section {
+    padding: 0.5rem 1rem;
+    color: $clr-white;
+    background-color: var(--theme-color);
+    border-radius: $border-radius;
+  }
+
+  &--subsection {
+    font-weight: 700;
+    padding: 0.35rem 1rem;
+    color: $clr-white;
+    background-color: var(--theme-color);
+    border-radius: 100rem;
+  }
+}

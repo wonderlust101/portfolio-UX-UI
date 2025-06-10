@@ -15,17 +15,17 @@ export default function ThemeEffect({ theme }: Props) {
     useEffect(() => {
         document.documentElement.style.setProperty(
             "--theme-color",
-            theme?.themeColor ?? "#507A5C"
+            theme?.themeColor ?? "#6A7D8B"
         );
         document.documentElement.style.setProperty(
             "--light-theme-color",
-            theme?.lightThemeColor ?? "#8AD1A0"
+            theme?.lightThemeColor ?? "#c2c7cc"
         );
         document.documentElement.style.setProperty(
             "--dark-theme-color",
-            theme?.darkThemeColor ?? "#4A7256"
+            theme?.darkThemeColor ?? "#3D4A5A"
         );
-    }, [theme]);
+    }, [theme?.themeColor, theme?.lightThemeColor, theme?.darkThemeColor]);
 
     return null;
 }

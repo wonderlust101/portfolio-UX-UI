@@ -1,0 +1,374 @@
+{
+  "productName"    : "MacEwan Room Booking Redesign",
+  "type"           : "UX & UI Design",
+  "featured"       : false,
+  "metadata"       : {
+    "title"      : "MacEwan Room Booking Redesign",
+    "description": "A mobile redesign of MacEwan’s room booking system focused on improving usability, accessibility, and speed for students managing study and group sessions.",
+    "keywords"   : [
+      "Higher Education",
+      "UX design",
+      "Room Booking",
+      "UI redesign",
+      "Student Experience",
+      "Inclusive Design",
+      "Material Design"
+    ],
+    "imageUrl"   : "/images/shared/skyrim-square-preview.webp",
+    "url"        : "https://sergei-borja.dev/skyrim-quest-log-redesign"
+  },
+  "projectType"    : "A Student-Centered Mobile Experience",
+  "heroImage"      : "skyrim-wide_stut1i",
+  "heroImageTablet": "skyrim-square_jtisqs",
+  "theme"          : {
+    "themeColor"     : "#7e1a2a",
+    "lightThemeColor": "#bf8d95",
+    "darkThemeColor" : "#3f0d15"
+  },
+  "projectSummary" : {
+    "description": "A mobile app for MacEwan students that streamlines room reservations with simplified flows, progressive disclosure, and filters for amenities like TVs, whiteboards, and accessibility features.",
+    "role"       : "I conducted user research, mapped user flows, and applied Material Design to the design. I also ensured the app was accessible and contributed to designing booking features across design stages.",
+    "details"    : [
+      {
+        "header": "Course Name",
+        "text"  : "DESN 344: Interaction Design I"
+      },
+      {
+        "header": "Timeline",
+        "text"  : "Jan 2024 - Apr 2024"
+      },
+      {
+        "header": "Collaborators",
+        "text"  : [
+          "Jess May",
+          "Carter Wynn"
+        ]
+      },
+      {
+        "header": "Skills",
+        "text"  : [
+          "UX Research & Testing",
+          "Visual Design",
+          "Prototyping"
+        ]
+      },
+      {
+        "header": "Tools",
+        "text"  : [
+          "Adobe Photoshop",
+          "Figma",
+          "Google Material Design"
+        ]
+      }
+    ]
+  },
+  "sections"       : [
+    {
+      "title"      : "Problem Discovery",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "The MacEwan Room Booking Services, as it stands, presents several usability and accessibility challenges for its users. To start our process, my team and I conducted user research through empathy mapping and persona development. I helped identify how users interact with the current room booking system and uncover key frustrations, goals, and gaps in usability."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Empathy Map",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Do & Say",
+                  "text"  : "Users are trying to choose rooms based on date, time, and amenities, often expressing confusion about features and clutter."
+                },
+                {
+                  "header": "See",
+                  "text"  : "The interface is overwhelmed with excess calendar months, ambiguous icons, and headers styled like links, making navigation and interpretation difficult."
+                },
+                {
+                  "header": "Think & Feel",
+                  "text"  : "Users feel frustrated by inconsistent booking flows, stressed by excessively irrelevant options, and worried about missing essential room features, leading to anxiety or embarrassment, especially when needing assistance."
+                },
+                {
+                  "header": "Hear",
+                  "text"  : "Repeated messages like “You can’t book past the week” or “Click the row for details,” alongside concerns about unexplained error messages."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "Insight",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Confusing Navigation and Layout",
+                  "text"  : "The homepage’s information hierarchy and link styling are inconsistent, with key navigation elements hidden in dropdowns, leaving users unsure where to click or how to find basic functions."
+                },
+                {
+                  "header": "Inconsistent and Cluttered Flows for Booking and Modifying Reservations",
+                  "text"  : "Booking and modification screens overload users with irrelevant options like unavailable time slots and two-month calendars that overwhelm rather than guide."
+                },
+                {
+                  "header": "Poor Discoverability of Functionality",
+                  "text"  : "Crucial filters, room details, and booking-management tasks are hidden behind low-contrast icons or buried menus, preventing users from easily finding and using them."
+                },
+                {
+                  "header": "Essential amenities are hard to locate",
+                  "text"  : "Poor filter design and hidden room details make it difficult for users to quickly find rooms with key features like TVs, whiteboards, or accessibility options."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "User Statement",
+          "contents": [
+            {
+              "type"     : "userStatement",
+              "statement": "As a student, I want to quickly book a room for a group project so that I can effectively collaborate with my team."
+            }
+          ]
+        },
+        {
+          "title"   : "Personas",
+          "contents": [
+            {
+              "type"   : "persona",
+              "persona": {
+                "name"      : "Alex Chen",
+                "image"     : "skyrim-persona_cxybc4",
+                "age"       : 21,
+                "location"  : "Edmonton, AB",
+                "devices"   : [
+                  "Mobile"
+                ],
+                "type"      : "2nd-year Bachelor of Design student at MacEwan",
+                "quote"     : "I know exactly what kind of space my team needs; I just want to book it quickly without dealing with broken links.",
+                "goals"     : [
+                  "Book group-friendly rooms with specific features (e.g., TV, whiteboard, seating for 8)",
+                  "Reserve a quiet study space for solo prep before exams",
+                  "Quickly complete bookings in under 10 minutes"
+                ],
+                "painPoints": [
+                  "Gets stuck when error codes or broken links appear",
+                  "Frustrated by cluttered or unclear navigation when in a rush",
+                  "Struggles to find rooms with the right features due to poor filtering options"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"   : "The Solution",
+      "contents": [
+        {
+          "type": "text",
+          "text": "To address these challenges, we redesigned the MacEwan Room Booking Services into a mobile application that introduces new features such as:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Streamlined Information Architecture",
+              "text"  : "Prioritize essential features for students on the homepage, use clearly labelled buttons instead of misleading link styles, and nest staff content under a separate section."
+            },
+            {
+              "header": "Intuitive Booking Flows",
+              "text"  : "Limit booking views to one week, hide unavailable slots, and use an intuitive filter panel with toggles for room criteria like equipment and accessibility."
+            },
+            {
+              "header": "Consistent Booking Modification",
+              "text"  : "Simplify modifications into two clear paths (change the time or change room), keep booking details visible, and default to hiding cancelled bookings with a toggle to show them."
+            },
+            {
+              "header": "Enhanced Room Details & Accessibility",
+              "text"  : "Show full room info (capacity, equipment, accessibility, layout) clearly, replace hard-to-see icons with labelled toggles, and follow accessibility standards for contrast and usability."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Ideation & Design",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "I collaborated with my team to reimagine the booking experience using insights from our earlier research. I contributed to the following with the help of my team:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Revised the user flow for streamlined navigation",
+              "text"  : "We mapped out the current system to expose redundancies and pain points, then redesigned the flow to make key actions like booking and modifying reservations clearer and faster to complete."
+            },
+            {
+              "header": "Applied Material Design for visual consistency",
+              "text"  : "By using Material 3 guidelines, we standardized components, spacing, and typography, creating a polished, modern UI that felt intuitive and institutionally branded."
+            },
+            {
+              "header": "Integrated accessibility considerations from the start",
+              "text"  : "We used high-contrast elements, readable typography, and clear visual cues to ensure that users with low vision or limited dexterity could confidently interact with every screen."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "UI Flow",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "ui-flow_zvcn8t",
+                    "alt": "UI flow diagram"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Low Fidelity",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "wireframe-1_nff4kv",
+                    "alt": "Low-fidelity wireframe 1"
+                  },
+                  {
+                    "src": "wireframe-2_rozqwo",
+                    "alt": "Low-fidelity wireframe 2"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Mid Fidelity",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "style-tile-1_tp5txk",
+                    "alt": "Mid-fidelity prototype style tile 1"
+                  },
+                  {
+                    "src": "style-tile-2_srtty4",
+                    "alt": "Mid-fidelity prototype style tile 2"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Visual Design & Brand Alignment",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-1_ud2s5v",
+                    "alt": "High-fidelity mockup 1"
+                  },
+                  {
+                    "src": "mockup-2_xxknih",
+                    "alt": "High-fidelity mockup 2"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Final Solution",
+      "subsections": [
+        {
+          "title"   : "App Screens",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-1_ud2s5v",
+                    "alt": "Final Solution screen: mockup-1_ud2s5v"
+                  },
+                  {
+                    "src": "mockup-2_xxknih",
+                    "alt": "Final Solution screen: mockup-2_xxknih"
+                  },
+                  {
+                    "src": "mockup-3_rxm3bm",
+                    "alt": "Final Solution screen: mockup-3_rxm3bm"
+                  },
+                  {
+                    "src": "mockup-4_ie9okc",
+                    "alt": "Final Solution screen: mockup-4_ie9okc"
+                  },
+                  {
+                    "src": "mockup-5_xnfw9u",
+                    "alt": "Final Solution screen: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "mockup-6_hgt5rm",
+                    "alt": "Final Solution screen: mockup-6_hgt5rm"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"   : "Reflection",
+      "contents": [
+        {
+          "type": "text",
+          "text": "This project reinforced the value of user-centered design, especially in institutional systems where user needs vary widely. Through iterative testing and accessibility-first thinking, we created a solution that significantly improved efficiency and confidence for all user types."
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Early persona involvement guided critical decisions",
+              "text"  : "Including users from the beginning ensured our design addressed real-world challenges, especially for those less confident with digital tools."
+            },
+            {
+              "header": "Iterative prototyping saved time and revealed usability issues early",
+              "text"  : "By creating a series of low to mid-fidelity prototypes, we gradually improved the layout, identified confusing interactions, and streamlined the overall user flow."
+            },
+            {
+              "header": "Accessibility was most effective when planned early",
+              "text"  : "Building contrast checks, screen-reader support, and wayfinding considerations from scratch reduced rework and improved inclusivity."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

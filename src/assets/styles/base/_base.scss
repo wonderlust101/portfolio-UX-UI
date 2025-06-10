@@ -1,5 +1,11 @@
 @use "../abstract/index" as a;
 
+@-moz-document url-prefix() {
+  html {
+    scroll-padding-top: 280px;
+  }
+}
+
 body {
   background-color: a.$clr-white;
 }

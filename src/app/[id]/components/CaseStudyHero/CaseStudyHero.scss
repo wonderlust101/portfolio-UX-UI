@@ -1,18 +1,13 @@
 .case-study-hero {
-  grid-template-rows: max-content max-content;
+  grid-template-rows: min-content max-content;
   row-gap: 3rem;
   align-content: center;
-  padding: 4.75rem 0;
+  align-items: center;
+  padding-top: 30dvh;
   background-color: $clr-white;
-  height: 100dvh;
-
-  @include breakpoint(large) {
-    grid-template-rows: 1fr max-content;
-  }
 
   @include breakpoint(medium) {
-    padding: 4.75rem 0 3rem;
-    row-gap: 1.5rem;
+    padding-top: 35dvh;
   }
 
   &__header {
@@ -20,14 +15,16 @@
   }
 
   &__image-container {
+    grid-column: 1/-1;
     overflow: hidden;
-    height: 100%;
   }
 
   &__image {
     object-fit: cover;
     object-position: center;
     width: 100%;
+    height: 80vh;
+    border-radius: 0;
   }
 
   &__type {

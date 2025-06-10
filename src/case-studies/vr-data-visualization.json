@@ -1,0 +1,483 @@
+{
+  "productName"    : "Immersive VR for Geospatial Visualization",
+  "type"           : "UX & UI Design | VR Unity Development",
+  "featured"       : true,
+  "metadata"       : {
+    "title"      : "Immersive VR for Geospatial Visualization",
+    "description": "A VR tool designed to help urban planners and analysts explore geospatial data layers in 3D using the Meta Quest headset.",
+    "keywords"   : [
+      "VR Interface Design",
+      "Geospatial Data",
+      "ArcGIS",
+      "3D Interaction",
+      "Data Visualization",
+      "Immersive Technology",
+      "Meta Quest"
+    ],
+    "imageUrl"   : "/images/shared/skyrim-square-preview.webp",
+    "url"        : "https://sergei-borja.dev/skyrim-quest-log-redesign"
+  },
+  "projectType"    : " A Spatial Data Explorer for Meta Quest",
+  "heroImage"      : "vr-visualization-preview-wide_xyswfp",
+  "heroImageTablet": "vr-visualization-preview-square_ksjnll",
+  "theme"          : {
+    "themeColor"     : "#18469a",
+    "lightThemeColor": "#8ca3cd",
+    "darkThemeColor" : "#0c234d"
+  },
+  "projectSummary" : {
+    "description": "A VR application for Meta Quest that lets urban planners and analysts explore layered geospatial data in 3D with hand-based controls, interactive UI, and real-world datasets.",
+    "role"       : "A VR application for Meta Quest for my capstone that lets urban planners and analysts explore layered geospatial data in 3D with hand-based controls, interactive UI, and real-world datasets.",
+    "details"    : [
+      {
+        "header": "Course Name",
+        "text"  : "CMPT 496: Final Project"
+      },
+      {
+        "header": "Timeline",
+        "text"  : "Jan 2025 – Apr 2025"
+      },
+      {
+        "header": "Collaborator",
+        "text"  : [
+          "Keegan Vanstone"
+        ]
+      },
+      {
+        "header": "Skills",
+        "text"  : [
+          "UX Research & Testing",
+          "Interaction Design for VR",
+          "Visual Design",
+          "VR Development",
+          "Unity Scripting"
+        ]
+      },
+      {
+        "header": "Tech Stack",
+        "text"  : [
+          "C#",
+          "Unity",
+          "Unity DevOps",
+          "Meta XR Interaction Toolkit",
+          "ArcGIS Maps SDK for Unity",
+          "Figma"
+        ]
+      }
+    ]
+  },
+  "sections"       : [
+    {
+      "title"      : "Problem Discovery",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "My teammate and I reviewed existing research and defined user needs through persona development to understand the existing issues with traditional spatial data viewing methods. This initial research helped clarify how traditional geospatial tools fall short, especially compared to more immersive technologies like VR."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Insight",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "2D views limit spatial understanding",
+                  "text"  : "Traditional map and dashboard tools force users to interpret complex geospatial data on flat screens, limiting depth perception and spatial reasoning."
+                },
+                {
+                  "header": "Multiple tools required for specific workflows",
+                  "text"  : "Analysts frequently switch between multiple applications or browser tabs to access different data, leading to disjointed analysis."
+                },
+                {
+                  "header": "Difficulty interpreting layers without context",
+                  "text"  : "Whether zoning, demographics, or infrastructure, professionals like urban planners, data scientists, and policymakers benefit from viewing multi-layered geospatial information in a shared 3D context."
+                },
+                {
+                  "header": "Underutilization of Immersive Technologies",
+                  "text"  : "While 3D and VR technologies have been explored in other domains, a gap exists in applying immersive VR environments specifically to geospatial datasets."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "User Statement",
+          "contents": [
+            {
+              "type"     : "userStatement",
+              "statement": "As an urban planner, I want to intuitively explore layered geospatial data in a virtual environment to quickly understand spatial relationships and make informed planning decisions."
+            }
+          ]
+        },
+        {
+          "title"   : "Personas",
+          "contents": [
+            {
+              "type"   : "persona",
+              "persona": {
+                "name"      : "Maya Rodriguez",
+                "image"     : "persona-vr_ebc5ek",
+                "age"       : 35,
+                "location"  : "Vancouver, BC",
+                "devices"   : [
+                  "Meta Quest 3"
+                ],
+                "type"      : "Municipal GIS Analyst",
+                "quote"     : "I need to see how all the layers interact such as elevation, zoning, and infrastructure without flipping between ten different maps.",
+                "goals"     : [
+                  "Evaluate potential development zones with complete spatial context",
+                  "Compare zoning boundaries and building footprints in a single environment",
+                  "Communicate spatial insights clearly to non-technical stakeholders"
+                ],
+                "painPoints": [
+                  "Wastes time toggling between flat maps and layers in disconnected tools",
+                  "Struggles to convey spatial relationships to decision-makers using 2D diagrams",
+                  "Finds it difficult to explain spatial decisions to team members without visual aids"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"   : "The Solution",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Rather than relying on static, screen-based tools, we introduced a fully immersive VR experience tailored for spatial data exploration. Built in Unity and optimized for the Meta Quest 3, our solution emphasizes intuitive interaction and deeper comprehension through:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Immersive 3D Environment with Natural Navigation",
+              "text"  : "Our solution immerses users in interactive 3D environments with intuitive hand-based navigation, making spatial data exploration more natural and insightful."
+            },
+            {
+              "header": "Interactive Layer Management",
+              "text"  : "Users can toggle visibility, adjust opacity, and enable or disable specific data overlays through an accessible, in-world UI panel."
+            },
+            {
+              "header": "Reduced Cognitive Load Through Immersive Exploration",
+              "text"  : "By placing users directly inside a three-dimensional map, the system leverages kinesthetic and spatial learning strategies to make complex spatial relationships easier to understand."
+            },
+            {
+              "header": "Integration with ArcGIS for Real-World Data Fidelity",
+              "text"  : "The app uses the ArcGIS Maps SDK to bring in high-accuracy geographic data, enabling stakeholders to analyze real-world information in a realistic and interactive context."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Ideation & Design",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "Informed by our early research, technical constraints and problem definition, I led the ideation and interface design process, focusing on translating spatial data interactions into an intuitive, immersive VR experience. My work centred on creating a flow that would feel natural to both VR newcomers and experienced users."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "UI Flow",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "ui-flow_kyh1qq",
+                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Idea Exploration",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "idea-2_bsvxd5",
+                    "alt": "Image from Idea Exploration: competitor-metro_hs5sz0"
+                  },
+                  {
+                    "src": "idea-1_vb5epr",
+                    "alt": "Image from Idea Exploration: competitor-witcher-_m2xqty"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Wireframing",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "wireframe-1_k7569z",
+                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                  },
+                  {
+                    "src": "wireframe-2_ankbz4",
+                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Implementation",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "To bring our concept to life, we transformed our early design into a functional VR prototype using Unity and the ArcGIS Maps SDK. While my teammate focused on implementing locomotion, SDK integration and deployment, I also designed and implemented the interactive UI and interaction, ensuring a smooth and immersive user experience."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Development Process",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Interactive VR UI System",
+                  "text"  : "I implemented the user interface, including toggles for data layer visibility, opacity sliders, and a toggleable legend panel. These tools allowed users to explore and manipulate geospatial data in real time."
+                },
+                {
+                  "header": "Interaction Scripting",
+                  "text"  : "I contributed to scripting behaviours such as data layer switching and legend updates. I also played a role in adapting inherited code to fit our new data visualization goals."
+                },
+                {
+                  "header": "Scene-Based Data Exploration",
+                  "text"  : "My teammate created the base environments using public datasets, while I ensured each city scene (Edmonton, Paris, Tokyo) supported seamless UI interaction and consistent user experience across locations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "Development Photos",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "development_lhpsmh",
+                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Challenges & Solutions",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "ArcGIS Data Constraints",
+                  "text"  : "The free ArcGIS account limited us to using publicly available tile and scene layers. Attempts to upload and use custom datasets failed due to hosting restrictions.\n\n|Solution:| We adapted by sourcing quality public datasets, especially for cities like New York and Tokyo, for our prototype."
+                },
+                {
+                  "header": "UI Scripting & Layer Control",
+                  "text"  : "Implementing runtime control of data layers via the UI required reverse-engineering some ArcGIS API code due to the lack of documentation.\n\n|Solution:| By analyzing the SDK scripts, we created custom functions to toggle visibility, adjust opacity, and switch data legends interactively."
+                },
+                {
+                  "header": "Version Control Limitations",
+                  "text"  : "Unity's large file sizes quickly exceeded GitHub's storage limits, complicating collaboration.\n\n|Solution:| Our solution was to adopt Unity DevOps, which better handled the project's larger files and allowed smooth collaboration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "SDK Code Extracting",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "challenge-1_xfkg0u",
+                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                  },
+                  {
+                    "src": "challenge-2_rkwslt",
+                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Testing & Feedback",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "To evaluate the usability and effectiveness of our VR prototype, we designed and conducted a structured user testing session. We aimed to assess how easily participants could navigate and understand spatial data in VR and whether the interactive controls were intuitive for all users."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Key Findings & Observations",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "The layer toggles and opacity controls were effective for exploring spatial data.",
+                  "text"  : ""
+                },
+                {
+                  "header": "Scene switching between cities was smooth and well-received",
+                  "text"  : ""
+                },
+                {
+                  "header": "Request for continuous turning instead of snap-turning for smoother navigation",
+                  "text"  : ""
+                },
+                {
+                  "header": "Ascend/descend controls were missing, limiting full vertical movement",
+                  "text"  : ""
+                },
+                {
+                  "header": "Scene boundaries were unclear, and some users accidentally flew below the map",
+                  "text"  : ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Final Prototype",
+      "subsections": [
+        {
+          "title"   : "Scenes (Edmonton, Paris, Tokyo)",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "final-1_esw72a",
+                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                  },
+                  {
+                    "src": "final-3_vtqrtx",
+                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                  },
+                  {
+                    "src": "final-4_qqhycq",
+                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                  }
+                ],
+                "options": {
+                  "columns": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Data Layers",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "final-2_qitgbs",
+                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "UI Components",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "final-5_simhib",
+                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                  },
+                  {
+                    "src": "final-6_gkovak",
+                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                  }
+                ],
+                "options": {
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"   : "Reflection",
+      "contents": [
+        {
+          "type": "text",
+          "text": "By embracing both the creative and practical challenges of VR development, we delivered a functional prototype that pushed our skills and demonstrated the viability of spatial data exploration in virtual environments."
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Shifting focus early led to a stronger product direction",
+              "text"  : "Pivoting from abstract datasets to geospatial data mid-project allowed us to ground the experience in real-world use cases and better align with user expectations for spatial understanding."
+            },
+            {
+              "header": "Working within technical constraints taught resourceful problem-solving",
+              "text"  : "Limitations from the ArcGIS SDK, Unity version control, and VR build compatibility forced us to explore alternate tools and workflows, building our confidence in navigating platform-specific challenges."
+            },
+            {
+              "header": "Collaboration and clear task division accelerated progress",
+              "text"  : "Splitting responsibilities between UI/UX design and development helped us iterate faster and maintain a steady development pace over the semester."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

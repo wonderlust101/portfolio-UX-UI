@@ -1,13 +1,10 @@
 "use client";
 
 import List from "@/components/List";
-import OptimizedImage from "@/components/OptimizedImage";
-import Section from "@/components/Section";
 import "./About.scss";
-import { buildNamedTransformUrl } from "@/lib/cloudinary";
-import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants";
+import SectionHeader from "@/components/SectionHeader";
 import type { ProfileData } from "@/types/home";
-import { motion } from "motion/react";
+import { CldImage } from "next-cloudinary";
 
 type AboutProps = {
     aboutText: ProfileData|null;
@@ -15,34 +12,29 @@ type AboutProps = {
 
 export default function About({aboutText}: AboutProps) {
     return (
-        <Section header="About Me">
-            <motion.div
-                variants={staggerParent}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{once: true}}
-            >
-                <motion.hr variants={fadeUpLowOpacity}/>
+        <section className="grid-bleed skills-list" id="about-me">
+            <SectionHeader type="page">
+                About Me
+            </SectionHeader>
 
-                <motion.div className="about__split" variants={staggerParent}>
-                    <motion.div className="about__content" variants={fadeUp}>
-                        <p>{aboutText?.aboutText}</p>
-                        <List items={aboutText!.additionalDetails} type="meta"/>
-                    </motion.div>
+            <div className="about__split" >
+                <div className="about__content" >
+                    <p>{aboutText?.aboutText}</p>
+                    <List items={aboutText!.additionalDetails} type="meta"/>
+                </div>
 
-                    <motion.div variants={fadeUp} className="about__image">
-                        <OptimizedImage
-                            className="about__image"
-                            src={buildNamedTransformUrl("sergei-borja_c36hvi", "webp_low")}
-                            alt="Sergei Borja"
-                            loading="lazy"
-                            width={700}
-                            height={700}
-                            quality={75}
-                        />
-                    </motion.div>
-                </motion.div>
-            </motion.div>
-        </Section>
+                <div className="about__image">
+                    <CldImage
+                        className="about__image"
+                        src={"sergei-borja_c36hvi"}
+                        alt="Sergei Borja"
+                        loading="lazy"
+                        width={700}
+                        height={700}
+                        quality={75}
+                    />
+                </div>
+            </div>
+        </section>
     );
 }

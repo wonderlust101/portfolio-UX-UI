@@ -24,6 +24,6 @@
 
 @-moz-document url-prefix() {
   .revealer {
-    display: none;
+    display: none !important;
   }
 }

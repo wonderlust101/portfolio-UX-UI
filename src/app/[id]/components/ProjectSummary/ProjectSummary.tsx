@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import ContentBlock from "@/components/ContentBlock";
 import List from "@/components/List";
-import Section from "@/components/Section";
+import SectionHeader from "@/components/SectionHeader";
 import type { ProjectSummary } from "@/types/case-study";
 import { parseHighlightedText } from "@/utils/parseHighlightedText";
+import "./ProjectSummary.scss";
 
 type ProjectSummaryProps = {
     details: ProjectSummary;
@@ -12,11 +12,24 @@ type ProjectSummaryProps = {
 
 export default function ProjectSummary({details}: ProjectSummaryProps) {
     return (
-        <Section style={{paddingTop: "0"}}>
-            <ContentBlock header="Project Overview">
-                <p>{parseHighlightedText(details.description)}</p>
-                <List items={details.details} type='meta'/>
-            </ContentBlock>
-        </Section>
+        <section className="grid-bleed" id='intro'>
+            <div className="project-summary">
+                <div className="project-summary__content">
+                    <div className='project-summary__intro'>
+                        <SectionHeader type='page'>Introduction</SectionHeader>
+                        <p>{parseHighlightedText(details.description)}</p>
+                    </div>
+
+                    <div className="project-summary__role">
+                        <SectionHeader type='subsection'>Role</SectionHeader>
+                        <p>{parseHighlightedText(details.role)}</p>
+                    </div>
+                </div>
+
+                <div className="project-summary__metatags">
+                    <List items={details.details} type="meta"/>
+                </div>
+            </div>
+        </section>
     );
 }

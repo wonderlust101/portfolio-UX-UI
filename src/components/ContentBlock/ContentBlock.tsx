@@ -1,48 +1,25 @@
 "use client";
 
 import SectionHeader from "@/components/SectionHeader";
-import { CSSProperties, ReactNode } from "react";
-import { motion } from "framer-motion";
-import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants";
+import { ReactNode } from "react";
 import "./ContentBlock.scss";
 
 type SubsectionProps = {
-    children: ReactNode | undefined;
-    header: string | undefined;
-    type?: "subsection" | "block";
-    hideDivider?: boolean;
+    children?: ReactNode;
+    header: string|undefined;
+    type: string;
 };
 
-export default function ContentBlock({children, header, type = "subsection", hideDivider = false}: SubsectionProps) {
-    const styles = {
-        "--border-padding-top": hideDivider ? `0` : undefined,
-    } as CSSProperties;
-
+export default function ContentBlock({children, header, type}: SubsectionProps) {
     return (
-        <motion.section
-            className="content-block__container"
-            variants={staggerParent}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-        >
-            {!hideDivider && (<motion.hr variants={fadeUpLowOpacity} />)}
+        <section className={`content-block ${type === 'subsection' ? 'content-block--subsection' : ''}`}>
+            <SectionHeader type={type}>
+                {header}
+            </SectionHeader>
 
-            <motion.div
-                className="content-block"
-                variants={staggerParent}
-                style={styles}
-            >
-                <motion.div variants={fadeUp}>
-                    <SectionHeader type={type}>
-                        {header}
-                    </SectionHeader>
-                </motion.div>
-
-                <motion.div className="content-block__content" variants={fadeUp}>
-                    {children}
-                </motion.div>
-            </motion.div>
-        </motion.section>
+            <div className="content-block__content">
+                {children}
+            </div>
+        </section>
     );
 }

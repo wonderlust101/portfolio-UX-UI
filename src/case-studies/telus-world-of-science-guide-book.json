@@ -1,0 +1,601 @@
+{
+  "productName"    : "Designing an AR App for Telus World of Science",
+  "type"           : "UX & UI Design",
+  "featured"       : true,
+  "metadata"       : {
+    "title"      : "Designing an AR App for Telus World of Science",
+    "description": "A mobile AR app created to enhance navigation, accessibility, and engagement for visitors at Telus World of Science Edmonton.",
+    "keywords"   : [
+      "Wayfinding",
+      "UX design",
+      "Gamification",
+      "Interactive Museum",
+      "Science Education",
+      "AR App Design",
+      "Visitor Experience"
+    ],
+    "imageUrl"   : "/images/shared/skyrim-square-preview.webp",
+    "url"        : "https://sergei-borja.dev/skyrim-quest-log-redesign"
+  },
+  "projectType"    : "Guiding Discovery Through Play",
+  "heroImage"      : "telus-wide_qtlqgz",
+  "heroImageTablet": "telus-square_mjt24z",
+  "theme"          : {
+    "themeColor"     : "#971e8f",
+    "lightThemeColor": "#cb8fc7",
+    "darkThemeColor" : "#4c0f48"
+  },
+  "projectSummary" : {
+    "description": "In collaboration with Telus World of Science and Exlir Simulations, we built a mobile AR app for science centre visitors that supports real-time navigation, interactive exhibit engagement, and gamified exploration with built-in accessibility features.",
+    "role"       : "I contributed to research, user flow, wireframing, interaction design and testing. My role also focused on the technical aspect of the project, like 3D modelling and AR prototyping, to help build an engaging and accessible user experience for real-world visitor needs.",
+    "details"    : [
+      {
+        "header": "Course Name",
+        "text"  : "DESN 444: Interaction Design II"
+      },
+      {
+        "header": "Timeline",
+        "text"  : "Sept 2024 – Dec 2024"
+      },
+      {
+        "header": "Collaborators",
+        "text"  : [
+          "Chris Clarke",
+          "Sankalp Shrivastav"
+        ]
+      },
+      {
+        "header": "Skills",
+        "text"  : [
+          "UX Research & Testing",
+          "Visual Design",
+          "AR & Mobile Prototyping",
+          "Gamified UX"
+        ]
+      },
+      {
+        "header": "Tools",
+        "text"  : [
+          "Adobe Aero",
+          "Blender",
+          "Figma"
+        ]
+      }
+    ]
+  },
+  "sections"       : [
+    {
+      "title"      : "Problem Discovery",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "We visited the science centre for contextual research to understand visitor challenges and opportunities for AR and VR at Telus World of Science Edmonton. We interviewed staff to surface key pain points and gaps in existing wayfinding and engagement tools. We constructed a user statement and a persona to help us work towards a solution."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Contextual Research",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "navigation-1_ljuk4e",
+                    "alt": "Image from Contextual Research: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "navigation-2_wi72fk",
+                    "alt": "Image from Contextual Research: heuristic-2_exhk3n"
+                  },
+                  {
+                    "src": "exploration-1_ljdj9p",
+                    "alt": "Image from Contextual Research: competitor-witcher-_m2xqty"
+                  },
+                  {
+                    "src": "exploration-2_eul6x5",
+                    "alt": "Image from Contextual Research: competitor-metro_hs5sz0"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Insight",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Limited Accessibility Across Navigation and Exhibits",
+                  "text"  : "Guests frequently get lost due to missing signs and unclear elevator directions. Inconsistent wayfinding forces reliance on staff and interrupts the visit flow, especially during busy hours."
+                },
+                {
+                  "header": "Confusing and Ineffective Map System",
+                  "text"  : "Existing maps lack clarity and adaptability, making it hard for guests to orient themselves or locate exhibits. Without real-time guidance or accessible formats, visitors often get lost or miss areas entirely."
+                },
+                {
+                  "header": "Barriers to Hands-On Learning",
+                  "text"  : "Younger visitors struggle with text-heavy content and may also cause concern to fragile displays. Limited interactive opportunities restrict their ability to explore concepts through play and experimentation."
+                },
+                {
+                  "header": "Low Engagement with Exhibits",
+                  "text"  : "Static presentations and minimal use of new or interesting technology lead to reduced interest, especially among repeat visitors. The lack of dynamic, personalized interaction diminishes overall engagement and learning retention."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "User Statement",
+          "contents": [
+            {
+              "type"     : "userStatement",
+              "statement": "“As a visitor with a strong interest towards science, I want intuitive navigation and engaging interactive elements so I can focus on discovery without getting lost or bored.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "The Solution",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "To address the identified challenges, we designed a mobile app that utilizes AR technology to enhance navigation and exploration at the science centre. Our solution integrates:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "AR-Assisted, Real-Time Navigation",
+              "text"  : "Guests can interact with the built-in map of their exhibit of choice and receive guidance through AR arrows, making it easier to locate exhibits, restrooms, and other key areas without confusion."
+            },
+            {
+              "header": "Gamified Exploration with a Digital Stamp Book",
+              "text"  : "The app includes an interactive stamp system that encourages deeper engagement. Visitors collect stamps by interacting with exhibits, giving their visit a sense of progress, reward, and discovery."
+            },
+            {
+              "header": "Built-In Accessibility for All Users",
+              "text"  : "With high-contrast visuals, audio narration, and simplified language, the app is designed to support a wide range of visitors, including children, seniors, and those with visual or sensory impairments."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Preview",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "intro_a1ddt3",
+                    "alt": "Image from Title Style: style-tile-1_tp5txk"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Ideation & Design",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "During this phase, I collaborated with my team to reimagine the visitor experience at the Telus World of Science, using user research and creative strategy to guide our design decisions. I contributed across all areas of the project while also taking the lead on AR prototyping and 3D modelling:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Developed and Prioritized Ideas Through Collaborative Workshops",
+              "text"  : "We explored multiple concepts through mind mapping, brainwriting, and a prioritization matrix. We identified the most impactful features to address navigation and engagement challenges."
+            },
+            {
+              "header": "Mapped User Flows and Built Wireframes",
+              "text"  : "We created detailed task flows to visualize how users would interact with the app and translated these into wireframes that balanced simplicity with functionality."
+            },
+            {
+              "header": "AR Integration and 3D Environment Modeling",
+              "text"  : "I focused on bringing the AR navigation feature to life using Adobe Aero to prototype object scanning and directional guidance. I modelled the science centre in 3D to support the app’s interactive map and spatial features."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Mind Mapping",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mind-map-1_dthwdj",
+                    "alt": "Image from Mind Mapping: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "mind-map-2_prq1tn",
+                    "alt": "Image from Mind Mapping: heuristic-2_exhk3n"
+                  },
+                  {
+                    "src": "mind-map-3_fspzsx",
+                    "alt": "Image from Mind Mapping: heuristic-2_exhk3n"
+                  },
+                  {
+                    "src": "mind-map-4_vgyjop",
+                    "alt": "Image from Mind Mapping: competitor-witcher-_m2xqty"
+                  },
+                  {
+                    "src": "mind-map-5_imaguq",
+                    "alt": "Image from Mind Mapping: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "mind-map-6_fxcjpf",
+                    "alt": "Image from Mind Mapping: heuristic-2_exhk3n"
+                  }
+                ],
+                "options": {
+                  "columns"      : 3,
+                  "tabletColumns": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Brainwriting",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "brainwriting-1_dhorni",
+                    "alt": "Image from Brainwriting: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "brainwriting-2_jvvjyx",
+                    "alt": "Image from Brainwriting: heuristic-2_exhk3n"
+                  },
+                  {
+                    "src": "brainwriting-3_dzof1b",
+                    "alt": "Image from Brainwriting: competitor-witcher-_m2xqty"
+                  }
+                ],
+                "options": {
+                  "columns": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Task Flow",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "ui-flow_biaqm6",
+                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "AR & 3D Models",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "3d-1_go6nud",
+                    "alt": "Image from AR & 3D Models: wireframe-1_nff4kv"
+                  },
+                  {
+                    "src": "3d-2_mkmyxg",
+                    "alt": "Image from AR & 3D Models: wireframe-2_rozqwo"
+                  },
+                  {
+                    "src": "ar-1_j91nxp",
+                    "alt": "Image from AR & 3D Models: wireframe-1_nff4kv"
+                  },
+                  {
+                    "src": "ar-2_g2obp6",
+                    "alt": "Image from AR & 3D Models: wireframe-2_rozqwo"
+                  }
+                ],
+                "options": {
+                  "masonry"      : true,
+                  "tabletColumns": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Wireframing",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "wireframe_ob7rk7",
+                    "alt": "Image from Wireframing: wireframe-3_cpi4yl"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Testing & Feedback",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "We conducted both pilot and on-site user testing to evaluate our prototype. Initial tests with friends and family helped us refine our design and interview process. At the same time, on-site testing at Telus World of Science with real users provided valuable insights into how the app performed in its intended environment."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Key Findings",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "App was intuitive and required little guidance",
+                  "text"  : ""
+                },
+                {
+                  "header": "Stamp book feature increased engagement, especially for kids",
+                  "text"  : ""
+                },
+                {
+                  "header": "Accessibility tools like audio and simple text were well-received",
+                  "text"  : ""
+                },
+                {
+                  "header": "Icons like AR and stamp book confused some users at first",
+                  "text"  : ""
+                },
+                {
+                  "header": "Small text and lack of font options made reading difficult for a few",
+                  "text"  : ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "On-Site Testing",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "testing-1_ml3gar",
+                    "alt": "Image from Wireframing: wireframe-3_cpi4yl"
+                  },
+                  {
+                    "src": "testing-2_xkk3eh",
+                    "alt": "Image from Wireframing: wireframe-4_mhn3rc"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Final Mockup",
+      "content"    : [],
+      "subsections": [
+        {
+          "title"   : "Onboarding",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-1_p11iso",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Home",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-2_rcsukj",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Tutorial",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-3_ab5csz",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Stamp Book",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-4_bmvdld",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "AR Scanning",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-5_fayit9",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Typing Alternative",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-6_lxxdad",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Navigation",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-6_lxxdad",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Settings",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-8_weivjl",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  }
+                ],
+                "options": {
+                  "columns": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"   : "Reflection",
+      "contents": [
+        {
+          "type": "text",
+          "text": "This project highlighted the value of research-driven design when creating inclusive, interactive experiences for public learning spaces like the Telus World of Science. By addressing real visitor challenges through user testing and iteration, we created a solution that makes navigation and exploration more engaging and accessible for all ages."
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Designing for exploration and inclusion",
+              "text"  : "We focused on simplifying complex content, improving visual clarity, and integrating gamified learning to make the experience fun and intuitive."
+            },
+            {
+              "header": "Initial and user research shaped every design decision",
+              "text"  : "On-site testing, interviews, and pilot studies revealed navigation pain points and engagement gaps, helping us design intuitive and purposeful features."
+            },
+            {
+              "header": "Designing and wireframing for AR required new thinking",
+              "text"  : "Integrating AR into our prototype forced us to think differently than designing for websites and apps. We had to prototype with both screen-based and real-world movement in mind to ensure AR felt intuitive."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

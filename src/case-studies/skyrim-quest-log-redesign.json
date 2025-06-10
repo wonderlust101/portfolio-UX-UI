@@ -1,0 +1,530 @@
+{
+  "productName"    : "Skyrim Quest Log Redesign",
+  "type"           : "UX & UI Design",
+  "featured"       : false,
+  "metadata"       : {
+    "title"      : "Skyrim Quest Log Redesign",
+    "description": "A UX/UI redesign of Skyrim's quest log, transforming it into an intuitive and immersive journal with improved clarity, filtering, and usability for modern players.",
+    "keywords"   : [
+      "Skyrim",
+      "UX design",
+      "quest log",
+      "UI redesign",
+      "game interface",
+      "player experience",
+      "immersive design"
+    ],
+    "imageUrl"   : "/images/shared/skyrim-square-preview.webp",
+    "url"        : "https://sergei-borja.dev/skyrim-quest-log-redesign"
+  },
+  "projectType"    : "An Immersive UX Overhaul",
+  "heroImage"      : "skyrim-wide_stut1i",
+  "heroImageTablet": "skyrim-square_jtisqs",
+  "theme"          : {
+    "themeColor"     : "#5b503e",
+    "lightThemeColor": "#a39b8f",
+    "darkThemeColor" : "#28241c"
+  },
+  "projectSummary" : {
+    "description": "An immersive, journal-style quest log for Skyrim lets players sort, filter, and track quests with summaries, progress indicators, and integrated map navigation.",
+    "role"       : "I conducted user interviews, performed heuristic evaluations, mapped user flows, and contributed to wireframing and usability testing. I also ensured the redesign aligned with the immersive tone of the game world.",
+    "details"    : [
+      {
+        "header": "Course Name",
+        "text"  : "DESN 342: DXD Theory & Issues"
+      },
+      {
+        "header": "Timeline",
+        "text"  : "Jan 2024 - Apr 2024"
+      },
+      {
+        "header": "Collaborators",
+        "text"  : [
+          "Chris Clarke",
+          "Sankalp Shrivastav"
+        ]
+      },
+      {
+        "header": "Skills",
+        "text"  : [
+          "UX Research & Testing",
+          "Visual Design",
+          "Prototyping",
+          "Game Design"
+        ]
+      },
+      {
+        "header": "Tools",
+        "text"  : [
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+          "Google Forms",
+          "Figma"
+        ]
+      }
+    ]
+  },
+  "sections"       : [
+    {
+      "title"      : "Problem Discovery",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "We conducted user interviews, guided play sessions, and competitive analysis of similar RPGs to uncover usability issues in Skyrim's quest log. These methods helped us understand how players interact with the current system, where they struggle, and what features they expect in a modern quest log. We then created personas and user journeys based on our findings to guide our redesign."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Heuristic Evaluation",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "heuristic-1_mqzplx",
+                    "alt": "Image from Heuristic Evaluation: heuristic-1_mqzplx"
+                  },
+                  {
+                    "src": "heuristic-2_exhk3n",
+                    "alt": "Image from Heuristic Evaluation: heuristic-2_exhk3n"
+                  },
+                  {
+                    "src": "competitor-witcher-_m2xqty",
+                    "alt": "Image from Heuristic Evaluation: competitor-witcher-_m2xqty"
+                  },
+                  {
+                    "src": "competitor-metro_hs5sz0",
+                    "alt": "Image from Heuristic Evaluation: competitor-metro_hs5sz0"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Competitive Analysis",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "competitor-witcher-_m2xqty",
+                    "alt": "Image from Competitive Analysis: competitor-witcher-_m2xqty"
+                  },
+                  {
+                    "src": "competitor-metro_hs5sz0",
+                    "alt": "Image from Competitive Analysis: competitor-metro_hs5sz0"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Insight",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Lack of Organization and Sorting Options",
+                  "text"  : "Players found it hard to manage quests due to the lack of filters, categories, or sorting functions. These problems made prioritising tasks or tracking progress in complex playthroughs frustrating."
+                },
+                {
+                  "header": "Incomplete or Vague Quest Objectives",
+                  "text"  : "Many users felt quest instructions were too ambiguous, leading to confusion about what to do next. Without consistent detail, players often had to rely on external guides."
+                },
+                {
+                  "header": "Confusing Map and Marker System",
+                  "text"  : "The in-game map was overloaded with icons and lacked clear legends. Players struggled to identify objectives and navigate the world efficiently using the quest log integration."
+                },
+                {
+                  "header": "No Personalisation or Contextual Recall",
+                  "text"  : "Users returning after breaks found remembering storylines or their last steps difficult. The lack of dialogue history or progress summaries made re-engaging with quests disorienting."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "User Statement",
+          "contents": [
+            {
+              "type"     : "userStatement",
+              "statement": "As a completionist, I want to quickly sort and review my main and side quests to plan my adventures without hunting through a long, confusing list."
+            }
+          ]
+        },
+        {
+          "title"   : "Player Personas",
+          "contents": [
+            {
+              "type"   : "persona",
+              "persona": {
+                "name"      : "Hiroshi Nakamura",
+                "image"     : "skyrim-persona_cxybc4",
+                "age"       : 32,
+                "location"  : "Edmonton, Alberta",
+                "devices"   : [
+                  "PC",
+                  "Xbox Series X",
+                  "PS5"
+                ],
+                "type"      : "Completionist",
+                "quote"     : "I enjoy the satisfaction of completing everything a game has to offer.",
+                "goals"     : [
+                  "Complete side quests before progressing main story",
+                  "Organize quest log based on personal playstyle",
+                  "Track progress and achievements"
+                ],
+                "painPoints": [
+                  "No way to sort or filter quests",
+                  "Can\u2019t distinguish main vs. side quests",
+                  "Overly cluttered quest list"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Solution",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "To solve these issues identified, we redesigned Skyrim's quest log to function more like an immersive, interactive journal. Our solution improves usability, context retention, and navigation while keeping the aesthetic of the game world. Our new quest log now includes:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Interactive Journal Format",
+              "text"  : "We replaced the basic list view with a journal-inspired interface that organises quests by type and status, helping users navigate more intuitively while enhancing immersion."
+            },
+            {
+              "header": "Quest Synopsis",
+              "text"  : "Each quest now includes a recap section to help returning players quickly understand the quest and what they've already done, minimising confusion after breaks."
+            },
+            {
+              "header": "Sorting, Filtering, and Custom Indicators",
+              "text"  : "Players can sort quests by type (main, side, faction) and status (active, completed). Visual icons, colour coding, and progress bars make tracking and prioritisation easier."
+            },
+            {
+              "header": "Integrated Map and Quest Tracking",
+              "text"  : "Quests link directly to an updated map view where users can locate objectives and toggle filters to reduce visual clutter, streamlining exploration."
+            },
+            {
+              "header": "Immersive UI and Visual Cues",
+              "text"  : "The interface uses fantasy-inspired typography, textures, and animations. We also considered including Environmental visual indicators to reduce reliance on HUD elements and immerse players."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Preview",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "competitor-witcher-_m2xqty",
+                    "alt": "Image from Preview: competitor-witcher-_m2xqty"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Ideation & Design",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "Throughout this phase, I actively shaped the structure and functionality of the redesigned quest log. From early brainstorming to mid-fidelity prototyping, I collaborated with my team while also contributing to the following:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "Prioritization Matrix and Storyboarding Key Interactions",
+              "text"  : "As a team, we mapped out our ideas and determined the feasibility to develop and its value it brings to users. I contributed to idea generation while my teammate illustrated the final storyboards."
+            },
+            {
+              "header": "Mapped User Flows and Built Intuitive Wireframes",
+              "text"  : "We built a clear UI flow to show how players would move between tabs like \"Active,\" \"Completed,\" and \"Quest Details.\" This change helped us structure the app for quick navigation and minimal friction."
+            },
+            {
+              "header": "Style Tile Development",
+              "text"  : "To stay true to Skyrim's aesthetic, we designed a style tile featuring medieval textures and fantasy-inspired typography instead of the current modern-looking one, ensuring the UI felt integrated with the game world."
+            },
+            {
+              "header": "Wireframing",
+              "text"  : "We finally translated our flows and visual ideas into prototypes that tested layout, functionality, and feature integration."
+            }
+          ]
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Prioritization Matrix",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "whiteboarding-1_xzkzf8",
+                    "alt": "Image from Prioritization Matrix: whiteboarding-1_xzkzf8"
+                  },
+                  {
+                    "src": "storyboarding_jp9efi",
+                    "alt": "Image from Prioritization Matrix: storyboarding_jp9efi"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "UI Flow",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "ui-flow_zvcn8t",
+                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Style Tile",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "style-tile-1_tp5txk",
+                    "alt": "Image from Style Tile: style-tile-1_tp5txk"
+                  },
+                  {
+                    "src": "style-tile-2_srtty4",
+                    "alt": "Image from Style Tile: style-tile-2_srtty4"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "contents": [
+            {
+              "title"        : "Wireframes",
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "wireframe-1_nff4kv",
+                    "alt": "Image from Wireframes: wireframe-1_nff4kv"
+                  },
+                  {
+                    "src": "wireframe-2_rozqwo",
+                    "alt": "Image from Wireframes: wireframe-2_rozqwo"
+                  },
+                  {
+                    "src": "wireframe-3_cpi4yl",
+                    "alt": "Image from Wireframes: wireframe-3_cpi4yl"
+                  },
+                  {
+                    "src": "wireframe-4_mhn3rc",
+                    "alt": "Image from Wireframes: wireframe-4_mhn3rc"
+                  },
+                  {
+                    "src": "wireframe-5_rre8p1",
+                    "alt": "Image from Wireframes: wireframe-5_rre8p1"
+                  },
+                  {
+                    "src": "wireframe-6_ogdoah",
+                    "alt": "Image from Wireframes: wireframe-6_ogdoah"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Usability Testing",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "To evaluate the usability of our redesign, we conducted task-based usability testing using a functional prototype. Participants completed tasks, and we recorded both Inuit metric scores and qualitative feedback to assess effectiveness, efficiency, and satisfaction."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "User Tasks",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Find a Specific Quest",
+                  "text"  : "Users searched for a specified quest and identified its objectives, type, and description."
+                },
+                {
+                  "header": "Review a Completed Quest",
+                  "text"  : "Users located a finished quest and used the synopsis to understand what happened."
+                },
+                {
+                  "header": "Track a Quest on the Map",
+                  "text"  : "Users selected a quest and used the interactive map to find its in-game location."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "Results & Impact",
+          "contents": [
+            {
+              "type" : "list",
+              "items": [
+                {
+                  "header": "Task success rate",
+                  "text"  : "Users could locate and identify quest objectives with greater accuracy, showing strong alignment between the new layout and player expectations.",
+                  "bold"  : "95%"
+                },
+                {
+                  "header": "Improved navigation efficiency",
+                  "text"  : "With filtering, sorting, and visual indicators, players spent significantly less time searching through the quest log and freeing up focus for gameplay and exploration.",
+                  "bold"  : "53%"
+                },
+                {
+                  "header": "Increased re-engagement",
+                  "text"  : "The addition of the Quest Synopsis tab allowed players to quickly re-immerse after taking a break, reducing confusion and improving long-term session retention.",
+                  "bold"  : "88%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"      : "Final Product",
+      "content"    : [],
+      "subsections": [
+        {
+          "title"   : "Main",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-1_ud2s5v",
+                    "alt": "Image from Main: mockup-1_ud2s5v"
+                  },
+                  {
+                    "src": "mockup-2_xxknih",
+                    "alt": "Image from Main: mockup-2_xxknih"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Map",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-3_rxm3bm",
+                    "alt": "Image from Map: mockup-3_rxm3bm"
+                  },
+                  {
+                    "src": "mockup-4_ie9okc",
+                    "alt": "Image from Map: mockup-4_ie9okc"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Journal",
+          "contents": [
+            {
+              "type"         : "imagesGallery",
+              "imagesGallery": {
+                "images" : [
+                  {
+                    "src": "mockup-5_xnfw9u",
+                    "alt": "Image from Journal: mockup-5_xnfw9u"
+                  },
+                  {
+                    "src": "mockup-6_hgt5rm",
+                    "alt": "Image from Journal: mockup-6_hgt5rm"
+                  }
+                ],
+                "options": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title"   : "Reflection",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Redesigning Skyrim's quest log challenged us to balance immersion with usability. By centring our process on real player feedback and iterative design, we created a solution that respects the game's lore while improving clarity, control, and accessibility. This project reinforced several key takeaways:"
+        },
+        {
+          "type" : "list",
+          "items": [
+            {
+              "header": "User Centered Design Works",
+              "text"  : "Every decision from player interviews to usability tests allowed us to solve real problems. Many features were responses to user pain points, ensuring our redesign stayed relevant and valuable to our users."
+            },
+            {
+              "header": "Immersive Visuals and Functional Design Can Coexist",
+              "text"  : "Transforming the quest log into a journal was more than an aesthetic choice as it helped players mentally organise their progress. The metaphor of a journal encouraged a narrative mindset and allowed us to develop a more immersive interface."
+            },
+            {
+              "header": "Iteration Drives Meaningful Improvement",
+              "text"  : "Each round of feedback surfaced new usability and visual design opportunities. Iteration allowed us to refine everything from tab navigation to visual hierarchy, ensuring the final design felt polished and accessible."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

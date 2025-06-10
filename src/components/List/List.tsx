@@ -1,74 +1,64 @@
 "use client";
 
-import { fadeUp, fadeUpLowOpacity, staggerParent } from "@/motion/motionVariants";
-import { motion } from "motion/react";
-import { type ReactNode } from "react";
+import { ListItem as ListItemType } from "@/types/case-study";
+import { parseHighlightedText } from "@/utils/parseHighlightedText";
 import "./List.scss";
 
-export type ListItem = {
-    header?: string | undefined;
-    content?: string | ReactNode;
-    bold?: string;
-};
-
 type ListItemProps = {
-    item: ListItem;
+    item: ListItemType;
     index: number;
 }
 
 type MetaItemProps = {
-    item: ListItem;
+    item: ListItemType;
 }
 
 type ListProps = {
-    items: ListItem[];
+    items: ListItemType[];
     type: "list"|"meta";
 };
 
 function MetaItem({item}: MetaItemProps) {
     return (
-        <motion.div className="list__meta" variants={fadeUp}>
+        <div className="list__meta">
             <p>{item.header}:</p>
-            {Array.isArray(item.content) ? (
+            {Array.isArray(item.text) ? (
                 <ul>
-                    {item.content.map((item) => (
+                    {item.text.map((item) => (
                         <li key={item}>
                             <p>{item}</p>
                         </li>
                     ))}
                 </ul>
-            ) : typeof item.content === "string" ? (
-                <p>{item.content}</p>
+            ) : typeof item.text === "string" ? (
+                <p>{item.text}</p>
             ) : (
-                item.content
+                item.text
             )}
-        </motion.div>
+        </div>
     );
 }
 
 function ListItem({item, index}: ListItemProps) {
 
     return (
-        <motion.div className="list__item" variants={fadeUp}>
+        <div className="list__item">
             <p className="list__index">0{index + 1}</p>
+
             <div className="list__item-content">
                 {item.bold && <p className="list__item-bold">{item.bold}</p>}
+
                 <p className="accent-color">{item.header}</p>
-                {item.content && <p>{item.content}</p>}
+
+                {item.text && <p>{parseHighlightedText(item.text)}</p>}
             </div>
-        </motion.div>
+        </div>
     );
 }
 
 export default function List({items, type}: ListProps) {
     return (
-        <motion.ul
-            className="list"
-            variants={staggerParent}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{once: true}}
-        >
+        <ul className="list">
             {items.map((item, index) => (
                 <li key={item.header} style={{display: "contents"}}>
                     {type === "meta" ? (
@@ -78,10 +68,10 @@ export default function List({items, type}: ListProps) {
                     )}
 
                     {index !== items.length - 1 && (
-                        <motion.hr className="list__divider" variants={fadeUpLowOpacity}/>
+                        <hr className="list__divider"/>
                     )}
                 </li>
             ))}
-        </motion.ul>
+        </ul>
     );
 }

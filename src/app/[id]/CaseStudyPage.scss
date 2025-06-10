@@ -1,0 +1,35 @@
+.case-study-page {
+  display: grid;
+  gap: 8rem;
+
+  @include breakpoint(small) {
+    gap: 6rem;
+  }
+
+  &__main-content {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 16rem 1fr;
+    gap: 4rem;
+
+    @include breakpoint(large) {
+      grid-template-columns: 16rem 1fr;
+      gap: 2rem;
+    }
+
+    @include breakpoint(medium) {
+      grid-template-columns: 14rem 1fr;
+    }
+  }
+
+  &__sections {
+    grid-column: 2;
+    display: grid;
+    gap: 8rem;
+
+    @include breakpoint(small) {
+      gap: 6rem;
+      grid-column: 1/-1;
+    }
+  }
+}

@@ -2,20 +2,21 @@ import CaseStudyHero from "@/app/[id]/components/CaseStudyHero";
 import CaseStudySection from "@/app/[id]/components/CaseStudySection";
 import OtherProjects from "@/app/[id]/components/OtherProjects";
 import ProjectSummary from "@/app/[id]/components/ProjectSummary";
+import CaseStudyNavigation from "@/components/CaseStudyNavigation";
 import Revealer from "@/components/Revealer";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
-import ScrollTracker from "@/components/ScrollTracker";
 import ThemeEffect from "@/components/ThemeEffect";
 import { getCaseStudy } from "@/lib/getCaseStudy";
+import { ProjectData, Section } from "@/types/case-study";
 import { notFound } from "next/navigation";
+import "./CaseStudyPage.scss";
 
 type Props = {
-    params: Promise<{ id: string }>
+    params: Promise<{id: string}>
 };
 
 export default async function CaseStudyPage({params}: Props) {
-    const { id } = await params;
-    const caseStudy = await getCaseStudy(id);
+    const {id} = await params;
+    const caseStudy: ProjectData|null = await getCaseStudy(id);
 
     if (!caseStudy || !caseStudy.sections) {
         return notFound();
@@ -26,9 +27,7 @@ export default async function CaseStudyPage({params}: Props) {
             <Revealer/>
             <ThemeEffect theme={caseStudy.theme}/>
 
-            <ScrollToTopButton/>
-
-            <main className="home__content">
+            <main className='case-study-page'>
                 <CaseStudyHero
                     productName={caseStudy.productName}
                     projectType={caseStudy.projectType}
@@ -36,16 +35,21 @@ export default async function CaseStudyPage({params}: Props) {
                     tabletHeroImage={caseStudy.heroImageTablet}
                 />
 
-                <h2 className='sr-only'>Case Study</h2>
+                <ProjectSummary details={caseStudy.projectSummary}/>
 
-                <ScrollTracker>
-                    <ProjectSummary details={caseStudy.projectSummary} />
-                    {caseStudy.sections.map((section) => (
-                        <CaseStudySection key={section.title} section={section} />
-                    ))}
-                </ScrollTracker>
+                <div className="grid-bleed">
+                    <div className='case-study-page__main-content'>
+                        <CaseStudyNavigation sections={caseStudy.sections}/>
 
-                <OtherProjects currentProject={id}/>
+                        <div className="case-study-page__sections">
+                            {caseStudy.sections.map((section: Section) => (
+                                <CaseStudySection key={section.title} section={section}/>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <OtherProjects currentProject={`/${id}`}/>
             </main>
         </>
     );

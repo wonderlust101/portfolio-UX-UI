@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -13,17 +13,22 @@ const lenisOptions: LenisOptions = {
     lerp: 0.09,
 };
 
+function isFirefox(): boolean {
+    return (
+        typeof navigator !== "undefined" &&
+        /firefox/i.test(navigator.userAgent)
+    );
+}
+
 function ScrollTriggerProxySetup() {
     const lenis = useLenis();
 
     useEffect(() => {
-        if (!lenis) return;
+        if (!lenis || isFirefox()) return;
 
         ScrollTrigger.scrollerProxy(document.body, {
-            scrollTop(value) {
-                if (value !== undefined) {
-                    lenis.scrollTo(value);
-                }
+            scrollTop(v) {
+                if (v !== undefined) lenis.scrollTo(v);
                 return lenis.scroll;
             },
             getBoundingClientRect() {
@@ -37,16 +42,15 @@ function ScrollTriggerProxySetup() {
             fixedMarkers: true,
         });
 
-        const update = (time: number) => {
-            lenis.raf(time);
+        lenis.on("scroll", () => {
             ScrollTrigger.update();
-            requestAnimationFrame(update);
-        };
+        });
 
-        requestAnimationFrame(update);
+        ScrollTrigger.refresh();
 
         return () => {
-            ScrollTrigger.getAll().forEach(t => t.kill());
+            ScrollTrigger.getAll().forEach((t) => t.kill());
+            lenis.off("scroll", ScrollTrigger.update);
         };
     }, [lenis]);
 
@@ -54,33 +58,11 @@ function ScrollTriggerProxySetup() {
 }
 
 export default function SmoothScrolling() {
-    const lenisRef = useRef<any>(null);
-
-    useEffect(() => {
-        const handleMouseDown = (e: MouseEvent) => {
-            if (e.button === 1 && lenisRef.current) {
-                lenisRef.current.stop(); // pause smooth scroll
-            }
-        };
-
-        const handleMouseUp = (e: MouseEvent) => {
-            if (e.button === 1 && lenisRef.current) {
-                lenisRef.current.start(); // resume smooth scroll
-            }
-        };
-
-        window.addEventListener("mousedown", handleMouseDown);
-        window.addEventListener("mouseup", handleMouseUp);
-
-        return () => {
-            window.removeEventListener("mousedown", handleMouseDown);
-            window.removeEventListener("mouseup", handleMouseUp);
-        };
-    }, []);
+    if (isFirefox()) return null;
 
     return (
         <>
-            <ReactLenis root options={lenisOptions} ref={lenisRef} />
+            <ReactLenis root options={lenisOptions} />
             <ScrollTriggerProxySetup />
         </>
     );

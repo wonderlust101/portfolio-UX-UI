@@ -1,32 +1,22 @@
 .content-block {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9rem;
-  padding-top: var(--border-padding-top, 2rem);
-
-  @include breakpoint(large) {
-    grid-template-columns: 1fr 1.5fr;
-  }
-
-  @include breakpoint(medium) {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  @include breakpoint(small) {
-    gap: 1rem;
-    padding-top: var(--border-padding-top, 1.5rem);
-  }
-
-  &__container {
-    width: 100%;
-  }
+  align-items: flex-start;
+  gap: 1.25rem;
 
   &__content {
     display: grid;
+    justify-items: flex-start;
     gap: 2rem;
+    width: 100%;
+  }
 
-    @include breakpoint(small) {
+  &--subsection {
+    grid-template-columns:  1fr;
+    justify-items: flex-start;
+    gap: 1.25rem;
+    width: 100%;
+
+    @include breakpoint(medium) {
       gap: 1rem;
     }
   }

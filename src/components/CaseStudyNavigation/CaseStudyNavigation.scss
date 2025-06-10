@@ -1,0 +1,43 @@
+.case-study-navigation {
+  position: sticky;
+  top: 8rem;
+  display: grid;
+  align-content: flex-start;
+  gap: 1.5rem;
+  color: $clr-black;
+  border-radius: $border-radius;
+
+  @include breakpoint(large) {
+    padding: 1.5rem;
+  }
+
+  @include breakpoint(small) {
+    display: none;
+  }
+
+  &__links {
+    display: grid;
+    font-size: 1.1rem;
+    gap: 1.25rem;
+
+    @include breakpoint(large) {
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    justify-self: flex-start;
+    font-weight: 600;
+    color: $clr-black-50;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      color: $clr-black;
+    }
+
+    &.link-active {
+      padding-left: 0.5rem;
+      color: $clr-black;
+    }
+  }
+}

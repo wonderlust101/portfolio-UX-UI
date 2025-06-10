@@ -1,75 +1,54 @@
 "use client";
 
-import Button from "@/components/Button";
-import OptimizedImage from "@/components/OptimizedImage";
-import Section from "@/components/Section";
-import { buildNamedTransformUrl } from "@/lib/cloudinary";
-import "./OtherProjects.scss";
+import SectionHeader from "@/components/SectionHeader";
+import projectData from "@/data/projectLinks.json";
+import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
+import { CldImage } from "next-cloudinary";
+import { CSSProperties } from "react";
+import './OtherProjects.scss'
 
 type CurrentProjectProps = {
-    currentProject: string | undefined;
+    currentProject: string|undefined;
 }
 
-const otherProjects = [
-    {
-        project: "The Elder Scrolls: Skyrim Quest Log Redesign",
-        href   : "skyrim-quest-log-redesign",
-        thumbnail: "skyrim-wide_stut1i"
-    },
-    {
-        project: "Telus World of Science Edmonton Guide Book",
-        href   : "telus-world-of-science-guide-book",
-        thumbnail: "telus-wide_qtlqgz"
-},
-    {
-        project: "Elections Canada Website Audit",
-        href   : "election-canada-website-audit",
-        thumbnail: "election-canada-wide_dfpmwa"
-    }
-];
-
 export default function OtherProjects({currentProject}: CurrentProjectProps) {
+    const {handleNavigation} = useAnimatedNavigation();
+
     return (
-        <Section header="Other Projects">
-            {otherProjects.map((project) => {
-                if (project.href !== currentProject)
-                    return (
-                        <div key={project.project}>
-                            <hr/>
+        <section className="other-projects grid-bleed" id='other-works'>
+            <SectionHeader type="page">
+                Other Works
+            </SectionHeader>
 
-                            <section className="other-projects">
-                                <div className="other-projects__header">
-                                    <h3 className="heading-xs" >
-                                        <span className="accent-color">// </span>
-                                        {project.project}
-                                        <span className="accent-color">.</span>
-                                    </h3>
-
-                                    <Button
-                                        color="accent"
-                                        theme="light"
-                                        size="sm"
-                                        disabled={currentProject === project.href}
-                                        href={`/${project.href}`}
-                                    >
-                                        Read Case Study
-                                    </Button>
-                                </div>
-
-                                <div className="other-projects__content">
-                                    <OptimizedImage
-                                        className='other-projects__thumbnail'
-                                        src={buildNamedTransformUrl(project.thumbnail, "webp_low")}
+            <div className="other-projects__grid">
+                {projectData.projectLinks.map((project) => {
+                    if (currentProject !== project.link && project.featured === true)
+                        return (
+                            <div
+                                className="other-projects__container"
+                                style={{"--hover-color": project.theme.lightThemeColor} as CSSProperties}
+                                key={project.title}
+                                onClick={handleNavigation(project.link)}
+                            >
+                                <div className="other-projects__image-container">
+                                    <CldImage
+                                        className="other-projects__image"
+                                        src={project.previewImage}
                                         alt=""
-                                        width={1600}
-                                        height={400}
+                                        width={600}
+                                        height={600}
                                         quality={50}
                                     />
                                 </div>
-                            </section>
-                        </div>
-                    );
-            })}
-        </Section>
+
+                                <div className="other-projects__text-container">
+                                    <p>{project.type}</p>
+                                    <h2 className="heading-sm">{project.title}</h2>
+                                </div>
+                            </div>
+                        );
+                })}
+            </div>
+        </section>
     );
 }

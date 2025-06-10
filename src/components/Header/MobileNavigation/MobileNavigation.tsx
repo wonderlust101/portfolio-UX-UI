@@ -6,7 +6,6 @@ import Button from "@/components/Button";
 import List from "@/components/List";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 
-import type { NavLinks } from "@/types/links";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import Image from "next/image";
@@ -15,16 +14,12 @@ import React, { Fragment, useEffect, useRef, useState } from "react";
 
 import "./MobileNavigation.scss";
 
-type MobileNavigationProps = {
-    navLinks: NavLinks[];
-};
-
 const contactList = [
-    {header: "Email", content: "sergei.borja0701@gmail.com"},
-    {header: "Phone", content: "(780) 886-0023"},
+    {header: "Email", text: "sergei.borja0701@gmail.com"},
+    {header: "Phone", text: "(780) 886-0023"},
     {
         header : "LinkedIn",
-        content: (
+        text: (
             <a
                 className="link"
                 href="https://www.linkedin.com/in/sergei-borja/"
@@ -37,7 +32,7 @@ const contactList = [
     },
     {
         header : "GitHub",
-        content: (
+        text: (
             <a
                 className="link"
                 href="https://github.com/wonderlust101"
@@ -50,7 +45,26 @@ const contactList = [
     }
 ];
 
-export default function MobileNavigation({navLinks}: MobileNavigationProps) {
+const navLinks = [
+    {
+        page: "Home",
+        link: "/"
+    },
+    {
+        page: "Selected Works",
+        link: "/#selected-works"
+    },
+    {
+        page: "Skills and Tools",
+        link: "/#skills-and-tools"
+    },
+    {
+        page: "About Me",
+        link: "/#about-me"
+    }
+]
+
+export default function MobileNavigation() {
     const {handleNavigation} = useAnimatedNavigation();
 
     const containerRef = useRef<HTMLDivElement>(null);
@@ -80,10 +94,20 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
     );
 
     useEffect(() => {
+        const overlay = containerRef.current?.querySelector(".mobile-navigation__overlay") as HTMLElement;
+
+        if (!overlay) return;
+
         if (isMenuOpen) {
+            overlay.style.display = 'block';
             tl.current?.play();
         } else {
-            tl.current?.reverse();
+            if (tl.current) {
+                tl.current.reverse();
+                tl.current.eventCallback("onReverseComplete", () => {
+                    overlay.style.display = 'none';
+                });
+            }
         }
     }, [isMenuOpen]);
 
@@ -92,18 +116,18 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
             <div className="mobile-navigation__bar">
                 <div className="mobile-navigation__bar-flex">
                     <div className="mobile-navigation__logo">
-                    <Link
-                        scroll={true}
-                        className="header__logo"
-                        href="/"
-                        onClick={handleNavigation("/", () => setIsMenuOpen(false))}
-                        aria-label="Go to Home"
-                    >
-                        <span className='accent-color-light'>//</span> SB
-                    </Link>
-                    <p className="header__tag" role="presentation">
-                        [ Full Stack Developer, UX &amp; UI Designer ]
-                    </p>
+                        <Link
+                            scroll={true}
+                            className="header__logo"
+                            href="/"
+                            onClick={handleNavigation("/", () => setIsMenuOpen(false))}
+                            aria-label="Go to Home"
+                        >
+                            <span className='accent-color-light'>//</span> SB
+                        </Link>
+                        <p className="header__tag" role="presentation">
+                            [ Full Stack Developer, UX &amp; UI Designer ]
+                        </p>
                     </div>
 
                     <div className="mobile-navigation__cta">
@@ -140,35 +164,22 @@ export default function MobileNavigation({navLinks}: MobileNavigationProps) {
 
                     <div className="mobile-navigation__links">
                         {navLinks.map((link) => (
-                            <Fragment key={link.title}>
+                            <Fragment key={link.page}>
                                 {link.link && (
                                     <div className="mobile-navigation__link-item">
                                         <div className="mobile-navigation__link-item-holder">
                                             <Link
                                                 scroll={true}
-                                                className="mobile-navigation__link" href={link.link}
+                                                className="mobile-navigation__link"
+                                                href={link.link}
                                                 onClick={handleNavigation(link.link, toggleMenu)}
-                                                aria-label={`Go to ${link.title} page`}
+                                                aria-label={`Go to ${link.page} page`}
                                             >
-                                                {link.title}
+                                                {link.page}
                                             </Link>
                                         </div>
                                     </div>
                                 )}
-                                {link.subLinks?.map((subLink) => (
-                                    <div key={subLink.title} className="mobile-navigation__link-item">
-                                        <div className="mobile-navigation__link-item-holder">
-                                            <Link
-                                                scroll={true}
-                                                className="mobile-navigation__link" href={subLink.link}
-                                                onClick={handleNavigation(subLink.link, toggleMenu)}
-                                                aria-label={`Go to ${subLink.title} page`}
-                                            >
-                                                {subLink.title}
-                                            </Link>
-                                        </div>
-                                    </div>
-                                ))}
                             </Fragment>
                         ))}
                     </div>

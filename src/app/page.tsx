@@ -1,15 +1,14 @@
 import About from "@/app/home/components/About";
 import Hero from "@/app/home/components/Hero";
-import ContentBlock from "@/components/ContentBlock";
-import List from "@/components/List";
+import SelectedWorks from "@/components/FeautredWorks/SelectedWorks";
 import Revealer from "@/components/Revealer";
-import Section from "@/components/Section";
-import SelectedWork from "@/components/SelectedWork";
+import SkillsList from "@/components/SkillsList";
 import ThemeEffect from "@/components/ThemeEffect";
 import { ProfileData } from "@/types/home";
 import { promises as fs } from "fs";
 import { notFound } from "next/navigation";
 import path from "path";
+import '@/app/home/Home.scss'
 
 export default async function Home() {
     const filePath = path.join(process.cwd(), "src", "data", `home.json`);
@@ -24,28 +23,16 @@ export default async function Home() {
     }
 
     return (
-        <>
+        <main className='home'>
             <Revealer/>
             <ThemeEffect/>
 
             <Hero/>
+            <SelectedWorks/>
 
-            <Section header="Featured Case Studies">
-                {homeData.caseStudies.map((caseStudy, index) => (
-                    <SelectedWork key={index} caseStudy={caseStudy} index={index + 1}/>
-                ))}
-            </Section>
-
-            <Section header="Skills & Tools">
-                {homeData.skills.map((skill) => (
-                    <ContentBlock key={skill.title} header={skill.title}>
-                        <p>{skill.description}</p>
-                        <List items={skill.skillList} type="list"/>
-                    </ContentBlock>
-                ))}
-            </Section>
+            <SkillsList/>
 
             <About aboutText={homeData}/>
-        </>
+        </main>
     );
 }

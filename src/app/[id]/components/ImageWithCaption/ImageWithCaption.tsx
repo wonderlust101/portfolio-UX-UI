@@ -1,80 +1,55 @@
 "use client";
 
-import ImageModal from "@/components/ImageModal";
-import OptimizedImage from "@/components/OptimizedImage";
 import { buildNamedTransformUrl } from "@/lib/cloudinary";
-import { fadeUp } from "@/motion/motionVariants";
-import type { Image as ImageType } from "@/types/global";
+import { CldImage } from "next-cloudinary";
+import dynamic from "next/dynamic";
+import { useState } from "react";
 import "./ImageWithCaption.scss";
-import { AnimatePresence, motion } from "motion/react";
-import { getCldImageUrl } from "next-cloudinary";
-import { CSSProperties, useEffect, useState } from "react";
 
 type ImageWithCaptionProps = {
-    image: ImageType;
+    image: string;
+    alt?: string;
 };
 
-export default function ImageWithCaption({image}: ImageWithCaptionProps) {
+const Lightbox = dynamic(
+    () =>
+        import("react-modal-image").then((mod) => mod.Lightbox),
+    {ssr: false}
+);
+
+export default function ImageWithCaption({image, alt = "No caption available"}: ImageWithCaptionProps) {
     const [isOpen, setIsOpen] = useState(false);
-    const [highBlur, setHighBlur] = useState<string | null>(null);
 
-    const styles = {"--image-max-width": image.containerPercentage ? `${image.containerPercentage}%` : undefined} as CSSProperties;
-
-    useEffect(() => {
-        async function fetchHighResBlur() {
-            try {
-                const url = buildNamedTransformUrl(image.image, "webp_high");
-                const tinyUrl = getCldImageUrl({
-                    src: url,
-                    width: 20,
-                    quality: "10",
-                    format: "webp",
-                });
-                const res = await fetch(tinyUrl);
-                const blob = await res.blob();
-                const reader = new FileReader();
-                reader.onloadend = () => setHighBlur(reader.result as string);
-                reader.readAsDataURL(blob);
-            } catch (e) {
-                console.error(e);
-            }
-        }
-
-        fetchHighResBlur();
-    }, [image.image]);
+    const thumbUrl = buildNamedTransformUrl(image, "webp_low");
+    const largeUrl = buildNamedTransformUrl(image, "webp_high");
 
     return (
         <>
-            <motion.figure
+            <figure
                 className="image-with-caption"
-                style={styles}
-                variants={fadeUp}
                 onClick={() => setIsOpen(true)}
+                style={{cursor: "pointer"}}
             >
-                <OptimizedImage
+                <CldImage
                     className="image-with-caption__image"
-                    src={buildNamedTransformUrl(image.image, "webp_low")}
-                    alt={image.caption || "No caption available"}
+                    src={image}
+                    alt={alt}
                     width={1000}
                     height={600}
-                    quality={80}
+                    quality={60}
                 />
+            </figure>
 
-                {image.caption && (
-                    <figcaption className="image-with-caption__caption">{image.caption}</figcaption>
-                )}
-            </motion.figure>
-
-            <AnimatePresence mode="wait">
-                {isOpen && (
-                    <ImageModal
-                        src={image.image}
-                        caption={image.caption}
-                        blurDataUrl={highBlur}
-                        onClose={() => setIsOpen(false)}
-                    />
-                )}
-            </AnimatePresence>
+            {isOpen && (
+                <Lightbox
+                    medium={thumbUrl}
+                    large={largeUrl}
+                    alt={alt}
+                    onClose={() => setIsOpen(false)}
+                    hideDownload={true}
+                    hideZoom={false}
+                />
+            )}
         </>
     );
 }

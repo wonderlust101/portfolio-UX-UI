@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { ViewTransitions } from "next-view-transitions";
 import { ReactNode } from "react";
 import "@/assets/styles/globals.scss";
+import './layout.scss'
 
 export const metadata: Metadata = {
     title       : "Sergei Borja | Full Stack Developer & UX & UI Designer",
@@ -63,23 +64,19 @@ type RootLayoutProps = {
     children: ReactNode;
 }
 
-export default function RootLayout({children}: RootLayoutProps) {
+export default async function RootLayout({children}: RootLayoutProps) {
     return (
         <>
-            <SmoothScrolling/>
-
             <ViewTransitions>
+                <SmoothScrolling/>
                 <html lang="en" className={`${satoshi.variable}`}>
-                <body>
 
+                <body className='layout'>
                     <Header/>
-
-                    <main>
-                        {children}
-                    </main>
-
+                    {children}
                     <Footer/>
                 </body>
+
                 </html>
             </ViewTransitions>
         </>

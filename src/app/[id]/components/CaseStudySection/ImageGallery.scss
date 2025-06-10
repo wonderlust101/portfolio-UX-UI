@@ -1,15 +1,12 @@
 .image-gallery {
   display: grid;
-  gap: 2rem;
-  margin: 0 5rem;
-
-  @include breakpoint(large) {
-    margin: 0 2rem;
-    gap: 2.5rem;
-  }
+  align-items: flex-start;
+  grid-template-columns: repeat(var(--column-num), 1fr);
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+  width: 100%;
 
   @include breakpoint(medium) {
-    margin: 0;
-    gap: 2.5rem;
+    grid-template-columns: repeat(var(--tablet-column-num), 1fr);
   }
 }

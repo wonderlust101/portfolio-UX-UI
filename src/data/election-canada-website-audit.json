@@ -28,11 +28,11 @@
     "details"    : [
       {
         "header" : "Role",
-        "content": "UX Auditor"
+        "text": "UX Auditor"
       },
       {
         "header" : "Skills",
-        "content": [
+        "text": [
           "Content Auditing",
           "Information Architecture",
           "Accessibility Evaluation",
@@ -41,11 +41,11 @@
       },
       {
         "header" : "Timeline",
-        "content": "Sept 2024 – Oct 2024"
+        "text": "Sept 2024 – Oct 2024"
       },
       {
         "header" : "Tools",
-        "content": [
+        "text": [
           "Figma",
           "OnPoint Content Auditor",
           "SE Ranking",
@@ -54,11 +54,11 @@
       },
       {
         "header" : "Course Name",
-        "content": "DESN 442: Information Architecture"
+        "text": "DESN 442: Information Architecture"
       },
       {
         "header" : "Collaborators",
-        "content": [
+        "text": [
           "Cindy Fubara",
           "Francis Safari",
           "Jenish Shakya"

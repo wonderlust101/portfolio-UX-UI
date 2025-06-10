@@ -3,47 +3,51 @@
   "aboutText"        : "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing clean interfaces, and building things that help people.\n\nI enjoy working with others to turn ideas into real, useful products. Whether sketching in Figma or coding in React, I always bring curiosity, focus, and a drive to do things right.",
   "additionalDetails": [
     {
-      "header" : "Role",
-      "content": "Full Stack Developer, UX & UI Designer"
+      "header": "Role",
+      "text"  : "Full Stack Developer, UX & UI Designer"
     },
     {
-      "header" : "Education",
-      "content": "B.Sc. in Computer Science, MacEwan University"
+      "header": "Education",
+      "text"  : "B.Sc. in Computer Science, MacEwan University"
     },
     {
-      "header" : "Based In",
-      "content": "Edmonton, Alberta"
+      "header": "Based In",
+      "text"  : "Edmonton, Alberta"
     },
     {
-      "header" : "Looking For",
-      "content": "Internship Opportunities"
+      "header": "Looking For",
+      "text"  : "Internship Opportunities"
     }
   ],
   "skills"           : [
     {
-      "title"      : "Designing Experiences",
+      "title"      : "UX & UI Design",
       "description": "I can use research methods like user interviews and usability testing to understand real user needs. I aim to shape intuitive, meaningful experiences through journey mapping, wireframing, and prototyping.",
       "skillList"  : [
         {
-          "header": "User Interviews"
+          "header": "User Interviews",
+          "tint"  : "#00000040"
         },
         {
-          "header": "Usability Testing"
+          "header": "Usability Testing",
+          "tint"  : "#00000040"
         },
         {
-          "header": "Journey Mapping"
+          "header": "Information Architecture",
+          "tint"  : "#00000040"
         },
         {
-          "header": "Information Architecture"
+          "header": "Figma",
+          "icon"  : "figma.svg",
+          "tint"  : "#00000040"
         },
         {
-          "header": "Figma"
+          "header": "Wireframing",
+          "tint"  : "#00000040"
         },
         {
-          "header": "Wireframing"
-        },
-        {
-          "header": "Prototyping"
+          "header": "Prototyping",
+          "tint"  : "#00000040"
         }
       ]
     },
@@ -52,49 +56,79 @@
       "description": "I build responsive, accessible interfaces using HTML, CSS, TypeScript, and modern frameworks like React and Next.js. I care about creating clean, maintainable code that aligns with great design.",
       "skillList"  : [
         {
-          "header": "HTML"
+          "header": "HTML",
+          "icon"  : "html.svg",
+          "tint"  : "#EF652A40"
         },
         {
-          "header": "CSS/SCSS"
+          "header": "CSS/SCSS",
+          "icon"  : "css.svg",
+          "tint"  : "#66339940"
         },
         {
-          "header": "JavaScript & TypeScript"
+          "header": "Tailwind",
+          "icon"  : "tailwind.svg",
+          "tint"  : "#06B6D440"
         },
         {
-          "header": "React"
+          "header": "JavaScript & TypeScript",
+          "icon"  : "typescript.svg",
+          "tint"  : "#007ACC40"
         },
         {
-          "header": "Next.js"
+          "header": "React",
+          "icon"  : "react.svg",
+          "tint"  : "#61DAFB40"
         },
         {
-          "header": "Vite"
+          "header": "Next.js",
+          "icon"  : "nextjs.svg",
+          "tint"  : "#00000040"
+        },
+        {
+          "header": "Vite",
+          "icon"  : "vite.svg",
+          "tint"  : "#FFB60E40"
         }
       ]
     },
     {
-      "title"      : "Engineering the Backend",
+      "title"      : "Back-End Development",
       "description": "I develop robust server-side logic using Node.js, Express, and REST or GraphQL APIs. I’m comfortable handling data, building scalable systems, and connecting front-end interfaces to reliable back-end services.",
       "skillList"  : [
         {
-          "header": "Node.js"
+          "header": "Node.js",
+          "icon"  : "nodejs.svg",
+          "tint"  : "#8CC84B40"
         },
         {
-          "header": "Express"
+          "header": "Express",
+          "icon"  : "express.svg",
+          "tint"  : "#00000040"
         },
         {
-          "header": "RESTful APIs"
+          "header": "RESTful APIs",
+          "tint"  : "#00000040"
         },
         {
-          "header": "GraphQL"
+          "header": "GraphQL",
+          "icon"  : "graphql.svg",
+          "tint"  : "#E535AB40"
         },
         {
-          "header": "Apollo"
+          "header": "Apollo",
+          "icon"  : "apollo.svg",
+          "tint"  : "#00000040"
         },
         {
-          "header": "SQL"
+          "header": "mySQL",
+          "icon"  : "mysql.svg",
+          "tint"  : "#00546B40"
         },
         {
-          "header": "Python"
+          "header": "Python",
+          "icon"  : "python.svg",
+          "tint"  : "#366D9A40"
         }
       ]
     },
@@ -103,56 +137,26 @@
       "description": "These supporting skills help me work efficiently in modern development environments, from managing code and deployments to ensuring quality and smooth collaboration.",
       "skillList"  : [
         {
-          "header": "Git"
+          "header": "Git",
+          "icon"  : "git.svg",
+          "tint"  : "#DE4C3640"
         },
         {
-          "header": "Docker"
+          "header": "Docker",
+          "icon"  : "docker.svg",
+          "tint"  : "#0091E240"
         },
         {
-          "header": "Kubernetes"
+          "header": "Kubernetes",
+          "icon"  : "kubernetes.svg",
+          "tint"  : "#326DE640"
         },
         {
-          "header": "Jest"
+          "header": "Jest",
+          "icon"  : "jest.svg",
+          "tint"  : "#C2132540"
         }
       ]
-    }
-  ],
-  "caseStudies"      : [
-    {
-      "title"       : "The Elder Scrolls: Skyrim Quest Log Redesign",
-      "type"        : "UX & UI Design",
-      "description" : "Redesigned Skyrim’s quest log into an interactive journal that fixes frustrating usability issues and transforms gameplay into a more immersive and intuitive experience.",
-      "link"        : "/skyrim-quest-log-redesign",
-      "previewImage": "skyrim-square_jtisqs",
-      "theme"          : {
-        "themeColor"     : "#C12A2C",
-        "lightThemeColor": "#F15154",
-        "darkThemeColor" : "#9D2325"
-      }
-    },
-    {
-      "title"       : "Telus World of Science Edmonton Guide Book",
-      "type"        : "UX & UI Design",
-      "description" : "Created a mobile app with AR navigation and gamified exploration to make visiting the science centre more engaging, accessible, and fun for all ages.",
-      "link"        : "/telus-world-of-science-guide-book",
-      "previewImage": "telus-square_mjt24z",
-      "theme"          : {
-        "themeColor"     : "#8E2D90",
-        "lightThemeColor": "#EBB2ED",
-        "darkThemeColor" : "#732575"
-      }
-    },
-    {
-      "title"       : "Elections Canada Website Audit",
-      "type"        : "UX & UI Design",
-      "description" : "Audited the Elections Canada website to uncover and fix major usability, accessibility, and content clarity issues that hindered voters' experience.",
-      "link"        : "/election-canada-website-audit",
-      "previewImage": "election-canada-square_tmz5es",
-      "theme"          : {
-        "themeColor"     : "#8B2942",
-        "lightThemeColor": "#D694A6",
-        "darkThemeColor" : "#6E2134"
-      }
     }
   ]
 }

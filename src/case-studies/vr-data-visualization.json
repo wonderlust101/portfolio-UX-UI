@@ -397,19 +397,19 @@
                   "text"  : ""
                 },
                 {
-                  "header": "Scene switching between cities was smooth and well-received",
+                  "header": "Scene switching between cities was smooth and well-received.",
                   "text"  : ""
                 },
                 {
-                  "header": "Request for continuous turning instead of snap-turning for smoother navigation",
+                  "header": "Request for continuous turning instead of snap-turning for smoother navigation.",
                   "text"  : ""
                 },
                 {
-                  "header": "Ascend/descend controls were missing, limiting full vertical movement",
+                  "header": "Ascend/descend controls were missing, limiting full vertical movement.",
                   "text"  : ""
                 },
                 {
-                  "header": "Scene boundaries were unclear, and some users accidentally flew below the map",
+                  "header": "Scene boundaries were unclear, and some users accidentally flew below the map.",
                   "text"  : ""
                 }
               ]
@@ -422,27 +422,31 @@
       "title"      : "Final Prototype",
       "subsections": [
         {
-          "title"   : "Scenes (Edmonton, Paris, Tokyo)",
+          "title"   : "Scenes (Edmonton, Paris, Tokyo, Rendered Buildings)",
           "contents": [
             {
               "type"         : "imagesGallery",
               "imagesGallery": {
                 "images" : [
                   {
-                    "src": "final-1_esw72a",
+                    "src": "final-edmonton_sln9ft",
                     "alt": "Image from Wireframing: wireframe-1_nff4kv"
                   },
                   {
-                    "src": "final-3_vtqrtx",
+                    "src": "final-paris_gjiewv",
                     "alt": "Image from Wireframing: wireframe-2_rozqwo"
                   },
                   {
-                    "src": "final-4_qqhycq",
+                    "src": "final-tokyo_yfkhgn",
+                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                  },
+                  {
+                    "src": "final-tokyo-2_h7rbrj",
                     "alt": "Image from Wireframing: wireframe-2_rozqwo"
                   }
                 ],
                 "options": {
-                  "columns": 3
+                  "columns": 4
                 }
               }
             }

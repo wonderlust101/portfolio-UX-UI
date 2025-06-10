@@ -1,3 +1,4 @@
+import FigmaFrame from "@/components/FigmaFrame";
 import dynamic from "next/dynamic";
 import List from "@/components/List";
 import Persona from "@/components/Persona";
@@ -30,6 +31,8 @@ export default function ContentRenderer({contents}: ContentRendererProps) {
                         return <UserStatement key={index} statement={content.statement}/>;
                     case "quoteList":
                         return <QuoteList key={index} quotes={content.quotes}/>;
+                    case "figma":
+                        return <FigmaFrame key={index} figmaLink={content.figmaLink}/>
                     default:
                         return null;
                 }

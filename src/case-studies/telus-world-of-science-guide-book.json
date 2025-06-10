@@ -65,8 +65,8 @@
   },
   "sections"       : [
     {
-      "title"   : "The Problem Space",
-      "contents": [
+      "title"      : "The Problem Space",
+      "contents"   : [
         {
           "type": "text",
           "text": "Visiting the science center is meant to be an immersive and exploratory experience, especially for families, children, and guests of all abilities. However, with so many exhibits, diverse visitor needs, and a dynamic physical environment, creating a cohesive, accessible journey across the space is an ongoing challenge. From orientation to interaction, every space shapes how visitors engage, learn, and move through the experience."
@@ -124,15 +124,12 @@
                   }
                 ],
                 "options": {
-                  "columns": 3
                 }
               }
             }
           ]
         }
-
       ]
-
     },
     {
       "title"      : "The Solution",
@@ -161,7 +158,7 @@
       ],
       "subsections": [
         {
-          "title"   : "Demo (Coming Soon)"
+          "title": "Demo (Coming Soon)"
         }
       ]
     },
@@ -194,7 +191,9 @@
                     "alt": "Image from Contextual Research: competitor-witcher-_m2xqty"
                   }
                 ],
-                "options": {}
+                "options": {
+                  "columns": 3
+                }
               }
             }
           ]
@@ -234,7 +233,6 @@
             }
           ]
         }
-
       ]
     },
     {
@@ -469,154 +467,11 @@
       "content"    : [],
       "subsections": [
         {
-          "title"   : "Onboarding",
+          "title"   : "Figma Mockup",
           "contents": [
             {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "mockup-1_p11iso",
-                    "alt": "Image from Main: mockup-1_ud2s5v"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "title"   : "Home",
-          "contents": [
-            {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "mockup-2_rcsukj",
-                    "alt": "Image from Main: mockup-1_ud2s5v"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "title"   : "Tutorial",
-          "contents": [
-            {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "mockup-3_ab5csz",
-                    "alt": "Image from Main: mockup-1_ud2s5v"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "title"   : "Stamp Book",
-          "contents": [
-            {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "mockup-4_bmvdld",
-                    "alt": "Image from Main: mockup-1_ud2s5v"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "title"   : "AR Scanning",
-          "contents": [
-            {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "mockup-5_fayit9",
-                    "alt": "Image from Main: mockup-1_ud2s5v"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "title"   : "Typing Alternative",
-          "contents": [
-            {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "mockup-6_lxxdad",
-                    "alt": "Image from Main: mockup-1_ud2s5v"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "title"   : "Navigation",
-          "contents": [
-            {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "mockup-6_lxxdad",
-                    "alt": "Image from Main: mockup-1_ud2s5v"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
-            }
-          ]
-        },
-        {
-          "title"   : "Settings",
-          "contents": [
-            {
-              "type"         : "imagesGallery",
-              "imagesGallery": {
-                "images" : [
-                  {
-                    "src": "mockup-8_weivjl",
-                    "alt": "Image from Main: mockup-1_ud2s5v"
-                  }
-                ],
-                "options": {
-                  "columns": 1
-                }
-              }
+              "type"     : "figma",
+              "figmaLink": "https://embed.figma.com/design/Xcs00mQWvxVdPi5QHsqPp6/Telus-World-of-Science-GuidebBok?node-id=0-1&embed-host=share"
             }
           ]
         }

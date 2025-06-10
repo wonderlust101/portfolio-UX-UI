@@ -33,7 +33,7 @@ export type ProjectSummary = {
 
 export type Detail = {
     header: string;
-    text: string | string[];
+    text: string|string[];
 };
 
 export type Section = {
@@ -48,12 +48,18 @@ export type Subsection = {
 };
 
 export type ContentBlock =
-    | TextBlock
-    | ListBlock
-    | ImagesGalleryBlock
-    | PersonaBlock
-    | QuoteList
-    | UserStatement;
+    |TextBlock
+    |ListBlock
+    |ImagesGalleryBlock
+    |PersonaBlock
+    |QuoteList
+    |UserStatement
+    |FigmaBlock;
+
+export type FigmaBlock = {
+    type: "figma";
+    figmaLink: string;
+};
 
 export type TextBlock = {
     type: "text";
@@ -67,7 +73,7 @@ export type ListBlock = {
 
 export type ListItem = {
     header: string;
-    text?: string | ReactNode;
+    text?: string|ReactNode;
     bold?: string;
 };
 

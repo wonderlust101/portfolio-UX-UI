@@ -21,6 +21,8 @@ export default function CaseStudyNavigation({ sections }: CaseStudyNavigationPro
         const target = document.getElementById(id);
         if (target && lenis) {
             lenis.scrollTo(target, { offset: -160, duration: 2 });
+        } else if(target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     };
 

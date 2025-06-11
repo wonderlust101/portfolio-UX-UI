@@ -13,12 +13,8 @@ type CaseStudyListingProps = {
 export default function SelectedWork({caseStudy, index}: CaseStudyListingProps) {
     return (
         <div>
-            <hr/>
-
             <section className="selected-work">
-                <div
-                    className="selected-work__text-column"
-                >
+                <div className="selected-work__text-column">
                     <h3 className="heading-sm">
                         <span className="accent-color">// </span>
                         0{index}

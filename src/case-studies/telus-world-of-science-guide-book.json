@@ -158,10 +158,10 @@
       ],
       "subsections": [
         {
-          "title": "Demo",
-          "contents"   : [
+          "title"   : "Demo",
+          "contents": [
             {
-              "type": "video",
+              "type" : "video",
               "video": "Desn444_Final_Crit_1_rgrmuh"
             }
           ]
@@ -419,28 +419,13 @@
           "title"   : "Key Findings",
           "contents": [
             {
-              "type" : "list",
-              "items": [
-                {
-                  "header": "App was intuitive and required little guidance",
-                  "text"  : ""
-                },
-                {
-                  "header": "Stamp book feature increased engagement, especially for kids",
-                  "text"  : ""
-                },
-                {
-                  "header": "Accessibility tools like audio and simple text were well-received",
-                  "text"  : ""
-                },
-                {
-                  "header": "Icons like AR and stamp book confused some users at first",
-                  "text"  : ""
-                },
-                {
-                  "header": "Small text and lack of font options made reading difficult for a few",
-                  "text"  : ""
-                }
+              "type"  : "quoteList",
+              "quotes": [
+                "App was intuitive and required little guidance",
+                "Stamp book feature increased engagement, especially for kids",
+                "Accessibility tools like audio and simple text were well-received",
+                "Icons like AR and stamp book confused some users at first",
+                "Small text and lack of font options made reading difficult for a few"
               ]
             }
           ]
@@ -462,6 +447,39 @@
                   }
                 ],
                 "options": {}
+              }
+            }
+          ]
+        },
+        {
+          "title"   : "Changes for accessibility",
+          "contents": [
+            {
+              "type"  : "feedback",
+              "change": {
+                "header": "Manual answer input for stamp questions",
+                "before": {
+                  "text": "Users had to use their |cameras to scan exhibits| to answer stamp book questions. However, it also created a barrier for those with camera issues or visual accessibility needs, |which may cause a missed interaction with the user|.",
+                  "image": "changes-1_vpexsq"
+                },
+                "after" : {
+                  "text": "To improve accessibility, we added a |\"Type in Answer\" option| directly below the scanner interface. |This change provides a reliable alternative for users experiencing technical problems or physical limitations|.",
+                  "image": "changes-2_locbpk"
+                }
+              }
+            },
+            {
+              "type"  : "feedback",
+              "change": {
+                "header": "Added accessibility preferences for better usability",
+                "before": {
+                  "text": "Before our usability test, we didn't account for users with mobility aids like wheelchairs, strollers, or individuals with low vision or sensory sensitivity. Our |current map| makes it difficult for the mentioned users to use our navigation features. |This created friction in how they moved through the space|.",
+                  "image": "changes-3_to8mqs"
+                },
+                "after" : {
+                  "text": "To address this gap, we introduced an |accessibility menu| where users can personalize their experience by selecting from several options to |tailor the map visuals and routes|. |This helps meet individual needs, improving usability and inclusion from the start of their visit|.",
+                  "image": "changes-4_lh30lw"
+                }
               }
             }
           ]

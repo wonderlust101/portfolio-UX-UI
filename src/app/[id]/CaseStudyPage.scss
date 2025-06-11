@@ -21,11 +21,19 @@
   &__sections {
     grid-column: 2;
     display: grid;
-    gap: 8rem;
+    gap: 4rem;
 
     @include breakpoint(medium) {
-      gap: 6rem;
+      gap: 3rem;
       grid-column: 1/-1;
+    }
+  }
+
+  &__divider {
+    border: 2px solid $clr-black;
+
+    &:last-of-type {
+      display: none;
     }
   }
 }

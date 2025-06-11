@@ -15,24 +15,27 @@ export default function CaseStudySection({section}: CaseStudySectionProps) {
     return (
         <Section key={section.title} id={toKebabCase(section.title)}>
             <ContentBlock header={section.title} type="page">
-                <div className="case-study-section__section">
-                    <ContentRenderer contents={section.contents}/>
-                </div>
-            </ContentBlock>
-
-            <div className="case-study-section__sub-section-container">
-                {section.subsections?.map((subsection, index) => (
-                    <div key={index}>
-                        <ContentBlock header={subsection.title} type="subsection">
-                            {subsection.contents && (
-                                <div className="case-study-section__sub-section">
-                                    <ContentRenderer contents={subsection.contents}/>
-                                </div>
-                            )}
-                        </ContentBlock>
+                {section.contents &&
+                    <div className="case-study-section__section">
+                        <ContentRenderer contents={section.contents}/>
                     </div>
+                }
+
+                {section.subsections?.map((subsection) => (
+                    <ContentBlock
+                        key={subsection.title}
+                        header={subsection.title}
+                        type="subsection"
+                        hasSectionContent={!!section.contents}
+                    >
+                        {subsection.contents && (
+                            <div className="case-study-section__sub-section">
+                                <ContentRenderer contents={subsection.contents}/>
+                            </div>
+                        )}
+                    </ContentBlock>
                 ))}
-            </div>
+            </ContentBlock>
         </Section>
     );
 }

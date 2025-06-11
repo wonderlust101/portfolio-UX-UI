@@ -55,7 +55,8 @@ export type ContentBlock =
     |QuoteList
     |UserStatement
     |FigmaBlock
-    |VideoBlock;
+    |VideoBlock
+    |FeedbackBlock;
 
 export type TextBlock = {
     type: "text";
@@ -130,3 +131,25 @@ export type VideoBlock = {
     type: "video";
     video: string;
 };
+
+export type FeedbackBlock = {
+    type: "feedback";
+    change: FeedbackContent;
+};
+
+export type FeedbackContent = {
+    header: string;
+    before: Feedback;
+    after?: Feedback;
+    option?: FeedbackOptions;
+}
+
+export type Feedback = {
+    image: string;
+    imageAlt: string;
+    text: string;
+};
+
+export type FeedbackOptions = {
+    reversed?: boolean;
+}

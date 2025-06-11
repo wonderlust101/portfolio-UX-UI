@@ -24,11 +24,12 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
                 {projectData.projectLinks.map((project) => {
                     if (currentProject !== project.link && project.featured === true)
                         return (
-                            <div
+                            <a
                                 className="other-projects__container"
                                 style={{"--hover-color": project.theme.lightThemeColor} as CSSProperties}
                                 key={project.title}
                                 onClick={handleNavigation(project.link)}
+                                href={project.link}
                             >
                                 <div className="other-projects__image-container">
                                     <CldImage
@@ -45,7 +46,7 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
                                     <p>{project.type}</p>
                                     <h2 className="heading-sm">{project.title}</h2>
                                 </div>
-                            </div>
+                            </a>
                         );
                 })}
             </div>

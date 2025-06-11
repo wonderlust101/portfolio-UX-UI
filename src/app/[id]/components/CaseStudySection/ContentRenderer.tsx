@@ -1,14 +1,15 @@
+import DesignChange from "@/components/DesignFeedback";
 import FigmaFrame from "@/components/FigmaFrame";
-import VideoPlayer from "@/components/VideoPlayer";
-import dynamic from "next/dynamic";
 import List from "@/components/List";
 import Persona from "@/components/Persona";
 import QuoteList from "@/components/QuoteList";
 import UserStatement from "@/components/UserStatement";
+import VideoPlayer from "@/components/VideoPlayer";
 import { ContentBlock } from "@/types/case-study";
+import dynamic from "next/dynamic";
 
 const ImageGallery = dynamic(() => import("@/app/[id]/components/CaseStudySection/ImageGallery"), {
-    ssr: false,
+    ssr: false
 });
 
 type ContentRendererProps = {
@@ -33,9 +34,11 @@ export default function ContentRenderer({contents}: ContentRendererProps) {
                     case "quoteList":
                         return <QuoteList key={index} quotes={content.quotes}/>;
                     case "figma":
-                        return <FigmaFrame key={index} figmaLink={content.figmaLink}/>
+                        return <FigmaFrame key={index} figmaLink={content.figmaLink}/>;
                     case "video":
-                        return <VideoPlayer key={index} videoLink={content.video}></VideoPlayer>
+                        return <VideoPlayer key={index} videoLink={content.video}/>;
+                    case "feedback":
+                        return <DesignChange key={index} change={content.change} num={index + 1}/>;
                     default:
                         return null;
                 }

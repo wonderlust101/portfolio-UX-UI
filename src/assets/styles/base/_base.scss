@@ -24,6 +24,7 @@ picture source {
 hr {
   border: 1.25px solid;
   opacity: 20%;
+  border-radius: a.$border-radius;
 }
 
 html.lenis, html.lenis body {

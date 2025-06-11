@@ -114,7 +114,6 @@ export default function Footer() {
                 </div>
 
                 <div className="footer__bottom" role="presentation">
-                    <hr/>
                     <p className="footer__copyright">@ 2025 Sergei Borja</p>
                 </div>
             </div>

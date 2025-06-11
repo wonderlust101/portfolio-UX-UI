@@ -9,6 +9,7 @@ import { getCaseStudy } from "@/lib/getCaseStudy";
 import { ProjectData, Section } from "@/types/case-study";
 import { notFound } from "next/navigation";
 import "./CaseStudyPage.scss";
+import { Fragment } from "react";
 
 type Props = {
     params: Promise<{id: string}>
@@ -27,7 +28,7 @@ export default async function CaseStudyPage({params}: Props) {
             <Revealer/>
             <ThemeEffect theme={caseStudy.theme}/>
 
-            <main className='case-study-page'>
+            <main className="case-study-page">
                 <CaseStudyHero
                     productName={caseStudy.productName}
                     projectType={caseStudy.projectType}
@@ -38,12 +39,15 @@ export default async function CaseStudyPage({params}: Props) {
                 <ProjectSummary details={caseStudy.projectSummary}/>
 
                 <div className="grid-bleed">
-                    <div className='case-study-page__main-content'>
+                    <div className="case-study-page__main-content">
                         <CaseStudyNavigation sections={caseStudy.sections}/>
 
                         <div className="case-study-page__sections">
                             {caseStudy.sections.map((section: Section) => (
-                                <CaseStudySection key={section.title} section={section}/>
+                                <Fragment key={section.title}>
+                                    <CaseStudySection section={section}/>
+                                    <hr className='case-study-page__divider'/>
+                                </Fragment>
                             ))}
                         </div>
                     </div>

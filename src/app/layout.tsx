@@ -12,7 +12,7 @@ import './layout.scss'
 export const metadata: Metadata = {
     title       : "Sergei Borja | Full Stack Developer & UX & UI Designer",
     description : "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing" +
-        " clean interfaces, and bu ilding things that help people.",
+        " clean interfaces, and building things that help people.",
     keywords    : [
         "Sergei Borja",
         "UX designer",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     },
     twitter     : {
         card       : "summary_large_image",
-        title      : "Sergei Borja | Product Designer & Developer",
+        title      : "Sergei Borja | Full Stack Developer & UX & UI Designer",
         description: "I'm a computer science student in Edmonton, Alberta, passionate about UX/UI and full stack development. I love solving problems, designing" +
             " clean interfaces, and building things that help people.",
         images     : ["/images/shared/sergei-borja.webp"],

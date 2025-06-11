@@ -8,11 +8,14 @@ type SubsectionProps = {
     children?: ReactNode;
     header: string|undefined;
     type: string;
+    hasSectionContent?: boolean;
 };
 
-export default function ContentBlock({children, header, type}: SubsectionProps) {
+export default function ContentBlock({children, header, type, hasSectionContent}: SubsectionProps) {
     return (
-        <section className={`content-block ${type === 'subsection' ? 'content-block--subsection' : ''}`}>
+        <section
+            className={`content-block ${type === "subsection" ? `content-block--subsection ${hasSectionContent || "content-block--no-section-content"}` : ""}`}
+        >
             <SectionHeader type={type}>
                 {header}
             </SectionHeader>

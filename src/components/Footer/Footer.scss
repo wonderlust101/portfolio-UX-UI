@@ -103,11 +103,13 @@
 
   &__bottom {
     grid-column: 1/-1;
+    border-top: 1px solid $clr-white-50;
   }
 
   &__copyright {
     font-size: 1rem;
     padding: 1.5rem 0;
+    width: 100%;
   }
 
   &__image {

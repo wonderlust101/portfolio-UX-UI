@@ -19,8 +19,6 @@ const Lightbox = dynamic(
 
 export default function ImageWithCaption({image, alt = "No caption available"}: ImageWithCaptionProps) {
     const [isOpen, setIsOpen] = useState(false);
-
-    const thumbUrl = buildNamedTransformUrl(image, "webp_low");
     const largeUrl = buildNamedTransformUrl(image, "webp_high");
 
     return (
@@ -43,8 +41,7 @@ export default function ImageWithCaption({image, alt = "No caption available"}: 
             {isOpen && (
                 <div className="image-with-caption__modal">
                     <Lightbox
-                        medium={thumbUrl}
-                        large={largeUrl}
+                        medium={largeUrl}
                         alt={alt}
                         onClose={() => setIsOpen(false)}
                         hideDownload={true}

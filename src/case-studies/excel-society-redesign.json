@@ -348,6 +348,61 @@
       ]
     },
     {
+      "title"      : "Feedback & Changes",
+      "contents"   : [
+        {
+          "type": "text",
+          "text": "After completing our initial design before implementation, we asked for feedback to gauge usability and clarity. While we did not conduct formal user testing sessions, we shared our design with peers in our class to gather informal impressions and suggestions. We also presented our prototype to the client to ensure it aligned with their goals and gain additional feedback."
+        }
+      ],
+      "subsections": [
+        {
+          "title"   : "Feedback",
+          "contents": [
+            {
+              "type"  : "quoteList",
+              "quotes": [
+                "In the information-dense pages, it is still overwhelming to read.",
+                "Some pages could benefit from more visual breaks or icons to guide the eye.",
+                "The visual design is a vast improvement as it's much more modern and easier to navigate than the original site."
+              ]
+            }
+          ]
+        },
+        {
+          "title"   : "Handling large block of text",
+          "contents": [
+            {
+              "type"  : "feedback",
+              "change": {
+                "header": "Toggling to show or hide content",
+                "before": {
+                  "text" : "Some of the feedback highlighted that dense sections of text felt overwhelming and did not encourage users to read beyond the first paragraph.\n\nTo improve this, we initially introduced a toggle button that allowed users to choose how much content they wanted to view by showing or hiding sections.",
+                  "image": "change-1_vwm9t6"
+                },
+                "option": {
+                  "reversed": true
+                }
+              }
+            },
+            {
+              "type"  : "feedback",
+              "change": {
+                "header": "Sectioning content into boxes",
+                "before": {
+                  "text" : "However, we noticed that this approach sometimes left pages looking empty, and there was also a concern that users might miss the toggle button entirely, leading to important content being overlooked.\n\nTo address the issue, we reorganized the content into boxes and add more icons, white space, and visual hierarchies, effectively breaking up large text blocks into sections that are easier to scan and comprehend.",
+                  "image": "change-2_w0dssk"
+                },
+                "option": {
+                  "reversed": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title"      : "Implementation",
       "contents"   : [
         {

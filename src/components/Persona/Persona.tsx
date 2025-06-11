@@ -38,11 +38,9 @@ export default function Persona({personaData}: PersonaProps) {
                 </div>
             </div>
 
-            <hr/>
-
             <div className="persona__bottom">
                 <div className="persona__list">
-                    <p className="bold">Goals:</p>
+                    <p className="black heading-xs">Goals:</p>
                     <ul>
                         {personaData.goals.map((goal) => (
                             <li key={goal}>
@@ -53,7 +51,7 @@ export default function Persona({personaData}: PersonaProps) {
                 </div>
 
                 <div className="persona__list">
-                    <p className="bold">Pain Points:</p>
+                    <p className="black heading-xs">Pain Points:</p>
                     <ul>
                         {personaData.painPoints.map((pain) => (
                             <li key={pain}>

@@ -137,6 +137,7 @@ p {
 .medium {font-weight: 500;}
 .semi-bold {font-weight: 600;}
 .bold {font-weight: 700;}
+.black {font-weight: 900;}
 
 // Text Transform
 .text-transform-unset {
@@ -168,7 +169,6 @@ p {
 .quote {
   font-size: 1.15rem;
   font-weight: 700;
-  font-style: italic;
   color: var(--theme-color);
 
   @include a.breakpoint(large) {

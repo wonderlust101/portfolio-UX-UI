@@ -154,7 +154,7 @@ export type FeedbackContent = {
 
 export type Feedback = {
     image: string;
-    imageAlt: string;
+    alt: string;
     text: string;
 };
 

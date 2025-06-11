@@ -46,8 +46,13 @@
   padding: 0.5rem 1.5rem;
   align-items: center;
   grid-template-columns: 1fr max-content;
+  font-size: 1rem;
 
   & > :first-child {
     order: 2;
   }
+}
+
+.__react_modal_image__caption {
+  font-size: 1.1rem !important;
 }

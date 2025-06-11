@@ -14,7 +14,7 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
     if (!after) {
         return (
             <div className="design-feedback">
-                <ImageWithCaption image={before.image}/>
+                <ImageWithCaption image={before.image} alt={before.alt} />
                 <div
                     className="design-feedback__after"
                     style={option?.reversed ? {order: "-1"} : {}}
@@ -31,7 +31,7 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
             <h3 className="heading-xs design-feedback__header">{num}. {header}</h3>
 
             <div className="design-feedback__compare-grid">
-                <ImageWithCaption image={before.image}/>
+                <ImageWithCaption image={before.image} alt={before.alt}/>
 
                 <div>
                     <h3 className="heading-xs">Before:</h3>
@@ -40,7 +40,7 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
             </div>
 
             <div className="design-feedback__compare-grid">
-                <ImageWithCaption image={after.image}/>
+                <ImageWithCaption image={after.image} alt={after.alt}/>
 
                 <div>
                     <h3 className="heading-xs">After:</h3>

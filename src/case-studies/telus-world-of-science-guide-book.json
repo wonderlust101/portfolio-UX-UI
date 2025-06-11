@@ -116,19 +116,19 @@
                 "images" : [
                   {
                     "src": "navigation-1_ljuk4e",
-                    "alt": "Image from Contextual Research: heuristic-1_mqzplx"
+                    "alt": "A map at Telus World of Science, showing a colour-coded floor plan with several exhibits and areas with a ‘You Are Here’ marker and arrows guiding visitors."
                   },
                   {
                     "src": "navigation-2_wi72fk",
-                    "alt": "Image from Contextual Research: heuristic-2_exhk3n"
+                    "alt": "A directional sign listing destinations with icons hanging over the stairs in the science centre."
                   },
                   {
                     "src": "exploration-1_ljdj9p",
-                    "alt": "Image from Contextual Research: competitor-witcher-_m2xqty"
+                    "alt": "Interactive touchscreen quiz showing the question with answer cards and a progress indicator."
                   },
                   {
                     "src": "exploration-2_eul6x5",
-                    "alt": "Image from Contextual Research: competitor-metro_hs5sz0"
+                    "alt": "An exhibit table in the Health Zone with an interactive tablet and buttons that can change what displays on the screen."
                   }
                 ],
                 "options": {
@@ -196,15 +196,15 @@
                 "images" : [
                   {
                     "src": "research-1_e6cnxb",
-                    "alt": "Image from Contextual Research: heuristic-1_mqzplx"
+                    "alt": "The lobby ceiling at the science centre showing a large, textured moon capable of being scanned for AR features."
                   },
                   {
                     "src": "research-2_gztqo0",
-                    "alt": "Image from Contextual Research: heuristic-2_exhk3n"
+                    "alt": "Photo of the Arctic Journey exhibit’s immersive area with a wall projection for some story-based interaction."
                   },
                   {
                     "src": "research-3_dnsqjx",
-                    "alt": "Image from Contextual Research: competitor-witcher-_m2xqty"
+                    "alt": "View inside the Science Garage maker-space area, featuring a hanging prototype car model suspended overhead."
                   }
                 ],
                 "options": {
@@ -287,27 +287,27 @@
                 "images" : [
                   {
                     "src": "mind-map-1_dthwdj",
-                    "alt": "Image from Mind Mapping: heuristic-1_mqzplx"
+                    "alt": "Users interact with a moon lander exhibit using AR. Scanning QR codes reveals astronauts, rover interiors, and educational holograms to simulate a lunar mission."
                   },
                   {
                     "src": "mind-map-2_prq1tn",
-                    "alt": "Image from Mind Mapping: heuristic-2_exhk3n"
+                    "alt": "Users scan QR codes to explore 360° planetary models. AR overlays show real-time data like humidity and place guests in immersive environments to discover key facts."
                   },
                   {
                     "src": "mind-map-3_fspzsx",
-                    "alt": "Image from Mind Mapping: heuristic-2_exhk3n"
+                    "alt": "Users scan QR codes at themed podiums to “travel” between planets. Each station offers AR content, placing guests in planetary settings with immersive fact-based exploration."
                   },
                   {
                     "src": "mind-map-4_vgyjop",
-                    "alt": "Image from Mind Mapping: competitor-witcher-_m2xqty"
+                    "alt": "Users scan an igloo exhibit to unlock AR scenes of Indigenous life. The app reveals a campfire, cultural info, and interior visuals to explore daily life and traditions."
                   },
                   {
                     "src": "mind-map-5_imaguq",
-                    "alt": "Image from Mind Mapping: heuristic-1_mqzplx"
+                    "alt": "A collaborative map showing major idea branching to wayfinding, Indigenous exhibits, AR add-ons, and health education. Notes reflect pros, cons, and user engagement strategies."
                   },
                   {
                     "src": "mind-map-6_fxcjpf",
-                    "alt": "Image from Mind Mapping: heuristic-2_exhk3n"
+                    "alt": "A mixed concept combining AR animations, space and body exhibits, and fact-scanning. A mascot character helps guide kids through learning in a playful, engaging way."
                   }
                 ],
                 "options": {
@@ -327,15 +327,15 @@
                 "images" : [
                   {
                     "src": "brainwriting-1_dhorni",
-                    "alt": "Image from Brainwriting: heuristic-1_mqzplx"
+                    "alt": "Handwritten scenario about a rover team drills for moon rocks under tough conditions."
                   },
                   {
                     "src": "brainwriting-2_jvvjyx",
-                    "alt": "Image from Brainwriting: heuristic-2_exhk3n"
+                    "alt": "Handwritten scenario about a family that navigates exhibits with tech glitches and language barriers."
                   },
                   {
                     "src": "brainwriting-3_dzof1b",
-                    "alt": "Image from Brainwriting: competitor-witcher-_m2xqty"
+                    "alt": "Handwritten scenario about astronauts hunt planets and peacefully befriend aliens"
                   }
                 ],
                 "options": {
@@ -354,7 +354,7 @@
                 "images" : [
                   {
                     "src": "ui-flow_biaqm6",
-                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                    "alt": "User flow from opening the app and browsing tasks to saving progress and exchanging rewards."
                   }
                 ],
                 "options": {
@@ -373,19 +373,19 @@
                 "images" : [
                   {
                     "src": "3d-1_go6nud",
-                    "alt": "Image from AR & 3D Models: wireframe-1_nff4kv"
+                    "alt": "Initial 3D model of the museum layout showing connected exhibit spaces."
                   },
                   {
                     "src": "3d-2_mkmyxg",
-                    "alt": "Image from AR & 3D Models: wireframe-2_rozqwo"
+                    "alt": "Colored 3D site model with exhibit zones highlighted, used for the 2D and 3D navigation feature."
                   },
                   {
                     "src": "ar-1_j91nxp",
-                    "alt": "Image from AR & 3D Models: wireframe-1_nff4kv"
+                    "alt": "AR view overlaying arrows the exhibit hallway floor to guide visitors to the Space Gallery."
                   },
                   {
                     "src": "ar-2_g2obp6",
-                    "alt": "Image from AR & 3D Models: wireframe-2_rozqwo"
+                    "alt": "AR view with a purple arrow pointing down a corridor toward the Space Gallery entrance."
                   }
                 ],
                 "options": {
@@ -405,7 +405,7 @@
                 "images" : [
                   {
                     "src": "wireframe_ob7rk7",
-                    "alt": "Image from Wireframing: wireframe-3_cpi4yl"
+                    "alt": "Early mid-fidelity wireframe of the AR app showing onboarding, homepage, directory, and map screens."
                   }
                 ],
                 "options": {
@@ -451,11 +451,11 @@
                 "images" : [
                   {
                     "src": "testing-1_ml3gar",
-                    "alt": "Image from Wireframing: wireframe-3_cpi4yl"
+                    "alt": "User in the Space Gallery using the AR app on their phone to scan a planet exhibit."
                   },
                   {
                     "src": "testing-2_xkk3eh",
-                    "alt": "Image from Wireframing: wireframe-4_mhn3rc"
+                    "alt": "Close-up of a user’s hand tapping the app’s stamp-book interface during on-site testing."
                   }
                 ],
                 "options": {}
@@ -472,11 +472,13 @@
                 "header": "Manual answer input for stamp questions",
                 "before": {
                   "text" : "Users had to use their |cameras to scan exhibits| to answer stamp book questions. However, it also created a barrier for those with camera issues or visual accessibility needs, |which may cause a missed interaction with the user|.",
-                  "image": "changes-1_vpexsq"
+                  "image": "changes-1_vpexsq",
+                  "alt": "App view of a phone camera scanning an exhibit and adding a digital stamp to the user’s stamp book.”"
                 },
                 "after" : {
                   "text" : "To improve accessibility, we added a |\"Type in Answer\" option| directly below the scanner interface. |This change provides a reliable alternative for users experiencing technical problems or physical limitations|.",
-                  "image": "changes-2_locbpk"
+                  "image": "changes-2_locbpk",
+                  "alt": "App popup offering a ‘Type in Answer’ text field for accessibility or technical issues."
                 }
               }
             },
@@ -486,11 +488,13 @@
                 "header": "Added accessibility preferences for better usability",
                 "before": {
                   "text" : "Before our usability test, we didn't account for users with mobility aids like wheelchairs, strollers, or individuals with low vision or sensory sensitivity. Our |current map| makes it difficult for the mentioned users to use our navigation features. |This created friction in how they moved through the space|.",
-                  "image": "changes-3_to8mqs"
+                  "image": "changes-3_to8mqs",
+                  "alt": "Our initial design of the science centre map without consideration for accessibility or technical issues."
                 },
                 "after" : {
                   "text" : "To address this gap, we introduced an |accessibility menu| where users can personalize their experience by selecting from several options to |tailor the map visuals and routes|. |This helps meet individual needs, improving usability and inclusion from the start of their visit|.",
-                  "image": "changes-4_lh30lw"
+                  "image": "changes-4_lh30lw",
+                  "alt": "Accessibility Menu screen listing different accessibility options to tailor map visuals and routes."
                 }
               }
             }

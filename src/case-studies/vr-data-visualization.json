@@ -112,11 +112,11 @@
                 "images" : [
                   {
                     "src": "problem-1_jopj7e",
-                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                    "alt": "ArcGIS Enterprise web map showing red/green/blue night-lights trend rendering."
                   },
                   {
                     "src": "problem-2_ef2rhv",
-                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                    "alt": "ArcGIS Pro 3D view of Wellington buildings colored by annual solar potential."
                   }
                 ],
                 "options": {
@@ -232,7 +232,7 @@
                 "images" : [
                   {
                     "src": "ui-flow_kyh1qq",
-                    "alt": "Image from UI Flow: ui-flow_zvcn8t"
+                    "alt": "UI Flow of VR geospatial app from launch, starting at the tutorial to data options and environment change."
                   }
                 ],
                 "options": {
@@ -251,11 +251,11 @@
                 "images" : [
                   {
                     "src": "idea-2_bsvxd5",
-                    "alt": "Image from Idea Exploration: competitor-metro_hs5sz0"
+                    "alt": "Hand-drawn sketches of VR data menu and 2D graph with list panel."
                   },
                   {
                     "src": "idea-1_vb5epr",
-                    "alt": "Image from Idea Exploration: competitor-witcher-_m2xqty"
+                    "alt": "Hand-drawn sketches of floating info screens and point-of-interest markers in 3D space."
                   }
                 ],
                 "options": {}
@@ -272,11 +272,11 @@
                 "images" : [
                   {
                     "src": "wireframe-1_k7569z",
-                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                    "alt": "Wireframe showing map selection list and layer opacity toggles."
                   },
                   {
                     "src": "wireframe-2_ankbz4",
-                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                    "alt": "Wireframe legend panel listing data layers and color-coded symbols."
                   }
                 ],
                 "options": {}
@@ -327,7 +327,7 @@
                 "images" : [
                   {
                     "src": "development_dmzjuy",
-                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                    "alt": "VR scene in Unity with a floating legend panel anchored in the 3D environment."
                   }
                 ],
                 "options": {
@@ -368,11 +368,11 @@
                 "images" : [
                   {
                     "src": "challenge-1_xfkg0u",
-                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                    "alt": "Our C# code showing a loop that syncs a UI toggle’s state with a map layer’s visibility."
                   },
                   {
                     "src": "challenge-2_rkwslt",
-                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                    "alt": "ArcGIS SDK C# example showing similar code, iterating through internal map layers to update visibility and opacity."
                   }
                 ],
                 "options": {}
@@ -422,19 +422,19 @@
                 "images" : [
                   {
                     "src": "final-edmonton_sln9ft",
-                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                    "alt": "VR view of Edmonton’s 3D cityscape rendered in unrendered 3D blocks."
                   },
                   {
                     "src": "final-paris_gjiewv",
-                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                    "alt": "VR view of Paris’s 3D cityscape rendered in unrendered 3D blocks."
                   },
                   {
                     "src": "final-tokyo_yfkhgn",
-                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                    "alt": "VR view of Tokyo’s 3D cityscape rendered in unrendered 3D blocks."
                   },
                   {
                     "src": "final-tokyo-2_h7rbrj",
-                    "alt": "Image from Wireframing: wireframe-2_rozqwo"
+                    "alt": "VR view of Tokyo with detailed textured buildings."
                   }
                 ],
                 "options": {
@@ -453,7 +453,7 @@
                 "images" : [
                   {
                     "src": "final-2_qitgbs",
-                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                    "alt": "VR view of Edmonton with colored data layers under on the 3D model."
                   }
                 ],
                 "options": {
@@ -472,11 +472,11 @@
                 "images" : [
                   {
                     "src": "final-5_simhib",
-                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                    "alt": "Floating VR UI showing map select buttons and sliders for layer opacity."
                   },
                   {
                     "src": "final-6_gkovak",
-                    "alt": "Image from Wireframing: wireframe-1_nff4kv"
+                    "alt": "VR legend panel listing data layers and their color-coded symbols."
                   }
                 ],
                 "options": {

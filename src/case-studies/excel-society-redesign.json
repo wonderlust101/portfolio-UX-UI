@@ -119,11 +119,11 @@
                 "images" : [
                   {
                     "src": "problem-1_a5et9r",
-                    "alt": "Image from Contextual Research: heuristic-1_mqzplx"
+                    "alt": "Excel Society’s initial Services page, showing a hero section, followed by an introduction about community care and a two-column overview of services in Edmonton and Calgary."
                   },
                   {
                     "src": "problem-2_yonszj",
-                    "alt": "Image from Contextual Research: heuristic-2_exhk3n"
+                    "alt": "Excel Society’s initial About page, featuring a semi-transparent overlay of a red-brick church behind text titled ‘Enriching Lives Since 1923,’ followed by a multi-paragraph history."
                   }
                 ],
                 "options": {}
@@ -208,19 +208,19 @@
                 "images" : [
                   {
                     "src": "content-audit-1_nzjb3a",
-                    "alt": "Image from Content Audit: heuristic-1_mqzplx"
+                    "alt": "My content-audit board for the Excel Society site, annotated by arrows and sticky notes."
                   },
                   {
                     "src": "content-audit-2_moofan",
-                    "alt": "Image from Content Audit: heuristic-1_mqzplx"
+                    "alt": "Anika’s content-audit board for the Excel Society site, annotated by arrows and sticky notes."
                   },
                   {
                     "src": "content-audit-3_fpzpl5",
-                    "alt": "Image from Content Audit: heuristic-1_mqzplx"
+                    "alt": "Andre’s content-audit board for the Excel Society site, annotated by arrows and sticky notes."
                   },
                   {
                     "src": "content-audit-4_eqdlkb",
-                    "alt": "Image from Content Audit: heuristic-2_exhk3n"
+                    "alt": "Amaka’s content-audit board for the Excel Society site, annotated by arrows and sticky notes."
                   }
                 ],
                 "options": {
@@ -239,11 +239,11 @@
                 "images" : [
                   {
                     "src": "card-sort-1_cahbud",
-                    "alt": "Image from Card Sorting: competitor-witcher-_m2xqty"
+                    "alt": "Final group card sort results with color-coded categories into About, Services, Engagement, Our People, Support Us, Careers."
                   },
                   {
                     "src": "card-sort-2_sun1rz",
-                    "alt": "Image from Card Sorting: competitor-metro_hs5sz0"
+                    "alt": "Final sitemap diagram for the redesign showing the top-level nav categories with nested child pages in colored blocks and ‘Contact’/‘Donate’ highlighted as CTA buttons."
                   }
                 ],
                 "options": {}
@@ -298,7 +298,7 @@
                 "images" : [
                   {
                     "src": "sitemap_j3act8",
-                    "alt": "Image from Updated Sitemap: ui-flow_zvcn8t"
+                    "alt": "Final sitemap diagram for the redesign showing the top-level nav categories with nested child pages in colored blocks and ‘Contact’ and ‘Donate’ highlighted as CTA buttons."
                   }
                 ],
                 "options": {
@@ -317,19 +317,19 @@
                 "images" : [
                   {
                     "src": "wireframe-5_uenv9o",
-                    "alt": "Image from Wireframing: wireframe-5_rre8p1"
+                    "alt": "Mid-fidelity wireframe for the Excel Society homepage layout featuring top navigation, large hero section, and several other important sections."
                   },
                   {
                     "src": "wireframe-6_jvdpzm",
-                    "alt": "Image from Wireframing: wireframe-6_ogdoah"
+                    "alt": "Wireframe for the Designated Supportive Living page with structured content blocks for Balwin Villa and Grand Manor."
                   },
                   {
                     "src": "wireframe-7_ojggr9",
-                    "alt": "Image from Wireframing: wireframe-6_ogdoah"
+                    "alt": "Wireframe of the Careers page with an introductory section, employment philosophy, and a job listings module that includes filters and multiple job listings."
                   },
                   {
                     "src": "wireframe-8_xzbvw3",
-                    "alt": "Image from Wireframing: wireframe-6_ogdoah"
+                    "alt": "Wireframe of the Excel Advantage page with sections on the organization’s history, mission, vision, and values."
                   }
                 ],
                 "options": {
@@ -349,11 +349,11 @@
                 "images" : [
                   {
                     "src": "branding-1_n13jll",
-                    "alt": "Image from Title Style: style-tile-1_tp5txk"
+                    "alt": "Excel Society’s typography system showing heading levels and body text styles using the Montserrat font family, with labeled sizes and formatting styles."
                   },
                   {
                     "src": "branding-2_v0y9mc",
-                    "alt": "Image from Title Style: style-tile-2_srtty4"
+                    "alt": "Brand color system for Excel Society with primary and secondary blue tones, accent and functional colors including orange and red, and associated HEX codes and usage guidelines."
                   }
                 ],
                 "options": {}
@@ -395,7 +395,8 @@
                 "header": "Toggling to show or hide content",
                 "before": {
                   "text" : "Some of the feedback highlighted that dense sections of text felt overwhelming and did not encourage users to read beyond the first paragraph.\n\nTo improve this, we initially introduced a toggle button that allowed users to choose how much content they wanted to view by showing or hiding sections.",
-                  "image": "change-1_vwm9t6"
+                  "image": "change-1_vwm9t6",
+                  "alt": "Design variation introducing a toggle button to expand or collapse dense content sections, aimed at improving user readability and reducing text overload."
                 },
                 "option": {
                   "reversed": true
@@ -408,7 +409,8 @@
                 "header": "Sectioning content into boxes",
                 "before": {
                   "text" : "However, we noticed that this approach sometimes left pages looking empty, and there was also a concern that users might miss the toggle button entirely, leading to important content being overlooked.\n\nTo address the issue, we reorganized the content into boxes and add more icons, white space, and visual hierarchies, effectively breaking up large text blocks into sections that are easier to scan and comprehend.",
-                  "image": "change-2_w0dssk"
+                  "image": "change-2_w0dssk",
+                  "alt": "Updated content layout using boxed sections with added icons, whitespace, and visual hierarchy to improve readability and information scannability."
                 },
                 "option": {
                   "reversed": true
@@ -460,7 +462,7 @@
                 "images" : [
                   {
                     "src": "implementation-1_lywbfs",
-                    "alt": "Image from Title Style: style-tile-1_tp5txk"
+                    "alt": "Screenshot of Webflow CMS editor showing a job post entry with several fields and description for ease of use and maintainability."
                   }
                 ],
                 "options": {
@@ -501,11 +503,11 @@
                 "images" : [
                   {
                     "src": "implementation-3_lyilpd",
-                    "alt": "Image from Title Style: style-tile-1_tp5txk"
+                    "alt": "Custom JavaScript snippet used in the Excel Society Webflow project to support dynamic tag display."
                   },
                   {
                     "src": "implementation-4_w9mgpe",
-                    "alt": "Image from Title Style: style-tile-2_srtty4"
+                    "alt": "Finsweet Attributes documentation page showing how to implement list filtering for Webflow CMS, with a visual demo and setup instructions."
                   }
                 ],
                 "options": {}

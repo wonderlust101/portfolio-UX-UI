@@ -29,12 +29,19 @@ export type ProjectSummary = {
     description: string;
     role: string;
     details: Detail[];
+    links?: Links[];
 };
 
 export type Detail = {
     header: string;
     text: string|string[];
 };
+
+export type Links = {
+    siteName: string;
+    label: string;
+    href: string;
+}
 
 export type Section = {
     title: string;

@@ -21,7 +21,7 @@ p {
   font-weight: 500;
   line-height: 1.7;
   white-space: pre-line;
-  max-width: 800px;
+  max-width: 65ch;
 
   @include a.breakpoint(x-large) {
     font-size: 1rem;

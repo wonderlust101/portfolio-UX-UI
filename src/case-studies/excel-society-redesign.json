@@ -18,7 +18,7 @@
     "imageUrl"   : "/images/shared/excel-society-preview.webp",
     "url"        : "https://sergei-borja.dev/excel-society-redesign"
   },
-  "heroImage"      : "excel-society-preview-wide_qgius3",
+  "heroImage"      : "excel-society-preview-wide_v5epwm",
   "heroImageTablet": "excel-society-preview-square_ktrsnz",
   "theme"          : {
     "themeColor"     : "#1e3c57",
@@ -26,8 +26,8 @@
     "darkThemeColor" : "#0f1e2c"
   },
   "projectSummary" : {
-    "description": "In collaboration with Excel Society and the work-integrated learning platform |Ripen|, we built a responsive website in Webflow that enables staff to manage content easily and helps users find services, events, and other essential information through accessible and well-organized design.",
-    "role"       : "I collaborated on UX research, wireframing and design. I also played a major role in front and backend development tasks, including implementing CMS structures, building responsive layouts, and implementing JavaScript using Webflow and third-party tools.",
+    "description": "In collaboration with |Excel Society| and the work-integrated learning platform |Ripen|, we built a responsive website in Webflow that enables staff to manage content easily and helps users find services, events, and other essential information through accessible and well-organized design.",
+    "role"       : "As a web developer, I collaborated with three other designer on UX research, wireframing and design. I also played a major role in front and backend development tasks, including implementing CMS structures, building responsive layouts, and implementing JavaScript using Webflow and third-party tools.",
     "details"    : [
       {
         "header": "Course Name",
@@ -62,6 +62,18 @@
           "Webflow",
           "Finsweet"
         ]
+      }
+    ],
+    "links": [
+      {
+        "siteName": "figma",
+        "label": "Figma Project",
+        "href": "https://www.figma.com/design/VnkMl4vEX0JCDKLtJ0PXXt/Excel-Society-Redesign?node-id=0-1&t=ZdsOeMzAgRTyyOih-1"
+      },
+      {
+        "siteName": "webflow",
+        "label": "Webflow Demo",
+        "href": "https://excel-society---group-3-e036a5.webflow.io/"
       }
     ]
   },
@@ -498,10 +510,10 @@
       ]
     },
     {
-      "title"      : "Final Product",
+      "title"      : "Final Mockup",
       "subsections": [
         {
-          "title"   : "Figma Mockup",
+          "title"   : "Figma Design",
           "contents": [
             {
               "type"     : "figma",

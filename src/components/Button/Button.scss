@@ -1,6 +1,7 @@
 .button {
   display: flex;
   justify-content: center;
+  align-items: center;
   border: none;
   text-transform: uppercase;
   border-radius: $border-radius;
@@ -47,6 +48,34 @@
 
     &:hover:not(:disabled) {
       background-color: var(--dark-theme-color);
+    }
+  }
+
+  // Branded Buttons
+  &--figma {
+    background-color: #2C2D34;
+    color: $clr-white;
+
+    &:hover:not(:disabled) {
+      opacity: 0.85;
+    }
+  }
+
+  &--github {
+    background-color: #0d1117;
+    color: $clr-white;
+
+    &:hover:not(:disabled) {
+      opacity: 0.85;
+    }
+  }
+
+  &--webflow {
+    background-color: #146EF5;
+    color: $clr-white;
+
+    &:hover:not(:disabled) {
+      opacity: 0.85;
     }
   }
 

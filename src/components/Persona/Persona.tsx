@@ -26,7 +26,6 @@ export default function Persona({personaData}: PersonaProps) {
 
                 <div className="persona__info">
                     <SectionHeader type="block">{personaData.name}</SectionHeader>
-
                     <div>
                         <ul>
                             <li><p><span className="bold">Age: </span>{personaData.age}</p></li>

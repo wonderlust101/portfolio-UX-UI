@@ -22,7 +22,7 @@
   "heroImageTablet": "excel-society-preview-square_ktrsnz",
   "theme"          : {
     "themeColor"     : "#1e3c57",
-    "lightThemeColor": "#8f9eab",
+    "lightThemeColor": "#A5B1BB",
     "darkThemeColor" : "#0f1e2c"
   },
   "projectSummary" : {
@@ -64,22 +64,23 @@
         ]
       }
     ],
-    "links": [
+    "links"      : [
       {
         "siteName": "figma",
-        "label": "Figma Project",
-        "href": "https://www.figma.com/design/VnkMl4vEX0JCDKLtJ0PXXt/Excel-Society-Redesign?node-id=0-1&t=ZdsOeMzAgRTyyOih-1"
+        "label"   : "Figma Project",
+        "href"    : "https://www.figma.com/design/VnkMl4vEX0JCDKLtJ0PXXt/Excel-Society-Redesign?node-id=0-1&t=ZdsOeMzAgRTyyOih-1"
       },
       {
         "siteName": "webflow",
-        "label": "Webflow Demo",
-        "href": "https://excel-society---group-3-e036a5.webflow.io/"
+        "label"   : "Webflow Demo",
+        "href"    : "https://excel-society---group-3-e036a5.webflow.io/"
       }
     ]
   },
   "sections"       : [
     {
       "title"      : "The Problem Space",
+      "icon"       : "problem",
       "contents"   : [
         {
           "type": "text",
@@ -134,6 +135,7 @@
     },
     {
       "title"      : "The Solution",
+      "icon"       : "solution",
       "contents"   : [
         {
           "type": "text",
@@ -175,6 +177,7 @@
     },
     {
       "title"      : "Research Process",
+      "icon"       : "research",
       "contents"   : [
         {
           "type": "text",
@@ -261,6 +264,7 @@
     },
     {
       "title"      : "Ideation & Design",
+      "icon"       : "design",
       "contents"   : [
         {
           "type": "text",
@@ -361,6 +365,7 @@
     },
     {
       "title"      : "Feedback & Changes",
+      "icon"       : "feedback",
       "contents"   : [
         {
           "type": "text",
@@ -416,6 +421,7 @@
     },
     {
       "title"      : "Implementation",
+      "icon"       : "implementation",
       "contents"   : [
         {
           "type": "text",
@@ -511,6 +517,7 @@
     },
     {
       "title"      : "Final Mockup",
+      "icon"       : "final",
       "subsections": [
         {
           "title"   : "Figma Design",
@@ -525,6 +532,7 @@
     },
     {
       "title"   : "Reflection",
+      "icon"    : "journal",
       "contents": [
         {
           "type": "text",

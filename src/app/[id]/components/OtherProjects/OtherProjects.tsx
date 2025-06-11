@@ -16,7 +16,7 @@ export default function OtherProjects({currentProject}: CurrentProjectProps) {
 
     return (
         <section className="other-projects grid-bleed" id='other-works'>
-            <SectionHeader type="page">
+            <SectionHeader type="page" icon='projects'>
                 Other Works
             </SectionHeader>
 

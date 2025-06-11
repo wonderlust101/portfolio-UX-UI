@@ -12,8 +12,8 @@ type AboutProps = {
 
 export default function About({aboutText}: AboutProps) {
     return (
-        <section className="grid-bleed skills-list" id="about-me">
-            <SectionHeader type="page">
+        <section className="about" id="about-me">
+            <SectionHeader type="page" icon='about'>
                 About Me
             </SectionHeader>
 

@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import "./Hero.scss";
 
 gsap.registerPlugin(SplitText);

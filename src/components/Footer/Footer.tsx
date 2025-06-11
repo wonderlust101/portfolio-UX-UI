@@ -5,6 +5,7 @@ import Button from "@/components/Button";
 import List from "@/components/List";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import Link from "next/link";
+import React from "react";
 
 const contactList = [
     {
@@ -82,6 +83,7 @@ export default function Footer() {
                             </Button>
 
                             <Button color="white" size="md" href="/Sergei Borja - Resume.pdf" aria-label="Download Sergei's Resume">
+                                <img src="/images/icons/download.svg" alt=""/>
                                 Download Resume
                             </Button>
                         </div>

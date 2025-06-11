@@ -1,17 +1,24 @@
 .skills-list {
   display: grid;
-  row-gap: 2.5rem;
+  row-gap: 2rem;
 
   @include breakpoint(small) {
-    row-gap: 2rem;
+    row-gap: 1rem;
   }
 
   &__type {
     display: grid;
-    gap: 6rem;
+    align-content: flex-start;
+    gap: 4rem;
 
     @include breakpoint(small) {
       gap: 2rem;
+    }
+
+    & > section {
+      display: grid;
+      justify-items: flex-start;
+      gap: 1rem;
     }
   }
 

@@ -1,4 +1,7 @@
 .about {
+  display: grid;
+  gap: 2rem;
+
   &__split {
     display: grid;
     grid-template-columns: 1.25fr 1fr;

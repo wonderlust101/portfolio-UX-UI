@@ -1,8 +1,6 @@
 .home {
-  display: grid;
-  gap: 8rem;
-
   &__content {
-    grid-column: 1/-1;
+    display: grid;
+    row-gap: 4rem;
   }
 }

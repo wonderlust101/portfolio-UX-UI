@@ -14,6 +14,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement|HTMLAnchorE
     onClick?: MouseEventHandler<HTMLButtonElement>;
     external?: boolean;
     target?: string;
+    icon?: string;
 }
 
 export default function Button({children, color, theme = "light", size, href, onClick, external, target, ...props}: ButtonProps) {

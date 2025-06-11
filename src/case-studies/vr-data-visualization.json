@@ -69,6 +69,7 @@
   "sections"       : [
     {
       "title"      : "The Problem Space",
+      "icon"       : "problem",
       "contents"   : [
         {
           "type": "text",
@@ -128,6 +129,7 @@
     },
     {
       "title"      : "The Solution",
+      "icon"       : "solution",
       "contents"   : [
         {
           "type": "text",
@@ -163,6 +165,7 @@
     },
     {
       "title"      : "Research Process",
+      "icon"       : "research",
       "contents"   : [
         {
           "type": "text",
@@ -212,6 +215,7 @@
     },
     {
       "title"      : "Ideation & Design",
+      "icon"       : "design",
       "contents"   : [
         {
           "type": "text",
@@ -284,6 +288,7 @@
     },
     {
       "title"      : "Implementation",
+      "icon"       : "implementation",
       "contents"   : [
         {
           "type": "text",
@@ -379,6 +384,7 @@
     },
     {
       "title"      : "Testing & Feedback",
+      "icon"       : "testing",
       "contents"   : [
         {
           "type": "text",
@@ -387,31 +393,16 @@
       ],
       "subsections": [
         {
-          "title"   : "Key Findings & Observations",
+          "title"   : "Key Findings",
           "contents": [
             {
-              "type" : "list",
-              "items": [
-                {
-                  "header": "The layer toggles and opacity controls were effective for exploring spatial data.",
-                  "text"  : ""
-                },
-                {
-                  "header": "Scene switching between cities was smooth and well-received.",
-                  "text"  : ""
-                },
-                {
-                  "header": "Request for continuous turning instead of snap-turning for smoother navigation.",
-                  "text"  : ""
-                },
-                {
-                  "header": "Ascend/descend controls were missing, limiting full vertical movement.",
-                  "text"  : ""
-                },
-                {
-                  "header": "Scene boundaries were unclear, and some users accidentally flew below the map.",
-                  "text"  : ""
-                }
+              "type"  : "quoteList",
+              "quotes": [
+                "The layer toggles and opacity controls were effective for exploring spatial data.",
+                "Scene switching between cities was smooth and well-received.",
+                "Request for continuous turning instead of snap-turning for smoother navigation.",
+                "Ascend/descend controls were missing, limiting full vertical movement.",
+                "Scene boundaries were unclear, and some users accidentally flew below the map."
               ]
             }
           ]
@@ -420,6 +411,7 @@
     },
     {
       "title"      : "Final Prototype",
+      "icon"       : "vr",
       "subsections": [
         {
           "title"   : "Scenes (Edmonton, Paris, Tokyo, Rendered Buildings)",
@@ -497,6 +489,7 @@
     },
     {
       "title"   : "Reflection",
+      "icon"    : "journal",
       "contents": [
         {
           "type": "text",

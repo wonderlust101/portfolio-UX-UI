@@ -1,4 +1,3 @@
-import ContentBlock from "@/components/ContentBlock";
 import SectionHeader from "@/components/SectionHeader";
 import homeData from "@/data/home.json";
 import "./SkillsList.scss";
@@ -8,14 +7,18 @@ export default function SkillsList() {
     const {skills} = homeData;
 
     return (
-        <section className="grid-bleed skills-list" id="skills-and-tools">
-            <SectionHeader type="page">
+        <section className="skills-list" id="skills-and-tools">
+            <SectionHeader type="page" icon='skills'>
                 Skills and Tools
             </SectionHeader>
 
             <div className="skills-list__type">
                 {skills.map((skill) => (
-                    <ContentBlock key={skill.title} header={skill.title} type="subsection">
+                    <section key={skill.title}>
+                        <SectionHeader type="subsection">
+                            {skill.title}
+                        </SectionHeader>
+
                         <p>{skill.description}</p>
 
                         <div className="skills-list__grid">
@@ -32,7 +35,7 @@ export default function SkillsList() {
                                 </div>
                             ))}
                         </div>
-                    </ContentBlock>
+                    </section>
                 ))}
             </div>
         </section>

@@ -1,6 +1,5 @@
 import About from "@/app/home/components/About";
 import Hero from "@/app/home/components/Hero";
-import SelectedWorks from "@/components/FeautredWorks/SelectedWorks";
 import Revealer from "@/components/Revealer";
 import SkillsList from "@/components/SkillsList";
 import ThemeEffect from "@/components/ThemeEffect";
@@ -8,7 +7,8 @@ import { ProfileData } from "@/types/home";
 import { promises as fs } from "fs";
 import { notFound } from "next/navigation";
 import path from "path";
-import '@/app/home/Home.scss'
+import SelectedWorks from "../components/SelectedWorks";
+import "@/app/home/Home.scss";
 
 export default async function Home() {
     const filePath = path.join(process.cwd(), "src", "data", `home.json`);
@@ -23,16 +23,23 @@ export default async function Home() {
     }
 
     return (
-        <main className='home'>
+        <main className="home">
             <Revealer/>
             <ThemeEffect/>
 
             <Hero/>
-            <SelectedWorks/>
 
-            <SkillsList/>
+            <div className="grid-bleed home__content">
+                <SelectedWorks/>
 
-            <About aboutText={homeData}/>
+                <hr className="case-study-page__divider"/>
+
+                <SkillsList/>
+
+                <hr className="case-study-page__divider"/>
+
+                <About aboutText={homeData}/>
+            </div>
         </main>
     );
 }

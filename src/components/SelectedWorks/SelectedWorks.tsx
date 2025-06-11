@@ -1,19 +1,18 @@
 "use client";
 
+import "./SelectedWorks.scss";
 import SectionHeader from "@/components/SectionHeader";
 import projectData from "@/data/projectLinks.json";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
-import "./SelectedWorks.scss";
 import { CldImage } from "next-cloudinary";
-import Link from "next/link";
 import { CSSProperties } from "react";
 
 export default function SelectedWorks() {
     const {handleNavigation} = useAnimatedNavigation();
 
     return (
-        <section className="selected-works grid-bleed" id='selected-works'>
-            <SectionHeader type="page">
+        <section className="selected-works" id='selected-works'>
+            <SectionHeader type="page" icon='projects'>
                 Selected Works
             </SectionHeader>
 
@@ -21,7 +20,7 @@ export default function SelectedWorks() {
                 {projectData.projectLinks.map((project) => {
                     if (project.featured === true)
                         return (
-                            <Link
+                            <a
                                 className="selected-works__container"
                                 style={{"--hover-color": project.theme.lightThemeColor} as CSSProperties}
                                 key={project.title}
@@ -33,8 +32,8 @@ export default function SelectedWorks() {
                                         className="selected-works__image"
                                         src={project.previewImage}
                                         alt=""
-                                        width={400}
-                                        height={400}
+                                        width={600}
+                                        height={600}
                                         quality={50}
                                     />
                                 </div>
@@ -43,7 +42,7 @@ export default function SelectedWorks() {
                                     <p>{project.type}</p>
                                     <h2 className="heading-sm">{project.title}</h2>
                                 </div>
-                            </Link>
+                            </a>
                         );
                 })}
             </div>

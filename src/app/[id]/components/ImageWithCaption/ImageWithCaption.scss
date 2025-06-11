@@ -40,3 +40,14 @@
     font-weight: 500;
   }
 }
+
+.__react_modal_image__header {
+  display: grid;
+  padding: 0.5rem 1.5rem;
+  align-items: center;
+  grid-template-columns: 1fr max-content;
+
+  & > :first-child {
+    order: 2;
+  }
+}

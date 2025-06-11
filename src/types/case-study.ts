@@ -45,6 +45,7 @@ export type Links = {
 
 export type Section = {
     title: string;
+    icon: string;
     contents?: ContentBlock[];
     subsections?: Subsection[];
 };

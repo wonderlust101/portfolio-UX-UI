@@ -41,6 +41,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-modal-image": "^2.6.4",
+    "babel-plugin-inline-react-svg": "^2.0.2",
     "cross-env": "^7.0.3",
     "sass": "^1.89.1",
     "typescript": "^5"

@@ -14,7 +14,7 @@ type CaseStudySectionProps = {
 export default function CaseStudySection({section}: CaseStudySectionProps) {
     return (
         <Section key={section.title} id={toKebabCase(section.title)}>
-            <ContentBlock header={section.title} type="page">
+            <ContentBlock header={section.title} type="page" icon={section.icon}>
                 {section.contents &&
                     <div className="case-study-section__section">
                         <ContentRenderer contents={section.contents}/>

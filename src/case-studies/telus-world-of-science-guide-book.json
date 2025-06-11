@@ -73,6 +73,7 @@
   "sections"       : [
     {
       "title"      : "The Problem Space",
+      "icon"       : "about",
       "contents"   : [
         {
           "type": "text",
@@ -140,6 +141,7 @@
     },
     {
       "title"      : "The Solution",
+      "icon"       : "solution",
       "contents"   : [
         {
           "type": "text",
@@ -177,6 +179,7 @@
     },
     {
       "title"      : "Research Process",
+      "icon"       : "research",
       "contents"   : [
         {
           "type": "text",
@@ -250,6 +253,7 @@
     },
     {
       "title"      : "Ideation & Design",
+      "icon"       : "design",
       "contents"   : [
         {
           "type": "text",
@@ -415,6 +419,7 @@
     },
     {
       "title"      : "Testing & Feedback",
+      "icon"       : "testing",
       "contents"   : [
         {
           "type": "text",
@@ -495,7 +500,7 @@
     },
     {
       "title"      : "Final Mockup",
-      "content"    : [],
+      "icon"       : "phone",
       "subsections": [
         {
           "title"   : "Figma Design",
@@ -510,6 +515,7 @@
     },
     {
       "title"   : "Reflection",
+      "icon"    : "journal",
       "contents": [
         {
           "type": "text",

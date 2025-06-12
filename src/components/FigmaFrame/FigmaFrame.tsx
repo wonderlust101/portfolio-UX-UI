@@ -11,7 +11,7 @@ export default function FigmaFrame({figmaLink}: FigmaFrameProps) {
                 className="figma-frame__iframe"
                 src={figmaLink}
                 allowFullScreen
-                loading="eager"
+                loading="lazy"
                 name="figma-frame"
             >
             </iframe>

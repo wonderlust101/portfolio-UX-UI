@@ -49,8 +49,8 @@ export default function ImageWithCaption({image, alt = "No caption available"}: 
                 carousel={{finite: true}}
                 controller={{closeOnBackdropClick: true}}
                 zoom={{
-                    maxZoomPixelRatio      : 0.5,
-                    zoomInMultiplier       : 0.5,
+                    maxZoomPixelRatio      : 1,
+                    zoomInMultiplier       : 1,
                     doubleTapDelay         : 300,
                     doubleClickDelay       : 300,
                     doubleClickMaxStops    : 1,

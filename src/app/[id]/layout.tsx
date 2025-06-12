@@ -63,8 +63,8 @@ export async function generateMetadata({params}: MetadataProps): Promise<Metadat
 export async function generateStaticParams() {
     return [
         {id: "excel-society-redesign"},
-        {id: "skyrim-quest-log-redesign"},
-        {id: "macewan-room-booking-redesign"},
+        // {id: "skyrim-quest-log-redesign"},
+        // {id: "macewan-room-booking-redesign"},
         {id: "vr-data-visualization"},
         {id: "telus-world-of-science-guide-book"}
     ];

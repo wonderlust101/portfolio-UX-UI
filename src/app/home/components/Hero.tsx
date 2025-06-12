@@ -14,6 +14,10 @@ export default function Hero() {
     const buttonRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            return;
+        }
+
         const runAnimation = () => {
 
             const splitText = SplitText.create(".hero__name", {
@@ -57,23 +61,24 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="hero grid-bleed-small">
+        <section className="hero grid-bleed-small" aria-labelledby="hero-heading">
             <div className="hero__body">
-                <h1 className="heading-xl hero__name">
+                <h1 id="hero-heading" className="heading-xl hero__name" aria-label="Sergei Borja">
+                    <span aria-hidden="true">
                     Sergei <br className="hero__name--break"/> Borja
+                    </span>
                 </h1>
 
                 <div>
                     <div className="hero__cta" ref={paragraphRef}>
-                        <p className="hero__tag">[ Full Stack Developer, UX & UI Designer ]</p>
+                        <p className="hero__tag">
+                            <span aria-hidden={true}>[ </span>
+                            Full Stack Developer, UX & UI Designer
+                            <span aria-hidden={true}> ]</span>
+                        </p>
 
                         <div ref={buttonRef}>
-                            <Button
-                                color="accent"
-                                theme="light"
-                                size="lg"
-                                href="mailto:sergei.borja0701@gmail.com"
-                            >
+                            <Button color="accent" theme="light" size="lg" href="mailto:sergei.borja0701@gmail.com">
                                 Contact Me
                             </Button>
                         </div>

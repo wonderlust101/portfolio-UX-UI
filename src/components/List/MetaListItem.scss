@@ -1,0 +1,29 @@
+.meta-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+
+  @include breakpoint(medium) {
+    padding-bottom: 1rem;
+  }
+
+  @include breakpoint(small) {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  &__term {
+    text-align: left;
+    font-weight: 500;
+    opacity: 0.75;
+  }
+
+  &__definition {
+    text-align: right;
+
+    @include breakpoint(small) {
+      text-align: left;
+    }
+  }
+}

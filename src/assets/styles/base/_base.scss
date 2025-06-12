@@ -31,6 +31,10 @@ html.lenis, html.lenis body {
   height: auto;
 }
 
+mark {
+  background-color: transparent;
+}
+
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }

@@ -1,20 +1,24 @@
+"use client";
+
 import "./FigmaFrame.scss";
 
-type FigmaFrameProps = {
-    figmaLink: string;
-}
+type Props = {figmaLink: string};
 
-export default function FigmaFrame({figmaLink}: FigmaFrameProps) {
+export default function FigmaFrame({figmaLink}: Props) {
+
     return (
-        <div className="figma-frame">
+        <div className="figma-frame" role="region" aria-labelledby="figma-frame-label">
+            <p id="figma-frame-label" className="sr-only">
+                Figma design preview
+            </p>
+
             <iframe
                 className="figma-frame__iframe"
                 src={figmaLink}
-                allowFullScreen
                 loading="lazy"
-                name="figma-frame"
-            >
-            </iframe>
+                allowFullScreen
+                title="Figma design preview"
+            />
         </div>
     );
 }

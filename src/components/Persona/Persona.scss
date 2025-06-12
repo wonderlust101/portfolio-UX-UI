@@ -53,12 +53,16 @@
       display: grid;
       gap: 1.5rem;
 
-      & > ul {
+      & > dl {
         display: grid;
         gap: 0.5rem;
+
+        & > div {
+          display: flex;
+          gap: 0.5rem;
+        }
       }
     }
-
   }
 
   &__quote {
@@ -86,7 +90,7 @@
       gap: 0.5rem;
     }
 
-    & > p {
+    & > h3 {
       font-size: 1.15rem;
     }
 

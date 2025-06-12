@@ -1,0 +1,79 @@
+.header-bar {
+  color: $clr-white;
+  background-color: $clr-black;
+  padding: 1rem 2rem;
+  border-radius: $border-radius $border-radius;
+  position: relative;
+  z-index: 1001;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+    @include breakpoint(medium) {
+      gap: 2rem;
+    }
+
+    @include breakpoint(small) {
+      & > p {
+        display: none;
+      }
+    }
+  }
+
+  &__logo {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: -0.03rem;
+    text-transform: uppercase;
+  }
+
+  &__tag {
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+
+    @include breakpoint(x-small) {
+      display: none;
+    }
+  }
+
+  &__cta {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 4rem;
+
+    @include breakpoint(medium) {
+      gap: 3rem;
+    }
+
+    @include breakpoint(small) {
+      & > a {
+        display: none;
+      }
+    }
+  }
+
+  &__toggle {
+    all: unset;
+    padding: 1rem;
+    margin: -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      display: block;
+    }
+  }
+}

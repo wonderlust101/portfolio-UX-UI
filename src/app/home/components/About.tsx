@@ -12,13 +12,13 @@ type AboutProps = {
 
 export default function About({aboutText}: AboutProps) {
     return (
-        <section className="about" id="about-me">
-            <SectionHeader type="page" icon='about'>
+        <section className="about" id="about-me" aria-labelledby="about-me-heading">
+            <SectionHeader type="section" icon="about" id="about-me-heading">
                 About Me
             </SectionHeader>
 
-            <div className="about__split" >
-                <div className="about__content" >
+            <div className="about__split">
+                <div className="about__content">
                     <p>{aboutText?.aboutText}</p>
                     <List items={aboutText!.additionalDetails} type="meta"/>
                 </div>
@@ -26,8 +26,8 @@ export default function About({aboutText}: AboutProps) {
                 <div className="about__image">
                     <CldImage
                         className="about__image"
-                        src={"sergei-borja_c36hvi"}
-                        alt="Sergei Borja"
+                        src="sergei-borja_c36hvi"
+                        alt="Portrait photograph of Sergei Borja"
                         loading="lazy"
                         width={700}
                         height={700}

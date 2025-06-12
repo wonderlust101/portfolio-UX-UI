@@ -13,12 +13,12 @@ type ProjectSummaryProps = {
 
 export default function ProjectSummary({details}: ProjectSummaryProps) {
     return (
-        <section className="grid-bleed" id="intro">
+        <section className="grid-bleed" id="intro" role="region" aria-labelledby="intro-heading">
             <div className="project-summary">
                 <div className="project-summary__left-column">
                     <div className="project-summary__content">
                         <div className="project-summary__intro">
-                            <SectionHeader type="page">Introduction</SectionHeader>
+                            <SectionHeader type="section" id="intro-heading">Introduction</SectionHeader>
                             <p>{parseHighlightedText(details.description)}</p>
                         </div>
 
@@ -39,6 +39,8 @@ export default function ProjectSummary({details}: ProjectSummaryProps) {
                                         external
                                         href={link.href}
                                         target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`${link.label} (opens in a new tab)`}
                                     >
                                         {link.label}
                                     </Button>

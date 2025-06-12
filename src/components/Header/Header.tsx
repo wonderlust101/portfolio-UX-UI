@@ -1,40 +1,17 @@
 "use client";
 
-import MobileNavigation from "@/components/Header/MobileNavigation";
-import gsap from "gsap";
+import HeaderBar from "@/components/Header/HeaderBar";
+import HeaderOverlay from "@/components/Header/HeaderOverlay";
+import userHeader from "@/components/Header/userHeader";
 import "./Header.scss";
-import { useEffect, useRef, useState } from "react";
-import { useWindowScrollFixed } from '@/hooks/useWindowScrollFixed';
 
 export default function Header() {
-    const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-    const headerRef = useRef(null);
-    const lastScrollY = useRef(0);
-    const { y: currentScrollY } = useWindowScrollFixed();
-
-    useEffect(() => {
-        const prevY = lastScrollY.current;
-
-        if (currentScrollY === 0 || currentScrollY < prevY) {
-            setIsHeaderVisible(true);
-        } else if (currentScrollY > prevY) {
-            setIsHeaderVisible(false);
-        }
-
-        lastScrollY.current = currentScrollY;
-    }, [currentScrollY]);
-
-    useEffect(() => {
-        if (!headerRef.current) return;
-        gsap.to(headerRef.current, {
-            y: isHeaderVisible ? 0 : -100,
-            duration: 0.6
-        });
-    }, [isHeaderVisible]);
+    const {headerRef, isMenuOpen, setIsMenuOpen, toggleMenu} = userHeader();
 
     return (
-        <header className="header" ref={headerRef}>
-            <MobileNavigation />
+        <header className="header grid-bleed-small" ref={headerRef} id="navigation-header" role="banner">
+            <HeaderBar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} toggleMenu={toggleMenu}/>
+            <HeaderOverlay toggleMenu={toggleMenu}/>
         </header>
     );
 }

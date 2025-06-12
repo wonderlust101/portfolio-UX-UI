@@ -1,9 +1,9 @@
 import CaseStudyHero from "@/app/[id]/components/CaseStudyHero";
 import CaseStudySection from "@/app/[id]/components/CaseStudySection";
-import OtherProjects from "@/app/[id]/components/OtherProjects";
 import ProjectSummary from "@/app/[id]/components/ProjectSummary";
 import CaseStudyNavigation from "@/components/CaseStudyNavigation";
 import Revealer from "@/components/Revealer";
+import SelectedWorks from "@/components/SelectedWorks";
 import ThemeEffect from "@/components/ThemeEffect";
 import { getCaseStudy } from "@/lib/getCaseStudy";
 import { ProjectData, Section } from "@/types/case-study";
@@ -25,10 +25,12 @@ export default async function CaseStudyPage({params}: Props) {
 
     return (
         <>
-            <Revealer/>
-            <ThemeEffect theme={caseStudy.theme}/>
+            <div aria-hidden={true}>
+                <Revealer/>
+                <ThemeEffect/>
+            </div>
 
-            <main className="case-study-page">
+            <main className="case-study-page" id="main-content" aria-labelledby="case-study-title">
                 <CaseStudyHero
                     productName={caseStudy.productName}
                     projectType={caseStudy.projectType}
@@ -36,9 +38,9 @@ export default async function CaseStudyPage({params}: Props) {
                     tabletHeroImage={caseStudy.heroImageTablet}
                 />
 
-                <ProjectSummary details={caseStudy.projectSummary}/>
+                <div className="case-study-page__content grid-bleed">
+                    <ProjectSummary details={caseStudy.projectSummary}/>
 
-                <div className="grid-bleed">
                     <div className="case-study-page__main-content">
                         <CaseStudyNavigation sections={caseStudy.sections}/>
 
@@ -46,14 +48,14 @@ export default async function CaseStudyPage({params}: Props) {
                             {caseStudy.sections.map((section: Section) => (
                                 <Fragment key={section.title}>
                                     <CaseStudySection section={section}/>
-                                    <hr className='case-study-page__divider'/>
+                                    <hr className="case-study-page__divider"/>
                                 </Fragment>
                             ))}
                         </div>
                     </div>
-                </div>
 
-                <OtherProjects currentProject={`/${id}`}/>
+                    <SelectedWorks title="Other Works" currentProject={`/${id}`}/>
+                </div>
             </main>
         </>
     );

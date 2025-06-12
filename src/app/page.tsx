@@ -23,21 +23,19 @@ export default async function Home() {
     }
 
     return (
-        <main className="home">
-            <Revealer/>
-            <ThemeEffect/>
+        <main className="home" id="main-content">
+            <div aria-hidden={true}>
+                <Revealer/>
+                <ThemeEffect/>
+            </div>
 
             <Hero/>
 
             <div className="grid-bleed home__content">
-                <SelectedWorks/>
-
-                <hr className="home__divider"/>
-
+                <SelectedWorks title="Selected Works" currentProject=""/>
+                <hr className="home__divider" aria-hidden="true"/>
                 <SkillsList/>
-
-                <hr className="home__divider"/>
-
+                <hr className="home__divider" aria-hidden="true"/>
                 <About aboutText={homeData}/>
             </div>
         </main>

@@ -10,9 +10,11 @@
 
   & > img {
     width: 2.25rem;
+    height: 2.25rem;
 
     @include breakpoint(medium) {
       width: 2rem;
+      height: 2rem;
     }
   }
 

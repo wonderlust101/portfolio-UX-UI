@@ -1,0 +1,42 @@
+.list-item {
+  display: flex;
+  gap: 1rem;
+
+  &__index {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.7;
+    opacity: 0.5;
+
+    @include breakpoint(x-large) {
+      font-size: 1rem;
+    }
+
+    @include breakpoint(small) {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__item-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__item-content {
+    display: grid;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  &__item-text {
+    font-weight: 700;
+  }
+
+  &__item-bold {
+    font-size: 3rem;
+    font-weight: 900 !important;
+    line-height: 1;
+    margin-bottom: -0.25rem;
+    text-transform: uppercase;
+  }
+}

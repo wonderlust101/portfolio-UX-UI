@@ -12,26 +12,43 @@ type PersonaProps = {
 export default function Persona({personaData}: PersonaProps) {
 
     return (
-        <section className="persona">
+        <section className="persona" role="region" aria-labelledby="persona-heading">
             <div className="persona__top">
-                <div className="persona__image-container">
+                <figure className="persona__image-container">
                     <CldImage
                         className="persona__image"
                         src={personaData.image}
-                        alt={`${personaData.name}`}
+                        alt={`Portrait of ${personaData.name}`}
                         height={600}
                         width={600}
                     />
-                </div>
+
+                    <figcaption className="sr-only">
+                        Portrait of {personaData.name}
+                    </figcaption>
+                </figure>
 
                 <div className="persona__info">
-                    <SectionHeader type="block">{personaData.name}</SectionHeader>
+                    <SectionHeader type="block" id="persona-heading">{personaData.name}</SectionHeader>
+
                     <div>
-                        <ul>
-                            <li><p><span className="bold">Age: </span>{personaData.age}</p></li>
-                            <li><p><span className="bold">Location: </span>{personaData.location}</p></li>
-                            <li><p><span className="bold">Occupation: </span>{personaData.type}</p></li>
-                        </ul>
+                        <dl>
+                            <div>
+                                <dt className="bold">Age:</dt>
+                                <dd>{personaData.age}</dd>
+                            </div>
+
+                            <div>
+                                <dt className="bold">Location:</dt>
+                                <dd>{personaData.location}</dd>
+                            </div>
+
+                            <div>
+                                <dt className="bold">Occupation:</dt>
+                                <dd>{personaData.type}</dd>
+                            </div>
+                        </dl>
+
                         <p className="persona__quote accent-color">"{personaData.quote}"</p>
                     </div>
                 </div>
@@ -39,23 +56,21 @@ export default function Persona({personaData}: PersonaProps) {
 
             <div className="persona__bottom">
                 <div className="persona__list">
-                    <p className="black">Goals:</p>
+                    <h3 className="black">Goals:</h3>
+
                     <ul>
                         {personaData.goals.map((goal) => (
-                            <li key={goal}>
-                                <p>{goal}</p>
-                            </li>
+                            <li key={goal}>{goal}</li>
                         ))}
                     </ul>
                 </div>
 
                 <div className="persona__list">
-                    <p className="black ">Pain Points:</p>
+                    <h3 className="black">Pain Points:</h3>
+
                     <ul>
                         {personaData.painPoints.map((pain) => (
-                            <li key={pain}>
-                                <p>{pain}</p>
-                            </li>
+                            <li key={pain}>{pain}</li>
                         ))}
                     </ul>
                 </div>

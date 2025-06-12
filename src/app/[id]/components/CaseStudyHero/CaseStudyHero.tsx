@@ -22,18 +22,22 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
     const titleRef = useRef<HTMLHeadingElement|null>(null);
     const typeRef = useRef<HTMLDivElement|null>(null);
     const imageRef = useRef<HTMLImageElement|null>(null);
-    const [tabletSrcSet, setTabletSrcSet] = useState<string | null>(null);
+    const [tabletSrcSet, setTabletSrcSet] = useState<string|null>(null);
 
     useEffect(() => {
         try {
             const url = buildNamedTransformUrl(tabletHeroImage, "webp_high");
             setTabletSrcSet(url);
         } catch (error) {
-            console.warn('Failed to build tablet image URL:', error);
+            console.warn("Failed to build tablet image URL:", error);
         }
     }, [tabletHeroImage]);
 
     useGSAP(() => {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            return;
+        }
+
         if (!titleRef.current) return;
 
         const splitText = SplitText.create(titleRef.current, {
@@ -69,28 +73,24 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
     });
 
     return (
-        <section className="case-study-hero grid-bleed-small">
-            <div className="case-study-hero__header">
-                <h1 className='heading-lg' ref={titleRef}>
-                    <span>{productName}</span>
-                    <div ref={typeRef} className="case-study-hero__type accent-color"> {parseHighlightedText(projectType)}</div>
-                </h1>
-            </div>
+        <section className="case-study-hero grid-bleed-small" role="region" aria-labelledby="case-study-title">
+            <h1 className="case-study-hero__header" ref={titleRef} id="case-study-title">
+                <span className="heading-lg">{productName}</span>
+                <span ref={typeRef} className="heading-lg case-study-hero__type accent-color"> {parseHighlightedText(projectType)}</span>
+            </h1>
 
-            <div className="case-study-hero__image-container">
-                <picture className="case-study-hero__image-container" ref={imageRef}>
-                    <source srcSet={tabletSrcSet!} media="(max-width: 90rem)"/>
-                    <CldImage
-                        className="case-study-hero__image"
-                        src={heroImage}
-                        alt={`Preview of ${productName} ${projectType}`}
-                        height={1000}
-                        width={1200}
-                        quality={80}
-                        priority
-                    />
-                </picture>
-            </div>
+            <picture className="case-study-hero__image-container" ref={imageRef}>
+                <source srcSet={tabletSrcSet!} media="(max-width: 90rem)"/>
+                <CldImage
+                    className="case-study-hero__image"
+                    src={heroImage}
+                    alt={`Screenshot preview of ${productName}, ${projectType}`}
+                    height={1000}
+                    width={1200}
+                    quality={80}
+                    priority
+                />
+            </picture>
         </section>
     );
 }

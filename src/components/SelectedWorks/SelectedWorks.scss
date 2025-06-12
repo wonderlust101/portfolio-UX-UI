@@ -25,7 +25,8 @@
     gap: 0.5rem;
     grid-template-rows: max-content 1fr;
 
-    &:hover {
+    &:hover,
+    &:focus {
       cursor: pointer;
 
       & .selected-works__image {

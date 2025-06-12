@@ -1,11 +1,5 @@
 .image-with-caption {
-  display: grid;
-  align-items: center;
-  align-content: flex-start;
-  gap: 1.5rem;
   position: relative;
-  max-width: var(--image-max-width, 100%);
-  border-radius: $border-radius;
 
   &:hover {
     cursor: pointer;

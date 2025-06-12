@@ -2,5 +2,5 @@
 import './Revealer.scss';
 
 export default function Revealer() {
-    return <div className="revealer" />;
+    return <div className="revealer" aria-hidden={true} />;
 }

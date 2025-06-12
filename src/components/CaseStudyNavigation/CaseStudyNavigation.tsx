@@ -2,8 +2,7 @@
 
 import { Section } from "@/types/case-study";
 import "./CaseStudyNavigation.scss";
-import { toKebabCase } from "@/utils/toSnakeCase";
-import { useLenis } from "@studio-freight/react-lenis";
+import { toKebabCase } from "@/utils/toKebabCase";
 import { Fragment, MouseEvent, useEffect, useState } from "react";
 
 type CaseStudyNavigationProps = {
@@ -11,7 +10,6 @@ type CaseStudyNavigationProps = {
 };
 
 export default function CaseStudyNavigation({sections}: CaseStudyNavigationProps) {
-    const lenis = useLenis();
     const [activeId, setActiveId] = useState<string>("");
 
     const handleClick = (e: MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -19,9 +17,7 @@ export default function CaseStudyNavigation({sections}: CaseStudyNavigationProps
         setActiveId(id);
 
         const target = document.getElementById(id);
-        if (target && lenis) {
-            lenis.scrollTo(target, {offset: -160, duration: 2});
-        } else if (target) {
+        if (target) {
             target.scrollIntoView({behavior: "smooth", block: "start"});
         }
     };
@@ -62,33 +58,31 @@ export default function CaseStudyNavigation({sections}: CaseStudyNavigationProps
 
 
     return (
-        <section className="case-study-navigation">
-            <h2 className="heading-xs accent-color">
+        <nav className="case-study-navigation" aria-labelledby="case-study-nav-heading">
+            <h2 className="heading-xs accent-color" id="case-study-nav-heading">
+                <span className='sr-only'>Table of</span>
                 Contents
             </h2>
 
-            <ul className="case-study-navigation__links">
-                {sections.map((section, index) => {
+            <ul className="case-study-navigation__links" role="list">
+                {sections.map((section) => {
                     const id = toKebabCase(section.title);
 
                     return (
                         <Fragment key={id}>
-                            <li
-                                className={`case-study-navigation__link ${
-                                    activeId === id ? "link-active" : ""
-                                }`}
-                            >
-                                <a href={`#${id}`} onClick={(e) => handleClick(e, id)}>
+                            <li className={`case-study-navigation__link ${activeId === id ? "link-active" : ""}`}>
+                                <a
+                                    href={`#${id}`}
+                                    onClick={(e) => handleClick(e, id)}
+                                    aria-current={activeId === id ? "location" : undefined}
+                                >
                                     {section.title}
                                 </a>
                             </li>
-
-                            {index !== sections.length - 1 && <hr/>}
                         </Fragment>
                     );
                 })}
             </ul>
-
-        </section>
+        </nav>
     );
 }

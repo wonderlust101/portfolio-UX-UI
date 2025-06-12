@@ -30,8 +30,9 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
             <div className="design-change__compare-grid">
                 <ImageWithCaption image={before.image} alt={before.alt}/>
 
-                <div>
-                    <h3 className='black'>Before:</h3>
+                <div role="group" aria-labelledby={`change-${num}-before-label`}>
+                    <p id={`change-${num}-before-label`} className="sr-only">Before:</p>
+                    <p aria-hidden={true} className="black">Before:</p>
                     <p className="">{parseHighlightedText(before.text)}</p>
                 </div>
             </div>
@@ -39,8 +40,9 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
             <div className="design-change__compare-grid">
                 <ImageWithCaption image={after.image} alt={after.alt}/>
 
-                <div>
-                    <h3 className='black'>After:</h3>
+                <div role="group" aria-labelledby={`change-${num}-after-label`}>
+                    <p id={`change-${num}-after-label`} className="sr-only">After:</p>
+                    <p aria-hidden={true} className="black">After:</p>
                     <p className="">{parseHighlightedText(after.text)}</p>
                 </div>
             </div>

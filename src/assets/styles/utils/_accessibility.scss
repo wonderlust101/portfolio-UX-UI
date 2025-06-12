@@ -1,4 +1,5 @@
-// Make the content in the class visually hidden but readable by screen readers
+@use "../abstract" as a;
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -7,4 +8,35 @@
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+//a:focus, button:focus {
+//  outline: 3px solid red;
+//  outline-offset: 4px;
+//}
+
+.skip-link {
+  font-weight: 700;
+  position: absolute;
+  top: -4rem;
+  left: 2rem;
+  background: #000000;
+  color: #FFFFFF;
+  padding: 1rem;
+  z-index: 100;
+  transition: top 0.3s;
+  border-radius: a.$border-radius;
+  text-transform: uppercase;
+
+  &:focus {
+    top: 6rem;
+  }
+
+  @include a.breakpoint(medium) {
+    left: 1.5rem;
+  }
+
+  @include a.breakpoint(small) {
+    left: 1rem;
+  }
 }

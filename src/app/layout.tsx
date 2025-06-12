@@ -1,13 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
-import SmoothScrolling from "@/components/SmoothScrolling";
 import { satoshi } from "@/fonts/Satoshi/satoshi";
 import type { Metadata } from "next";
 import { ViewTransitions } from "next-view-transitions";
 import { ReactNode } from "react";
 import "@/assets/styles/globals.scss";
-import './layout.scss'
+import "./layout.scss";
 
 export const metadata: Metadata = {
     title       : "Sergei Borja | Full Stack Developer & UX & UI Designer",
@@ -68,10 +66,13 @@ export default async function RootLayout({children}: RootLayoutProps) {
     return (
         <>
             <ViewTransitions>
-                <SmoothScrolling/>
                 <html lang="en" className={`${satoshi.variable}`}>
 
-                <body className='layout'>
+                <body className="layout">
+                    <a href="#main-content" className="skip-link">
+                        Skip to main content
+                    </a>
+
                     <Header/>
                     {children}
                     <Footer/>

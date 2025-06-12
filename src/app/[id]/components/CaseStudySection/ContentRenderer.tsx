@@ -1,5 +1,4 @@
 import DesignChange from "../../../../components/DesignChange";
-import FigmaFrame from "@/components/FigmaFrame";
 import List from "@/components/List";
 import Persona from "@/components/Persona";
 import QuoteList from "@/components/QuoteList";
@@ -10,6 +9,15 @@ import dynamic from "next/dynamic";
 
 const ImageGallery = dynamic(() => import("@/app/[id]/components/CaseStudySection/ImageGallery"), {
     ssr: false
+});
+
+const FigmaFrame = dynamic(() => import("@/components/FigmaFrame"), {
+    ssr: false,                           // only in the browser
+    loading: () => (
+        <div className="figma-frame__placeholder">
+            Loading preview…v
+        </div>
+    ),
 });
 
 type ContentRendererProps = {

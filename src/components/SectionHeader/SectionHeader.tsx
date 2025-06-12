@@ -8,6 +8,7 @@ type SectionHeaderProps = {
     children: ReactNode;
     type: string;
     icon?: string;
+    id?: string;
 };
 
 const iconMap: any = {
@@ -28,26 +29,25 @@ const iconMap: any = {
 };
 
 const SectionHeader = forwardRef<HTMLHeadingElement, SectionHeaderProps>(
-    ({children, type, icon}, ref) => {
+    ({children, type, icon, id}, ref) => {
         switch (type) {
             case "page":
                 return (
-                    <h1 ref={ref} className="section-header heading-md">
+                    <h1 ref={ref} className="section-header heading-md" id={id}>
                         {icon && <img src={iconMap[icon]} alt=""/>}
                         {children}
                     </h1>
                 );
             case "section":
                 return (
-                    <h2 ref={ref} className="section-header--section heading-sm">
-                        <span>// </span>
+                    <h2 className="section-header heading-md" id={id}>
+                        {icon && <img src={iconMap[icon]} alt=""/>}
                         {children}
-                        <span>.</span>
                     </h2>
                 );
             case "subsection":
                 return (
-                    <h3 ref={ref} className="section-header--subsection heading-xxs">
+                    <h3 ref={ref} className="section-header--subsection heading-xxs" id={id}>
                         {children}
                     </h3>
                 );

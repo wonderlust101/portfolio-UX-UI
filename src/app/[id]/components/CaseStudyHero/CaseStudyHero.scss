@@ -29,7 +29,8 @@
   }
 
   &__type {
-    @include breakpoint(small) {
+    display: block;
+    @include breakpoint(medium) {
       display: inline;
     }
   }

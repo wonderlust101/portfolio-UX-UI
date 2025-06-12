@@ -1,0 +1,88 @@
+.header-overlay {
+  position: relative;
+  top: -0.25rem;
+  padding-top: 0.25rem;
+  left: 0;
+  width: 100%;
+  color: $clr-white;
+  background-color: $clr-black;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  border-radius: 0 0 $border-radius $border-radius;
+  display: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__copy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    padding: 2rem;
+
+    @include breakpoint(medium) {
+      grid-template-columns: 1fr;
+    }
+
+    @include breakpoint(small) {
+      gap: 3rem;
+    }
+  }
+
+  &__contact {
+    display: grid;
+    gap: 3rem;
+
+    @include breakpoint(small) {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+
+    &-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+
+  &__links {
+    display: grid;
+    align-content: flex-start;
+    gap: 1rem;
+    text-align: right;
+
+    @include breakpoint(medium) {
+      order: -1;
+      text-align: left;
+    }
+  }
+
+  &__link-item {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    &-holder {
+      position: relative;
+    }
+  }
+
+  &__link {
+    color: $clr-white;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: -0.03em;
+    cursor: pointer;
+
+    @include breakpoint(small) {
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+  }
+}

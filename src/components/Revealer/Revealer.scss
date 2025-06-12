@@ -27,3 +27,9 @@
     display: none !important;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .revealer {
+    display: none !important;
+  }
+}

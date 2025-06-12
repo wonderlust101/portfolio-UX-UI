@@ -6,6 +6,10 @@
     gap: 4rem;
   }
 
+  &__content {
+    row-gap: 8rem;
+  }
+
   &__main-content {
     display: grid;
     align-items: flex-start;

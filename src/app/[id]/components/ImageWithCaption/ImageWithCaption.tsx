@@ -6,8 +6,8 @@ import dynamic from "next/dynamic";
 import { useRef, useState } from "react";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
-import Captions from "yet-another-react-lightbox/plugins/captions";
 import { Zoom } from "yet-another-react-lightbox/plugins";
+import Captions from "yet-another-react-lightbox/plugins/captions";
 import "./ImageWithCaption.scss";
 
 type ImageWithCaptionProps = {
@@ -16,7 +16,7 @@ type ImageWithCaptionProps = {
 };
 
 const Lightbox = dynamic(() => import("yet-another-react-lightbox"), {
-    ssr: false,
+    ssr: false
 });
 
 export default function ImageWithCaption({image, alt = "No caption available"}: ImageWithCaptionProps) {
@@ -44,34 +44,26 @@ export default function ImageWithCaption({image, alt = "No caption available"}: 
             <Lightbox
                 open={isOpen}
                 close={() => setIsOpen(false)}
-                slides={[{ src: largeUrl, alt, description: alt }]}
+                slides={[{src: largeUrl, alt, description: alt}]}
                 plugins={[Zoom, Captions]}
-                carousel={{ finite: true }}
-                controller={{ closeOnBackdropClick: true }}
+                carousel={{finite: true}}
+                controller={{closeOnBackdropClick: true}}
                 zoom={{
-                    maxZoomPixelRatio: 0.5,
-                    zoomInMultiplier: 0.5,
-                    doubleTapDelay: 300,
-                    doubleClickDelay: 300,
-                    doubleClickMaxStops: 1,
-                    keyboardMoveDistance: 50,
+                    maxZoomPixelRatio      : 0.5,
+                    zoomInMultiplier       : 0.5,
+                    doubleTapDelay         : 300,
+                    doubleClickDelay       : 300,
+                    doubleClickMaxStops    : 1,
+                    keyboardMoveDistance   : 50,
                     wheelZoomDistanceFactor: 50,
                     pinchZoomDistanceFactor: 50,
-                    scrollToZoom: true
+                    scrollToZoom           : true
                 }}
                 render={{
                     buttonPrev: () => null,
-                    buttonNext: () => null,
+                    buttonNext: () => null
                 }}
-                captions={{ ref: captionsRef }}
-                on={{
-                    click: () => {
-                        (captionsRef.current?.visible
-                            ? captionsRef.current?.hide
-                            : captionsRef.current?.show)?.();
-                    },
-                }}
-
+                captions={{ref: captionsRef}}
             />
         </>
     );

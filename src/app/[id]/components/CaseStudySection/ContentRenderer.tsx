@@ -1,4 +1,4 @@
-import DesignChange from "@/components/DesignFeedback";
+import DesignChange from "../../../../components/DesignChange";
 import FigmaFrame from "@/components/FigmaFrame";
 import List from "@/components/List";
 import Persona from "@/components/Persona";

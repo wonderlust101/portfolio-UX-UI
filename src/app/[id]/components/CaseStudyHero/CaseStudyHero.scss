@@ -8,6 +8,7 @@
 
   @include breakpoint(medium) {
     padding-top: 35dvh;
+    row-gap: 2rem;
   }
 
   &__header {

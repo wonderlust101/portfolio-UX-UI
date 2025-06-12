@@ -1,6 +1,10 @@
 .about {
   display: grid;
-  gap: 2rem;
+  gap: 1.25rem;
+
+  @include breakpoint(medium) {
+    gap: 1rem;
+  }
 
   &__split {
     display: grid;
@@ -23,7 +27,7 @@
     will-change: opacity, transform;
 
     @include breakpoint(small) {
-      gap: 0.5rem;
+      gap: 1.5rem;
     }
   }
 

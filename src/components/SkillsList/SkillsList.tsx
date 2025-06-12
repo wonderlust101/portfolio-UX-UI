@@ -8,7 +8,7 @@ export default function SkillsList() {
 
     return (
         <section className="skills-list" id="skills-and-tools">
-            <SectionHeader type="page" icon='skills'>
+            <SectionHeader type="page" icon="skills">
                 Skills and Tools
             </SectionHeader>
 
@@ -19,21 +19,23 @@ export default function SkillsList() {
                             {skill.title}
                         </SectionHeader>
 
-                        <p>{skill.description}</p>
+                        <div className="skills-list__skill-info">
+                            <p>{skill.description}</p>
 
-                        <div className="skills-list__grid">
-                            {skill.skillList.map((skillName) => (
-                                <div
-                                    key={skillName.header}
-                                    className="skills-list__skill"
-                                    style={{"--hover-color": skillName.tint} as CSSProperties}
-                                >
-                                    <p className="bold" key={skillName.header}>{skillName.header}</p>
-                                    {skillName.icon &&
-                                        <img className="skills-list__icon" src={`/images/shared/${skillName.icon}`} alt=""/>
-                                    }
-                                </div>
-                            ))}
+                            <div className="skills-list__grid">
+                                {skill.skillList.map((skillName) => (
+                                    <div
+                                        key={skillName.header}
+                                        className="skills-list__skill"
+                                        style={{"--hover-color": skillName.tint} as CSSProperties}
+                                    >
+                                        <p className="bold" key={skillName.header}>{skillName.header}</p>
+                                        {skillName.icon &&
+                                            <img className="skills-list__icon" src={`/images/shared/${skillName.icon}`} alt=""/>
+                                        }
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </section>
                 ))}

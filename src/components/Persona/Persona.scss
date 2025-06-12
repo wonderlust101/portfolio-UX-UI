@@ -86,7 +86,11 @@
       gap: 0.5rem;
     }
 
-    p {
+    & > p {
+      font-size: 1.15rem;
+    }
+
+    & p {
       display: inline;
     }
   }

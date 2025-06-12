@@ -4,13 +4,13 @@ import { Section } from "@/types/case-study";
 import "./CaseStudyNavigation.scss";
 import { toKebabCase } from "@/utils/toSnakeCase";
 import { useLenis } from "@studio-freight/react-lenis";
-import { Fragment, MouseEvent, useState, useEffect } from "react";
+import { Fragment, MouseEvent, useEffect, useState } from "react";
 
 type CaseStudyNavigationProps = {
     sections: Section[];
 };
 
-export default function CaseStudyNavigation({ sections }: CaseStudyNavigationProps) {
+export default function CaseStudyNavigation({sections}: CaseStudyNavigationProps) {
     const lenis = useLenis();
     const [activeId, setActiveId] = useState<string>("");
 
@@ -20,17 +20,17 @@ export default function CaseStudyNavigation({ sections }: CaseStudyNavigationPro
 
         const target = document.getElementById(id);
         if (target && lenis) {
-            lenis.scrollTo(target, { offset: -160, duration: 2 });
-        } else if(target) {
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            lenis.scrollTo(target, {offset: -160, duration: 2});
+        } else if (target) {
+            target.scrollIntoView({behavior: "smooth", block: "start"});
         }
     };
 
     useEffect(() => {
         const observerOptions = {
-            root: null,
+            root      : null,
             rootMargin: "-50% 0px -40% 0px",
-            threshold: 0,
+            threshold : 0
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -63,10 +63,8 @@ export default function CaseStudyNavigation({ sections }: CaseStudyNavigationPro
 
     return (
         <section className="case-study-navigation">
-            <h2 className="heading-xs">
-                <span className="accent-color">// </span>
+            <h2 className="heading-xs accent-color">
                 Contents
-                <span className="accent-color">.</span>
             </h2>
 
             <ul className="case-study-navigation__links">
@@ -85,7 +83,7 @@ export default function CaseStudyNavigation({ sections }: CaseStudyNavigationPro
                                 </a>
                             </li>
 
-                            {index !== sections.length - 1 && <hr />}
+                            {index !== sections.length - 1 && <hr/>}
                         </Fragment>
                     );
                 })}

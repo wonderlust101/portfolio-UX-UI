@@ -6,7 +6,6 @@
   position: relative;
   max-width: var(--image-max-width, 100%);
   border-radius: $border-radius;
-  overflow: hidden;
 
   &:hover {
     cursor: pointer;
@@ -32,27 +31,11 @@
     object-fit: contain;
     width: 100%;
     height: auto;
-    transition: transform 0.35s ease-in-out;
+    transition: transform 0.15s ease-in-out;
   }
 
   &__modal {
-    position: absolute;
+    position: fixed;
     font-weight: 500;
   }
-}
-
-.__react_modal_image__header {
-  display: grid;
-  padding: 0.5rem 1.5rem;
-  align-items: center;
-  grid-template-columns: 1fr max-content;
-  font-size: 1rem;
-
-  & > :first-child {
-    order: 2;
-  }
-}
-
-.__react_modal_image__caption {
-  font-size: 1.1rem !important;
 }

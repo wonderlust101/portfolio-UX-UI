@@ -1,6 +1,10 @@
 .selected-works {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1.25rem;
+
+  @include breakpoint(medium) {
+    gap: 1rem;
+  }
 
   &__grid {
     display: grid;

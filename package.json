@@ -32,8 +32,10 @@
     "react-layout-masonry": "^1.2.0",
     "react-modal-image": "^2.6.0",
     "react-use": "^17.6.0",
+    "react-zoom-pan-pinch": "^3.7.0",
     "sharp": "^0.34.2",
     "webpack": "^5.99.9",
+    "yet-another-react-lightbox": "^3.23.2",
     "zustand": "^5.0.5"
   },
   "devDependencies": {

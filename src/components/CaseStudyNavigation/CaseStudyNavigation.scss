@@ -16,7 +16,7 @@
     font-size: 1.1rem;
     gap: 1.25rem;
 
-    @include breakpoint(large) {
+    @include breakpoint(x-large) {
       font-size: 1rem;
     }
   }

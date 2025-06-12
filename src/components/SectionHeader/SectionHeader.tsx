@@ -51,14 +51,6 @@ const SectionHeader = forwardRef<HTMLHeadingElement, SectionHeaderProps>(
                         {children}
                     </h3>
                 );
-            case "block":
-                return (
-                    <h4 ref={ref} className="heading-xs">
-                        <span className="accent-color">// </span>
-                        {children}
-                        <span className="accent-color">.</span>
-                    </h4>
-                );
         }
     }
 );

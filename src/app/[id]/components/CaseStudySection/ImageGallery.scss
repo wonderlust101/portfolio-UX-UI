@@ -2,8 +2,7 @@
   display: grid;
   align-items: flex-start;
   grid-template-columns: repeat(var(--column-num), 1fr);
-  column-gap: 0.5rem;
-  row-gap: 1rem;
+  gap: 0.5rem;
   width: 100%;
 
   @include breakpoint(medium) {

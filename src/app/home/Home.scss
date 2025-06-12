@@ -2,5 +2,13 @@
   &__content {
     display: grid;
     row-gap: 4rem;
+
+    @include breakpoint(medium) {
+      row-gap: 2.5rem;
+    }
+  }
+
+  &__divider {
+    border: 2px solid $clr-black;
   }
 }

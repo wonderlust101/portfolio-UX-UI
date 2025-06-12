@@ -32,11 +32,11 @@ export default async function Home() {
             <div className="grid-bleed home__content">
                 <SelectedWorks/>
 
-                <hr className="case-study-page__divider"/>
+                <hr className="home__divider"/>
 
                 <SkillsList/>
 
-                <hr className="case-study-page__divider"/>
+                <hr className="home__divider"/>
 
                 <About aboutText={homeData}/>
             </div>

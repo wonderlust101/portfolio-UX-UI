@@ -1,4 +1,8 @@
 .layout {
   display: grid;
   gap: 8rem;
+
+  @include breakpoint(medium) {
+    gap: 4rem;
+  }
 }

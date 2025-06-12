@@ -3,7 +3,11 @@
 import { buildNamedTransformUrl } from "@/lib/cloudinary";
 import { CldImage } from "next-cloudinary";
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import { Zoom } from "yet-another-react-lightbox/plugins";
 import "./ImageWithCaption.scss";
 
 type ImageWithCaptionProps = {
@@ -11,15 +15,14 @@ type ImageWithCaptionProps = {
     alt?: string;
 };
 
-const Lightbox = dynamic(
-    () =>
-        import("react-modal-image").then((mod) => mod.Lightbox),
-    {ssr: false}
-);
+const Lightbox = dynamic(() => import("yet-another-react-lightbox"), {
+    ssr: false,
+});
 
 export default function ImageWithCaption({image, alt = "No caption available"}: ImageWithCaptionProps) {
     const [isOpen, setIsOpen] = useState(false);
     const largeUrl = buildNamedTransformUrl(image, "webp_high");
+    const captionsRef = useRef(null);
 
     return (
         <>
@@ -38,17 +41,38 @@ export default function ImageWithCaption({image, alt = "No caption available"}: 
                 />
             </figure>
 
-            {isOpen && (
-                <div className="image-with-caption__modal">
-                    <Lightbox
-                        medium={largeUrl}
-                        alt={alt}
-                        onClose={() => setIsOpen(false)}
-                        hideDownload={true}
-                        hideZoom={false}
-                    />
-                </div>
-            )}
+            <Lightbox
+                open={isOpen}
+                close={() => setIsOpen(false)}
+                slides={[{ src: largeUrl, alt, description: alt }]}
+                plugins={[Zoom, Captions]}
+                carousel={{ finite: true }}
+                controller={{ closeOnBackdropClick: true }}
+                zoom={{
+                    maxZoomPixelRatio: 0.5,
+                    zoomInMultiplier: 0.5,
+                    doubleTapDelay: 300,
+                    doubleClickDelay: 300,
+                    doubleClickMaxStops: 1,
+                    keyboardMoveDistance: 50,
+                    wheelZoomDistanceFactor: 50,
+                    pinchZoomDistanceFactor: 50,
+                    scrollToZoom: true
+                }}
+                render={{
+                    buttonPrev: () => null,
+                    buttonNext: () => null,
+                }}
+                captions={{ ref: captionsRef }}
+                on={{
+                    click: () => {
+                        (captionsRef.current?.visible
+                            ? captionsRef.current?.hide
+                            : captionsRef.current?.show)?.();
+                    },
+                }}
+
+            />
         </>
     );
 }

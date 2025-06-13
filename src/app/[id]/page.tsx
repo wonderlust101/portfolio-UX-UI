@@ -39,7 +39,6 @@ export default async function CaseStudyPage({params}: Props) {
                 />
 
                 <div className="case-study-page__content grid-bleed">
-
                     <div className="case-study-page__main-content">
                         <CaseStudyNavigation sections={caseStudy.sections}/>
 

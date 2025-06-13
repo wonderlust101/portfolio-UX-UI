@@ -12,7 +12,7 @@ type PersonaProps = {
 export default function Persona({personaData}: PersonaProps) {
 
     return (
-        <section className="persona" role="region" aria-labelledby="persona-heading">
+        <section className="persona" aria-labelledby="persona-heading">
             <div className="persona__top">
                 <figure className="persona__image-container">
                     <CldImage

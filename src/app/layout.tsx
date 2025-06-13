@@ -7,7 +7,10 @@ import { ReactNode } from "react";
 import "@/assets/styles/globals.scss";
 import "./layout.scss";
 
-const outfit = Outfit({subsets: ["latin"]})
+const outfit = Outfit({
+    subsets: ["latin"],
+    preload: false
+})
 
 export const metadata: Metadata = {
     title       : "Sergei Borja | Full Stack Developer & UX & UI Designer",

@@ -1,4 +1,27 @@
 .video-player {
   border-radius: $border-radius;
   overflow: hidden;
+
+  &__loading {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(
+                    90deg,
+                    var(--skeleton-bg, #E0E0E0) 25%,
+                    var(--skeleton-highlight, #F0F0F0) 50%,
+                    var(--skeleton-bg, #E0E0E0) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 12px;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
 }

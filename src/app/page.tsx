@@ -21,7 +21,7 @@ export default async function Home() {
     } catch (err) {
         return notFound();
     }
-
+    
     return (
         <main className="home" id="main-content">
             <div aria-hidden={true}>

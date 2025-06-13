@@ -1,9 +1,11 @@
-import DesignChange from "../../../../components/DesignChange";
+"use client"
+
+import DesignChange from "@/components/DesignChange";
 import List from "@/components/List";
 import Persona from "@/components/Persona";
 import QuoteList from "@/components/QuoteList";
 import UserStatement from "@/components/UserStatement";
-import VideoPlayer from "@/components/VideoPlayer";
+import LazyVideoPlayer from "@/components/VideoPlayer";
 import { ContentBlock } from "@/types/case-study";
 import dynamic from "next/dynamic";
 
@@ -12,10 +14,10 @@ const ImageGallery = dynamic(() => import("@/app/[id]/components/CaseStudySectio
 });
 
 const FigmaFrame = dynamic(() => import("@/components/FigmaFrame"), {
-    ssr: false,                           // only in the browser
+    ssr: false,
     loading: () => (
         <div className="figma-frame__placeholder">
-            Loading preview…v
+            Loading preview…
         </div>
     ),
 });
@@ -44,7 +46,7 @@ export default function ContentRenderer({contents}: ContentRendererProps) {
                     case "figma":
                         return <FigmaFrame key={index} figmaLink={content.figmaLink}/>;
                     case "video":
-                        return <VideoPlayer key={index} videoLink={content.video}/>;
+                        return <LazyVideoPlayer key={index} videoLink={content.video}/>;
                     case "feedback":
                         return <DesignChange key={index} change={content.change} num={index + 1}/>;
                     default:

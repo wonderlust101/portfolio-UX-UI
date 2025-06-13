@@ -45,7 +45,7 @@ export function useAnimatedNavigation() {
                     if (hash) {
                         const el = document.getElementById(hash);
                         if (el) {
-                            el.scrollIntoView();
+                            el.scrollIntoView({ behavior: "smooth" });
                         }
                     }
                     if (callback) callback();
@@ -62,7 +62,7 @@ export function useAnimatedNavigation() {
                             setTimeout(() => {
                                 const el = document.getElementById(hash);
                                 if (el) {
-                                    el.scrollIntoView();
+                                    el.scrollIntoView({ behavior: "smooth" });
                                 }
                             }, 500);
                         }

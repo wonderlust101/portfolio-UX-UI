@@ -19,6 +19,7 @@ export default function Error({error, reset}: ErrorProps) {
         console.error("Error boundary caught:", error);
     }, [error]);
 
+
     return (
         <>
             <Revealer/>
@@ -45,7 +46,7 @@ export default function Error({error, reset}: ErrorProps) {
                     </div>
                 </div>
 
-                <Button color="black" size="sm" onClick={() => setOpen(true)}>
+                <Button color="black" size="md" onClick={() => setOpen(true)}>
                     Show more details
                 </Button>
 

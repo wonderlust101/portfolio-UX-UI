@@ -33,7 +33,7 @@
     color: $clr-black-50;
     transform: translateX(0);
     will-change: transform;
-    transition: all 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 
     &:hover {
       color: $clr-black;

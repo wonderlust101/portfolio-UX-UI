@@ -67,7 +67,7 @@ export default function Footer() {
     const {handleNavigation} = useAnimatedNavigation();
 
     return (
-        <footer className="footer grid-bleed-small">
+        <footer className="footer grid-bleed-small" aria-label="Site Footer">
             <div className="footer__grid">
                 <section className="footer__left-column" role="region" aria-labelledby="footer-cta-heading">
                     <div className="footer__cta">
@@ -95,7 +95,7 @@ export default function Footer() {
                 </section>
 
                 <div className="footer__right-column">
-                    <p className="footer__name" role="presentation">
+                    <p className="footer__name" aria-hidden={true}>
                         Sergei Borja
                     </p>
 
@@ -118,7 +118,7 @@ export default function Footer() {
                     </nav>
                 </div>
 
-                <div className="footer__bottom" role="presentation">
+                <div className="footer__bottom" aria-hidden={true}>
                     <p className="footer__copyright">@ 2025 Sergei Borja</p>
                 </div>
             </div>

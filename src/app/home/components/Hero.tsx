@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Hero.scss";
 
 gsap.registerPlugin(SplitText);
@@ -12,6 +12,21 @@ gsap.registerPlugin(SplitText);
 export default function Hero() {
     const paragraphRef = useRef<HTMLParagraphElement>(null);
     const buttonRef = useRef<HTMLDivElement>(null);
+    const [fontsLoaded, setFontsLoaded] = useState(false);
+
+    useEffect(() => {
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(() => {
+                setFontsLoaded(true);
+            });
+        } else {
+            // Fallback for browsers that don't support document.fonts
+            const timeout = setTimeout(() => {
+                setFontsLoaded(true);
+            }, 100);
+            return () => clearTimeout(timeout);
+        }
+    }, []);
 
     useGSAP(() => {
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -19,9 +34,7 @@ export default function Hero() {
         }
 
         const runAnimation = () => {
-            const isFirefox =
-                typeof (window as any).InstallTrigger !== "undefined" ||
-                navigator.userAgent.toLowerCase().includes("firefox");
+            const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
 
             const nameAnimationDelay = isFirefox ? 0 : 1.25;
             const contentAnimationDelay = isFirefox ? 0.75 : 2.5;
@@ -35,7 +48,7 @@ export default function Hero() {
 
             gsap.to(splitText.chars, {
                 y       : "0%",
-                duration: 1.5,
+                duration: 1.25,
                 stagger : 0.1,
                 delay   : nameAnimationDelay,
                 ease    : "power4.out"
@@ -64,7 +77,7 @@ export default function Hero() {
         } else {
             runAnimation();
         }
-    }, []);
+    }, [fontsLoaded]);
 
     return (
         <section className="hero grid-bleed-small" aria-labelledby="hero-heading">

@@ -5,4 +5,10 @@
   @include breakpoint(medium) {
     gap: 4rem;
   }
+
+  & a:focus-visible,
+  & button:focus-visible {
+    outline: 3px solid var(--theme-color);
+    outline-offset: 0.25rem;
+  }
 }

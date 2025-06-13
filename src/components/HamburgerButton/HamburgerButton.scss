@@ -1,0 +1,39 @@
+.hamburger-button {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  border-radius: $border-radius;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  // Hamburger lines
+  &__line {
+    position: absolute;
+    height: 2.5px;
+    width: 24px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+
+    &--top {
+      left: 50%;
+      top: 35%;
+    }
+
+    &--middle {
+      left: 50%;
+      top: 50%;
+    }
+
+    &--bottom {
+      left: 50%;
+      bottom: 35%;
+      transform: translate(-50%, 50%);
+    }
+  }
+}

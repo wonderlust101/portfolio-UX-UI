@@ -32,7 +32,7 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
 
                 <div role="group" aria-labelledby={`change-${num}-before-label`}>
                     <p id={`change-${num}-before-label`} className="sr-only">Before:</p>
-                    <p aria-hidden={true} className="black">Before:</p>
+                    <p aria-hidden={true} className="bold">Before:</p>
                     <p className="">{parseHighlightedText(before.text)}</p>
                 </div>
             </div>
@@ -42,7 +42,7 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
 
                 <div role="group" aria-labelledby={`change-${num}-after-label`}>
                     <p id={`change-${num}-after-label`} className="sr-only">After:</p>
-                    <p aria-hidden={true} className="black">After:</p>
+                    <p aria-hidden={true} className="bold">After:</p>
                     <p className="">{parseHighlightedText(after.text)}</p>
                 </div>
             </div>

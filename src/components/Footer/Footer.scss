@@ -4,6 +4,12 @@
   color: $clr-white;
   position: relative;
 
+  & a:focus-visible,
+  & button:focus-visible {
+    outline: 3px solid var(--light-theme-color) !important;
+    outline-offset: 0.25rem;
+  }
+
   &__header {
     display: grid;
     padding-bottom: 2rem;

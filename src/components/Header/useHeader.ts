@@ -1,7 +1,6 @@
 import { useWindowScrollFixed } from "@/hooks/useWindowScrollFixed";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 export default function UseHeader() {
@@ -21,14 +20,14 @@ export default function UseHeader() {
         timeline.current = gsap.timeline({paused: true}).to(".header-overlay", {
             duration: 0.5,
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            ease    : "power4.inOut",
+            ease    : "power3.inOut",
             force3D : true
         }).to(".header-overlay__link-item-holder", {
             y       : 0,
-            duration: 1,
+            duration: 0.75,
             stagger : 0.1,
-            ease    : "power4.out",
-            delay   : -0.75,
+            ease    : "power3.out",
+            delay   : -0.5,
             force3D : true
         });
     }, {scope: headerRef});

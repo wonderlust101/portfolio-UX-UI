@@ -1,14 +1,9 @@
 "use client";
+import { Theme } from "@/types/case-study";
 import { useEffect } from "react";
 
-type ThemeProps = {
-    themeColor?: string;
-    lightThemeColor?: string;
-    darkThemeColor?: string;
-};
-
 type Props = {
-    theme?: ThemeProps;
+    theme?: Theme;
 };
 
 export default function ThemeEffect({theme}: Props) {

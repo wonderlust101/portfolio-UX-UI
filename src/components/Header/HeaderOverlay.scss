@@ -67,8 +67,6 @@
   }
 
   &__link-item {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
     &-holder {
       position: relative;
       will-change: transform;
@@ -89,7 +87,7 @@
 
     &:hover {
       opacity: 0.8;
-      transform: scale(1.05);
+      transform: scale(1.025);
     }
 
     @include breakpoint(small) {

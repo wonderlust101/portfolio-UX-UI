@@ -6,11 +6,13 @@
   border: none;
   text-transform: uppercase;
   border-radius: $border-radius;
-  transition: all 0.2s ease-in-out;
   font-family: "Satoshi", sans-serif;
   font-weight: 700;
+  will-change: color, background-color, opacity, transform, cursor;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 
   &:hover:not(:disabled) {
+    transform: scale(1.05);
     cursor: pointer;
   }
 
@@ -114,7 +116,7 @@
   &--sm {
     font-size: 1rem;
     letter-spacing: 0.01rem;
-    padding: 0.6rem 1.25rem;
+    padding: 0.55rem 1.2rem;
 
     & > img {
       height: 1.25rem;

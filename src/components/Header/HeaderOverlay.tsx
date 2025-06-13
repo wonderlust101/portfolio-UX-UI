@@ -1,5 +1,6 @@
 import List from "@/components/List";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 import Link from "next/link";
 import "./HeaderOverlay.scss";
 
@@ -67,8 +68,23 @@ const navLinks = [
 
 
 export default function HeaderOverlay({toggleMenu}: HeaderOverlayProps) {
+    const overlayRef = useFocusTrap(true, toggleMenu);
+
     return (
-        <div className="header-overlay">
+        <div
+            ref={overlayRef}
+            className="header-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Main Menu"
+            tabIndex={-1}
+            onKeyDown={(e) => {
+                if (e.key === "Escape") {
+                    e.preventDefault();
+                    toggleMenu();
+                }
+            }}
+        >
             <div className="header-overlay__copy">
                 <div className="header-overlay__contact">
                     <div className="header-overlay__info">

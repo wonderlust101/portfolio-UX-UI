@@ -18,6 +18,8 @@ export default function FigmaFrame({figmaLink}: Props) {
                 loading="lazy"
                 allowFullScreen
                 title="Figma design preview"
+                tabIndex={-1}
+                aria-hidden={true}
             />
         </div>
     );

@@ -1,8 +1,8 @@
 "use client";
 
 import Button from "@/components/Button";
-import "./status-pages.scss";
 import Revealer from "@/components/Revealer";
+import "./status-pages.scss";
 
 export default function NotFound() {
     return (

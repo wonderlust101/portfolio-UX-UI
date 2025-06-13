@@ -45,10 +45,10 @@
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
 
     @include breakpoint(medium) {
-      gap: 3rem;
+      gap: 2rem;
     }
 
     @include breakpoint(small) {
@@ -67,8 +67,14 @@
     justify-content: center;
     cursor: pointer;
 
+    &:focus-visible {
+      outline: 3px solid var(--light-theme-color);
+      outline-offset: 0 !important;
+    }
+
     img {
       display: block;
+
     }
   }
 }

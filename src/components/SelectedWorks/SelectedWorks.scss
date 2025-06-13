@@ -25,8 +25,7 @@
     gap: 0.5rem;
     grid-template-rows: max-content 1fr;
 
-    &:hover,
-    &:focus {
+    &:hover {
       cursor: pointer;
 
       & .selected-works__image {
@@ -36,6 +35,12 @@
       & .selected-works__text-container {
         background-color: color-mix(in srgb, var(--hover-color) 50%, white);
       }
+    }
+
+    &:focus-visible {
+      outline: 4px solid var(--hover-color) !important;
+      outline-offset: 0.25rem;
+      border-radius: $border-radius;
     }
   }
 

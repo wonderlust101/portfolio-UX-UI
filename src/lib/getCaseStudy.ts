@@ -27,19 +27,3 @@ export async function getCaseStudySlugs(): Promise<string[]> {
         return [];
     }
 }
-
-
-export async function getAllCaseStudies(): Promise<(ProjectData & { slug: string })[]> {
-    const slugs = await getCaseStudySlugs();
-
-    return await Promise.all(
-        slugs.map(async (slug) => {
-            const filePath = path.join(process.cwd(), "src", "case-studies", `${slug}.json`);
-            const data = await fs.readFile(filePath, "utf8");
-            return {
-                slug,
-                ...JSON.parse(data),
-            };
-        })
-    );
-}

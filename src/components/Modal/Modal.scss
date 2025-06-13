@@ -10,13 +10,37 @@
   }
 
   &__container {
-    background: #fff;
+    display: grid;
+    gap: 1rem;
     border-radius: 8px;
     padding: 1rem;
+    width: max-content;
+    height: fit-content;
     max-width: 90%;
     max-height: 90vh;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    -webkit-overflow-scrolling: touch;
+    background: $clr-white;
+  }
+
+  &__header {
+    justify-self: flex-end;
+  }
+
+  &__close-button {
+    background: none;
+    border: none;
+    will-change: transform, opacity;
+    transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.25);
+      opacity: 0.65;
+    }
+  }
+
+  &__content {
+    & p {
+      max-width: unset;
+    }
   }
 }

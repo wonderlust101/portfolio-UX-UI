@@ -1,5 +1,3 @@
-"use client";
-
 import ContentBlock from "@/components/ContentBlock";
 import type { Section as SectionType } from "@/types/case-study";
 import ContentRenderer from "./ContentRenderer";
@@ -10,6 +8,7 @@ type CaseStudySectionProps = {
 }
 
 export default function CaseStudySection({section}: CaseStudySectionProps) {
+
     return (
         <ContentBlock header={section.title} type="section" icon={section.icon}>
             {section.contents &&

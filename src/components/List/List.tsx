@@ -8,13 +8,14 @@ import "./List.scss";
 type ListProps = {
     items: ListItemType[];
     type: "list"|"meta";
+    theme?: "light"|"dark";
 };
 
 
-export default function List({items, type}: ListProps) {
+export default function List({items, type, theme}: ListProps) {
     if (type === "meta") {
         return (
-            <dl className="list">
+            <dl className={`list ${theme === "dark" ? "list--dark" : ""}`}>
                 {items.map((item, index) => (
                     <MetaListItem item={item} key={index}/>
                 ))}

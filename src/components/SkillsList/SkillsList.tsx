@@ -30,7 +30,7 @@ export default function SkillsList() {
                                         className="skills-list__skill"
                                         style={{"--hover-color": skillName.tint} as CSSProperties}
                                     >
-                                        <span className="bold" key={skillName.header}>{skillName.header}</span>
+                                        <span className="medium" key={skillName.header}>{skillName.header}</span>
 
                                         {skillName.icon &&
                                             <img className="skills-list__icon" src={`/images/shared/${skillName.icon}`} alt="" aria-hidden={true}/>}

@@ -9,7 +9,7 @@
   &__type {
     display: grid;
     align-content: flex-start;
-    gap: 4rem;
+    gap: 3rem;
 
     @include breakpoint(small) {
       gap: 2rem;
@@ -64,6 +64,14 @@
 
     &:hover {
       background-color: var(--hover-color);
+
+      .skills-list__icon {
+        transform: rotate(15deg) translateY(-50%) scale(1.1);
+
+        @include breakpoint(medium) {
+          transform: rotate(5deg) translate(50%, -50%) scale(1.1);
+        }
+      }
     }
   }
 
@@ -72,10 +80,12 @@
     width: 10rem;
     position: absolute;
     top: 50%;
-    right: 1rem;
-    transform: rotate(15deg) translateY(-50%);
+    right: 2rem;
+    transform: rotate(25deg) translateY(-50%);
     opacity: 50%;
     user-select: none;
+    will-change: transform;
+    transition: transform 0.15s ease-in-out;
 
     @include breakpoint(large) {
       height: 8rem;

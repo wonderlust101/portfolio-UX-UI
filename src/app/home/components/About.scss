@@ -23,11 +23,11 @@
 
   &__content {
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
     will-change: opacity, transform;
 
     @include breakpoint(small) {
-      gap: 1.5rem;
+      gap: 2rem;
     }
   }
 

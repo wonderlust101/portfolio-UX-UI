@@ -37,6 +37,12 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             return;
         }
+        const isFirefox =
+            typeof (window as any).InstallTrigger !== "undefined" ||
+            navigator.userAgent.toLowerCase().includes("firefox");
+
+        const titleDelay = isFirefox ? 0.20 : 1.75;
+        const imageDelay = isFirefox ? 0 : 1.55;
 
         if (!titleRef.current) return;
 
@@ -49,9 +55,9 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
 
         gsap.to(splitText.words, {
             y       : "0%",
-            duration: 1.5,
+            duration: 1.25,
             stagger : 0.1,
-            delay   : 1.,
+            delay   : titleDelay,
             ease    : "power3.out"
         });
 
@@ -66,7 +72,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
                 y       : 0,
                 duration: 1.5,
                 stagger : 0.15,
-                delay   : 1.55,
+                delay   : imageDelay,
                 ease    : "power3.out"
             }
         );

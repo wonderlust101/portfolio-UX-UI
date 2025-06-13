@@ -27,7 +27,7 @@ export default async function CaseStudyPage({params}: Props) {
         <>
             <div aria-hidden={true}>
                 <Revealer/>
-                <ThemeEffect/>
+                <ThemeEffect theme={caseStudy.theme}/>
             </div>
 
             <main className="case-study-page" id="main-content" aria-labelledby="case-study-title">
@@ -39,12 +39,13 @@ export default async function CaseStudyPage({params}: Props) {
                 />
 
                 <div className="case-study-page__content grid-bleed">
-                    <ProjectSummary details={caseStudy.projectSummary}/>
 
                     <div className="case-study-page__main-content">
                         <CaseStudyNavigation sections={caseStudy.sections}/>
 
                         <div className="case-study-page__sections">
+                            <ProjectSummary details={caseStudy.projectSummary}/>
+
                             {caseStudy.sections.map((section: Section) => (
                                 <Fragment key={section.title}>
                                     <CaseStudySection section={section}/>

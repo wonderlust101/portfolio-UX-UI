@@ -1,12 +1,6 @@
 @use "../abstract/index" as a;
 
 // Global Styles
-*,
-*::before,
-*::after {
-  font-family: var(--font-satoshi), sans-serif;
-}
-
 li {
   color: inherit;
 }
@@ -18,13 +12,17 @@ a {
 
 p, dt, dd, li {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.7;
   white-space: pre-line;
   max-width: 65ch;
 
   @include a.breakpoint(x-large) {
     font-size: 1rem;
+  }
+
+  @include a.breakpoint(medium) {
+    max-width: unset;
   }
 
   @include a.breakpoint(small) {
@@ -35,39 +33,34 @@ p, dt, dd, li {
 // Heading Styles
 .heading-xl {
   color: a.$clr-black;
-  font-size: clamp(1rem, 14.5vw, 23.5rem);
-  font-weight: 900;
+  font-size: clamp(1rem, 13.75vw, 23.5rem);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -1.25rem;
   line-height: 1;
+  letter-spacing: -0.35rem;
   text-align: center;
   position: relative;
   padding-right: 1rem;
 
   @include a.breakpoint(large) {
-    font-size: clamp(1rem, 14.25vw, 23.5rem);
-    letter-spacing: -1.0rem;
+    font-size: clamp(1rem, 13.5vw, 23.5rem);
+    letter-spacing: -0.25rem;
   }
 
   @include a.breakpoint(medium) {
     font-size: clamp(1rem, 20vw, 23.5rem);
-    letter-spacing: -0.75rem;
   }
 
   @include a.breakpoint(small) {
-    letter-spacing: -0.50rem;
-  }
-
-  @include a.breakpoint(x-small) {
-    letter-spacing: -0.35rem;
+    letter-spacing: -0.15rem;
   }
 }
 
 .heading-lg {
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -0.125rem;
+  letter-spacing: -0.09rem;
   line-height: 1.25;
 
   @include a.breakpoint(medium) {
@@ -81,8 +74,8 @@ p, dt, dd, li {
 }
 
 .heading-md {
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 2.25rem;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1.25;
 
@@ -97,23 +90,19 @@ p, dt, dd, li {
 }
 
 .heading-sm {
-  font-size: 1.4rem;
-  font-weight: 900;
+  font-size: 1.25rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.005rem;
 
   @include a.breakpoint(medium) {
-    font-size: 1.25rem;
-  }
-
-  @include a.breakpoint(small) {
     font-size: 1.15rem;
   }
 }
 
 .heading-xs {
   font-size: 1.4rem;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.025rem;
 
@@ -128,7 +117,7 @@ p, dt, dd, li {
 
 .heading-xxs {
   font-size: 0.9rem;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
 
   @include a.breakpoint(medium) {
@@ -156,13 +145,13 @@ p, dt, dd, li {
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: background-size 0.36s ease-in-out;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 400;
   letter-spacing: 0.02rem;
   line-height: 1.7;
 
   @include a.breakpoint(small) {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   &:hover {
@@ -172,7 +161,7 @@ p, dt, dd, li {
 
 .quote {
   font-size: 1.15rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--theme-color);
 
   @include a.breakpoint(large) {
@@ -190,7 +179,7 @@ p, dt, dd, li {
 
 .quote-lg {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--theme-color);
 
   @include a.breakpoint(large) {

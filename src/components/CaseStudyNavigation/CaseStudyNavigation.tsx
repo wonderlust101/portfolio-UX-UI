@@ -60,19 +60,30 @@ export default function CaseStudyNavigation({sections}: CaseStudyNavigationProps
     return (
         <nav className="case-study-navigation" aria-labelledby="case-study-nav-heading">
             <h2 className="heading-xs accent-color" id="case-study-nav-heading">
-                <span className='sr-only'>Table of</span>
+                <span className="sr-only">Table of</span>
                 Contents
             </h2>
 
             <ul className="case-study-navigation__links" role="list">
+                <li className="case-study-navigation__link-container">
+                    <a
+                        href="#intro"
+                        className={`case-study-navigation__link ${activeId === "intro" ? "link-active" : ""}`}
+                        onClick={(e) => handleClick(e, "intro")}
+                        aria-current={activeId === "intro" ? "location" : undefined}
+                    >
+                        Introduction
+                    </a>
+                </li>
                 {sections.map((section) => {
                     const id = toKebabCase(section.title);
 
                     return (
                         <Fragment key={id}>
-                            <li className={`case-study-navigation__link ${activeId === id ? "link-active" : ""}`}>
+                            <li className="case-study-navigation__link-container">
                                 <a
                                     href={`#${id}`}
+                                    className={`case-study-navigation__link ${activeId === id ? "link-active" : ""}`}
                                     onClick={(e) => handleClick(e, id)}
                                     aria-current={activeId === id ? "location" : undefined}
                                 >

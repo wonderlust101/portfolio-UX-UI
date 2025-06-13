@@ -18,30 +18,25 @@
     align-items: center;
     gap: 8rem;
 
-    @include breakpoint(medium) {
-      gap: 2rem;
-    }
-
-    @include breakpoint(small) {
-      & > p {
-        display: none;
-      }
+    @include breakpoint(large) {
+      gap: 6rem;
     }
   }
 
   &__logo {
     font-family: "Satoshi", sans-serif;
     font-size: 1.75rem;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: -0.03rem;
     text-transform: uppercase;
+    padding: 0.15rem 0;
   }
 
   &__tag {
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 0.02rem;
 
-    @include breakpoint(x-small) {
+    @include breakpoint(medium) {
       display: none;
     }
   }

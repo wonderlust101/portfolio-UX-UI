@@ -19,6 +19,12 @@ export default function Hero() {
         }
 
         const runAnimation = () => {
+            const isFirefox =
+                typeof (window as any).InstallTrigger !== "undefined" ||
+                navigator.userAgent.toLowerCase().includes("firefox");
+
+            const nameAnimationDelay = isFirefox ? 0 : 1.25;
+            const contentAnimationDelay = isFirefox ? 0.75 : 2.5;
 
             const splitText = SplitText.create(".hero__name", {
                 type      : "chars",
@@ -29,9 +35,9 @@ export default function Hero() {
 
             gsap.to(splitText.chars, {
                 y       : "0%",
-                duration: 2,
+                duration: 1.5,
                 stagger : 0.1,
-                delay   : 1.25,
+                delay   : nameAnimationDelay,
                 ease    : "power4.out"
             });
 
@@ -46,7 +52,7 @@ export default function Hero() {
                     y         : 0,
                     duration  : 1,
                     stagger   : 0.15,
-                    delay     : 2.5,
+                    delay     : contentAnimationDelay,
                     ease      : "power4.out",
                     clearProps: "all"
                 }

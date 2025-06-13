@@ -17,13 +17,8 @@
     }
   }
 
-  &--meta {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0;
-
-    @include breakpoint(medium) {
-      grid-template-columns: 1fr;
-    }
+  &--dark>:not(:last-child ) {
+    border-bottom: 2px solid $clr-white-20;
   }
 
   &__divider {

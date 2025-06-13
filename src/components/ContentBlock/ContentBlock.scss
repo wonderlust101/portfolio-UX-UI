@@ -10,7 +10,7 @@
   &__content {
     display: grid;
     justify-items: flex-start;
-    gap: 4rem;
+    gap: 3rem;
     width: 100%;
 
     @include breakpoint(medium) {

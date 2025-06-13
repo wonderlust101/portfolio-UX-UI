@@ -28,8 +28,8 @@ export default function ProjectSummary({details}: ProjectSummaryProps) {
                     </div>
                 </div>
 
-                <div className="project-summary__links">
-                    {details.links &&
+                {details.links &&
+                    <div className="project-summary__links">
                         <div className="project-summary__button-row">
                             {details.links.map(link => (
                                 <Button
@@ -46,8 +46,8 @@ export default function ProjectSummary({details}: ProjectSummaryProps) {
                                 </Button>
                             ))}
                         </div>
-                    }
-                </div>
+                    </div>
+                }
             </div>
 
             <div className="project-summary__metatags">

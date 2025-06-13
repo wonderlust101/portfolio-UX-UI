@@ -14,25 +14,33 @@
   &__links {
     display: grid;
     font-size: 1.1rem;
-    gap: 1.25rem;
+    gap: 1rem;
 
     @include breakpoint(x-large) {
       font-size: 1rem;
     }
   }
 
+  &__link-container:not(:last-child) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $clr-black-20;
+  }
+
   &__link {
+    display: inline-block;
     justify-self: flex-start;
-    font-weight: 600;
+    font-weight: 500;
     color: $clr-black-50;
-    transition: all 0.15s ease-in-out;
+    transform: translateX(0);
+    will-change: transform;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       color: $clr-black;
     }
 
     &.link-active {
-      padding-left: 0.5rem;
+      transform: translateX(1rem);
       color: $clr-black;
     }
   }

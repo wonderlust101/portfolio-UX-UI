@@ -1,10 +1,10 @@
 .home {
   &__content {
     display: grid;
-    row-gap: 4rem;
+    row-gap: 6rem;
 
     @include breakpoint(medium) {
-      row-gap: 2.5rem;
+      row-gap: 3rem;
     }
   }
 

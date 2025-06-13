@@ -1,4 +1,5 @@
 "use client";
+
 import { useTransitionRouter } from "next-view-transitions";
 import { usePathname } from "next/navigation";
 import type { MouseEvent as ReactMouseEvent } from "react";

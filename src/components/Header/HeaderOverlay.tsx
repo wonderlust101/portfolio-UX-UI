@@ -72,7 +72,7 @@ export default function HeaderOverlay({toggleMenu}: HeaderOverlayProps) {
             <div className="header-overlay__copy">
                 <div className="header-overlay__contact">
                     <div className="header-overlay__info">
-                        <List items={contactList} type="meta"/>
+                        <List items={contactList} type="meta" theme="dark"/>
                     </div>
                 </div>
 

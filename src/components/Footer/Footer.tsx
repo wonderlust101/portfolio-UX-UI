@@ -90,7 +90,7 @@ export default function Footer() {
 
                     <div aria-labelledby="footer-contact-heading">
                         <h2 className="sr-only" id="footer-contact-heading">Contact Information</h2>
-                        <List items={contactList} type="meta"/>
+                        <List items={contactList} type="meta" theme='dark'/>
                     </div>
                 </section>
 

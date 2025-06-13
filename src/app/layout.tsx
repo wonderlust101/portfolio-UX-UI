@@ -1,11 +1,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { satoshi } from "@/fonts/Satoshi/satoshi";
+import { Outfit } from 'next/font/google'
 import type { Metadata } from "next";
 import { ViewTransitions } from "next-view-transitions";
 import { ReactNode } from "react";
 import "@/assets/styles/globals.scss";
 import "./layout.scss";
+
+const outfit = Outfit({subsets: ["latin"]})
 
 export const metadata: Metadata = {
     title       : "Sergei Borja | Full Stack Developer & UX & UI Designer",
@@ -66,7 +68,7 @@ export default async function RootLayout({children}: RootLayoutProps) {
     return (
         <>
             <ViewTransitions>
-                <html lang="en" className={`${satoshi.variable}`}>
+                <html lang="en" className={outfit.className}>
 
                 <body className="layout">
                     <a href="#main-content" className="skip-link">

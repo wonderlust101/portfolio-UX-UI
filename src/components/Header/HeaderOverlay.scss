@@ -12,6 +12,8 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
   border-radius: 0 0 $border-radius $border-radius;
   display: none;
+  will-change: clip-path;
+  transform: translateZ(0);
 
   &::-webkit-scrollbar {
     display: none;
@@ -69,16 +71,26 @@
 
     &-holder {
       position: relative;
+      will-change: transform;
+      transform: translateZ(0);
     }
   }
 
   &__link {
+    display: inline-block;
     color: $clr-white;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2.5rem;
-    letter-spacing: -0.03em;
     cursor: pointer;
+    will-change: transform;
+    transition: transform .15s ease-in-out;
+    transform-origin: right;
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
 
     @include breakpoint(small) {
       font-size: 1.75rem;

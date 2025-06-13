@@ -68,7 +68,7 @@ const navLinks = [
 
 
 export default function HeaderOverlay({toggleMenu}: HeaderOverlayProps) {
-    const overlayRef = useFocusTrap(true, toggleMenu);
+    const overlayRef = useFocusTrap(true);
 
     return (
         <div

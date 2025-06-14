@@ -13,7 +13,7 @@ type ContentRendererProps = {
     slug: string;
 };
 
-export default async function ContentRenderer({contents, slug}: ContentRendererProps) {
+export default function ContentRenderer({contents, slug}: ContentRendererProps) {
     return (
         <>
             {contents?.map((content, index) => {

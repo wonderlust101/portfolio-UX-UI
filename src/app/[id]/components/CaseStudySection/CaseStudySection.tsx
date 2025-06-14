@@ -8,7 +8,7 @@ type CaseStudySectionProps = {
     slug: string;
 }
 
-export default async function CaseStudySection({section, slug}: CaseStudySectionProps) {
+export default function CaseStudySection({section, slug}: CaseStudySectionProps) {
     return (
         <ContentBlock header={section.title} type="section" icon={section.icon}>
             {section.contents &&

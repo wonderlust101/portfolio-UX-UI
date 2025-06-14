@@ -12,7 +12,6 @@ type MetadataProps = {
     params: Promise<{id: string}>;
 };
 
-
 export async function generateMetadata({params}: MetadataProps): Promise<Metadata> {
     const {id} = await params;
     const caseStudy = await getCaseStudy(id);

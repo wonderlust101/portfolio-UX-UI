@@ -12,7 +12,7 @@ type ImageGalleryProps = {
     slug: string;
 }
 
-export default async function ImageGallery({imagesGallery, slug}: ImageGalleryProps) {
+export default function ImageGallery({imagesGallery, slug}: ImageGalleryProps) {
     const {columns, tabletColumns, masonry} = imagesGallery.options;
 
     const imageElements = imagesGallery.images.map((image, index) => (

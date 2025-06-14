@@ -19,6 +19,8 @@ export default async function CaseStudyPage({params}: Props) {
     const {id} = await params;
     const caseStudy: ProjectData|null = await getCaseStudy(id);
 
+    console.log(id);
+
     if (!caseStudy || !caseStudy.sections) {
         return notFound();
     }
@@ -47,7 +49,7 @@ export default async function CaseStudyPage({params}: Props) {
 
                             {caseStudy.sections.map((section: Section) => (
                                 <Fragment key={section.title}>
-                                    <CaseStudySection section={section}/>
+                                    <CaseStudySection section={section} slug={id}/>
                                     <hr className="case-study-page__divider"/>
                                 </Fragment>
                             ))}

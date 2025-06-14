@@ -1,32 +1,19 @@
-"use client"
-
 import DesignChange from "@/components/DesignChange";
+import FigmaFrame from "@/components/FigmaFrame";
 import List from "@/components/List";
 import Persona from "@/components/Persona";
 import QuoteList from "@/components/QuoteList";
 import UserStatement from "@/components/UserStatement";
 import LazyVideoPlayer from "@/components/VideoPlayer";
+import ImageGallery from "@/app/[id]/components/CaseStudySection/ImageGallery";
 import { ContentBlock } from "@/types/case-study";
-import dynamic from "next/dynamic";
-
-const ImageGallery = dynamic(() => import("@/app/[id]/components/CaseStudySection/ImageGallery"), {
-    ssr: false
-});
-
-const FigmaFrame = dynamic(() => import("@/components/FigmaFrame"), {
-    ssr: false,
-    loading: () => (
-        <div className="figma-frame__placeholder">
-            Loading preview…
-        </div>
-    ),
-});
 
 type ContentRendererProps = {
     contents?: ContentBlock[];
+    slug: string;
 };
 
-export default function ContentRenderer({contents}: ContentRendererProps) {
+export default async function ContentRenderer({contents, slug}: ContentRendererProps) {
     return (
         <>
             {contents?.map((content, index) => {
@@ -34,7 +21,7 @@ export default function ContentRenderer({contents}: ContentRendererProps) {
                     case "list":
                         return <List key={index} items={content.items} type="list"/>;
                     case "imagesGallery":
-                        return <ImageGallery key={index} imagesGallery={content.imagesGallery}/>;
+                        return <ImageGallery key={index} imagesGallery={content.imagesGallery} slug={slug}/>;
                     case "persona":
                         return <Persona key={index} personaData={content.persona}/>;
                     case "text":
@@ -48,7 +35,7 @@ export default function ContentRenderer({contents}: ContentRendererProps) {
                     case "video":
                         return <LazyVideoPlayer key={index} videoLink={content.video}/>;
                     case "feedback":
-                        return <DesignChange key={index} change={content.change} num={index + 1}/>;
+                        return <DesignChange key={index} change={content.change} num={index + 1} slug={slug}/>;
                     default:
                         return null;
                 }

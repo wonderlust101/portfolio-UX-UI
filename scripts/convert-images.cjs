@@ -28,7 +28,7 @@ function convertAndMoveImages(inputPath, outputPath) {
                 const outputFile = path.join(outputPath, `${baseName}.webp`);
 
                 sharp(fullInputPath)
-                    .webp({ quality: 60 })
+                    .webp()
                     .toFile(outputFile)
                     .then(() => {
                         const originalSize = fs.statSync(fullInputPath).size;

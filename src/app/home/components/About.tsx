@@ -4,7 +4,7 @@ import List from "@/components/List";
 import "./About.scss";
 import SectionHeader from "@/components/SectionHeader";
 import type { ProfileData } from "@/types/home";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 
 type AboutProps = {
     aboutText: ProfileData|null;
@@ -24,14 +24,14 @@ export default function About({aboutText}: AboutProps) {
                 </div>
 
                 <div className="about__image">
-                    <CldImage
+                    <Image
                         className="about__image"
-                        src="sergei-borja_c36hvi"
+                        src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/sergei-borja.webp`}
                         alt="Portrait photograph of Sergei Borja"
                         loading="lazy"
                         width={700}
                         height={700}
-                        quality={75}
+                        quality={80}
                     />
                 </div>
             </div>

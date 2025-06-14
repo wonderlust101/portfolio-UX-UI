@@ -3,21 +3,25 @@
 import SectionHeader from "@/components/SectionHeader";
 import type { Persona } from "@/types/case-study";
 import "./Persona.scss";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
+import { useParams } from "next/navigation";
 
 type PersonaProps = {
     personaData: Persona;
 }
 
 export default function Persona({personaData}: PersonaProps) {
+    const params = useParams();
+    const slug = params.id as string;
+    const imgSrc = `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/${slug}/${personaData.image}.webp`;
 
     return (
         <section className="persona" aria-labelledby="persona-heading">
             <div className="persona__top">
                 <figure className="persona__image-container">
-                    <CldImage
+                    <Image
                         className="persona__image"
-                        src={personaData.image}
+                        src={imgSrc}
                         alt={`Portrait of ${personaData.name}`}
                         height={600}
                         width={600}

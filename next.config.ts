@@ -1,4 +1,4 @@
-import { withNextVideo } from "next-video/process";
+import withPlaiceholder from "@plaiceholder/next";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -10,12 +10,19 @@ const nextConfig: NextConfig = {
         '*.local-origin.dev',
         '192.168.1.83',
         '192.168.1.83:3000'
-    ],    images: {
-        domains: ['res.cloudinary.com'],
+    ],
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'www.media.sergei-borja.dev',
+                pathname: '/**',
+            },
+        ],
     },
     experimental: {
         cssChunking: true,
     },
 } satisfies NextConfig;
 
-export default withNextVideo(nextConfig);
+export default withPlaiceholder(nextConfig);

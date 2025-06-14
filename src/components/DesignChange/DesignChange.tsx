@@ -6,15 +6,16 @@ import { parseHighlightedText } from "@/utils/parseHighlightedText";
 type DesignFeedbackProps = {
     change: FeedbackContent;
     num: number;
+    slug: string;
 }
 
-export default function DesignChange({change, num}: DesignFeedbackProps) {
+export default function DesignChange({change, num, slug}: DesignFeedbackProps) {
     const {header, before, after, option} = change;
 
     if (!after) {
         return (
             <div className="design-change">
-                <ImageWithCaption image={before.image} alt={before.alt}/>
+                <ImageWithCaption image={before.image} alt={before.alt} slug={slug}/>
                 <div className={`design-change__after ${option?.reversed ? "reversed" : ""}`}>
                     <h3 className="heading-xs design-change__header">{num}. {header}</h3>
                     <p>{parseHighlightedText(before.text)}</p>
@@ -28,7 +29,7 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
             <h3 className="design-change__header">{num}. {header}</h3>
 
             <div className="design-change__compare-grid">
-                <ImageWithCaption image={before.image} alt={before.alt}/>
+                <ImageWithCaption image={before.image} alt={before.alt} slug={slug}/>
 
                 <div role="group" aria-labelledby={`change-${num}-before-label`}>
                     <p id={`change-${num}-before-label`} className="sr-only">Before:</p>
@@ -38,7 +39,7 @@ export default function DesignChange({change, num}: DesignFeedbackProps) {
             </div>
 
             <div className="design-change__compare-grid">
-                <ImageWithCaption image={after.image} alt={after.alt}/>
+                <ImageWithCaption image={after.image} alt={after.alt} slug={slug}/>
 
                 <div role="group" aria-labelledby={`change-${num}-after-label`}>
                     <p id={`change-${num}-after-label`} className="sr-only">After:</p>

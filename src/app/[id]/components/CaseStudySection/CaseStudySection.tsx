@@ -5,15 +5,15 @@ import "./CaseStudySection.scss";
 
 type CaseStudySectionProps = {
     section: SectionType;
+    slug: string;
 }
 
-export default function CaseStudySection({section}: CaseStudySectionProps) {
-
+export default async function CaseStudySection({section, slug}: CaseStudySectionProps) {
     return (
         <ContentBlock header={section.title} type="section" icon={section.icon}>
             {section.contents &&
                 <div className="case-study-section__section">
-                    <ContentRenderer contents={section.contents}/>
+                    <ContentRenderer contents={section.contents} slug={slug}/>
                 </div>
             }
 
@@ -26,7 +26,7 @@ export default function CaseStudySection({section}: CaseStudySectionProps) {
                 >
                     {subsection.contents && (
                         <div className="case-study-section__sub-section">
-                            <ContentRenderer contents={subsection.contents}/>
+                            <ContentRenderer contents={subsection.contents} slug={slug}/>
                         </div>
                     )}
                 </ContentBlock>

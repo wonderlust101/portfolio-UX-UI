@@ -1,9 +1,7 @@
-"use client";
-
 import ImageWithCaption from "@/app/[id]/components/ImageWithCaption";
+import MasonryLayout from "@/components/MasonryLayout";
 import { Image, ImagesGalleryOptions } from "@/types/case-study";
 import { CSSProperties } from "react";
-import Masonry from "react-layout-masonry";
 import "./ImageGallery.scss";
 
 type ImageGalleryProps = {
@@ -11,26 +9,35 @@ type ImageGalleryProps = {
         images: Image[];
         options: ImagesGalleryOptions;
     };
+    slug: string;
 }
 
-export default function ImageGallery({imagesGallery}: ImageGalleryProps) {
+export default async function ImageGallery({imagesGallery, slug}: ImageGalleryProps) {
     const {columns, tabletColumns, masonry} = imagesGallery.options;
 
-    if (masonry)
-        return (
-            <Masonry className="image-gallery" columns={{768: tabletColumns ? tabletColumns : 1, 1184: columns ? columns : 2}} gap={8}>
-                {imagesGallery.images.map((image, index) => (
-                    <ImageWithCaption key={index} image={image.src} alt={image.alt}/>
-                ))}
-            </Masonry>
-        );
+    const imageElements = imagesGallery.images.map((image, index) => (
+        <ImageWithCaption key={index} image={image.src} alt={image.alt} slug={slug}/>
+    ));
 
+    // If masonry is enabled, wrap in client component
+    if (masonry) {
+        return (
+            <MasonryLayout
+                columns={columns ? columns : 2}
+                tabletColumns={tabletColumns ? tabletColumns : 1}
+                fallbackClassName="image-gallery"
+                fallbackStyle={{"--column-num": columns ? columns : 2, "--tablet-column-num": tabletColumns ? tabletColumns : 1} as CSSProperties}
+            >
+                {imageElements}
+            </MasonryLayout>
+        );
+    }
+
+    // Default server-side grid layout
     return (
         <div className="image-gallery"
-             style={{"--column-num": columns ? columns : 2, "--tablet-column-num": tabletColumns? tabletColumns : 1} as CSSProperties}>
-            {imagesGallery.images.map((image, index) => (
-                <ImageWithCaption key={index} image={image.src} alt={image.alt}/>
-            ))}
+             style={{"--column-num": columns ? columns : 2, "--tablet-column-num": tabletColumns ? tabletColumns : 1} as CSSProperties}>
+            {imageElements}
         </div>
     );
 }

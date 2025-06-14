@@ -1,5 +1,3 @@
-"use client";
-
 import SectionHeader from "@/components/SectionHeader";
 import { toKebabCase } from "@/utils/toKebabCase";
 import { ReactNode } from "react";

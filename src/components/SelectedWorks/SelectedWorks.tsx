@@ -4,7 +4,7 @@ import "./SelectedWorks.scss";
 import SectionHeader from "@/components/SectionHeader";
 import projectData from "@/data/projectLinks.json";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
-import { CldImage } from "next-cloudinary";
+import Image from 'next/image'
 import Link from "next/link";
 import { CSSProperties } from "react";
 
@@ -25,6 +25,8 @@ export default function SelectedWorks({title, currentProject}: SelectedWorksProp
 
             <ul className="selected-works__grid">
                 {projectData.projectLinks.map((project) => {
+                    const imgSrc = `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}${project.link}/${project.previewImage}.webp`;
+
                     if (currentProject !== project.link && project.featured === true) {
                         index = index + 1;
                         return (
@@ -37,12 +39,12 @@ export default function SelectedWorks({title, currentProject}: SelectedWorksProp
                                     aria-label={`View project: ${project.title} Case Study`}
                                 >
                                     <div className="selected-works__image-container">
-                                        <CldImage
+                                        <Image
                                             className="selected-works__image"
-                                            src={project.previewImage}
+                                            src={imgSrc}
                                             alt={`Preview screenshot of ${project.title}`}
-                                            width={600}
-                                            height={600}
+                                            width={500}
+                                            height={500}
                                             quality={50}
                                         />
                                     </div>

@@ -34,7 +34,7 @@ export default function SelectedWorks({title, currentProject}: SelectedWorksProp
                                     style={{"--hover-color": project.theme.lightThemeColor} as CSSProperties}
                                     href={project.link}
                                     onClick={handleNavigation(project.link)}
-                                    aria-label={`View project: ${project.title} (${project.type})`}
+                                    aria-label={`View project: ${project.title} Case Study`}
                                 >
                                     <div className="selected-works__image-container">
                                         <CldImage
@@ -49,8 +49,8 @@ export default function SelectedWorks({title, currentProject}: SelectedWorksProp
 
                                     <div className="selected-works__text-container">
                                         <div className='selected-works__header'>
-                                            <div>
-                                                <p>{project.type}</p>
+                                            <div className='selected-works__title'>
+                                                <p><span className='medium'>Timeline:</span> {project.timeline}</p>
                                                 <h2 className="heading-md">{project.title}</h2>
                                             </div>
 

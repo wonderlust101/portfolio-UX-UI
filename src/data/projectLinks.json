@@ -3,7 +3,7 @@
     {
       "title": "Excel Society Website Redesign",
       "link": "/excel-society-redesign",
-      "type": "UX Case Study | Webflow CMS",
+      "timeline": "Jan 2025 – Apr 2025",
       "description": "A redesign of Excel Society’s website focused on improving usability, accessibility, and improved staff content management.",
       "previewImage": "excel-society-preview-square_ktrsnz",
       "theme": {
@@ -14,15 +14,15 @@
       "featured": true,
       "tags": [
         "Web Design",
-        "Webflow CMS",
         "Accessibility",
+        "Webflow CMS",
         "Nonprofit"
       ]
     },
     {
       "title": "Designing an AR App for Telus World of Science",
       "link": "/telus-world-of-science-guide-book",
-      "type": "UX Case Study | Mobile App",
+      "timeline": "Sept 2024 – Dec 2024",
       "description": "A mobile AR app created to enhance navigation, accessibility, and engagement for visitors at Telus World of Science Edmonton.",
       "previewImage": "telus-square_mjt24z",
       "theme": {
@@ -41,7 +41,7 @@
     {
       "title": "Immersive VR for Geospatial Visualization",
       "link": "/vr-data-visualization",
-      "type": "XR Case Study | Virtual Reality",
+      "timeline": "Jan 2025 – Apr 2025",
       "description": "A VR tool designed to help urban planners and analysts explore geospatial data layers in 3D using the Meta Quest headset.",
       "previewImage": "vr-visualization-preview-square_ksjnll",
       "theme": {
@@ -52,8 +52,8 @@
       "featured": true,
       "tags": [
         "Virtual Reality",
+        "Meta Quest",
         "Data Visualization",
-        "Geospatial Data",
         "Urban Planning"
       ]
     }

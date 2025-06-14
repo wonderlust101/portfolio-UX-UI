@@ -20,7 +20,7 @@ async function generateProjectLinks() {
             links.push({
                 title: data.productName,
                 link : `/${slug}`,
-                type: data.type,
+                timeline: data.timeline,
                 description: data.metadata.description,
                 previewImage: data.heroImageTablet,
                 theme: data.theme,

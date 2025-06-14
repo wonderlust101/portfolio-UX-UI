@@ -129,6 +129,11 @@
     gap: 1rem;
   }
 
+  &__title {
+    display: grid;
+    gap: 0.25rem;
+  }
+
   &__tags {
     display: flex;
     flex-wrap: wrap;

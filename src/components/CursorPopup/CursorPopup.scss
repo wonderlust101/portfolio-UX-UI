@@ -1,0 +1,44 @@
+.cursor-popup {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  pointer-events: none;
+
+  &--fade-in {
+    animation: cursor-popup-fade-in 0.2s ease-out forwards;
+  }
+
+  &--fade-out {
+    animation: cursor-popup-fade-out 0.3s ease-out forwards;
+  }
+}
+
+// Keyframe animations
+@keyframes cursor-popup-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cursor-popup-fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

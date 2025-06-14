@@ -24,7 +24,8 @@ async function generateProjectLinks() {
                 description: data.metadata.description,
                 previewImage: data.heroImageTablet,
                 theme: data.theme,
-                featured: data.featured
+                featured: data.featured,
+                tags: data.tags,
             });
         }
 

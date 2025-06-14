@@ -2,8 +2,9 @@ import type { ReactNode } from "react";
 
 export type ProjectData = {
     productName: string;
-    metadata: Metadata;
     projectType: string;
+    tags: string[];
+    metadata: Metadata;
     heroImage: string;
     heroImageTablet: string;
     theme: Theme;

@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
     ],    images: {
         domains: ['res.cloudinary.com'],
     },
-};
+    experimental: {
+        cssChunking: true,
+    },
+} satisfies NextConfig;
 
 export default withNextVideo(nextConfig);

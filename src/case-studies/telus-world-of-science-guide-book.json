@@ -1,6 +1,13 @@
 {
   "productName"    : "Designing an AR App for Telus World of Science",
-  "type"           : "UX & UI Design",
+  "projectType"    : "Guiding Discovery Through Play",
+  "type"           : "UX Case Study | Mobile App",
+  "tags"            : [
+    "Mobile App",
+    "Gamification",
+    "Augmented Reality",
+    "Science Centre"
+  ],
   "featured"       : true,
   "metadata"       : {
     "title"      : "Designing an AR App for Telus World of Science",
@@ -17,7 +24,6 @@
     "imageUrl"   : "/images/shared/telus-preview.webp",
     "url"        : "https://sergei-borja.dev/telus-world-of-science-guide-book"
   },
-  "projectType"    : "Guiding Discovery Through Play",
   "heroImage"      : "telus-wide_dqk8ar",
   "heroImageTablet": "telus-square_mjt24z",
   "theme"          : {
@@ -473,12 +479,12 @@
                 "before": {
                   "text" : "Users had to use their |cameras to scan exhibits| to answer stamp book questions. However, it also created a barrier for those with camera issues or visual accessibility needs, |which may cause a missed interaction with the user|.",
                   "image": "changes-1_vpexsq",
-                  "alt": "App view of a phone camera scanning an exhibit and adding a digital stamp to the user’s stamp book.”"
+                  "alt"  : "App view of a phone camera scanning an exhibit and adding a digital stamp to the user’s stamp book.”"
                 },
                 "after" : {
                   "text" : "To improve accessibility, we added a |\"Type in Answer\" option| directly below the scanner interface. |This change provides a reliable alternative for users experiencing technical problems or physical limitations|.",
                   "image": "changes-2_locbpk",
-                  "alt": "App popup offering a ‘Type in Answer’ text field for accessibility or technical issues."
+                  "alt"  : "App popup offering a ‘Type in Answer’ text field for accessibility or technical issues."
                 }
               }
             },
@@ -489,12 +495,12 @@
                 "before": {
                   "text" : "Before our usability test, we didn't account for users with mobility aids like wheelchairs, strollers, or individuals with low vision or sensory sensitivity. Our |current map| makes it difficult for the mentioned users to use our navigation features. |This created friction in how they moved through the space|.",
                   "image": "changes-3_to8mqs",
-                  "alt": "Our initial design of the science centre map without consideration for accessibility or technical issues."
+                  "alt"  : "Our initial design of the science centre map without consideration for accessibility or technical issues."
                 },
                 "after" : {
                   "text" : "To address this gap, we introduced an |accessibility menu| where users can personalize their experience by selecting from several options to |tailor the map visuals and routes|. |This helps meet individual needs, improving usability and inclusion from the start of their visit|.",
                   "image": "changes-4_lh30lw",
-                  "alt": "Accessibility Menu screen listing different accessibility options to tailor map visuals and routes."
+                  "alt"  : "Accessibility Menu screen listing different accessibility options to tailor map visuals and routes."
                 }
               }
             }

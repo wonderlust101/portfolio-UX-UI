@@ -8,15 +8,18 @@
 
   &__type {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     align-content: flex-start;
     gap: 3rem;
 
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
+      grid-template-columns: 1fr;
       gap: 2rem;
     }
 
     & > section {
       display: grid;
+      align-content: flex-start;
       justify-items: flex-start;
       gap: 0.75rem;
     }
@@ -34,7 +37,7 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     width: 100%;
 
@@ -56,7 +59,7 @@
     align-items: flex-end;
     grid-template-columns: 1fr max-content;
     position: relative;
-    padding: 6rem 1rem 1rem;
+    padding: 4rem 1rem 1rem;
     background-color: $clr-grey-35;
     border-radius: $border-radius;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
@@ -76,8 +79,8 @@
   }
 
   &__icon {
-    height: 10rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
     position: absolute;
     top: 50%;
     right: 2rem;
@@ -88,15 +91,20 @@
     transition: transform 0.15s ease-in-out;
 
     @include breakpoint(large) {
-      height: 8rem;
-      width: 8rem;
+      height: 6rem;
+      width: 6rem;
     }
 
     @include breakpoint(medium) {
-      right: 50%;
-      height: 16rem;
-      width: 16rem;
+      right: 2rem;
       opacity: 15%;
+      transform: rotate(15deg) translate(0, -50%);
+    }
+
+    @include breakpoint(small) {
+      height: 8rem;
+      width: 8rem;
+      right: 50%;
       transform: rotate(15deg) translate(50%, -50%);
     }
   }

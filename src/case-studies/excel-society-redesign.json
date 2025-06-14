@@ -1,7 +1,13 @@
 {
   "productName"    : "Excel Society Website Redesign",
   "projectType"    : "Enhancing Accessibility and Community Engagement",
-  "type"           : "UX & UI Design | Webflow",
+  "type"           : "UX Case Study | Webflow CMS",
+  "tags"           : [
+    "Web Design",
+    "Accessibility",
+    "Webflow CMS",
+    "Nonprofit"
+  ],
   "featured"       : true,
   "metadata"       : {
     "title"      : "Excel Society Website Redesign",
@@ -396,7 +402,7 @@
                 "before": {
                   "text" : "Some of the feedback highlighted that dense sections of text felt overwhelming and did not encourage users to read beyond the first paragraph.\n\nTo improve this, we initially introduced a toggle button that allowed users to choose how much content they wanted to view by showing or hiding sections.",
                   "image": "change-1_vwm9t6",
-                  "alt": "Design variation introducing a toggle button to expand or collapse dense content sections, aimed at improving user readability and reducing text overload."
+                  "alt"  : "Design variation introducing a toggle button to expand or collapse dense content sections, aimed at improving user readability and reducing text overload."
                 },
                 "option": {
                   "reversed": true
@@ -410,7 +416,7 @@
                 "before": {
                   "text" : "However, we noticed that this approach sometimes left pages looking empty, and there was also a concern that users might miss the toggle button entirely, leading to important content being overlooked.\n\nTo address the issue, we reorganized the content into boxes and add more icons, white space, and visual hierarchies, effectively breaking up large text blocks into sections that are easier to scan and comprehend.",
                   "image": "change-2_w0dssk",
-                  "alt": "Updated content layout using boxed sections with added icons, whitespace, and visual hierarchy to improve readability and information scannability."
+                  "alt"  : "Updated content layout using boxed sections with added icons, whitespace, and visual hierarchy to improve readability and information scannability."
                 },
                 "option": {
                   "reversed": true

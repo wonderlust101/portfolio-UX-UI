@@ -119,6 +119,7 @@ p, dt, dd, li {
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.025rem;
 
   @include a.breakpoint(medium) {
     font-size: 0.75rem;
@@ -145,14 +146,9 @@ p, dt, dd, li {
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: background-size 0.36s ease-in-out;
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.02rem;
   line-height: 1.7;
-
-  @include a.breakpoint(small) {
-    font-size: 1.1rem;
-  }
 
   &:hover {
     background-size: 100% 3px;

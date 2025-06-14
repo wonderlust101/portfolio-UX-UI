@@ -1,6 +1,13 @@
 {
   "productName"    : "Immersive VR for Geospatial Visualization",
-  "type"           : "UX & UI Design | VR Unity Development",
+  "projectType"    : " A Spatial Data Explorer for Meta Quest",
+  "type"           : "XR Case Study | Virtual Reality",
+  "tags"            : [
+    "Virtual Reality",
+    "Meta Quest",
+    "Data Visualization",
+    "Urban Planning"
+  ],
   "featured"       : true,
   "metadata"       : {
     "title"      : "Immersive VR for Geospatial Visualization",
@@ -17,7 +24,6 @@
     "imageUrl"   : "/images/shared/vr-visualization-preview.webp",
     "url"        : "https://sergei-borja.dev/vr-data-visualization"
   },
-  "projectType"    : " A Spatial Data Explorer for Meta Quest",
   "heroImage"      : "vr-visualization-preview-wide_xyswfp",
   "heroImageTablet": "vr-visualization-preview-square_ksjnll",
   "theme"          : {

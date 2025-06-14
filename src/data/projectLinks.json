@@ -3,7 +3,7 @@
     {
       "title": "Excel Society Website Redesign",
       "link": "/excel-society-redesign",
-      "type": "UX & UI Design | Webflow",
+      "type": "UX Case Study | Webflow CMS",
       "description": "A redesign of Excel Society’s website focused on improving usability, accessibility, and improved staff content management.",
       "previewImage": "excel-society-preview-square_ktrsnz",
       "theme": {
@@ -11,38 +11,18 @@
         "lightThemeColor": "#A5B1BB",
         "darkThemeColor": "#0f1e2c"
       },
-      "featured": true
-    },
-    {
-      "title": "MacEwan Room Booking Redesign",
-      "link": "/macewan-room-booking-redesign",
-      "type": "UX & UI Design",
-      "description": "A mobile redesign of MacEwan’s room booking system focused on improving usability, accessibility, and speed for students managing study and group sessions.",
-      "previewImage": "skyrim-square_jtisqs",
-      "theme": {
-        "themeColor": "#7e1a2a",
-        "lightThemeColor": "#bf8d95",
-        "darkThemeColor": "#3f0d15"
-      },
-      "featured": false
-    },
-    {
-      "title": "Skyrim Quest Log Redesign",
-      "link": "/skyrim-quest-log-redesign",
-      "type": "UX & UI Design",
-      "description": "A UX/UI redesign of Skyrim's quest log, transforming it into an intuitive and immersive journal with improved clarity, filtering, and usability for modern players.",
-      "previewImage": "skyrim-square_jtisqs",
-      "theme": {
-        "themeColor": "#5b503e",
-        "lightThemeColor": "#a39b8f",
-        "darkThemeColor": "#28241c"
-      },
-      "featured": false
+      "featured": true,
+      "tags": [
+        "Web Design",
+        "Webflow CMS",
+        "Accessibility",
+        "Nonprofit"
+      ]
     },
     {
       "title": "Designing an AR App for Telus World of Science",
       "link": "/telus-world-of-science-guide-book",
-      "type": "UX & UI Design",
+      "type": "UX Case Study | Mobile App",
       "description": "A mobile AR app created to enhance navigation, accessibility, and engagement for visitors at Telus World of Science Edmonton.",
       "previewImage": "telus-square_mjt24z",
       "theme": {
@@ -50,12 +30,18 @@
         "lightThemeColor": "#cb8fc7",
         "darkThemeColor": "#4c0f48"
       },
-      "featured": true
+      "featured": true,
+      "tags": [
+        "Mobile App",
+        "Gamification",
+        "Augmented Reality",
+        "Science Centre"
+      ]
     },
     {
       "title": "Immersive VR for Geospatial Visualization",
       "link": "/vr-data-visualization",
-      "type": "UX & UI Design | VR Unity Development",
+      "type": "XR Case Study | Virtual Reality",
       "description": "A VR tool designed to help urban planners and analysts explore geospatial data layers in 3D using the Meta Quest headset.",
       "previewImage": "vr-visualization-preview-square_ksjnll",
       "theme": {
@@ -63,7 +49,13 @@
         "lightThemeColor": "#8ca3cd",
         "darkThemeColor": "#0c234d"
       },
-      "featured": true
+      "featured": true,
+      "tags": [
+        "Virtual Reality",
+        "Data Visualization",
+        "Geospatial Data",
+        "Urban Planning"
+      ]
     }
   ]
 }

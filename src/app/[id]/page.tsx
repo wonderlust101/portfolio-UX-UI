@@ -54,7 +54,7 @@ export default async function CaseStudyPage({params}: Props) {
                         </div>
                     </div>
 
-                    <SelectedWorks title="Other Works" currentProject={`/${id}`}/>
+                    <SelectedWorks title="Other Case Studies" currentProject={`/${id}`}/>
                 </div>
             </main>
         </>

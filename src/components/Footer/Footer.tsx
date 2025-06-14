@@ -2,47 +2,10 @@
 
 import "./Footer.scss";
 import Button from "@/components/Button";
-import List from "@/components/List";
+import ContactList from "@/components/ContactList";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import Link from "next/link";
 import React from "react";
-
-const contactList = [
-    {
-        header: "Email",
-        text  : "sergei.borja0701@gmail.com"
-    },
-    {
-        header: "Phone",
-        text  : "(780) 886-0023"
-    },
-    {
-        header: "LinkedIn",
-        text  : (
-            <a
-                className="link"
-                href="https://www.linkedin.com/in/sergei-borja/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                sergei-borja
-            </a>
-        )
-    },
-    {
-        header: "GitHub",
-        text  : (
-            <a
-                className="link"
-                href="https://github.com/wonderlust101"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                @wonderlust101
-            </a>
-        )
-    }
-];
 
 const navLinks = [
     {
@@ -90,7 +53,7 @@ export default function Footer() {
 
                     <div aria-labelledby="footer-contact-heading">
                         <h2 className="sr-only" id="footer-contact-heading">Contact Information</h2>
-                        <List items={contactList} type="meta" theme='dark'/>
+                        <ContactList/>
                     </div>
                 </section>
 

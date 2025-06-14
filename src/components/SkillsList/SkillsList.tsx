@@ -33,7 +33,8 @@ export default function SkillsList() {
                                         <span className="medium" key={skillName.header}>{skillName.header}</span>
 
                                         {skillName.icon &&
-                                            <img className="skills-list__icon" src={`/images/shared/${skillName.icon}`} alt="" aria-hidden={true}/>}
+                                            <img className="skills-list__icon" src={`/images/shared/${skillName.icon}`} alt="" aria-hidden={true}/>
+                                        }
                                     </li>
                                 ))}
                             </ul>

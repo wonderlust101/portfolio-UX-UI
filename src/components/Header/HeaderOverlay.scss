@@ -6,8 +6,6 @@
   width: 100%;
   color: $clr-white;
   background-color: $clr-black;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
   overscroll-behavior: contain;
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
   border-radius: 0 0 $border-radius $border-radius;

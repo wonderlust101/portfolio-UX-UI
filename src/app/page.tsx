@@ -32,7 +32,7 @@ export default async function Home() {
             <Hero/>
 
             <div className="grid-bleed home__content">
-                <SelectedWorks title="Selected Works" currentProject=""/>
+                <SelectedWorks title="Selected Case Studies" currentProject=""/>
                 <hr className="home__divider" aria-hidden="true"/>
                 <SkillsList/>
                 <hr className="home__divider" aria-hidden="true"/>

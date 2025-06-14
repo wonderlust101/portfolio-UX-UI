@@ -1,4 +1,4 @@
-import List from "@/components/List";
+import ContactList from "@/components/ContactList";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import { useFocusTrap } from "@/hooks/useFocusTrap";
 import Link from "next/link";
@@ -15,37 +15,6 @@ type HeaderLinkProps = {
     };
     toggleMenu: () => void;
 }
-
-const contactList = [
-    {header: "Email", text: "sergei.borja0701@gmail.com"},
-    {header: "Phone", text: "(780) 886-0023"},
-    {
-        header: "LinkedIn",
-        text  : (
-            <a
-                className="link"
-                href="https://www.linkedin.com/in/sergei-borja/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                sergei-borja
-            </a>
-        )
-    },
-    {
-        header: "GitHub",
-        text  : (
-            <a
-                className="link"
-                href="https://github.com/wonderlust101"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                @wonderlust101
-            </a>
-        )
-    }
-];
 
 const navLinks = [
     {
@@ -88,7 +57,7 @@ export default function HeaderOverlay({toggleMenu}: HeaderOverlayProps) {
             <div className="header-overlay__copy">
                 <div className="header-overlay__contact">
                     <div className="header-overlay__info">
-                        <List items={contactList} type="meta" theme="dark"/>
+                        <ContactList/>
                     </div>
                 </div>
 

@@ -157,8 +157,6 @@
   }
 
   &__description {
-    font-size: 1.1rem;
-
     @include breakpoint(medium) {
       margin-top: -1rem;
     }

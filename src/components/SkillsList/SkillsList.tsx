@@ -15,7 +15,7 @@ export default function SkillsList() {
 
             <div className="skills-list__type">
                 {skills.map((skill) => (
-                    <section key={skill.title} role="region" aria-label={toKebabCase(skill.title)}>
+                    <section className="skills-list__type-container" key={skill.title} role="region" aria-label={toKebabCase(skill.title)}>
                         <SectionHeader type="subsection" id={toKebabCase(skill.title)}>
                             {skill.title}
                         </SectionHeader>

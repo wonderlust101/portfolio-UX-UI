@@ -12,7 +12,8 @@ export default function ScrollAnimations() {
         if (!sectionsContainer) return;
 
         const elementsToAnimate = sectionsContainer.querySelectorAll(
-            '.project-summary, .content-block, .case-study-page__divider, .home__divider, .case-study-navigation, .selected-works, .skills-list, .about'
+            '.project-summary, .content-block, .case-study-page__divider, .home__divider, .case-study-navigation, #selected-works-heading,' +
+            '#skills-and-tools-heading, .selected-works__list-item, .skills-list__type-container, .about'
         );
 
         gsap.set(elementsToAnimate, {

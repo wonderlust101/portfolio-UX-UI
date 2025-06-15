@@ -44,8 +44,8 @@
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 6rem;
-    margin-bottom: 3rem;
-    padding: 0 3rem;
+    margin-bottom: 2.5rem;
+    padding: 0 2.5rem;
     background-color: $clr-grey-35;
     border-radius: $border-radius;
     transition: all 0.3s ease-in-out;
@@ -84,9 +84,9 @@
 
   &__image-container {
     position: relative;
-    top: 3rem;
+    top: 2.5rem;
     border-radius: $border-radius;
-    height: 28rem;
+    height: 24rem;
     aspect-ratio: 1/1;
 
     @include breakpoint(large) {

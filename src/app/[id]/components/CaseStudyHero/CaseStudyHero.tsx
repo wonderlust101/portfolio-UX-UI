@@ -92,7 +92,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
                     alt={`Screenshot preview of ${productName}, ${projectType}`}
                     height={1200}
                     width={1920}
-                    quality={75}
+                    quality={100}
                     priority
                 />
             </picture>

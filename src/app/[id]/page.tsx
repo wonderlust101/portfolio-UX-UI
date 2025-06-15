@@ -3,6 +3,7 @@ import CaseStudySection from "@/app/[id]/components/CaseStudySection";
 import ProjectSummary from "@/app/[id]/components/ProjectSummary";
 import CaseStudyNavigation from "@/components/CaseStudyNavigation";
 import Revealer from "@/components/Revealer";
+import ScrollAnimations from "@/components/ScrollAnimations/ScrollAnimations";
 import SelectedWorks from "@/components/SelectedWorks";
 import ThemeEffect from "@/components/ThemeEffect";
 import { getCaseStudy } from "@/lib/getCaseStudy";
@@ -30,6 +31,7 @@ export default async function CaseStudyPage({params}: Props) {
             <div aria-hidden={true}>
                 <Revealer/>
                 <ThemeEffect theme={caseStudy.theme}/>
+                <ScrollAnimations />
             </div>
 
             <main className="case-study-page" id="main-content" aria-labelledby="case-study-title">

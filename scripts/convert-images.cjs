@@ -43,6 +43,6 @@ function convertAndMoveImages(inputPath, outputPath) {
     });
 }
 
-console.log('🔄 Converting and moving images...');
+console.log('Converting and moving images...');
 ensureDir(outputDir);
 convertAndMoveImages(inputDir, outputDir);

@@ -26,7 +26,25 @@ const baseConfig: NextConfig = {
         ]
     },
     experimental: {
-        cssChunking: true
+        cssChunking: 'strict'
+    },
+    webpack: (config, { dev, isServer }) => {
+        if (!dev && !isServer) {
+            // Optimize CSS in production
+            config.optimization.splitChunks = {
+                ...config.optimization.splitChunks,
+                cacheGroups: {
+                    ...config.optimization.splitChunks.cacheGroups,
+                    styles: {
+                        name: 'styles',
+                        test: /\.(css|scss|sass)$/,
+                        chunks: 'all',
+                        enforce: true,
+                    },
+                },
+            }
+        }
+        return config
     }
 } satisfies NextConfig;
 

@@ -1,6 +1,7 @@
 import About from "@/app/home/components/About";
 import Hero from "@/app/home/components/Hero";
 import Revealer from "@/components/Revealer";
+import ScrollAnimations from "@/components/ScrollAnimations/ScrollAnimations";
 import SkillsList from "@/components/SkillsList";
 import ThemeEffect from "@/components/ThemeEffect";
 import { ProfileData } from "@/types/home";
@@ -27,6 +28,7 @@ export default async function Home() {
             <div aria-hidden={true}>
                 <Revealer/>
                 <ThemeEffect/>
+                <ScrollAnimations />
             </div>
 
             <Hero/>

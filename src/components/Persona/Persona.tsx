@@ -22,8 +22,10 @@ export default async function Persona({personaData, slug}: PersonaProps) {
                         src={imgSrc}
                         alt={`Portrait of ${personaData.name}`}
                         fill
+                        sizes="(max-width: 80rem) 100vw,(max-width: 48rem) 640px,800px"
                         placeholder={blurDataURL ? "blur" : "empty"}
                         blurDataURL={blurDataURL}
+                        quality={75}
                     />
                 </figure>
 

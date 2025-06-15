@@ -44,6 +44,7 @@ export default function SelectedWorks({title, currentProject}: SelectedWorksProp
                                             src={imgSrc}
                                             alt={`Preview screenshot of ${project.title}`}
                                             fill
+                                            sizes="100vw"
                                             quality={75}
                                         />
                                     </div>

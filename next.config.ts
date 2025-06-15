@@ -23,7 +23,6 @@ const nextConfig: NextConfig = {
     experimental: {
         cssChunking: true,
     },
-    staticPageGenerationTimeout: 120,
 } satisfies NextConfig;
 
 export default withPlaiceholder(nextConfig);

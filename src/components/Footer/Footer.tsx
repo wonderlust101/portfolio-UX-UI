@@ -5,7 +5,6 @@ import Button from "@/components/Button";
 import ContactList from "@/components/ContactList";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import Link from "next/link";
-import React from "react";
 
 const navLinks = [
     {

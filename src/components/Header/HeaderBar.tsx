@@ -2,7 +2,6 @@ import Button from "@/components/Button";
 import HamburgerButton from "@/components/HamburgerButton";
 import { useAnimatedNavigation } from "@/hooks/useAnimatedNavigation";
 import Link from "next/link";
-import React from "react";
 import "./HeaderBar.scss";
 
 type HeaderBarProps = {

@@ -1,5 +1,4 @@
 "use client";
-
 import Button from "@/components/Button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -35,48 +34,41 @@ export default function Hero() {
 
         const runAnimation = () => {
             const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
-
             const nameAnimationDelay = isFirefox ? 0 : 1.25;
             const contentAnimationDelay = isFirefox ? 0.75 : 2.5;
 
             const splitText = SplitText.create(".hero__name", {
-                type      : "chars",
+                type: "chars",
                 charsClass: "letter"
             });
 
-            gsap.set(splitText.chars, {y: "200%"});
-
+            gsap.set(splitText.chars, { y: "200%" });
             gsap.to(splitText.chars, {
-                y       : "0%",
+                y: "0%",
                 duration: 1.25,
-                stagger : 0.1,
-                delay   : nameAnimationDelay,
-                ease    : "power4.out"
+                stagger: 0.1,
+                delay: nameAnimationDelay,
+                ease: "power4.out"
             });
 
-            gsap.fromTo(
-                [paragraphRef.current, buttonRef.current],
-                {
-                    opacity: 0,
-                    y      : 60
-                },
-                {
-                    opacity   : 1,
-                    y         : 0,
-                    duration  : 1,
-                    stagger   : 0.15,
-                    delay     : contentAnimationDelay,
-                    ease      : "power4.out",
-                    clearProps: "all"
-                }
-            );
+            // Set initial state explicitly before animating
+            gsap.set([paragraphRef.current, buttonRef.current], {
+                opacity: 0,
+                y: 60
+            });
+
+            gsap.to([paragraphRef.current, buttonRef.current], {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                stagger: 0.15,
+                delay: contentAnimationDelay,
+                ease: "power4.out"
+            });
         };
 
-        if (document.fonts?.ready) {
-            document.fonts.ready.then(runAnimation);
-        } else {
-            runAnimation();
-        }
+        const timeout = setTimeout(runAnimation, 50);
+        return () => clearTimeout(timeout);
     }, [fontsLoaded]);
 
     return (
@@ -84,10 +76,9 @@ export default function Hero() {
             <div className="hero__body">
                 <h1 id="hero-heading" className="heading-xl hero__name" aria-label="Sergei Borja">
                     <span aria-hidden="true">
-                    Sergei <br className="hero__name--break"/> Borja
+                        Sergei <br className="hero__name--break"/> Borja
                     </span>
                 </h1>
-
                 <div>
                     <div className="hero__cta" ref={paragraphRef}>
                         <p className="hero__tag">
@@ -95,7 +86,6 @@ export default function Hero() {
                             Full Stack Developer, UX & UI Designer
                             <span aria-hidden={true}> ]</span>
                         </p>
-
                         <div ref={buttonRef}>
                             <Button color="accent" theme="light" size="lg" href="mailto:sergei.borja0701@gmail.com">
                                 Contact Me

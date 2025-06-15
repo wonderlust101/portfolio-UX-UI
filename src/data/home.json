@@ -26,28 +26,38 @@
       "skillList"  : [
         {
           "header": "User Interviews",
-          "tint"  : "#00000040"
+          "icon"  : "interview.svg",
+          "tint"  : "#FF8C0040"
         },
         {
           "header": "Usability Testing",
-          "tint"  : "#00000040"
+          "icon"  : "testing-color.svg",
+          "tint"  : "#28A74540"
         },
         {
           "header": "Information Architecture",
-          "tint"  : "#00000040"
+          "icon"  : "ia.svg",
+          "tint"  : "#007BFF40"
+        },
+        {
+          "header": "Visual Design",
+          "icon"  : "visual-design.svg",
+          "tint"  : "#6F42C140"
+        },
+        {
+          "header": "Wireframing",
+          "icon"  : "wireframe.svg",
+          "tint"  : "#343A4040"
+        },
+        {
+          "header": "Prototyping",
+          "icon"  : "prototype.svg",
+          "tint"  : "#17A2B840"
         },
         {
           "header": "Figma",
           "icon"  : "figma-color.svg",
-          "tint"  : "#00000040"
-        },
-        {
-          "header": "Wireframing",
-          "tint"  : "#00000040"
-        },
-        {
-          "header": "Prototyping",
-          "tint"  : "#00000040"
+          "tint"  : "#F24E1E40"
         }
       ]
     },
@@ -86,9 +96,19 @@
           "tint"  : "#00000040"
         },
         {
+          "header": "Redux",
+          "icon"  : "redux.svg",
+          "tint"  : "#764ABC40"
+        },
+        {
           "header": "Vite",
           "icon"  : "vite.svg",
           "tint"  : "#FFB60E40"
+        },
+        {
+          "header": "GSAP",
+          "icon"  : "gsap.svg",
+          "tint"  : "#8ac64040"
         }
       ]
     },
@@ -96,6 +116,11 @@
       "title"      : "Back-End Development",
       "description": "I develop robust server-side logic using Node.js, Express, and REST or GraphQL APIs. I’m comfortable handling data, building scalable systems, and connecting front-end interfaces to reliable back-end services.",
       "skillList"  : [
+        {
+          "header": "Python",
+          "icon"  : "python.svg",
+          "tint"  : "#366D9A40"
+        },
         {
           "header": "Node.js",
           "icon"  : "nodejs.svg",
@@ -108,7 +133,18 @@
         },
         {
           "header": "RESTful APIs",
-          "tint"  : "#00000040"
+          "icon"  : "api.svg",
+          "tint"  : "#6F42C140"
+        },
+        {
+          "header": "MongoDB",
+          "icon"  : "mongodb.svg",
+          "tint"  : "#6cac4840"
+        },
+        {
+          "header": "mySQL",
+          "icon"  : "mysql.svg",
+          "tint"  : "#00546B40"
         },
         {
           "header": "GraphQL",
@@ -121,14 +157,14 @@
           "tint"  : "#00000040"
         },
         {
-          "header": "mySQL",
-          "icon"  : "mysql.svg",
-          "tint"  : "#00546B40"
+          "header": "JWT",
+          "icon"  : "jwt.svg",
+          "tint"  : "#00f2e640"
         },
         {
-          "header": "Python",
-          "icon"  : "python.svg",
-          "tint"  : "#366D9A40"
+          "header": "Redis",
+          "icon"  : "redis.svg",
+          "tint"  : "#C6302B40"
         }
       ]
     },

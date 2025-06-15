@@ -32,8 +32,17 @@
   }
 
   &__image {
-    object-fit: cover;
+    position: relative;
+
     max-height: 32rem;
     width: 100%;
+
+    @include breakpoint(medium) {
+      aspect-ratio: var(--aspect-ratio);
+    }
+
+    & > img {
+      object-fit: cover;
+    }
   }
 }

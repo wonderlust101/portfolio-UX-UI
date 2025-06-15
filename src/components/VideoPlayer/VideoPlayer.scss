@@ -1,6 +1,13 @@
 .video-player {
   border-radius: $border-radius;
   overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  &__container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
 
   &__loading {
     width: 100%;

@@ -23,7 +23,7 @@ export default function ContentRenderer({contents, slug}: ContentRendererProps) 
                     case "imagesGallery":
                         return <ImageGallery key={index} imagesGallery={content.imagesGallery} slug={slug}/>;
                     case "persona":
-                        return <Persona key={index} personaData={content.persona}/>;
+                        return <Persona key={index} personaData={content.persona} slug={slug}/>;
                     case "text":
                         return <p key={index}>{content.text}</p>;
                     case "userStatement":

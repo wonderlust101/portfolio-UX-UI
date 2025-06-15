@@ -17,7 +17,8 @@
 
   &__bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: max-content 1fr;
+    align-content: center;
     gap: 3rem;
 
     @include breakpoint(small) {
@@ -27,17 +28,12 @@
 
   &__image-container {
     position: relative;
+    aspect-ratio: 4/3;
   }
 
   &__image {
-    max-height: 26rem;
-    width: 100%;
     justify-self: center;
     object-fit: cover;
-
-    @include breakpoint(small) {
-      max-width: unset;
-    }
   }
 
   &__info {

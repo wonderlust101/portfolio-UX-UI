@@ -37,11 +37,11 @@ export default function LazyVideoPlayer({videoLink}: LazyVideoPlayerProps) {
     }, []);
 
     return (
-        <div ref={placeholderRef} style={{minHeight: 200}}>
+        <div className='video-player__container' ref={placeholderRef}>
             {visible ? (
                 <VideoPlayer videoLink={videoSrc}/>
             ) : (
-                <div className="video-loading-placeholder"/>
+                <div className="video-player__loading"/>
             )}
         </div>
     );
@@ -50,8 +50,7 @@ export default function LazyVideoPlayer({videoLink}: LazyVideoPlayerProps) {
 function VideoPlayer({videoLink}: VideoPlayerProps) {
     return (
         <MediaThemeSutro className="video-player">
-            <video slot="media" src={videoLink}>
-            </video>
+            <video slot="media" src={videoLink}></video>
         </MediaThemeSutro>
     );
 }

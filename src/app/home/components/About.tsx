@@ -1,16 +1,21 @@
-"use client";
-
 import List from "@/components/List";
 import "./About.scss";
 import SectionHeader from "@/components/SectionHeader";
 import type { ProfileData } from "@/types/home";
+import { getBlurDataURL } from "@/utils/getBlurDataURL";
 import Image from "next/image";
+import probe from "probe-image-size";
+import { CSSProperties } from "react";
 
 type AboutProps = {
     aboutText: ProfileData|null;
 }
 
-export default function About({aboutText}: AboutProps) {
+export default async function About({aboutText}: AboutProps) {
+    const imgSrc = `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/sergei-borja.webp`;
+    const {width, height} = await probe(imgSrc);
+    const blurDataURL = await getBlurDataURL(imgSrc);
+
     return (
         <section className="about" id="about-me" aria-labelledby="about-me-heading">
             <SectionHeader type="section" icon="about" id="about-me-heading">
@@ -23,15 +28,18 @@ export default function About({aboutText}: AboutProps) {
                     <List items={aboutText!.additionalDetails} type="meta"/>
                 </div>
 
-                <div className="about__image">
+                <div
+                    className="about__image"
+                    style={{"--aspect-ratio": `${width / height}`} as CSSProperties}
+                >
                     <Image
-                        className="about__image"
                         src={`${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/sergei-borja.webp`}
                         alt="Portrait photograph of Sergei Borja"
                         loading="lazy"
-                        width={700}
-                        height={700}
+                        fill
                         quality={80}
+                        placeholder={blurDataURL? "blur" : "empty"}
+                        blurDataURL={blurDataURL}
                     />
                 </div>
             </div>

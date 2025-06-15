@@ -22,6 +22,7 @@
     "next": "15.3.3",
     "next-view-transitions": "^0.3.4",
     "player.style": "^0.1.9",
+    "probe-image-size": "^7.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-layout-masonry": "^1.2.0",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/probe-image-size": "^7.2.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/react-modal-image": "^2.6.4",

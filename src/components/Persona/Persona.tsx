@@ -1,19 +1,17 @@
-"use client";
-
 import SectionHeader from "@/components/SectionHeader";
 import type { Persona } from "@/types/case-study";
 import "./Persona.scss";
+import { getBlurDataURL } from "@/utils/getBlurDataURL";
 import Image from "next/image";
-import { useParams } from "next/navigation";
 
 type PersonaProps = {
     personaData: Persona;
+    slug: string;
 }
 
-export default function Persona({personaData}: PersonaProps) {
-    const params = useParams();
-    const slug = params.id as string;
+export default async function Persona({personaData, slug}: PersonaProps) {
     const imgSrc = `${process.env.NEXT_PUBLIC_R2_BUCKET_URL}/${slug}/${personaData.image}.webp`;
+    const blurDataURL = await getBlurDataURL(imgSrc);
 
     return (
         <section className="persona" aria-labelledby="persona-heading">
@@ -23,13 +21,10 @@ export default function Persona({personaData}: PersonaProps) {
                         className="persona__image"
                         src={imgSrc}
                         alt={`Portrait of ${personaData.name}`}
-                        height={600}
-                        width={600}
+                        fill
+                        placeholder={blurDataURL ? "blur" : "empty"}
+                        blurDataURL={blurDataURL}
                     />
-
-                    <figcaption className="sr-only">
-                        Portrait of {personaData.name}
-                    </figcaption>
                 </figure>
 
                 <div className="persona__info">

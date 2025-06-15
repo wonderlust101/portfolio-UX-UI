@@ -101,11 +101,6 @@
           "tint"  : "#764ABC40"
         },
         {
-          "header": "Vite",
-          "icon"  : "vite.svg",
-          "tint"  : "#FFB60E40"
-        },
-        {
           "header": "GSAP",
           "icon"  : "gsap.svg",
           "tint"  : "#8ac64040"
@@ -178,19 +173,39 @@
           "tint"  : "#DE4C3640"
         },
         {
-          "header": "Docker",
-          "icon"  : "docker.svg",
-          "tint"  : "#0091E240"
-        },
-        {
-          "header": "Kubernetes",
-          "icon"  : "kubernetes.svg",
-          "tint"  : "#326DE640"
+          "header": "npm",
+          "icon"  : "npm.svg",
+          "tint"  : "#CB383740"
         },
         {
           "header": "Jest",
           "icon"  : "jest.svg",
           "tint"  : "#C2132540"
+        },
+        {
+          "header": "Storybook",
+          "icon"  : "storybook.svg",
+          "tint"  : "#FF478540"
+        },
+        {
+          "header": "Vite",
+          "icon"  : "vite.svg",
+          "tint"  : "#FFB60E40"
+        },
+        {
+          "header": "Jira",
+          "icon"  : "jira.svg",
+          "tint"  : "#2684ff40"
+        },
+        {
+          "header": "Trello",
+          "icon"  : "trello.svg",
+          "tint"  : "#0091E640"
+        },
+        {
+          "header": "Slack",
+          "icon"  : "slack.svg",
+          "tint"  : "#248C7340"
         }
       ]
     }

@@ -86,7 +86,8 @@
     position: relative;
     top: 3rem;
     border-radius: $border-radius;
-    max-height: 28rem;
+    height: 28rem;
+    aspect-ratio: 1/1;
 
     @include breakpoint(large) {
       top: 2rem;
@@ -96,6 +97,7 @@
       top: unset;
       width: 100%;
       height: unset;
+      aspect-ratio: 1/1;
       margin-bottom: unset;
     }
   }

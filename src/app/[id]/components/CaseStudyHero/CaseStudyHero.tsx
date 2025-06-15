@@ -82,7 +82,7 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
             </h1>
 
             <picture
-                className={`case-study-hero__image-container`}
+                className="case-study-hero__image-container"
                 ref={imageRef}
             >
                 <source srcSet={imgSrcTablet} media="(max-width: 90rem)"/>
@@ -90,9 +90,9 @@ export default function CaseStudyHero({productName, projectType, heroImage, tabl
                     className="case-study-hero__image"
                     src={imgSrcDesktop}
                     alt={`Screenshot preview of ${productName}, ${projectType}`}
-                    height={1000}
-                    width={1200}
-                    quality={80}
+                    height={1200}
+                    width={1920}
+                    quality={75}
                     priority
                 />
             </picture>

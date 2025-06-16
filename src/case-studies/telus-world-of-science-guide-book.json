@@ -84,7 +84,7 @@
       "contents"   : [
         {
           "type": "text",
-          "text": "Visiting the science center is meant to be an immersive and exploratory experience, especially for families, children, and guests of all abilities. However, with so many exhibits, diverse visitor needs, and a dynamic physical environment, creating a cohesive, accessible journey across the space is an ongoing challenge. From orientation to interaction, every space shapes how visitors engage, learn, and move through the experience."
+          "text": "Visiting the science center is meant to be an immersive and exploratory experience, especially for families, children, and guests of all abilities. However, with so many exhibits, diverse visitor needs, and a dynamic physical environment, creating a cohesive, accessible journey across the space is an ongoing challenge. As a result, many visitors end up disoriented or frustrated, missing out on key learning moments and diminishing overall satisfaction."
         }
       ],
       "subsections": [
@@ -190,7 +190,7 @@
       "contents"   : [
         {
           "type": "text",
-          "text": "We visited the science centre for contextual research to understand visitor challenges and opportunities for AR and VR at Telus World of Science Edmonton. We interviewed staff to surface key pain points and gaps in existing wayfinding and engagement tools. We constructed a user statement and a persona to help us work towards a solution."
+          "text": "We visited the science centre for contextual research to understand visitor challenges and opportunities for AR and VR at Telus World of Science Edmonton. We received a tour and learned about key pain points and gaps in existing wayfinding and engagement tools. We constructed a user statement and a persona to help us work towards a solution."
         }
       ],
       "subsections": [
@@ -494,12 +494,12 @@
               "change": {
                 "header": "Added accessibility preferences for better usability",
                 "before": {
-                  "text" : "Before our usability test, we didn't account for users with mobility aids like wheelchairs, strollers, or individuals with low vision or sensory sensitivity. Our |current map| makes it difficult for the mentioned users to use our navigation features. |This created friction in how they moved through the space|.",
+                  "text" : "Before our usability test, we didn't account for users with mobility aids like wheelchairs, strollers, or individuals with low vision or sensory sensitivity. Our |current map| makes it difficult for the mentioned users to use our navigation features. This |created friction in how they moved through the space|.",
                   "image": "changes-3_to8mqs",
                   "alt"  : "Our initial design of the science centre map without consideration for accessibility or technical issues."
                 },
                 "after" : {
-                  "text" : "To address this gap, we introduced an |accessibility menu| where users can personalize their experience by selecting from several options to |tailor the map visuals and routes|. |This helps meet individual needs, improving usability and inclusion from the start of their visit|.",
+                  "text" : "To address this gap, we introduced an |accessibility menu| where users can personalize their experience by selecting from several options to |tailor the map visuals and routes|. This helps meet individual needs, |improving usability and inclusion from the start of their visit|.",
                   "image": "changes-4_lh30lw",
                   "alt"  : "Accessibility Menu screen listing different accessibility options to tailor map visuals and routes."
                 }

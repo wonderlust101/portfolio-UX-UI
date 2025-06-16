@@ -33,7 +33,7 @@
   },
   "projectSummary" : {
     "description": "In collaboration with |Excel Society| and the work-integrated learning platform |Ripen|, we built a responsive website in Webflow that enables staff to manage content easily and helps users find services, events, and other essential information through accessible and well-organized design.",
-    "role"       : "As a web developer, I collaborated with three other designer on UX research, wireframing and design. I also played a major role in front and backend development tasks, including implementing CMS structures, building responsive layouts, and implementing JavaScript using Webflow and third-party tools.",
+    "role"       : "As a web developer, I collaborated with three other designer on UX research, wireframing and design. I also played a major role in Webflow development, including implementing CMS structures, building responsive layouts, and implementing JavaScript and third-party tools.",
     "details"    : [
       {
         "header": "Course Name",
@@ -145,7 +145,7 @@
       "contents"   : [
         {
           "type": "text",
-          "text": "Working collaboratively, my team completely redesigned the website using a modern, responsive platform to address usability and maintenance challenges. Essential improvements included:"
+          "text": "Working with my team together, we completely redesigned the website using a modern platform to address usability and maintenance challenges. Essential improvements included:"
         },
         {
           "type" : "list",
@@ -187,7 +187,7 @@
       "contents"   : [
         {
           "type": "text",
-          "text": "The original Excel Society website presented major usability and maintenance issues for its primary audiences, including supporters, clients, and volunteers. We conducted a client interview, a card-sorting exercise, and a comprehensive content audit to uncover these issues."
+          "text": "Through the initial process of research, we learned that the original Excel Society website presented major usability for its primary audiences, including supporters, clients, and volunteers and maintenance issues for their staff. We conducted a client interview, a card-sorting exercise, and a comprehensive content audit to uncover these issues."
         }
       ],
       "subsections": [
@@ -288,7 +288,7 @@
               "text"  : "Drawing from our prototyping and feedback, we developed a clean and approachable design system aligned with Excel Society's mission and audience."
             },
             {
-              "header": "Prioritized Accessibility and Ease of Maintenance",
+              "header": "Improve the Accessibility and Ease of Maintenance",
               "text"  : "We designed the site to be responsive, accessible, and easy for staff to update, ensuring long-term usability without requiring technical expertise."
             }
           ]
@@ -375,7 +375,7 @@
       "contents"   : [
         {
           "type": "text",
-          "text": "After completing our initial design before implementation, we asked for feedback to gauge usability and clarity. While we did not conduct formal user testing sessions, we shared our design with peers in our class to gather informal impressions and suggestions. We also presented our prototype to the client to ensure it aligned with their goals and gain additional feedback."
+          "text": "After completing our initial design before implementation, we presented to the client for feedback to gauge usability as well to see if it aligned with our client's goal. While we did not conduct formal user testing sessions, we shared our design with peers in our class to gather informal impressions and suggestions."
         }
       ],
       "subsections": [
@@ -544,14 +544,14 @@
       "contents": [
         {
           "type": "text",
-          "text": "This project reinforced the importance of thoughtful content architecture and inclusive design—especially for nonprofits serving diverse users like donors, guardians, and clients. We delivered a welcoming, manageable, mission-aligned site by combining accessibility-first thinking with clear user pathways."
+          "text": "This project reinforced the importance of thoughtful content architecture and inclusive design, especially for nonprofits serving diverse users like supporters, clients, and volunteers. We delivered a welcoming and manageable site by focusing on accessibility with clear user pathways."
         },
         {
           "type" : "list",
           "items": [
             {
               "header": "Client collaboration anchored every design choice",
-              "text"  : "Early interviews and strategy sessions helped us stay aligned with Excel Society's vision and build a site that truly supports their goals which allows for connection, clarity, and ease of use."
+              "text"  : "Interviews in both the early and middle phases helped us stay aligned with Excel Society's vision and build a site that truly supports their goals which allows for connection, clarity, and ease of use."
             },
             {
               "header": "Balancing clarity with complexity was key",

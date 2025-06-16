@@ -27,8 +27,8 @@ export default async function ImageWithCaption({image, alt = "No caption availab
                         src={imgSrc}
                         alt={alt}
                         fill
-                        sizes="(max-width: 80rem) 100vw,(max-width: 48rem) 640px,800px"
-                        quality={80}
+                        sizes="(max-width: 80rem) 100vw,(max-width: 48rem) 1000px,1000px"
+                        quality={75}
                         placeholder={blurDataURL ? "blur" : "empty"}
                         blurDataURL={blurDataURL}
                     />

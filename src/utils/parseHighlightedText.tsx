@@ -9,7 +9,7 @@ export function parseHighlightedText(text: any) {
         if (part.startsWith('|') && part.endsWith('|')) {
             const clean = part.slice(1, -1);
             return (
-                <mark className='accent-color medium' key={index}>
+                <mark className='accent-color semi-bold' key={index}>
                     {clean}
                 </mark>
             );

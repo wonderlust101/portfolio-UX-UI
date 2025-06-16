@@ -34,7 +34,7 @@
   },
   "projectSummary" : {
     "description": "A VR application for Meta Quest that lets urban planners and analysts explore layered geospatial data in 3D with hand-based controls, interactive UI, and real-world datasets.",
-    "role"       : "A VR application for Meta Quest for my capstone that lets urban planners and analysts explore layered geospatial data in 3D with hand-based controls, interactive UI, and real-world datasets.",
+    "role": "As the Lead UX & Interaction Designer and VR Developer for this project, I played the main role in developing the user interface. I also implemented the Unity prototype with hand-based interactions and integrated the ArcGIS Maps SDK to ensure smooth transition between scenes.",
     "details"    : [
       {
         "header": "Course Name",

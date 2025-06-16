@@ -9,11 +9,11 @@ type LayoutProps = {
 };
 
 type MetadataProps = {
-    params: Promise<{id: string}>;
+    params: Promise<{ id: string }>;
 };
 
 export async function generateMetadata({params}: MetadataProps): Promise<Metadata> {
-    const {id} = await params;
+    const { id } = await params;
     const caseStudy = await getCaseStudy(id);
 
     if (!caseStudy) {
